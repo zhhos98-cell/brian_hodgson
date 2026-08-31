@@ -1,0 +1,135 @@
+{
+  "dataset": "military_tribes_english_production_states_v0_1",
+  "date": "2026-09-01",
+  "status": "chronology-secure; copy-direction partially unresolved",
+  "central_claim": "The surviving English military-tribe materials preserve a sequence from Hodgson's rough classificatory working to fair tabular manuscript states and print. Vol.6/1 is the strongest prepublication candidate, but direct printer-copy identity is not yet proven.",
+  "states": [
+    {
+      "id": "MT-1831-ROUGH-V7-20",
+      "ref": "MSS EUR HODGSON/7 item 20 ff.123-137",
+      "date": "1831",
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writer": "Brian Houghton Hodgson",
+      "writing_state": "rough pen and pencil working",
+      "document_state": "source_pool_working",
+      "title": "Castes of Parbattiah army tribes",
+      "content_markers": [
+        "Brahman family names",
+        "Khasa thars",
+        "Gorkha official castes",
+        "Bara-Magarant as original Magar home",
+        "Magar family names",
+        "Gurung clans",
+        "Pande groups",
+        "Shah genealogy"
+      ],
+      "relation_to_print": "strong source-family ancestor; direct copying not proven",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol007.html"
+    },
+    {
+      "id": "MT-1832-FAIR-V6-1",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "date": "1832-10",
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writing_state": "fair",
+      "document_state": "fair_tabular_copy",
+      "title": "Origin and classification of the Military tribes of Nepal",
+      "format": "tabular view",
+      "content_markers": ["Brahman", "Khasa", "Magar", "Gurung family names"],
+      "historical_address_context": "volume retains original Box 2 / Item 12 metadata",
+      "catalogue_context": "vol.6 manuscripts described as copies and most as published",
+      "relation_to_print": "PREPUBLICATION_CANDIDATE_HIGH",
+      "direct_printers_copy": false,
+      "independent_date_support": "Oldfield later says his condensed table derives from a Hodgson paper dated October 1832",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    },
+    {
+      "id": "MT-UNDATED-FAIR-V9-10",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "date": null,
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writing_state": "fair",
+      "document_state": "parallel_fair_copy",
+      "title": "Origin and classification of the military tribes of Nepal",
+      "content_markers": ["Bahun", "Thakuri", "Chetri", "Magar", "Gurung family names"],
+      "relation_to_v6_1": "declared another-copy/copy-family relation; direction unresolved",
+      "relation_to_print": "explicit catalogue link to 1833 and 1874 publication states",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "MT-1833-READING",
+      "ref": "Asiatic Society meeting",
+      "date": "1833-01-09",
+      "document_state": "society_reading",
+      "title": "Origin and Classification of the Military Tribes of Nepal",
+      "evidence": "journal header; later bibliographic corroboration",
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf"
+    },
+    {
+      "id": "MT-1833-PRINT",
+      "ref": "Journal of the Asiatic Society of Bengal 2 (1833): 217-224",
+      "date": "1833-05",
+      "document_state": "printed_article",
+      "operations": ["narrative argument", "tabular classification"],
+      "distinctive_content_marker": "Bara Mangrath as original Magar seat followed by named place sequence",
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf"
+    },
+    {
+      "id": "MT-1880-OLDFIELD-CONDENSED",
+      "ref": "H. A. Oldfield, Sketches from Nipal, vol.1, chapter XIII",
+      "date": "1880",
+      "document_state": "later_condensed_reproduction",
+      "explicit_source_statement": "Condensed from a paper by Mr. Brian Hodgson, dated October 1832",
+      "importance": "independent triangulation of the October 1832 prepublication paper state",
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1880%20Sketches%20from%20Nipal--Historical%20and%20Descriptive%20vol%201%20by%20Oldfield%20s.pdf"
+    }
+  ],
+  "relations": [
+    {
+      "from": "MT-1831-ROUGH-V7-20",
+      "to": "MT-1833-PRINT",
+      "type": "SOURCE_POOL_TO_PUBLICATION_FAMILY",
+      "strength": "strong",
+      "evidence": "shared Khasa/Magar/Gurung classification and distinctive Bara-Magarant content",
+      "direct_copy": false
+    },
+    {
+      "from": "MT-1832-FAIR-V6-1",
+      "to": "MT-1833-PRINT",
+      "type": "PREPUBLICATION_CANDIDATE",
+      "strength": "high",
+      "evidence": "same title; October 1832 date; fair tabular state; catalogue publication link; Oldfield independent October 1832 attribution",
+      "direct_copy": "unresolved"
+    },
+    {
+      "from": "MT-1832-FAIR-V6-1",
+      "to": "MT-UNDATED-FAIR-V9-10",
+      "type": "COPY_FAMILY",
+      "strength": "high",
+      "direction": "unresolved"
+    }
+  ],
+  "mechanisms": [
+    "ROUGH_SOURCE_POOL_TO_FAIR_PUBLICATION_STATE",
+    "PREPUBLICATION_FAIR_COPY_ON_MACHINE_PAPER",
+    "TABULAR_CLASSIFICATION_AS_DOCUMENTARY_REFORMATTING",
+    "VERSIONING_WITHIN_CONSTANT_SUPPORT_CLASS",
+    "COPY_DIRECTION_REQUIRES_SHARED_ERROR_CONTROL"
+  ],
+  "source_control_rules": [
+    "Chronology does not itself establish copy direction.",
+    "Do not call vol.6/1 the printer's copy without shared-error/layout/compositor evidence.",
+    "Do not force vol.9/10 before or after vol.6/1 until physical textual comparison.",
+    "The 1831 rough state is broader than the printed paper and should be coded as a source pool rather than direct draft.",
+    "PAHAR PDF screenshots were attempted but failed with timeout/403; no visual diplomatic comparison is claimed."
+  ],
+  "next_actions": [
+    "Transcribe list order in vol.7/20, vol.6/1 and vol.9/10.",
+    "Compare shared errors, omissions, additions and spellings against 1833 print.",
+    "Inspect vol.6/1 and vol.9/10 for printer/compositor marks.",
+    "Compare 1874 reprint and additions/corrections to 1833 before assuming textual identity."
+  ]
+}
