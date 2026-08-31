@@ -1,0 +1,137 @@
+{
+  "dataset": "hodgson_visual_copy_chain_mandala_v0_1",
+  "date": "2026-08-31",
+  "scope": "Explicit source-to-paper visual copy relations in Hodgson-associated Nepalese mandala drawings, combining the modern British Library Add Or 5332-5334 records with the older India Office catalogue description of the larger numbered series.",
+  "modern_collection_record": {
+    "shelfmarks": ["Add Or 5332", "Add Or 5333", "Add Or 5334"],
+    "parent": "Add Or 5332-5334",
+    "paper": "Nepalese country paper",
+    "dimensions_cm": [44, 34],
+    "date_range": "1820-1843",
+    "historical_relation": "formerly part of IO San 3976f according to modern BL catalogue",
+    "institutional_provenance_layer": "apparently once in the collection of the Institut Imperial de France, Academie des Inscriptions et Belles Lettres",
+    "warning": "Do not infer complete transfer chronology from the institutional provenance statement alone."
+  },
+  "signed_artist": {
+    "modern_shelfmark": "Add Or 5334",
+    "catalogue_name": "Rajbir Citrakar",
+    "signature_transcription": "Rajbeer Chittrakar Nepal",
+    "date_range": "1820-1844",
+    "confidence": "very_high_signature_plus_modern_catalogue",
+    "scope_warning": "Do not propagate this attribution to every item in the larger numbered series without item-level evidence."
+  },
+  "copy_chain_model": "situated visual source -> local drawing labour -> Nepalese paper surrogate -> serial/index metadata -> Hodgson descriptive layer -> institutional circulation",
+  "source_relations": [
+    {
+      "item_no": 1,
+      "mandala": "Dharmadhatu",
+      "source_description": "original structure opposite the east face of the temple of Swayambhunath near Kathmandu",
+      "source_medium_class": "architectural_or_ritual_structure",
+      "target_medium": "paper drawing",
+      "relation": "FROM_ORIGINAL_STRUCTURE",
+      "mechanisms": ["ARCHITECTURAL_RITUAL_OBJECT_TO_PAPER_SURROGATE", "RITUAL_LOCATION_TO_METADATA"]
+    },
+    {
+      "item_no": 2,
+      "mandala": "Durgatiparisodhana",
+      "source_description": "copied from a picture",
+      "source_medium_class": "picture_unspecified_support",
+      "target_medium": "paper drawing",
+      "relation": "COPIED_FROM_PICTURE"
+    },
+    {
+      "item_no": 3,
+      "mandala": "Vajradhatu",
+      "source_description": "from a Nepalese picture",
+      "source_medium_class": "Nepalese_picture_unspecified_support",
+      "target_medium": "paper drawing",
+      "relation": "FROM_NEPALESE_PICTURE"
+    },
+    {
+      "item_no": 4,
+      "mandala": "Vajradhatu",
+      "source_description": "copied from original in Maha Vihar of Patan",
+      "source_medium_class": "monastery_original",
+      "target_medium": "paper drawing",
+      "relation": "COPIED_FROM_MONASTERY_ORIGINAL"
+    },
+    {
+      "item_no": 5,
+      "mandala": "Dharmadhatu",
+      "source_description": "copied from Rudra Vihar alias Maha Vihar of Patan; source described as enshrined in upper storey of a temple structure",
+      "source_medium_class": "enshrined_monastery_or_temple_mandala",
+      "target_medium": "paper drawing",
+      "relation": "COPIED_FROM_ENSHRINED_MONASTERY_SOURCE"
+    },
+    {
+      "item_no": 6,
+      "mandala": "Dharmachakra",
+      "source_description": "copied from a picture on cloth",
+      "source_medium_class": "cloth_picture",
+      "target_medium": "paper drawing",
+      "relation": "CLOTH_TO_PAPER",
+      "modern_BL_confirmation": "Add Or 5334 retains this inscription",
+      "mechanisms": ["CLOTH_IMAGE_TO_PAPER_DIAGRAM", "CROSS_MEDIA_COPY_WITH_SOURCE_INSCRIPTION"]
+    },
+    {
+      "item_no": 7,
+      "mandala": "Yogambara",
+      "source_description": "copied from a picture on cloth; 57 deities",
+      "source_medium_class": "cloth_picture",
+      "target_medium": "paper drawing",
+      "relation": "CLOTH_TO_NUMBERED_PAPER_DIAGRAM",
+      "mechanisms": ["CLOTH_IMAGE_TO_PAPER_DIAGRAM", "NUMBERED_VISUAL_AGGREGATION"]
+    },
+    {
+      "item_no": 8,
+      "mandala": "Vasundhara",
+      "source_description": "copied from Nepalese picture",
+      "source_medium_class": "Nepalese_picture_unspecified_support",
+      "target_medium": "paper drawing",
+      "relation": "FROM_NEPALESE_PICTURE"
+    },
+    {
+      "item_no": 9,
+      "mandala": "Jnaneshvari",
+      "source_description": "copied from Nepalese picture",
+      "source_medium_class": "Nepalese_picture_unspecified_support",
+      "target_medium": "paper drawing",
+      "relation": "FROM_NEPALESE_PICTURE"
+    }
+  ],
+  "paper_operations": [
+    "PLANARIZATION_AS_KNOWLEDGE_OPERATION",
+    "SOURCE_CONTEXT_TO_INDEXED_PLANAR_SURROGATE",
+    "PAPER_AS_CROSS_MEDIA_COMPARISON_SURFACE",
+    "PORTABILITY_BY_CONTEXT_REDUCTION",
+    "SOURCE_MEDIUM_PRESERVED_IN_HODGSON_METADATA",
+    "LOCAL_VISUAL_LABOUR_VISIBLE_ON_PAPER",
+    "DRAWING_AND_METADATA_DIVIDED_LABOUR",
+    "VISUAL_COPY_CHAIN_WITH_EXPLICIT_SOURCE"
+  ],
+  "epistemic_effects": {
+    "gains": [
+      "portability",
+      "serial numbering",
+      "co-location of heterogeneous source types in a documentary series",
+      "written preservation of source location/medium",
+      "comparability on a planar paper field"
+    ],
+    "potential_losses_or_transformations": [
+      "original scale",
+      "material substrate",
+      "ritual emplacement",
+      "three-dimensional architectural relation",
+      "possibly colour and surface properties"
+    ]
+  },
+  "fidelity_warning": "The historical phrase copied from establishes a claimed source relation, not facsimile fidelity. Fidelity requires visual comparison with the source object where it survives.",
+  "catalogue_number_control": {
+    "older_catalogue_number": 7750,
+    "confidence": "high_via_repeated_subject_index_cross_references",
+    "old_general_collection_shelfmark": "OCR-conflicted; verify against printed page before publication",
+    "modern_survival_relation": "BL parent record states Add Or 5332-5334 were once part of IO San 3976f"
+  },
+  "article_relation": "Pairs with Cambridge Add.1644 as a second direct paper-surrogation mode: Add.1644 transfers content from a decaying attached palm leaf; the mandala set extracts information from surviving architectural, ritual, cloth and pictorial sources elsewhere.",
+  "next_step": "Map additional Hodgson visual sheets (catalogue nos. 7743-7749 and related modern BL shelfmarks) by source medium, artist/collaborator attribution, paper type, dimensions and indexing scheme; test whether individual drawings feed the later 143-symbol paper arrays without assuming direct derivation."
+}
