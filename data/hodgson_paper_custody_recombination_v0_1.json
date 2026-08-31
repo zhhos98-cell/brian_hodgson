@@ -1,0 +1,36 @@
+{
+  "dataset": "hodgson_paper_custody_recombination_v0_1",
+  "date": "2026-09-01",
+  "scope": "Cases where materially or linguistically differentiated documentary version states are later grouped together by archival transfer or custody.",
+  "central_claim": "Custody can recombine version states that research practice had differentiated, so present or historical container relations must be analysed separately from version relations.",
+  "events": [
+    {
+      "id": "HCR-JUMLA-1864",
+      "source_family": "Jumla revenue statement",
+      "research_states": [
+        {"ref":"vol.59/38","language":"Khas/Nepali","support":"NEPALI_HANDMADE","state":"extended local revenue source"},
+        {"ref":"vol.8/1","language":"English","support":"MACHINE_MADE","state":"large Campbell chart"},
+        {"ref":"vol.102/21","language":"Farsi","support":"NEPALI_HANDMADE","state":"compact neat table; current link to 1864 large bundle not directly stated"}
+      ],
+      "custody_event_date": "1864-08",
+      "custody_event": "presentation to India Office Library",
+      "manifest_unit": "sixth large bundle",
+      "manifest_description": "in Khas and in English, Statement of the Revenue of the Province of Jumla",
+      "source": "William Wilson Hunter, Life of Brian Houghton Hodgson (1896), Appendix B reproducing the August 1864 India Office presentation list",
+      "source_url": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/24484/GIPE-000910-Contents.pdf?isAllowed=y&sequence=2",
+      "interpretation": "At least Khas and English version states of the Jumla revenue family were intentionally co-custodied in one large transfer bundle after documentary differentiation.",
+      "source_control": [
+        "The manifest establishes large-bundle co-custody, not exact lesser-wrapper or sheet adjacency.",
+        "The Farsi derivative is part of the modern source family but is not explicitly named in the 1864 manifest line.",
+        "Modern volume separation must not be projected backward as the 1864 arrangement."
+      ],
+      "mechanisms": ["CUSTODY_RECOMBINES_VERSION_STATES", "CONTAINER_RELATION_DIFFERS_FROM_VERSION_RELATION", "TRANSFER_BUNDLE_AS_VERSION_FAMILY_UNIT"]
+    }
+  ],
+  "next_actions": [
+    "Locate original 1864 India Office accession/packing list if surviving.",
+    "Map the sixth large bundle to modern Mss Eur Hodgson volume/item identities.",
+    "Determine whether Khas and English Jumla states were in separate lesser wrappers inside the large bundle.",
+    "Check whether other 1864 manifest entries deliberately co-group originals and English translations in the same bundle."
+  ]
+}
