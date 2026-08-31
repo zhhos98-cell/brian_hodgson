@@ -1,0 +1,118 @@
+{
+  "dataset": "india_office_transfer_control_surfaces_v0_1",
+  "date": "2026-09-01",
+  "scope": "Paper/list/control objects and institutional interfaces mediating Hodgson's 1864 India Office manuscript transfer. Zoological catalogue references are explicitly separated from the manuscript-transfer chain.",
+  "central_claim": "The 1864 transfer used a distributed, multilingual and hierarchical descriptive system: librarian inspection, English/Hindi contents lists, a master trunk/bundle manifest, subordinate Hindi/Nagri lists, physical bundles, and later printed/annotated manifest states.",
+  "actors": [
+    {
+      "id": "IOTCS-HALL",
+      "name": "FitzEdward Hall",
+      "role": "India Office Librarian",
+      "role_dates": "1864-1869",
+      "source_url": "https://searcharchives.bl.uk/?f%5Bmaterial_type_si%5D%5B%5D=Photographs&f%5Brelated_places_ssim%5D%5B%5D=Westminster%2C+England&f%5Burl_non_blank_si%5D%5B%5D=No&per_page=100&search_field=all_fields&sort=date",
+      "transfer_operations": ["summary inspection before formal tender", "held English/Hindi contents lists", "institutional reader at transfer interface"],
+      "source_control": "Do not infer authorship of lists or exhaustive manuscript verification."
+    }
+  ],
+  "control_surfaces": [
+    {
+      "id": "IOTCS-1858-64-HANDLIST",
+      "object": "RAS BHH/11/14",
+      "state": "handwritten store/donation list",
+      "date_range": "1858-1864",
+      "relation": "RAS says an initial 1858 Hodgson store list became the 1864 India Office donation list",
+      "mechanisms": ["PRIVATE_STORE_LIST_TO_PUBLIC_TRANSFER_LIST"]
+    },
+    {
+      "id": "IOTCS-1864-HALL-INSPECTION",
+      "object": "RAS BHH/5/18 / Hodgson draft letter, 2 Aug 1864",
+      "state": "pre-deposit institutional evaluation",
+      "operation": "summary inspection by FitzEdward Hall before formal tender",
+      "mechanisms": ["PRE_DEPOSIT_LIBRARIAN_INSPECTION", "INSTITUTIONAL_EVALUATION_BEFORE_FORMAL_CUSTODY"]
+    },
+    {
+      "id": "IOTCS-ENGLISH-CONTENTS-LIST",
+      "object": "English contents list mentioned by Hodgson",
+      "state": "not yet located",
+      "custody_at_1864_letter": "in hands of India Office Librarian",
+      "language": "English",
+      "relation_to_other_lists": "unresolved",
+      "mechanisms": ["CONTROL_LIST_PRECEDES_FORMAL_CUSTODY"]
+    },
+    {
+      "id": "IOTCS-HINDI-CONTENTS-LIST",
+      "object": "Hindi contents list mentioned by Hodgson",
+      "state": "not yet located",
+      "custody_at_1864_letter": "in hands of India Office Librarian",
+      "language": "Hindi",
+      "relation_to_subordinate_lists": "possible but unproven identity with Hindi/Nagri lists referenced by master manifest",
+      "mechanisms": ["BILINGUAL_CONTENT_LIST_AT_TRANSFER_INTERFACE", "CONTROL_LIST_PRECEDES_FORMAL_CUSTODY"]
+    },
+    {
+      "id": "IOTCS-1864-MASTER-MANIFEST",
+      "object": "List of MSS Presented by Mr Hodgson to the India Office Library, August 1864",
+      "state": "master trunk/large-bundle/lesser-bundle manifest",
+      "surviving_ras_state": "BHH/19/5 printed pamphlet with annotations",
+      "functions": ["container hierarchy", "version-family co-bundling", "language/state overview", "references to subordinate lists"],
+      "mechanisms": ["LAYERED_TRANSFER_DESCRIPTION_SYSTEM", "ARCHIVAL_PACKING_AS_RELATIONAL_METADATA"]
+    },
+    {
+      "id": "IOTCS-SUBORDINATE-NAGRI-BUDDHISM",
+      "object": "Nagri list referenced under Trunk 1 second large bundle Buddhist papers",
+      "state": "not yet located",
+      "manifest_function": "details Buddhist paper groups",
+      "mechanisms": ["SUBORDINATE_LISTS_INDEX_PHYSICAL_BUNDLES"]
+    },
+    {
+      "id": "IOTCS-SUBORDINATE-HINDI-REVENUE",
+      "object": "Hindi lists referenced for Bhatgaon, Kathmandu and Jumla revenue bundles",
+      "state": "not yet located",
+      "manifest_function": "supplies lower-level particulars for lesser bundles and statements",
+      "mechanisms": ["SUBORDINATE_LISTS_INDEX_PHYSICAL_BUNDLES"]
+    },
+    {
+      "id": "IOTCS-INSTITUTIONAL-RECEIPT",
+      "object": "formal India Office acceptance/accession/receipt",
+      "state": "not yet located",
+      "mechanisms": ["OPEN_CUSTODY_EDGE"]
+    }
+  ],
+  "document_network_disambiguation": [
+    {
+      "id": "IOTCS-BHH5-19-ZOOLOGY",
+      "ras_object": "BHH/5/19, letter to Hall, 1 Dec 1865",
+      "phrase": "corrected copy of the second edition of the catalogue",
+      "best_current_identification": "1863 British Museum second-edition zoological catalogue of Hodgson specimens/drawings",
+      "evidence": ["same RAS description discusses specimen numbers", "ZSL preserves three Hodgson-annotated copies of the 1863 Second Edition"],
+      "relation_to_manuscript_transfer_manifest": "separate documentary network",
+      "confidence": "high pending page transcription",
+      "mechanisms": ["CATALOGUE_TERM_REQUIRES_OBJECT_DISAMBIGUATION", "HALL_CONNECTS_DISTINCT_DOCUMENTARY_NETWORKS"]
+    }
+  ],
+  "transfer_architecture": [
+    "private store/list state",
+    "Hall summary inspection",
+    "English and Hindi contents lists circulate ahead of formal custody",
+    "formal presentation letter",
+    "master trunk/bundle manifest",
+    "subordinate Hindi/Nagri lists",
+    "physical bundles and manuscripts",
+    "institutional acceptance/accession state not yet recovered"
+  ],
+  "source_control_rules": [
+    "Do not treat 'the 1864 list' as one self-sufficient object; the transfer description is distributed across several control surfaces.",
+    "English/Hindi lists in Hall's hands may or may not be identical to subordinate Hindi/Nagri lists referenced in the manifest.",
+    "Summary inspection is not full cataloguing.",
+    "BHH/5/19 belongs to the zoological catalogue chain unless direct transcription disproves the present identification.",
+    "Hall's participation in two Hodgson paper networks does not merge their document ontologies.",
+    "Formal acceptance/receipt remains an open edge."
+  ],
+  "next_actions": [
+    "Search Borthwick Charles Wood papers for acceptance/reply around August 1864.",
+    "Search India Office Library records for Hall inspection, accession and receipt.",
+    "Locate English/Hindi contents lists already in Hall's hands.",
+    "Locate subordinate Hindi/Nagri lists referenced by the master manifest.",
+    "Image-transcribe BHH/5/18, BHH/11/14 and BHH/19/5.",
+    "Page-transcribe BHH/5/19 only to close zoological catalogue disambiguation."
+  ]
+}
