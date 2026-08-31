@@ -1,0 +1,156 @@
+{
+  "dataset": "military_tribes_microrevision_chain_v0_2",
+  "date": "2026-09-01",
+  "status": "active microrevision chain; Phoenix target readings unresolved",
+  "supersedes": "data/military_tribes_microrevision_chain_v0_1.json",
+  "central_claim": "The 1857 Selections directly preserves both 'seventy years ago' and 'general caste and character'. Thus the later chronological and semantic changes occur after 1857. Phoenix III no.26 (Aug 1872, pp.31-35) is securely located as the decisive intermediate publication witness but its target readings remain unread.",
+  "nodes": [
+    {
+      "id": "MT-1832-FAIR-V6-1",
+      "date": "1832-10",
+      "type": "fair_manuscript",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "support": "MACHINE_MADE",
+      "state": "fair writing, tabular classification",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html",
+      "importance": "decisive restoration-vs-retrospective-revision witness"
+    },
+    {
+      "id": "MT-1832-PARALLEL-V9-10",
+      "type": "parallel_fair_copy",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "support": "MACHINE_MADE",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "relation": "Cambridge identifies another copy of vol.6/1"
+    },
+    {
+      "id": "MT-1833-JASB",
+      "date": "1833-05",
+      "type": "printed_article",
+      "support": "PRINT",
+      "gorkha_date_reading": "70 years ago",
+      "cast_caste_reading": "UNRESOLVED_DIRECT_CHECK",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf",
+      "source_control": "searchable source text available; page screenshot failed"
+    },
+    {
+      "id": "MT-1857-SELECTIONS",
+      "date": "1857",
+      "type": "printed_reprint",
+      "support": "PRINT",
+      "cast_caste_reading": "general caste and character",
+      "gorkha_date_reading": "seventy years ago",
+      "source": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt",
+      "evidence_state": "direct searchable full text",
+      "mechanisms": ["EARLY_PRINT_READING_PERSISTS_TO_1857"]
+    },
+    {
+      "id": "MT-1872-PHOENIX",
+      "date": "1872-08",
+      "type": "serial_reprint",
+      "citation": "The Phoenix III, no.26, Aug 1872, pp.31-35",
+      "support": "PRINT",
+      "cast_caste_reading": "UNREAD",
+      "gorkha_date_reading": "UNREAD",
+      "bibliographic_source": "Boulnois entry 3282",
+      "digital_witnesses": [
+        {"provider":"Google Books","id":"aTBBAQAAMAAJ","provenance":"Oxford University copy"},
+        {"provider":"Google Books","id":"LXlRAAAAcAAJ","provenance":"National Library of the Netherlands copy"},
+        {"provider":"Google Books","id":"0eaqUKm_xQIC","provenance":"Biblioteca Nazionale Centrale di Roma copy","note":"TOC exposes Vol III No 26 August 1872"}
+      ],
+      "access_state": "located but text-only endpoint 403; PDF export CAPTCHA during 2026-09-01 wave",
+      "mechanism": "INTERMEDIATE_WITNESS_LOCATED_TEXT_UNREAD"
+    },
+    {
+      "id": "MT-1874-BASE",
+      "date": "1874",
+      "type": "printed_collected_edition_base_text",
+      "support": "PRINT",
+      "gorkha_date_reading": "some years ago",
+      "cast_caste_reading": "caste",
+      "source": "https://www.scribd.com/document/299772597/Hodgson-Essays-on-the-Language"
+    },
+    {
+      "id": "MT-1874-CORRECTION-APPARATUS",
+      "date": "1874",
+      "type": "printed_correction_apparatus",
+      "support": "PRINT",
+      "corrections": [
+        {"page":39,"from":"caste","to":"cast","mechanism":"RETROSPECTIVE_SEMANTIC_DISAMBIGUATION"},
+        {"page":40,"from":"some","to":"about 100","mechanism":"RETROSPECTIVE_CHRONOLOGICAL_RECALIBRATION"}
+      ]
+    },
+    {
+      "id": "MT-1874-ALDERLEY-COPY",
+      "date": "1874-10",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "BHHodgson / Alderley Oct 1874",
+      "military_tribes_annotation_evidence": "Part II p.37 included in Joshi annotated-page census",
+      "annotation_content": "UNRECOVERED"
+    },
+    {
+      "id": "MT-1874-CORRECTED-1876-COPY",
+      "date": "1876+",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "Own Copy corrected 1876",
+      "relation_to_1972": "Joshi states Amsterdam edition was based on material from his collection and omitted some annotations; Saha's own exemplar statement still needed"
+    },
+    {
+      "id": "MT-1972-SAHA",
+      "date": "1972",
+      "type": "printed_editorial_derivative",
+      "support": "PRINT",
+      "description": "Supplement of additions and corrections edited from handwritten annotations in the author's copy",
+      "selection_state": "selective editorial extraction",
+      "military_tribes_entries": "UNRECOVERED"
+    }
+  ],
+  "microchains": [
+    {
+      "id": "MT-DATING",
+      "variable": "Gorkha expansion date phrase",
+      "states": [
+        {"node":"MT-1832-FAIR-V6-1","reading":"UNREAD"},
+        {"node":"MT-1833-JASB","reading":"70 years ago"},
+        {"node":"MT-1857-SELECTIONS","reading":"seventy years ago"},
+        {"node":"MT-1872-PHOENIX","reading":"UNREAD"},
+        {"node":"MT-1874-BASE","reading":"some years ago"},
+        {"node":"MT-1874-CORRECTION-APPARATUS","reading":"about 100 years ago"}
+      ],
+      "known_change_interval": "after 1857 and by 1874 base",
+      "interpretation": "precision 70 persists through 1857; later becomes vague 'some' before intended recalibration to about 100"
+    },
+    {
+      "id": "MT-PHYSIOGNOMY",
+      "variable": "general cast/caste and character",
+      "states": [
+        {"node":"MT-1832-FAIR-V6-1","reading":"UNREAD"},
+        {"node":"MT-1833-JASB","reading":"UNRESOLVED_DIRECT_CHECK"},
+        {"node":"MT-1857-SELECTIONS","reading":"caste"},
+        {"node":"MT-1872-PHOENIX","reading":"UNREAD"},
+        {"node":"MT-1874-BASE","reading":"caste"},
+        {"node":"MT-1874-CORRECTION-APPARATUS","reading":"cast"}
+      ],
+      "known_change_interval": "intended cast correction occurs after 1857; exact entry point unresolved",
+      "interpretation": "semantic correction cannot yet be classified as restoration until 1832 manuscript is read"
+    }
+  ],
+  "material_version_model": "fair manuscript -> journal print -> government-record reprint -> manuscript-on-printed-copy working state -> Phoenix serial reprint -> collected print + correction apparatus -> copy-specific manuscript-on-print branches -> selective editorial reprint",
+  "source_control_rules": [
+    "Do not infer Phoenix readings from the 1874 body or correction apparatus.",
+    "Do not call 1874 corrections restorations until the October 1832 manuscript readings are inspected.",
+    "Keep Phoenix bibliographic existence separate from textual reading state.",
+    "Keep annotated 1874 exemplars as separate physical witnesses.",
+    "Treat Google Books access failure as missing evidence, not as evidence for textual identity."
+  ],
+  "next_actions": [
+    "Read Phoenix III no.26 pp.31-35 from a library/exportable scan.",
+    "Read MSS EUR HODGSON/6 item 1 at both microrevision loci.",
+    "Read vol.9/10 at the same loci.",
+    "Recover Saha 1972 Part II entries.",
+    "Recover Alderley p.37 marginalia."
+  ]
+}
