@@ -4,6 +4,10 @@ Purpose: sources or checks that can be advanced with one or a few clicks and sho
 
 ## Highest priority
 
+- [ ] **Cambridge Hodgson inventory image-host recovery — paper census pilot.** The live `hodgson.socanth.cam.ac.uk` item pages still expose individual folio-image links, but the old thumbnail/media host `catalogue2.socanth.cam.ac.uk/eXistdata/media/thumbs/` currently returns a 502/DNS-style failure. Recover a migrated/static/archived media path before treating these images as unavailable. Start with BL pilot cases that already have explicit folio images: vol. 12 item 3 (`f.117`, 1843 Nepali-paper bill), item 15 (`f.147`, seven-box receipt), item 20, and item 25. Search exact image filenames in Wayback/new Cambridge hosts if necessary. Once recovered, use full recto/verso images for edge/fold/seal/support observation and request transmitted-light only where the ordinary image cannot answer formation/watermark questions.
+  - live metadata page: https://hodgson.socanth.cam.ac.uk/chunkhtml/vol012.html
+  - historical media prefix: `http://catalogue2.socanth.cam.ac.uk/eXistdata/media/thumbs/`
+
 - [ ] **ZSL `NZSL/HOD/5/4/38` — list of boxes/crates of skins, horns, skulls and osteological specimens.** A 16.5 MiB digital PDF is exposed directly in the ZSL catalogue. Inspect for box numbers, crate structure, destinations, packing vocabulary and any preservation instructions.
   - https://zsl-archive.maxarchiveservices.co.uk/index.php/list-of-boxes-crates-etc-of-skins-horns-skulls-osteological-specimens-of-birds-and-mammals-sent-to-england?sf_culture=en
 
