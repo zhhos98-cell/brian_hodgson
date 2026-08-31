@@ -1,4 +1,4 @@
-# Next archive upload targets — after public Waves 17–19
+# Next archive upload targets — after public Waves 17–24
 
 Date: 2026-08-31
 
@@ -16,9 +16,38 @@ Public-source work now provides independently reconstructed comparison regimes f
 - zoological specimen/drawing/list relations;
 - duplicate/reference-series construction and distribution;
 - paper manufacture, treatment and affordance failure;
-- transport, receipt and custody checks.
+- transport, receipt and custody checks;
+- **reconciliation surfaces**: lists/tables/catalogues used to compare expected, received, retained, distributed, missing or corrected collection states;
+- **copy-state counting failure**: numerical conflicts can occur inside retained copies and should not automatically be projected back onto sent originals;
+- **destination subset marking**: a global catalogue can encode the physical subset sent to one recipient by crosses/ticks or related marks.
 
 The next archival batch can therefore be read against explicit tests rather than broad themes.
+
+## Priority 0 — reconciliation surfaces
+
+Wave 24 makes these the highest-value objects if available.
+
+Prioritize any sheet/list/table/catalogue containing:
+
+- expected count vs observed count;
+- received / retained / distributed columns or subtotals;
+- grand totals or recalculations;
+- crosses, ticks, underlining, destination initials or other subset markers;
+- marginal comments such as missing, omitted, inaccurate, corrected;
+- evidence that a fair/corrected copy was requested;
+- several copy states of the same list or letter;
+- numbered catalogues used to infer missing or expected objects.
+
+Key tests:
+
+1. what historical state does the document claim to represent?
+2. what other state was it compared against?
+3. does arithmetic close internally?
+4. is the witness an original, sent letter, retained copy, draft, fair copy, printed version or later transcript?
+5. does a graphical mark identify the physical subset sent to a particular destination?
+6. was a corrected version propagated after an error was found?
+
+Model public case: `NZSL/HOD/5/4/9`, whose surviving **copy** gives a tabulated 85 drawings but later prose says 81; its stated grand total closes only with 81. Do not normalize comparable archival discrepancies prematurely.
 
 ## Priority 1 — highest information gain
 
@@ -42,6 +71,7 @@ Key tests:
 - can the mutable list states described by Gray in February 1845 be reconstructed?
 - were distributions written back onto the same list?
 - can specimen numbers be linked to drawings or surviving institutional accessions?
+- do received, retained and distributed totals occupy distinct list states?
 
 ### B. Original labels or label transcriptions
 
@@ -195,18 +225,23 @@ The repo can reconstruct relations after ingestion.
 ## Ingestion questions to apply to every item
 
 1. What historical unit is being counted?
-2. What physical object or document state is visible?
-3. What metadata fields are actually present?
-4. Which relations are physically carried by the sheet/label/list?
-5. What downstream operation was this object meant to enable?
-6. Is this a first record, updated state, proof, correction, receipt or later copy?
-7. What is semantically addressable?
-8. What is physically addressable?
-9. What is relationally addressable?
-10. Is there an explicit failure/reconciliation/correction event?
-11. Can the object be joined to a public printed/catalogue state already in the repo?
-12. What paper/material observations can be made without over-inference?
+2. Is the count `expected`, `observed`, `received`, `retained`, `distributed`, `missing`, or `corrected`?
+3. Does the arithmetic close internally?
+4. What physical object or document state is visible?
+5. Is this an original, sent copy, retained copy, draft, fair copy, proof, printed version or later transcript?
+6. What metadata fields are actually present?
+7. Are there graphical subset markers: cross, tick, underline, destination initial, cancellation?
+8. Which relations are physically carried by the sheet/label/list?
+9. What downstream operation was this object meant to enable?
+10. Is this a first record, updated state, receipt, reconciliation, correction or propagated corrected copy?
+11. What is semantically addressable?
+12. What is physically addressable?
+13. What is relationally addressable?
+14. Does the surviving identifier prove only species/object relation, or a stronger specific historical event relation?
+15. Is there an explicit failure/reconciliation/correction event?
+16. Can the object be joined to a public printed/catalogue state already in the repo?
+17. What paper/material observations can be made without over-inference?
 
 ## Bottom line
 
-Upload next rather than waiting for a complete archival sorting pass. The public-source scaffold is now mature enough that even scattered object-level records can falsify, refine or materially strengthen the mechanisms already in the article spine.
+Upload next rather than waiting for a complete archival sorting pass. Waves 17–24 have moved the public-source scaffold from thematic reconstruction to object-level tests of counts, copy states, subset markers, cross-media identifiers and reconciliation. Even scattered archival records can now falsify, refine or materially strengthen the article's central claim about reconstructibility after movement.
