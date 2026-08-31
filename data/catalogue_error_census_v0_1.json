@@ -1,7 +1,8 @@
 {
   "schema_version": "0.1",
   "date_created": "2026-08-31",
-  "scope": "Catalogue segmentation and re-identification failures in Hodgson manuscript collections, initialized from Rajendralal Mitra 1882 and related Hunter/Cowell-Eggeling catalogue states.",
+  "last_extended": "2026-08-31-wave16",
+  "scope": "Catalogue segmentation, re-identification, count-version and inspection-depth changes in Hodgson manuscript collections, initialized from Rajendralal Mitra 1882 and related Hunter/Cowell-Eggeling catalogue states.",
   "source_core": {
     "citation": "Rajendralal Mitra, The Sanskrit Buddhist Literature of Nepal, Asiatic Society of Bengal, 1882",
     "url": "https://archive.org/stream/cu31924007399342/cu31924007399342_djvu.txt"
@@ -11,8 +12,11 @@
     "FALSE_LUMP": "two or more textual works represented under one name/entry",
     "PHYSICAL_TEXTUAL_COLLAPSE": "physical codex or volume boundary assumed to equal textual-work boundary",
     "BOUNDARY_SAMPLING_ERROR": "inspection of first/last page or other limited boundary sample misses internal work transitions",
+    "UNDERDESCRIBED_COMPOSITE": "composite identity recognized but internal contents represented too coarsely for the later analytical task",
+    "RESEGMENTED_COMPOSITE": "stable physical/institutional unit receives a finer enumeration of internal textual units after deeper inspection",
     "LATER_REIDENTIFICATION": "identity corrected through deeper inspection or comparison with other witnesses/lists",
-    "CATALOGUE_VERSION_OBSOLESCENCE": "printed or institutional catalogue preserves an earlier known-imperfect descriptive state"
+    "CATALOGUE_VERSION_OBSOLESCENCE": "printed or institutional catalogue preserves an earlier known-imperfect descriptive state",
+    "COUNT_VERSION_CONFLICT": "same or apparently overlapping collection receives non-identical count states whose conversion genealogy is unresolved"
   },
   "records": [
     {
@@ -113,19 +117,91 @@
       "inspection_protocol": "brief identification-oriented description with explicit recognition of comparison requirements",
       "evidence_status": "DIRECT_PUBLISHED_CATALOGUE_INTRODUCTION",
       "article_value": "Contemporary cataloguers explicitly calibrated description depth to identification task."
+    },
+    {
+      "id": "CE-ASB-B5-08",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "institutional_identifier": "B.5",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts",
+      "error_type": "UNDERDESCRIBED_COMPOSITE_TO_RESEGMENTED_COMPOSITE",
+      "earlier_description": "Dharani-mantra-sangraha, B.5, described earlier in Mitra at p.80",
+      "later_diagnosis": "Mitra states the earlier description did not convey a full idea of B.5 contents and later enumerates 39 Dharanis.",
+      "identifier_stable": true,
+      "internal_textual_units_after_deeper_inspection": 39,
+      "overlap_relation": {
+        "other_identifier": "B.65",
+        "other_internal_units": 12,
+        "relation": "Mitra states some B.65 Dharanis are included in B.5"
+      },
+      "inspection_protocol": "later fuller internal-content analysis",
+      "effect_on_count": "one stable institutional aggregate becomes representable as 39 internal textual units without requiring a new outer identifier",
+      "evidence_status": "DIRECT_MITRA_1882_TEXT_MULTIPLE_DIGITAL_OCR_WITNESSES",
+      "page_image_verified": false,
+      "article_value": "Inspection depth changes represented object granularity; legitimate composite and false lump must be distinguished."
+    },
+    {
+      "id": "CE-ASB-COUNT-09",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts",
+      "error_type": "COUNT_VERSION_CONFLICT",
+      "count_versions": [
+        {
+          "context": "general historical distribution statement",
+          "bundle_count": 85,
+          "separate_work_count": 144,
+          "printed_page": "xxiv"
+        },
+        {
+          "context": "collection as immediate object of Mitra's analysis",
+          "bundle_count": 86,
+          "separate_work_count": 170,
+          "printed_page": "xl"
+        }
+      ],
+      "relation_status": "UNRESOLVED",
+      "possible_resegmentation_relation": "PLAUSIBLE_NOT_DEMONSTRATED",
+      "warning": "False splitting and false lumping both existed, and bundle count also changes; do not attribute the 26-work difference mechanically to false-lump correction.",
+      "evidence_status": "DIRECT_MITRA_1882_TEXT_MULTIPLE_DIGITAL_WITNESSES",
+      "page_image_verified": false,
+      "article_value": "A count is a versioned descriptive output, not timeless metadata."
     }
   ],
   "count_conversion_evidence": [
     {
-      "source": "Mitra 1882",
+      "source": "Mitra 1882, prefatory p.xxiv",
       "from_unit": "bundle",
       "from_value": 85,
       "to_unit": "separate textual works",
       "to_value": 144,
       "institution": "Asiatic Society of Bengal",
       "warning": "Do not generalize this ratio to Fort William or other shipments; it proves only that bundle and work counts are non-identical and can have many-to-many relations."
+    },
+    {
+      "source": "Mitra 1882, prefatory p.xl",
+      "from_unit": "bundle",
+      "from_value": 86,
+      "to_unit": "separate textual works",
+      "to_value": 170,
+      "institution": "Asiatic Society of Bengal",
+      "warning": "Do not silently merge with the 85/144 distribution statement; their genealogy remains unresolved."
     }
   ],
+  "catalogue_labour_observation": {
+    "source": "Mitra 1882 preface",
+    "institutional_patronage": "Arthur Grote repeatedly urged analysis; Asiatic Society Council accepted divided work and agreed to defray preparation/printing cost.",
+    "division_of_labour": [
+      "Harinath Vidyaratna read about two-thirds of texts and prepared Sanskrit abstracts under Mitra",
+      "Ramanath Tarkaratna read the large Prajnaparamita",
+      "Kamakhyanath Tarkayagisa read three smaller works",
+      "Mitra read the remainder and frequently checked abstracts against originals",
+      "Haraprasad Sastri translated abstracts of 16 larger works into English"
+    ],
+    "verification_limit": "Mitra states he did not compare all Haraprasad renderings with originals.",
+    "scope_change": "Difficulty with Buddhist philosophical terminology and condensation contributed to abandoning a broad doctrinal review in favour of narratives/stories.",
+    "analytical_tag": "CATALOGUE_LABOUR_ECONOMY"
+  },
   "proposed_fields_for_general_provenance_schema": [
     "inspection_depth",
     "pages_or_leaves_examined",
@@ -138,12 +214,19 @@
     "segmentation_error_type",
     "reidentification_basis",
     "comparison_witnesses",
-    "catalogue_version_date"
+    "catalogue_version_date",
+    "derivation_depth",
+    "checked_against_original",
+    "intermediate_representation",
+    "supervision_relation",
+    "count_version_status"
   ],
   "testable_claims": [
     "Material codex unity could be mistaken for textual unity when inspection sampled only boundary pages.",
     "Catalogue practices could alter the perceived number of works without any physical acquisition or loss.",
-    "Increasing inspection depth can change segmentation and therefore object identity.",
-    "Printed catalogues should be treated as versioned interventions in the identity history of collections."
+    "Increasing inspection depth can change segmentation and therefore object identity or internal object count.",
+    "A stable institutional identifier can legitimately describe a composite whose internal textual units are later enumerated more finely.",
+    "Printed catalogues should be treated as versioned interventions in the identity history of collections.",
+    "Institutional legibility depended on funded and divided expert labour, intermediate abstracts, selective checking and editorial constraints."
   ]
 }
