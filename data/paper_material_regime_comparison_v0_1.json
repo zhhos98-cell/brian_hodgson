@@ -1,0 +1,131 @@
+{
+  "dataset": "paper_material_regime_comparison_v0_1",
+  "date": "2026-08-31",
+  "scope": "Material-production comparison among Hodgson-described Nepali handmade paper, Darjeeling/Calcutta/Serampore experimental interfaces, British paper, East India Company-associated paper and wider European handmade paper. Geographic labels are not treated as secure production origins without independent evidence.",
+  "central_claim": "Paper properties are produced by fibre, preparation, sheet-formation interface, finishing, transport/storage history and intended operation; geographic or fibre provenance alone is insufficient.",
+  "formula": "paper_properties = fibre × preparation × sheet_formation_interface × finishing × transport_storage_history × intended_operation",
+  "regimes": [
+    {
+      "id": "PMR-NEPAL-HAND",
+      "label": "Hodgson-described Nipalese/Nepali handmade paper system",
+      "date_anchor": "1831-1832",
+      "historical_name": "Nipalese paper",
+      "production_origin_warning": "Hodgson explicitly says the paper is not principally made in Nepal proper; Nepal/Kathmandu is a major market name and node.",
+      "raw_material": "inner bark of Himalayan paper plant",
+      "chemical_preparation": "ash-derived alkaline liquor; bark boiling",
+      "mechanical_preparation": "beating to homogeneous pulp; dilution/churning; coarse screening",
+      "sheet_formation": "floating wooden frame with cloth bottom; manual distribution",
+      "thickness_control": "pulp layer varied according to required strength",
+      "drying": "frame set near large fire; sheet peeled after drying",
+      "finishing": "optional polishing/burnishing with conch shell or hardwood",
+      "sizing": "Hodgson reports no routine sizing required to prevent ink running",
+      "commodity_states": ["finished sheet", "folded sheet", "bundle", "dried pulp brick/tile"],
+      "reported_properties": ["tough", "durable", "writable", "large-sheet capability"],
+      "diagnostic_questions": ["cloth/mesh formation trace", "burnishing", "fibre distribution", "thickness variation", "ink penetration", "edge structure"],
+      "primary_source": "B. H. Hodgson, JASB 1 (1832), 8-11",
+      "mechanisms": ["MARKET_NAME_VS_PRODUCTION_ORIGIN", "INTENTIONAL_THICKNESS_CONTROL_AT_FORMATION", "WRITABLE_SURFACE_WITHOUT_REPORTED_ROUTINE_SIZING"]
+    },
+    {
+      "id": "PMR-BRITISH-REMAKE-1831-33",
+      "label": "British remanufacture of transported Nepal pulp",
+      "date_anchor": "1831-1833",
+      "input": "dried Nepal paper pulp made into transport bricks",
+      "operation": "British papermakers reprocess/bleach/form paper from transported pulp",
+      "reported_output_properties": ["brittle", "stiff", "transparent/varnish-like", "gritty brown spots", "poor whiteness", "obstinate water retention on sieve", "marked shrinkage on drying"],
+      "bleaching_warning": "Searchable 1833 scan reports unusually high chloride-of-lime/acid demand and probable texture injury; exact quantities require image verification before quotation.",
+      "control": "Finished thin sheets made in Nepal and sent to Britain in 1829 were described as exceedingly tough and flexible and capable of taking minute bank-note plate impression with perfect fidelity.",
+      "interpretation": "The same broad Himalayan material source did not reproduce local sheet properties under British remanufacture.",
+      "primary_source": "JASB 2 (1833), Asiatic Society proceedings p.93, G. Swinton / Robison / Charles Cowan correspondence",
+      "mechanisms": ["PROCESS_HISTORY_EMBODIED_IN_SHEET", "FIBRE_IDENTITY_DOES_NOT_PRESERVE_PAPER_PROPERTIES", "FINISHED_SHEET_VS_PULP_TRANSFER_DIVERGENCE", "METROPOLITAN_REMANUFACTURE_FAILURE", "PULP_BRICK_STABILISES_TRANSPORT_NOT_SHEET_AFFORDANCE"]
+    },
+    {
+      "id": "PMR-DARJEELING-EXPERIMENT",
+      "label": "Darjeeling reconstruction of Nepali papermaking",
+      "date_anchor": "1841-1842",
+      "inputs": ["five skilled Nepali papermakers", "paper-tree bark", "ash-producing woods", "water", "tools", "Hodgson's printed description"],
+      "observed_process_corrections": ["flat stone and double-headed mallets used", "iron boiler rejected because it darkened paper", "tinned copper preferred", "continuous water flow used to remove alkali"],
+      "bleaching_result": "whitening treatments could destroy toughness",
+      "interpretation": "Embodied skill and local process calibration exceeded the portable printed recipe.",
+      "primary_source": "Journal of the Agricultural and Horticultural Society of India 1 (1842), 210-221",
+      "repo_join": "data/paper_experiment_census_v0_1.json",
+      "mechanisms": ["TACIT_CRAFT_KNOWLEDGE_EXCEEDS_PRINTED_RECIPE", "WHITENESS_STRENGTH_TRADEOFF"]
+    },
+    {
+      "id": "PMR-CALCUTTA-HUB",
+      "label": "Calcutta as paper evaluation, procurement and distribution hub",
+      "date_anchor": "1820s-1840s",
+      "production_origin_class": "not a single paper manufacture class",
+      "roles": ["Government of India commissioning", "scientific correspondence", "postal testing", "procurement/market", "printing/publication", "transit/distribution"],
+      "coding_rule": "manufacture_place, purchase_place, test_place, print_place and administrative_destination must remain separate fields.",
+      "mechanisms": ["CALCUTTA_AS_PAPER_EVALUATION_AND_DISTRIBUTION_HUB"]
+    },
+    {
+      "id": "PMR-SERAMPORE-MACHINE",
+      "label": "Serampore mechanised paper interface",
+      "date_anchor": "1812 onward; Hodgson-linked tests 1842",
+      "historical_context": "Government of India CPPRI identifies Serampore, West Bengal, as the site of India's first mechanised paper mill, established in 1812.",
+      "Hodgson_linked_operation": "O'Shaughnessy bleaching result handed to Marshman at Serampore Paper Mills for practical larger-scale testing of Himalayan bark material.",
+      "failure": "mucilaginous pulp impeded free flow on machine web and thickness control; economic/general quality concerns remained.",
+      "interpretation": "A property bundle compatible with tough hand-sheet formation became a defect at the machine-web interface.",
+      "mechanisms": ["SERAMPORE_MACHINE_INTERFACE", "HAND_SHEET_STRENGTH_PROPERTY_BECOMES_MACHINE_WEB_DEFECT", "AFFORDANCE_REVERSAL"]
+    },
+    {
+      "id": "PMR-BRITISH-HAND-WOVE",
+      "label": "British handmade laid/wove rag paper",
+      "date_anchor": "late 18th-early 19th century",
+      "principal_fibre": "rag",
+      "formation": "hand mould; laid or wove",
+      "technical_context": ["Hollander/rag engine", "Whatman wove mould from mid-18th century", "sizing/finishing by grade"],
+      "diagnostic_features": ["laid lines", "chain lines", "wove structure", "watermark", "countermark", "deckle/whole-sheet relation"],
+      "source": "British Association of Paper Historians, History of Papermaking in the UK",
+      "mechanisms": ["BRITISH_PAPER_TECHNOLOGY_PLURALITY"]
+    },
+    {
+      "id": "PMR-BRITISH-MACHINE",
+      "label": "British early machine paper",
+      "date_anchor": "1803 onward",
+      "principal_fibre": "initially rag",
+      "formation": "continuous machine web",
+      "technical_context": ["Frogmore successful machine 1803", "Dickinson cylinder patent 1809", "continuous drying developments by 1820s"],
+      "strengths": ["volume", "regularity", "lower production cost at scale"],
+      "historical_limit": "best handmade grades continued where quality/durability/special use mattered",
+      "mechanisms": ["MACHINE_SCALE_VS_HANDMADE_SPECIALTY"]
+    },
+    {
+      "id": "PMR-EIC-WHATMAN",
+      "label": "East India Company-associated British paper and Whatman supply context",
+      "date_anchor": "late 18th-early 19th century",
+      "supply_context": "Secondary scholarship citing Balston reports the EIC as a major Whatman customer and an explicit aim to make papers able to stand Indian climates, replacing earlier Dutch Company supply.",
+      "object_comparators": [
+        "Rylands Persian MS 922 endpaper: EIC insignia + countermark J. Whatman 1811; English handmade laid paper, approx. 9 laid lines/cm and 23 mm chain spacing",
+        "Rylands Persian MS 795 endpaper: heart-shaped EIC insignia dated 1820 + countermark J Whatman Balston & Co. 1820"
+      ],
+      "source_control": ["EIC/VEIC watermark alone does not identify Whatman", "J WHATMAN alone does not prove Turkey Mill/Whatman production", "successor firms retained mark rights", "continental imitations/forgeries existed"],
+      "mechanisms": ["BRITISH_EIC_CLIMATE_SPECIFIC_PAPER_SUPPLY", "COMPANY_WATERMARK_NOT_MAKER_IDENTITY", "WATERMARK_PLUS_COUNTERMARK_SOURCE_CONTROL"]
+    },
+    {
+      "id": "PMR-DUTCH-EUROPE",
+      "label": "Dutch and wider European handmade paper market",
+      "date_anchor": "18th-early 19th century",
+      "dutch_characteristics": ["major high-quality export paper", "strong sizing identified as a quality factor", "maker/factor watermarks and countermarks"],
+      "trade_context": ["French paper continued in lower-cost grades", "British market itself supplemented domestic production with continental imports", "wove technology crossed from Britain into Dutch production around 1807"],
+      "whatman_imitation": "Whatman marks were imitated/forged in France, Germany and Austria in the first half of the nineteenth century.",
+      "interpretation": "European paper is a plural market of makers, technologies, grades and copied brands rather than one material class.",
+      "mechanisms": ["EUROPEAN_PAPER_REGIME_PLURALITY", "WATERMARK_BRAND_REPUTATION_EXCEEDS_MAKER_IDENTITY"]
+    }
+  ],
+  "source_control_rules": [
+    "Do not code Calcutta as manufacture origin from purchase, receipt, testing, printing or transit evidence.",
+    "Do not code historical 'Nipalese/Nepali paper' as made in Nepal proper without production-location evidence.",
+    "Do not code Whatman from imported status, whiteness, wove appearance, EIC context or Company watermark alone.",
+    "Do not use watermark alone when countermark, date, formation structure and maker chronology can be checked.",
+    "Exact chemical quantities in the 1833 British bleaching report require page-image verification before publication quotation."
+  ],
+  "archive_priority": [
+    "MSS EUR HODGSON/6 ff.77-81 — identify machine-paper covering letter and surviving Nepali sample/material state",
+    "MSS EUR HODGSON/12 f.117 — identify paper of bill that quantifies 1,012 bundles of Nepali paper",
+    "MSS EUR HODGSON/1 ff.216-223 — measure and identify two imported paper types, thick and thin",
+    "Nepali handmade sheets — inspect formation mesh, surface burnish, caliper and ink penetration",
+    "Linnean/Kew Hodgson sheets — watermark/countermark plus laid/wove inspection before maker attribution"
+  ]
+}
