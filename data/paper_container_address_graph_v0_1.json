@@ -1,0 +1,182 @@
+{
+  "dataset": "paper_container_address_graph_v0_1",
+  "date": "2026-08-31",
+  "scope": "Paper-borne identifiers and container metadata for reconstructing Hodgson's pre-1921 grouping and shipment order.",
+  "terminology_warning": "The BL inventory uses English terms such as sack, bundle and box. Historical surfaces are said to carry Nepali-script numbers/titles, but the original local container term has not yet been transcribed. Do not silently replace inventory 'sack' with bastā or another Nepali term.",
+  "nodes": [
+    {
+      "id": "BL_VOL58_F65_SACK8_CONTENTS",
+      "type": "container_contents_surface",
+      "shelfmark": "MSS EUR HODGSON/58 f.65",
+      "historical_container_level": "sack",
+      "historical_container_number": "8",
+      "surface_support": "Nepali hand-made paper",
+      "surface_language": "Nepali",
+      "description": "Content of manuscripts from sack No. 8 of the original shipment; manuscripts relating to customs and manners of different ethnic communities.",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["SACK_CONTENTS_LIST_SURVIVAL", "SACK_8_CONTENT_NODE"]
+    },
+    {
+      "id": "BL_VOL85_ITEM4_LIMBU_SACK8",
+      "type": "individual_manuscript",
+      "shelfmark": "MSS EUR HODGSON/85 ff.95-108",
+      "historical_container_level": "sack",
+      "historical_container_number": "8",
+      "support": "hand-made Nepali paper; small section mixed with slightly acidic paper",
+      "languages": ["Limbu", "Nepali"],
+      "description": "Limbu traditional beliefs, rituals and prayers relating to cultivation, harvesting and marriage; original sack number (8) mentioned in Nepali title metadata.",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["INDIVIDUAL_ITEM_TO_SACK_8_JOIN"]
+    },
+    {
+      "id": "BL_VOL55_F129V_BOX3_CONTENTS",
+      "type": "container_contents_surface",
+      "shelfmark": "MSS EUR HODGSON/55 f.129 verso",
+      "historical_container_level": "box",
+      "historical_container_number": "3",
+      "description": "Content page of box No. 3 of original shipment.",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["ORIGINAL_BOX_CONTENT_PAGE_SURVIVAL", "BOX_3_CONTENT_NODE"]
+    },
+    {
+      "id": "BL_VOL1_ITEM8_BOX_SACK_ID",
+      "type": "document_copy",
+      "shelfmark": "MSS EUR HODGSON/1 ff.281-290",
+      "support": "imported paper",
+      "description": "Second copy of Nepalese narrative of Britain-Nepal relations. Final page carries Nepali title and original box and sack number at time of shipment in Nepali, plus other Nepali words/numerals.",
+      "historical_container_level": "box+sack",
+      "historical_container_number": null,
+      "historical_number_present": true,
+      "number_script": "Nepali/Nagari",
+      "evidence_status": "explicit_catalogue_description_number_not_transcribed_online",
+      "mechanisms": ["BOX_SACK_DUAL_IDENTIFIER", "NESTED_CONTAINER_METADATA_ON_ITEM"]
+    },
+    {
+      "id": "BL_VOL94_ITEM7_SHIPMENT_CONTENTS",
+      "type": "shipment_title_contents_surface",
+      "shelfmark": "MSS EUR HODGSON/94 ff.40-44",
+      "support": "Nepali hand-made paper",
+      "language": "Farsi with Nepali title description",
+      "description": "Separated leaves containing title folio and contents of original shipment of Nepali manuscripts; includes bundle number and categories.",
+      "historical_container_level": "bundle/shipment",
+      "historical_container_number": "multiple bundle numbers; exact values not transcribed in current catalogue result",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["ORIGINAL_SHIPMENT_TITLE_FOLIO", "BUNDLE_NUMBER_AS_PROVENANCE_KEY", "CATEGORY_ON_SHIPMENT_SURFACE"]
+    },
+    {
+      "id": "BL_VOL4_NOTEBOOK_SHIPMENT_IDS",
+      "type": "notebook_series",
+      "shelfmark": "MSS EUR HODGSON/4",
+      "support": "machine-made paper notebooks",
+      "description": "Four pre-bound notebooks; in most cases cover pages bear Nepali title and original shipment number in Nepali language/script.",
+      "historical_container_level": "shipment",
+      "historical_container_number": "present but values not transcribed in catalogue summary",
+      "number_script": "Nepali/Nagari",
+      "evidence_status": "explicit_volume_level_catalogue_description",
+      "mechanisms": ["NOTEBOOK_COVER_AS_SHIPMENT_IDENTITY_SURFACE", "LOCAL_SCRIPT_TRANSPORT_IDENTIFIER"]
+    },
+    {
+      "id": "BL_VOL5_NOTEBOOK_SACK_IDS",
+      "type": "notebook_series",
+      "shelfmark": "MSS EUR HODGSON/5",
+      "support": "machine-made paper notebooks",
+      "description": "Six pre-bound notebooks; cover pages normally bear Nepali titles and original shipment numbers. For Jatamala notebooks, catalogue specifically says original sack numbers are written in Nepali.",
+      "historical_container_level": "sack/shipment",
+      "historical_container_number": "present but exact values not transcribed",
+      "number_script": "Nepali/Nagari",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["SACK_NUMBER_ON_NOTEBOOK_COVER", "LOCAL_SCRIPT_TRANSPORT_IDENTIFIER"]
+    },
+    {
+      "id": "BL_VOL55_BUNDLE_COVERS",
+      "type": "container_fossil_series",
+      "shelfmark": "MSS EUR HODGSON/55 ff.126-128",
+      "historical_container_level": "bundle",
+      "description": "Cover pages of different original bundles, later bound as folios within volume 55.",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["ORIGINAL_BUNDLE_COVER_SURVIVAL", "CONTAINER_FOSSIL_AS_PROVENANCE_SURFACE"]
+    },
+    {
+      "id": "BL_VOL56_ORIGINAL_GROUP_COVERS",
+      "type": "container_fossil_series",
+      "shelfmarks": ["MSS EUR HODGSON/56 ff.1-2", "MSS EUR HODGSON/56 ff.53-58", "MSS EUR HODGSON/56 ff.100-103"],
+      "historical_container_level": "original group/bundle",
+      "description": "Multiple surviving cover pages from original manuscript groups/bundles, including one cover with content of original bundles.",
+      "evidence_status": "explicit_catalogue_description",
+      "mechanisms": ["MULTIPLE_ORIGINAL_GROUP_COVER_SURVIVAL", "COVER_CONTENT_METADATA_SURFACE"]
+    },
+    {
+      "id": "RAS_BHH11_15_FOLDED_PACKET",
+      "type": "folded_packet",
+      "shelfmark": "GB 891 BHH-BHH/11-BHH/11/15",
+      "description": "Inner photograph list enclosed within larger paper folded as packet; outer paper carries similar list; newspaper header with later Hodgson series note also enclosed.",
+      "historical_container_level": "packet",
+      "evidence_status": "explicit_RAS_catalogue_description",
+      "mechanisms": ["SHEET_TO_PACKET_CONVERSION", "PAPER_PACKET_AS_CONTAINER_AND_INDEX", "CONTAINER_CONTENT_METADATA_REDUNDANCY"]
+    },
+    {
+      "id": "RAS_BHH11_17_HOOKER_WRAPPER",
+      "type": "reused_wrapper",
+      "shelfmark": "GB 891 BHH-BHH/11-BHH/11/17",
+      "description": "Older Joseph Hooker letter wrapped round Dec. 1882 rough book list; Hodgson had already used reverse of letter for 1868 book-return notes.",
+      "historical_container_level": "wrapper",
+      "evidence_status": "explicit_RAS_catalogue_description",
+      "mechanisms": ["LETTER_AS_WRAPPER", "VERSO_REUSE", "FUNCTIONAL_STRATIGRAPHY_OF_PAPER"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "BL_VOL85_ITEM4_LIMBU_SACK8",
+      "target": "BL_VOL58_F65_SACK8_CONTENTS",
+      "relation": "member_of_sack",
+      "join_key": "historical sack number 8",
+      "confidence": "very_high_explicit_number_join"
+    },
+    {
+      "source": "BL_VOL1_ITEM8_BOX_SACK_ID",
+      "target": "UNRESOLVED_HISTORICAL_SACK",
+      "relation": "carried_sack_identifier",
+      "join_key": "original sack number not transcribed online",
+      "confidence": "high_relation_low_identifier_resolution"
+    },
+    {
+      "source": "BL_VOL1_ITEM8_BOX_SACK_ID",
+      "target": "UNRESOLVED_HISTORICAL_BOX",
+      "relation": "carried_box_identifier",
+      "join_key": "original box number not transcribed online",
+      "confidence": "high_relation_low_identifier_resolution"
+    },
+    {
+      "source": "BL_VOL55_F129V_BOX3_CONTENTS",
+      "target": "UNRESOLVED_BOX3_MEMBERS",
+      "relation": "indexes_contents_of",
+      "join_key": "box 3",
+      "confidence": "very_high_box_node_members_not_yet_transcribed"
+    },
+    {
+      "source": "BL_VOL94_ITEM7_SHIPMENT_CONTENTS",
+      "target": "UNRESOLVED_BUNDLE_MEMBERS",
+      "relation": "indexes_bundles/categories_of_original_shipment",
+      "join_key": "bundle numbers/categories not yet transcribed",
+      "confidence": "high"
+    }
+  ],
+  "provisional_hierarchy": {
+    "model": "document/notebook -> sack or bundle -> box -> shipment",
+    "status": "partially supported",
+    "support": [
+      "individual manuscript and sack-8 contents sheet share explicit historical sack number",
+      "one item carries both original box and sack number",
+      "box 3 has surviving contents page",
+      "shipment contents/title folio records bundle numbers/categories"
+    ],
+    "unresolved": [
+      "historical Nepali term translated as sack",
+      "whether inventory bundle and sack are distinct historical levels or overlapping translations",
+      "exact box/sack numbers on vol.1 item 8",
+      "members of box 3",
+      "full membership of sack 8"
+    ]
+  },
+  "method_rule": "Reconstruct container membership only from explicit historical identifiers, cover/title metadata, contents lists, or direct shipment relations. Subject similarity alone is insufficient."
+}
