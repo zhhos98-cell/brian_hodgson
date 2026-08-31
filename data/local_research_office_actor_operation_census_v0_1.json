@@ -1,0 +1,155 @@
+{
+  "dataset": "local_research_office_actor_operation_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "named and role-level actors in Hodgson's Kathmandu/Darjeeling research organization, reconstructed from the Cambridge inventory of British Library Hodgson Papers",
+  "status": "v0.1; catalogue-description grounded, direct folio transcription required for quotation-level use",
+  "source_control": {
+    "primary_basis": "Cambridge/SOAS Hodgson Papers inventory descriptions of British Library manuscripts",
+    "warning": "inventory descriptions summarize primary folios and sometimes include cautious identifications such as Rajman Sing?; preserve those confidence levels"
+  },
+  "actors": [
+    {
+      "id": "B_H_HODGSON",
+      "name": "Brian Houghton Hodgson",
+      "roles": ["commissioner", "question-setter", "classifier", "editor", "archive manager", "institutional router"],
+      "operations": ["prepare/adapt questionnaires", "write English titles/framing", "compare/correct data", "manage internal archive circulation", "commission/route field and visual work"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "KHARDAR_JITMOHAN",
+      "name": "Khardar Jitmohan / Jitman Singh",
+      "roles": ["principal research assistant", "compiler", "translator", "map maker", "lexicographer", "local editor"],
+      "operations": ["joint Lepcha textbook compilation", "Nepali translation", "title/colophon production", "Sanskrit-Newari vocabulary", "Gorkha genealogy", "maps", "Limbu text organization", "coordinate local specialists"],
+      "source_examples": ["MSS EUR HODGSON/79", "vol.33", "vol.51", "vol.7", "vol.85", "vol.60"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "JATANLAL",
+      "name": "Jatanlal",
+      "roles": ["regional research assistant", "Tarai field reporter"],
+      "operations": ["Morang report", "Tarai revenue data", "people/culture/topography reporting"],
+      "geographic_scope": ["Morang", "Saptari-Mahottari", "Nepal Tarai"],
+      "source_examples": ["MSS EUR HODGSON/3 f.134", "MSS EUR HODGSON/104 ff.25-26", "vol.102"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "ASHRAF_ALI",
+      "name": "Ashraf Ali Kashmiri",
+      "roles": ["Kashmiri trader", "research assistant", "route/topography informant-author"],
+      "operations": ["Q&A on Tibet", "popular account of Tibet", "Kathmandu-Lhasa route", "language/geography/governance/culture/economy reporting"],
+      "source_examples": ["MSS EUR HODGSON/9 ff.65-71", "MSS EUR HODGSON/94 ff.124-142b"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "RAJMAN_SINGH",
+      "name": "Rajman Singh / Rajman Chitrakar / Rajmansing",
+      "roles": ["artist", "specimen-selection gatekeeper", "shipment recommender", "possible ethnographic mediator"],
+      "operations": ["draw zoological specimens", "select/recommend birds for shipment to Darjeeling", "potential Chitrakar-mediated ethnographic collection"],
+      "source_examples": ["MSS EUR HODGSON/58 f.59b", "vol.4 mārphat Citrakāra context", "vol.60 Rajman Sing? context", "vol.59 Chitrakar presumed Rajman context"],
+      "confidence": {
+        "bird_selection_and_drawing": "very_high_catalogue_description",
+        "specific_ethnographic_Chitrakar_identity": "medium_provisional"
+      },
+      "warning": "not yet proven author of the 1870 native painter Hindi bird list"
+    },
+    {
+      "id": "SHANKARLAL",
+      "name": "Shankarlal",
+      "roles": ["named local collector"],
+      "operations": ["collect Newar festival information in 1830"],
+      "source_examples": ["MSS EUR HODGSON/59 f.1"],
+      "confidence": "high"
+    },
+    {
+      "id": "LEPCHA_SAMPRIT",
+      "name": "Minister/Karthak Samprit of Takbar",
+      "roles": ["Lepcha specialist/co-compiler"],
+      "operations": ["joint Lepcha La-zong compilation"],
+      "source_examples": ["MSS EUR HODGSON/79"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "BONTHING_CHO_SAM",
+      "name": "Bonthing Cho-sam Lapcha of Temarbau",
+      "roles": ["ritual specialist", "Lepcha co-compiler"],
+      "operations": ["joint Lepcha La-zong and associated cultural/religious knowledge production"],
+      "source_examples": ["MSS EUR HODGSON/79"],
+      "confidence": "very_high"
+    },
+    {
+      "id": "HAMSABAJ_SUBBA_LIMBU",
+      "name": "Hamsabaj Subba-Limbu of Ilam",
+      "roles": ["Limbu specialist/collaborator"],
+      "operations": ["assist Jitmohan in Lepcha/Limbu manuscript compilation"],
+      "source_examples": ["MSS EUR HODGSON/60 f.230-237"],
+      "confidence": "high"
+    },
+    {
+      "id": "HODGSON_WRITER",
+      "name": null,
+      "roles": ["writer", "translator/scribe"],
+      "operations": ["translate shikaree viva voce bird behaviour", "write manners memoranda", "add brief English note to local-dialect bird descriptions in some BL material"],
+      "confidence": "very_high_role_identity_unknown"
+    },
+    {
+      "id": "SHIKAREES",
+      "name": null,
+      "roles": ["field observer", "sportsman/hunter"],
+      "operations": ["observe and report bird manners/habits", "delegated field observation"],
+      "confidence": "very_high_role_identity_unknown"
+    },
+    {
+      "id": "LACHUMAN",
+      "name": "Lachuman / Laxman",
+      "roles": ["household expense manager or responsible payer; exact employment role unresolved"],
+      "operations": ["incur/manage kitchen and other expenses recorded in 1857 account"],
+      "source_examples": ["MSS EUR HODGSON/58 ff.19-22"],
+      "confidence": "high_for_name_and_expense_role_low_for_research_role",
+      "warning": "do not classify as research assistant without direct evidence"
+    }
+  ],
+  "organizational_surfaces": [
+    {
+      "id": "STANDARD_QUESTIONNAIRE",
+      "source": "MSS EUR HODGSON/58 ff.28-32",
+      "functions": ["task standardization", "district-level field inquiry", "cross-domain coverage"],
+      "prepared_by": ["Hodgson", "research assistants"],
+      "languages_scripts": ["mixed local dialects similar to Hindi-Urdu and Maithili", "Kaithi"]
+    },
+    {
+      "id": "DARJEELING_ARCHIVE_ISSUANCE_LEDGER",
+      "source": "MSS EUR HODGSON/59 f.54b",
+      "functions": ["record manuscript issuance", "track documents borrowed by Hodgson and wife", "internal custody control"],
+      "date": "1855"
+    },
+    {
+      "id": "HOUSEHOLD_WORKER_EXPENSE_ACCOUNT",
+      "source": "MSS EUR HODGSON/58 ff.19-22",
+      "functions": ["record kitchen/other expenses", "preserve names of regular paid workers/kullis"],
+      "date": "1857"
+    },
+    {
+      "id": "STAFF_VERIFICATION_SURFACE",
+      "source": "MSS EUR HODGSON/59 ff.9-10",
+      "functions": ["check/compare population and household figures across historical states"],
+      "actor": "Hodgson's staff"
+    }
+  ],
+  "organizational_mechanisms": [
+    "PAID_LOCAL_RESEARCH_STAFF",
+    "STANDARDIZED_FIELD_QUESTIONNAIRE",
+    "TASK_FORMALIZATION",
+    "REGIONAL_FIELD_DELEGATION",
+    "TRADER_AS_RESEARCH_ASSISTANT",
+    "PRINCIPAL_RESEARCH_ASSISTANT",
+    "ASSISTANT_AS_SUBNETWORK_COORDINATOR",
+    "ARTIST_AS_SPECIMEN_SELECTION_GATEKEEPER",
+    "ROLE_PERMEABILITY",
+    "ASSISTANT_VERIFICATION_LABOUR",
+    "PRIVATE_ARCHIVE_ISSUANCE_LEDGER",
+    "MULTI_LAYER_TRANSLATION_PIPELINE",
+    "CROSS_DOMAIN_RESEARCH_OFFICE",
+    "SEQUENTIAL_ORGANIZATIONAL_TRANSLATION"
+  ],
+  "core_hypothesis": "Hodgson's archive preserves a recurrent, task-differentiated local research organization rather than a radial relationship between one European scholar and undifferentiated informants. Questions could be standardized, fieldwork delegated geographically, merchant mobility converted into research access, assistants could coordinate specialists and produce translations/titles/maps, artists could select and route specimens as well as draw them, staff could verify figures, and the private archive itself maintained circulation control. These locally produced documentary states then entered a second organized processing regime in British institutions."
+}
