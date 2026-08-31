@@ -1,0 +1,102 @@
+{
+  "dataset": "military_tribes_publication_revision_states_v0_1",
+  "date": "2026-09-01",
+  "status": "publication-state version graph; diplomatic 1833-vs-1874 table comparison pending",
+  "states": [
+    {
+      "id": "PUB-1833-JASB",
+      "date": "1833-05",
+      "ref": "JASB 2 (1833):217-224",
+      "state": "first journal print",
+      "operations": ["narrative ethnological argument", "recruitment evaluation", "tabular classification"],
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf"
+    },
+    {
+      "id": "PUB-AUTHOR-ANNOTATED-PRINT-ENVIRONMENT",
+      "date_range": "post-earlier-reprint to pre-1874",
+      "state": "printed predecessor copies with Hodgson manuscript additions/corrections",
+      "evidence_scope": "collection-level",
+      "evidence": "1874 NOTICE says Hodgson made numerous manuscript additions in his own copy of the Selections and these corrections/additions were introduced into the reprint, representing phases of his views across nearly thirty years",
+      "source_url": "https://www.scribd.com/document/674819438/Essays-on-Language-00-Ho-Dg",
+      "specific_military_tribes_annotated_copy_identified": false
+    },
+    {
+      "id": "PUB-1874-REPRINT",
+      "date": "1874",
+      "ref": "Essays, Part II, pp.37-44",
+      "state": "collected reprint",
+      "classification_architecture": "Khas/Ekthariya/Thakuri/Magar/Gurung table retained",
+      "source_url": "https://www.scribd.com/document/674819438/Essays-on-Language-00-Ho-Dg"
+    },
+    {
+      "id": "PUB-1874-CORRECTION-APPARATUS",
+      "date": "1874",
+      "ref": "List of Additions and Corrections, Part II",
+      "state": "printed version-difference surface",
+      "corrections_for_military_tribes": [
+        {
+          "page": 39,
+          "line": "17",
+          "from": "caste",
+          "to": "cast",
+          "context": "Magar/Gurung physiognomies: general cast and character",
+          "type": "semantic/typographic disambiguation",
+          "interpretation": "removes ambiguity between social caste and physical/general cast"
+        },
+        {
+          "page": 40,
+          "line": "4 from top",
+          "from": "some",
+          "to": "about 100",
+          "context": "Khas issued from Gorkha under Prithvi Narayan about 100 years ago",
+          "type": "retrospective chronological precision",
+          "interpretation": "replaces vague time expression with approximate century-scale date"
+        }
+      ],
+      "listed_table_corrections_pages_42_44": 0,
+      "source_url": "https://www.scribd.com/document/674819438/Essays-on-Language-00-Ho-Dg"
+    }
+  ],
+  "relations": [
+    {
+      "from": "PUB-1833-JASB",
+      "to": "PUB-1874-REPRINT",
+      "type": "REPRINT_VERSION_RELATION",
+      "strength": "high",
+      "note": "1874 contents explicitly identifies JASB 1833 source and prior Selections reprint"
+    },
+    {
+      "from": "PUB-AUTHOR-ANNOTATED-PRINT-ENVIRONMENT",
+      "to": "PUB-1874-REPRINT",
+      "type": "ANNOTATED_PRINT_TO_REVISED_PRINT_WORKFLOW",
+      "strength": "high at collection level; exact article witness unresolved"
+    },
+    {
+      "from": "PUB-1874-REPRINT",
+      "to": "PUB-1874-CORRECTION-APPARATUS",
+      "type": "PRINT_TO_DECLARED_CORRECTED_READING",
+      "strength": "very high"
+    }
+  ],
+  "mechanisms": [
+    "PRINT_STATE_REMAINS_REVISABLE",
+    "ANNOTATED_PRINT_AS_INTERMEDIATE_MANUSCRIPT_STATE",
+    "AUTHOR_COPY_AS_VERSION_CONTROL_SURFACE",
+    "CORRECTION_LIST_AS_VERSION_DIFFERENCE_SURFACE",
+    "PHYSIOGNOMIC_SEMANTIC_DISAMBIGUATION_IN_REPRINT",
+    "RETROSPECTIVE_CHRONOLOGICAL_PRECISION",
+    "CLASSIFICATORY_ARCHITECTURE_PERSISTS_IN_EXPLICIT_REVISION_APPARATUS"
+  ],
+  "source_control_rules": [
+    "Do not infer that every correction is a new intellectual position rather than restoration of intended wording.",
+    "No listed correction to pp.42-44 means no explicit correction in the apparatus, not proof of exact diplomatic identity.",
+    "The collection-level annotated-author-copy workflow does not identify the exact annotated physical copy for this article.",
+    "Compare 1833, prior Selections state, 1874 reprint, and 1972 supplement before closing the publication stemma."
+  ],
+  "next_actions": [
+    "Compare 1833 and 1874 table spellings/order diplomatically.",
+    "Search 1972 supplement for further military-tribe corrections from the author's copy.",
+    "Inspect October 1832 vol.6/1 for cast/caste and vague/precise Gorkha chronology wording.",
+    "Locate Hodgson's annotated Selections copy if extant."
+  ]
+}
