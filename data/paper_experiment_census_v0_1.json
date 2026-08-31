@@ -1,0 +1,230 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Operational census of the Nepal/Darjeeling paper experiments reconstructed from the 1842 Journal of the Agricultural and Horticultural Society of India correspondence dossier and sequel.",
+  "source_control": {
+    "primary_source": "Correspondence relative to the Manufacture of Nipal Paper at Darjeeling, with details as to its cost, relative value, mode of bleaching, and rendering water proof, Journal of the Agricultural and Horticultural Society of India 1 (1842), 210-221; sequel, 273-274.",
+    "internet_archive_item": "https://archive.org/details/in.ernet.dli.2015.109896",
+    "ocr_url": "https://archive.org/stream/in.ernet.dli.2015.109896/2015.109896.Journal-Of-The-Agricultural-And-Horticultural-Society-Of-India--Vol-1_djvu.txt",
+    "warning": "OCR-derived extraction. Verify exact wording and numerical typography against page images before publication quotation."
+  },
+  "records": [
+    {
+      "id": "PE-1841-01",
+      "label": "Skilled-maker transfer from Nepal to Darjeeling",
+      "date": "1841",
+      "actors": ["Brian Houghton Hodgson", "Archibald Campbell", "Lord Auckland", "Nepal Durbar", "five Nepali paper-makers"],
+      "actor_roles": ["broker", "experimental administrator", "patron/governor-general", "sending authority", "skilled makers"],
+      "process_stage": "technology_transfer",
+      "operation": "mobilize embodied craft knowledge",
+      "transfer_event": ["persons", "instructions"],
+      "inputs": ["five skilled paper-makers"],
+      "observations": [
+        "Campbell states that Lord Auckland asked Hodgson to send people skilled in Nepali paper manufacture.",
+        "Five makers were sent by the Nepal Durbar at Hodgson's request.",
+        "Monthly wage hierarchy: head maker Rs 10; mate Rs 8; three ordinary workers Rs 8 each; total Rs 42."
+      ],
+      "desired_properties_or_outcomes": ["reconstruct manufacture at Darjeeling", "obtain technical information", "create local production capacity"],
+      "failure_mode": null,
+      "interface": "diplomatic-administrative labour transfer",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [210, 211],
+      "analytical_value": "Technology moves through differentiated labour, pay, authority and travel rather than as recipe alone."
+    },
+    {
+      "id": "PE-1841-02",
+      "label": "Manufactory siting: carriage economy versus experimental observation",
+      "date": "1841",
+      "actors": ["Archibald Campbell", "Nepali paper-makers"],
+      "actor_roles": ["experimental administrator", "skilled makers"],
+      "process_stage": "workshop_setup",
+      "operation": "select production site",
+      "transfer_event": ["raw-material survey", "site selection"],
+      "inputs": ["paper-tree supply", "ash-producing woods", "clear running water", "carriage distance", "administrative observation"],
+      "observations": [
+        "Makers preferred Pucheem/Pacheem to economise carriage and remain close to paper-tree supply.",
+        "Campbell overrode their preference because he wanted manufacture nearer his own observation.",
+        "A small house and tank were built near a stream crossing Auckland Road; water was carried by bamboo conduits."
+      ],
+      "desired_properties_or_outcomes": ["raw-material proximity", "low transport cost", "continuous water", "inspectability"],
+      "failure_mode": null,
+      "interface": "resource ecology / transport / observation",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [211],
+      "analytical_value": "Observability is itself an infrastructural requirement with transport costs."
+    },
+    {
+      "id": "PE-1841-03",
+      "label": "Wet-bark transport failure",
+      "date": "1841",
+      "actors": ["Nepali paper-makers", "Archibald Campbell"],
+      "actor_roles": ["skilled makers", "observer/reporter"],
+      "process_stage": "raw_material_transport",
+      "operation": "transport dried bark from Pacheem to Darjeeling",
+      "transfer_event": ["bark"],
+      "inputs": ["previously dried inner bark", "carriage", "wet weather exposure"],
+      "observations": [
+        "Makers insisted bark should be thoroughly dried and not rewetted before use.",
+        "Some dried bark became wet during carriage from Pacheem to Darjeeling, mildewed, and was reported altogether useless for paper-making."
+      ],
+      "desired_properties_or_outcomes": ["dry stable bark", "manufacturability"],
+      "failure_mode": "rewetting -> mildew -> loss of manufacturability",
+      "interface": "transport / seasonal moisture",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [212],
+      "analytical_value": "Raw-material custody and transport conditions are part of paper manufacture."
+    },
+    {
+      "id": "PE-1841-04",
+      "label": "Workshop material substitutions and process calibration",
+      "date": "1841",
+      "actors": ["Nepali paper-makers", "Archibald Campbell", "Brian Houghton Hodgson"],
+      "actor_roles": ["skilled makers", "experimental administrator", "earlier technical describer"],
+      "process_stage": "pulp_preparation_and_sheet_forming",
+      "operation": "reconstruct Nepali manufacturing process at Darjeeling",
+      "transfer_event": ["recipe", "tools", "tacit craft variation"],
+      "inputs": ["flat stone", "double-headed mallets", "tinned copper boiler", "flowing tank water", "alkaline ash liquor"],
+      "observations": [
+        "Campbell uses Hodgson's 1832 implement list as baseline.",
+        "Makers use a flat stone and double-headed mallets rather than Hodgson's stone mortar and pestle.",
+        "Iron boiler is rejected because it darkens paper; tinned copper is preferred, brass considered acceptable.",
+        "Continuous water flow through the tank is required to carry alkali away from pulp."
+      ],
+      "desired_properties_or_outcomes": ["uniform pulp", "lighter colour", "alkali removal", "successful sheet formation"],
+      "failure_mode": "iron contact -> dark tinge",
+      "interface": "portable written specification / tacit workshop practice",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [211, 212],
+      "analytical_value": "Recipe transmission reveals local substitutions and tacit knowledge rather than exact replication."
+    },
+    {
+      "id": "PE-1841-05",
+      "label": "Campbell bleaching trade-off trials",
+      "date": "1841",
+      "actors": ["Archibald Campbell"],
+      "actor_roles": ["experimenter"],
+      "process_stage": "pulp_treatment",
+      "operation": "whiten paper without destroying strength",
+      "transfer_event": ["experimental treatment"],
+      "inputs": ["prepared pulp", "water", "rain", "air", "weather exposure"],
+      "observations": [
+        "Immersion plus exposure whitened the pulp considerably but destroyed the toughness characteristic of the untreated paper.",
+        "Board exposure preserved toughness but produced little whitening.",
+        "Campbell abandoned the immersion plan and proposed further dry-season exposure trials."
+      ],
+      "desired_properties_or_outcomes": ["whiteness", "toughness"],
+      "failure_mode": "property trade-off: whitening by immersion -> toughness loss; non-immersion exposure -> insufficient whitening",
+      "interface": "chemical/weather treatment / fibre performance",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [214, 215, 219],
+      "analytical_value": "Improvement is multi-dimensional; optimizing colour can destroy strength."
+    },
+    {
+      "id": "PE-1841-06",
+      "label": "Distributed bleaching handoff to O'Shaughnessy",
+      "date": "1841",
+      "actors": ["Archibald Campbell", "T. H. Maddock", "W. B. O'Shaughnessy", "Government of India", "Mr Marshman"],
+      "actor_roles": ["initial experimenter", "government secretary", "chemical examiner", "commissioning authority", "industrial papermaker"],
+      "process_stage": "finished_sheet_and_pulp_treatment",
+      "operation": "develop scalable bleaching method",
+      "transfer_event": ["20-30 finished sheets by dak", "bleached specimens", "chemical formula", "documents"],
+      "inputs": ["Darjeeling paper", "chlorine in water", "red lead", "salt", "sulphuric acid"],
+      "observations": [
+        "Government requested 20-30 sheets in several dak despatches for O'Shaughnessy's experiments.",
+        "O'Shaughnessy reported success using chlorine in water instead of chloride of lime.",
+        "The process was passed to Marshman at Serampore Paper Mills for practical larger-scale testing."
+      ],
+      "desired_properties_or_outcomes": ["whiteness", "cheap reagents", "scalability", "retained useful material properties"],
+      "failure_mode": "chloride-of-lime interaction with colouring matter -> difficult bleaching",
+      "interface": "Darjeeling workshop / government office / chemical laboratory / industrial mill",
+      "evidence_status": "direct_1842_printed_correspondence",
+      "printed_pages": [217, 219, 220, 221],
+      "analytical_value": "Failure creates a distributed troubleshooting network rather than ending the experiment."
+    },
+    {
+      "id": "PE-1841-07",
+      "label": "Filtering-paper substitution test",
+      "date": "1841-1842",
+      "actors": ["Government of India", "Agricultural and Horticultural Society editors/users", "Archibald Campbell"],
+      "actor_roles": ["procurer/comparator", "users/evaluators", "producer"],
+      "process_stage": "finished_sheet_use",
+      "operation": "chemical filtration",
+      "transfer_event": ["finished sheets", "cost comparison"],
+      "inputs": ["Darjeeling/Nepal paper", "English filtering paper", "chemical precipitate/liquor"],
+      "observations": [
+        "Government noted English filtering paper at Rs 9 per ream versus an understood Darjeeling cost of about Rs 3 per ream for that purpose.",
+        "Editors later reported that Nepal paper's strength allowed pressure/twisting without tearing.",
+        "Actual filtering was slower and produced less clear liquor than good European filtering paper."
+      ],
+      "desired_properties_or_outcomes": ["tear resistance", "fast filtration", "clear filtrate", "low cost"],
+      "failure_mode": "strength advantage accompanied by slow filtration and poorer clarification",
+      "interface": "paper / chemical filtration operation",
+      "comparison_standard": "English bibulous/filtering paper",
+      "evidence_status": "direct_1842_government_correspondence_and_editorial_use_report",
+      "printed_pages": [218, 274],
+      "analytical_value": "A material can rank highly on mechanical strength yet poorly on the full operational requirements of filtration."
+    },
+    {
+      "id": "PE-1841-08",
+      "label": "India-rubber waterproof postal-wrap substitution",
+      "date": "1841-1842",
+      "actors": ["Government of India", "Calcutta Post Office authorities"],
+      "actor_roles": ["experimental procurer", "operational evaluator"],
+      "process_stage": "treated_finished_sheet",
+      "operation": "wet-season packet wrapping",
+      "transfer_event": ["treated sheet", "mail trial"],
+      "inputs": ["Darjeeling paper", "India rubber", "wax cloth comparison"],
+      "observations": [
+        "India-rubber-treated Darjeeling paper was reported perfectly waterproof.",
+        "Prepared paper was reported to weigh one-third as much as the same area of Post Office wax cloth.",
+        "Post Office authorities proposed substitution to reduce expense and improve packet protection."
+      ],
+      "desired_properties_or_outcomes": ["waterproofness", "low mass", "strength", "low cost", "packet protection"],
+      "failure_mode": null,
+      "interface": "paper treatment / postal packet / monsoon transport",
+      "comparison_standard": "wax cloth",
+      "evidence_status": "direct_1842_government_correspondence",
+      "printed_pages": [218],
+      "analytical_value": "Colour becomes irrelevant while strength, mass and waterproofing become decisive: affordance ranking changes with operation."
+    },
+    {
+      "id": "PE-1842-09",
+      "label": "Serampore machine-web affordance reversal",
+      "date": "1842",
+      "actors": ["Mr Marshman", "Serampore Paper Mills", "Agricultural and Horticultural Society editors"],
+      "actor_roles": ["industrial experimenter", "machine-production site", "evaluators/editors"],
+      "process_stage": "industrial_pulp_and_sheet_forming",
+      "operation": "adapt bark fibre to machine paper production",
+      "transfer_event": ["dried bark", "chemical/process formula", "experimental paper"],
+      "inputs": ["paper-tree bark", "chloride of lime", "industrial steeping/boiling/sizing", "machine web"],
+      "observations": [
+        "Marshman reported little hope of economic success versus alternative materials.",
+        "Even after treatments analogous to English paper practice, general paper quality remained inferior.",
+        "Mucilaginous material prevented pulp from running freely on the web when greater thickness was attempted.",
+        "Marshman doubted general use with machinery then in vogue.",
+        "He nevertheless identified strength-dominant applications such as bank-note paper as more plausible."
+      ],
+      "desired_properties_or_outcomes": ["machinability", "thickness control", "whiteness", "strength", "economic competitiveness"],
+      "failure_mode": "mucilaginous fibre/pulp behaviour -> poor machine-web flow and thickness control; high bleaching/process cost",
+      "interface": "Nepal/Darjeeling bark fibre / Serampore machine web",
+      "comparison_standard": "rag/muy furnish used at Serampore",
+      "evidence_status": "direct_1842_sequel",
+      "printed_pages": [273, 274],
+      "analytical_value": "The same fibre behaviour that supports tough hand-made paper becomes a production defect at a machine interface: a direct affordance reversal."
+    }
+  ],
+  "cross_cutting_claims": [
+    "Affordance is operation- and interface-specific rather than an intrinsic ranking of paper types.",
+    "Failed experiments reveal the property bundles and infrastructural interfaces that successful use can hide.",
+    "Technology transfer involved skilled bodies, pay, authority, tools, raw materials, specimens, formulas and repeated testing.",
+    "Paper manufacture extended into drying, raw-material transport, water supply, fuel/ash ecology and workshop siting.",
+    "Finished sheets became distributed experimental objects circulating among Darjeeling, Calcutta and Serampore.",
+    "The 1842 editors themselves omitted some document-transmission notes as unimportant, creating a historically revealing contrast with this project's focus on circulation metadata."
+  ],
+  "archive_joins": [
+    "Mss Eur Hodgson/6 item 6 ff.77-81 — 1831 Hodgson paper sample and manufacturing account",
+    "Mss Eur Hodgson/6 item 9 ff.181-184 — 1841 Campbell paper-maker transfer/experiment correspondence",
+    "Mss Eur Hodgson/14 item 15 ff.172-177 — duplicate Campbell paper-making letter",
+    "Mss Eur Hodgson/12 item 3 f.117 — 1843 Wallich bill for 1,012 bundles of Nepali paper and packing materials"
+  ]
+}
