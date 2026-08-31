@@ -1,0 +1,169 @@
+{
+  "dataset": "hodgson_archive_list_version_chain_v0_1",
+  "date": "2026-09-01",
+  "scope": "Chronology of surviving RAS-described Hodgson list/inventory objects used for storage, transport, repacking and institutional donation, without assuming direct textual descent among every state.",
+  "central_claim": "The 1864 India Office donation list belongs to a longer pre-institutional history of box/trunk/store inventories; RAS states that the 1858 store list BHH/11/14 became the 1864 donation list, and a separate printed annotated August 1864 state survives as BHH/19/5.",
+  "states": [
+    {
+      "id": "HALVC-1837-BOXES",
+      "date_range": "1837-1844",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/1",
+      "title": "List of Buddha Books & drawings, & of Statistics of Nepaul",
+      "material_state": "handwritten, 1 piece, 4 sides",
+      "custody_state": "five boxes left in Residency plus sixth package",
+      "later_revision": "additional heading records repackaging in 1844 to take home",
+      "additional_function": "instruction for literary/scientific stores to pass to Hodgson's father in event of death",
+      "url": "https://www.royalasiaticarchives.org/index.php/list-of-buddha-books-amp-amp-drawings-amp-amp-of-statistics-of-nepaul",
+      "mechanisms": ["INVENTORY_SURFACE_ACCUMULATES_CUSTODY_STATES", "REPACKING_EVENT_WRITTEN_ON_PRIOR_LIST", "BOX_MEMBERSHIP_AS_RELATIONAL_METADATA"]
+    },
+    {
+      "id": "HALVC-1842-TRUNK1",
+      "date_range": "1842-1844",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/3",
+      "title": "Details of Contents of Bastas or Bundles in Trunk No. 1 Cathmandu",
+      "material_state": "handwritten, 1 piece, 4 sides",
+      "custody_state": "Trunk No.1 with nested bastas/bundles",
+      "content_headings_catalogued": ["Buddhism", "Vaisavalis", "Jatmalas", "Army details", "Catalogues", "Sastras"],
+      "later_revision": "note says repacked in 1844 and put on board the Hardwicke with Hodgson",
+      "url": "https://royalasiaticarchives.org/index.php/details-of-contents-of-bastas-or-bundles-in-trunk-no-1-cathmandu",
+      "mechanisms": ["NESTED_CONTAINER_ONTOLOGY_BEFORE_1864", "BUNDLE_LIST_AS_TRANSPORT_INTERFACE"]
+    },
+    {
+      "id": "HALVC-1844-CANTERBURY-DRAWINGS",
+      "date_range": "1844-1845",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/4",
+      "title": "Total of Drawings at Canterbury - my original series",
+      "material_state": "handwritten, 4 sides",
+      "custody_state": "original zoological, ethnographical and architectural drawings at Hodgson's father's Canterbury home",
+      "later_revision": "note says all were to be shipped with Hodgson in July 1845",
+      "source": "RAS catalogue browse",
+      "mechanisms": ["GEOGRAPHIC_MOVE_GENERATES_NEW_INVENTORY_STATE"]
+    },
+    {
+      "id": "HALVC-1845-BUDDHIST-DRAWINGS",
+      "date_range": "1845-1852",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/5",
+      "title": "List of Buddhist Drawings, February 1845",
+      "material_state": "handwritten, 1 piece, 4 sides",
+      "custody_state": "detailed drawing-series inventory",
+      "later_revision": "note says left in Hodgson's house at Darjeeling December 1852",
+      "mechanisms": ["INVENTORY_SURFACE_ACCUMULATES_CUSTODY_STATES"]
+    },
+    {
+      "id": "HALVC-1845-BIRD-DRAWINGS",
+      "date_range": "1845-1852",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/7",
+      "title": "Bird Drawings Jan 31, 1845",
+      "material_state": "handwritten, 1 piece, 4 sides",
+      "custody_state": "species drawing counts plus mammal drawing list",
+      "later_revision": "note says left at Darjeeling December 1852 in chest of drawers",
+      "mechanisms": ["INVENTORY_SURFACE_ACCUMULATES_CUSTODY_STATES"]
+    },
+    {
+      "id": "HALVC-1845-LITERARY-BOXES",
+      "date_range": "1845-1852",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/8",
+      "title": "Memorandum of Boxes Literary 1845",
+      "material_state": "handwritten, 2 pieces, 4 sides",
+      "custody_state": "trunks aboard Alfred in 1845; later left at Darjeeling in 1852; separate scrap lists trunks/chests contents",
+      "mechanisms": ["TRANSPORT_LIST_TO_LATER_STORE_LIST_STATE"]
+    },
+    {
+      "id": "HALVC-1845-52-GUIDE-KHARDAN",
+      "date_range": "1845-1852",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/9",
+      "title": "Rough lists of Ethnographical and Architectural drawings",
+      "material_state": "handwritten lists, 3 pieces, 8 sides",
+      "function": "includes summary of heads of drawings/MSS to guide Khardan in listing them",
+      "mechanisms": ["LIST_GENERATES_FURTHER_LISTING_LABOUR", "DISTRIBUTED_ARCHIVAL_DESCRIPTION_LABOUR"]
+    },
+    {
+      "id": "HALVC-1852-WITHECOMBE",
+      "date": 1852,
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/10",
+      "title": "Memo for Dr Withecombe",
+      "material_state": "handwritten, 1 piece, 2 sides",
+      "custody_state": "literary papers in trunks left at Darjeeling December 1852",
+      "mechanisms": ["GEOGRAPHIC_MOVE_GENERATES_NEW_INVENTORY_STATE"]
+    },
+    {
+      "id": "HALVC-1854-58-METALIST",
+      "date_range": "1854-1858",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/11",
+      "title": "A List of Lists",
+      "material_state": "handwritten, 1 piece, 2 sides",
+      "function": "lists nine different lists pertaining to Hodgson's possessions; reverse contains list titles/dates",
+      "mechanisms": ["META_INVENTORY_OF_CONTROL_SURFACES", "LIST_SYSTEM_BECOMES_SELF_INDEXING"]
+    },
+    {
+      "id": "HALVC-1855-TRUNK2",
+      "date": 1855,
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/12",
+      "title": "List of pictorial illustration of Nepalese and Tibetan Buddhism",
+      "material_state": "handwritten, 2 pieces, 6 sides",
+      "custody_state": "Darjeeling list of pictorial illustrations on cloth/paper plus further list of papers in Trunk No.2",
+      "mechanisms": ["PRIVATE_TRUNK_INVENTORY_CONTINUES_BEFORE_DONATION"]
+    },
+    {
+      "id": "HALVC-1858-64-STORE-DONATION",
+      "date_range": "1858-1864",
+      "ras_ref": "GB 891 BHH-BHH/11-BHH/11/14",
+      "title": "List of MSS presented to the India Office",
+      "material_state": "handwritten list: 2 pieces, 4 sides; accompanying letter copy: 4 pieces, 13 sides",
+      "ras_catalogue_interpretation": "initially a store list for Hodgson compiled in 1858 but became the list of MSS given to the India Office in 1864",
+      "accompanying_document": "copy of Hodgson letter to Sir Charles Wood about acceptance of donation and articles to be given",
+      "url": "https://www.royalasiaticarchives.org/index.php/list-of-mss-presented-to-the-india-office",
+      "mechanisms": ["PRIVATE_STORE_LIST_TO_PUBLIC_TRANSFER_LIST", "STORE_ONTOLOGY_TO_TRANSFER_ONTOLOGY_CANDIDATE"]
+    },
+    {
+      "id": "HALVC-1864-DRAFT-WOOD",
+      "date": "1864-08-02",
+      "ras_ref": "GB 891 BHH-BHH/5-BHH/5/18",
+      "title": "Draft letter to Sir C Wood",
+      "material_state": "handwritten, 4 sides",
+      "institutional_interface": "catalogue says large Kathmandu manuscript collection had been inspected by Mr Hall, India Office Librarian before Hodgson tendered it for deposit",
+      "url": "https://royalasiaticarchives.org/index.php/draft-letter-from-brian-houghton-hodgson-to-the-right-honorable-sir-c-wood-g-l-b-mp-secretary-of-state-for-india-2-august-1864",
+      "mechanisms": ["INSTITUTIONAL_INSPECTION_PRECEDES_TRANSFER_CLOSURE"]
+    },
+    {
+      "id": "HALVC-1864-PRINTED-ANNOTATED",
+      "date": "1864-08",
+      "ras_ref": "GB 891 BHH-BHH/19-BHH/19/5",
+      "title": "List of MSS Presented by Mr. Hodgson to the India Office Library, August 1864",
+      "material_state": "printed pamphlet with some annotations",
+      "function": "lists manuscripts donated to India Office Library",
+      "url": "https://royalasiaticarchives.org/index.php/list-of-mss-presented-by-mr-hodgson-to-the-india-office-library-august-1864",
+      "mechanisms": ["MANIFEST_HAS_HANDWRITTEN_AND_PRINTED_STATES", "ANNOTATED_PRINTED_MANIFEST_AS_WORKING_STATE"]
+    },
+    {
+      "id": "HALVC-1896-HUNTER",
+      "date": 1896,
+      "state": "later biographical reproduction",
+      "title": "Hunter, Life of Brian Houghton Hodgson, Appendix B",
+      "source_role": "searchable downstream witness reproducing 1864 presentation list",
+      "source_rank": "lower than surviving RAS 1858-64 manuscript/printed list states for diplomatic/source-control purposes",
+      "mechanisms": ["LATER_REPRODUCTION_OF_MANIFEST_STATE"]
+    }
+  ],
+  "source_hierarchy": [
+    "Tier 1: RAS BHH/11/14 handwritten 1858-64 store/donation list; BHH/5/18 2 Aug 1864 draft; BHH/19/5 Aug 1864 printed annotated list",
+    "Tier 2: India Office accession, Hall inspection, English/Hindi content lists and institutional manifest copy if located",
+    "Tier 3: Hunter 1896 reproduction"
+  ],
+  "source_control_rules": [
+    "Chronological succession does not prove textual descent among all list objects.",
+    "RAS's statement that BHH/11/14 store list became donation list is direct catalogue evidence; exact textual changes require page comparison.",
+    "Do not assign BHH/19/5 annotations to Hodgson until handwriting/provenance is checked.",
+    "Do not equate BHH/11/1 five boxes with BHH/11/3 Trunk No.1 or later 1864 trunks without content reconciliation.",
+    "Do not infer that 1858 store order already had the final 1864 version-family co-bundling until BHH/11/14 and BHH/19/5 are compared.",
+    "Treat lists as paper objects with their own state, custody and revision histories."
+  ],
+  "next_actions": [
+    "Image-transcribe BHH/11/14 and identify 1858 versus 1864 alterations.",
+    "Inspect BHH/19/5 annotations and compare item order/text with BHH/11/14 and Hunter 1896.",
+    "Inspect BHH/11/1 and BHH/11/3 for exact box/basta membership and 1844 repacking changes.",
+    "Compare BHH/11/12 Trunk No.2 1855 list with 1858/1864 store/donation order.",
+    "Search India Office records for Hall inspection, accession, and the English/Hindi content lists.",
+    "Compare BL vol.55/20 f.129v box No.3 content page against pre-1921 list states without assuming identity in advance."
+  ]
+}
