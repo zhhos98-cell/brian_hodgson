@@ -2,7 +2,7 @@
 
 Date created: 2026-08-31
 
-Status: working schema. Designed from the evidence accumulated through public-web Waves 1–11 and the Wilson paper-method notes. It should be implemented later as CSV/JSON/SQLite only after enough real rows have tested the fields.
+Status: working schema. Designed from the evidence accumulated through public-web Waves 1–15, the Wilson paper-method notes, Fort William count reconstruction, and Mitra's 1882 catalogue-error diagnosis. It should be implemented later as CSV/JSON/SQLite only after enough real rows have tested the fields.
 
 ## 1. Purpose
 
@@ -662,3 +662,207 @@ Before converting this schema to structured data, manually code five stress-test
 5. one Buddhist manuscript whose wrapper/title/folio state produced a later catalogue misidentification.
 
 If those five can be represented without overloaded free-text fields, freeze schema v0.1 and then implement CSV/JSON/SQLite.
+
+---
+
+## 18. Wave 14 extension — counting ontology
+
+Fort William and Mitra require count statements to become first-class historical records rather than generic `item_count` fields.
+
+### Required fields
+
+- `count_id`
+- `count_value`
+- `count_unit`
+- `count_unit_class`
+  - `TEXTUAL_WORK`
+  - `PHYSICAL_VOLUME`
+  - `LEAF`
+  - `COPY`
+  - `PACKAGE`
+  - `BUNDLE`
+  - `BOX`
+  - `CATALOGUE_ENTRY`
+  - `SPECIMEN`
+  - `DRAWING_SHEET`
+  - `OTHER`
+- `count_operation`
+  - production
+  - packing
+  - dispatch
+  - receipt
+  - shelving
+  - inventory
+  - cataloguing
+  - retrospective_reconstruction
+- `count_date`
+- `count_actor`
+- `count_source_id`
+- `same_corpus_status`
+  - `confirmed_same`
+  - `partial_overlap`
+  - `possible_overlap`
+  - `unknown`
+- `unit_conversion_demonstrated`
+- `conversion_source_id`
+- `conversion_relation`
+- `count_version_status`
+  - `contemporary`
+  - `later_recount`
+  - `retrospective_reconstruction`
+  - `conflicting_same_source`
+  - `unresolved`
+
+### Hard rule
+
+**Never subtract, ratio, reconcile or silently replace counts across `count_unit_class` unless a source demonstrates the conversion relation.**
+
+`109 bundles`, `127 volumes` and `66 works` cannot be treated as three estimates of one count. They answer different operational questions.
+
+### Direct calibration
+
+Mitra 1882 provides a demonstrated non-identity: one distribution statement gives **85 bundles comprising 144 separate works** for the Asiatic Society of Bengal. The ratio is local to that statement and must not be generalized.
+
+The same preface later states the Society collection under analysis as **86 bundles including 170 separate works**. Preserve both statements as separate count versions until the addition/recount/catalogue genealogy is demonstrated. Do not choose one as the `correct` total by default.
+
+---
+
+## 19. Wave 15 extension — segmentation and inspection protocol
+
+Catalogue identity depends on how a composite object is inspected. Mitra 1882 directly diagnoses both false splitting and false lumping in the Calcutta Hodgson collection.
+
+### Segmentation fields
+
+- `segmentation_event_id`
+- `physical_unit_entity_id`
+- `pre_segmentation_object_count`
+- `post_segmentation_object_count`
+- `segmentation_basis`
+  - binding_boundary
+  - pagination_boundary
+  - colophon
+  - title_leaf
+  - internal_title
+  - script_hand_change
+  - support_change
+  - comparison_with_other_copy
+  - catalogue_comparison
+  - other
+- `work_boundary_visible`
+- `pagination_continuity`
+- `multiple_works_in_physical_unit`
+- `one_work_across_multiple_physical_units`
+- `segmentation_error_type`
+  - `FALSE_SPLIT`
+  - `FALSE_LUMP`
+  - `PHYSICAL_TEXTUAL_COLLAPSE`
+  - `BOUNDARY_SAMPLING_ERROR`
+  - `UNRESOLVED`
+- `reidentification_basis`
+- `comparison_witness_ids`
+
+### Inspection-protocol fields
+
+- `inspection_event_id`
+- `inspection_actor`
+- `inspection_goal`
+- `inspection_depth`
+  - boundary_only
+  - sampled_internal
+  - full_codex
+  - comparative_collation
+  - unknown
+- `pages_or_leaves_examined`
+- `first_leaf_examined`
+- `last_leaf_examined`
+- `internal_leaves_examined`
+- `colophons_examined`
+- `material_fields_recorded`
+- `textual_fields_recorded`
+- `inspection_time_or_labour_if_known`
+- `expertise_language_script`
+- `resulting_identity_change`
+
+### Model warning case
+
+Mitra reports that two or more works could be written continuously in one volume without a pagination break, while cursory examination read only the first and last page to determine the volume name. This can be coded as:
+
+```text
+physical_unit: codex
+pagination_continuity: true
+multiple_works_in_physical_unit: true
+inspection_depth: boundary_only
+pages_or_leaves_examined: first + last
+segmentation_error_type: FALSE_LUMP
+result: several textual works -> one catalogue identity
+```
+
+### B.5 calibration
+
+Mitra explicitly says his earlier description of `B.5` did not give a full idea of its contents and that fuller analysis showed it comprised **39 Dharanis**. `B.65` contained another 12, some also included in B.5. This is a high-value test because increased inspection depth changes the represented internal object count under a stable institutional identifier.
+
+---
+
+## 20. Institutional legibility fields
+
+Receipt, physical possession and catalogue existence must be separated from institutional usability.
+
+- `institutional_legibility_event_id`
+- `custody_confirmed`
+- `physical_access_available`
+- `unpacked_or_opened`
+- `physical_units_delimited`
+- `contents_identified`
+- `identifier_assigned`
+- `catalogue_entry_created`
+- `catalogue_language`
+- `catalogue_script`
+- `catalogue_fields`
+- `catalogue_arrangement`
+- `required_expertise`
+- `proposed_examiner`
+- `competence_assessment`
+- `authorised_examiner`
+- `institutional_use_status`
+  - received_only
+  - physically_arranged
+  - partly_identified
+  - catalogued_limited_access
+  - catalogued_operational
+  - later_reidentified
+  - unknown
+
+Fort William is the model: a collection could be physically counted as volumes and still require a competent person to ascertain its contents. Its surviving Persian catalogue MS.PERS.130 further shows that shelfmark, title, condition and handwriting quality were selected institutional fields; catalogue usability depended on language/script as well as physical existence.
+
+---
+
+## 21. New failure and event vocabulary after Waves 14–15
+
+Add failure tags:
+
+- `false_split`
+- `false_lump`
+- `physical_textual_collapse`
+- `boundary_sampling_error`
+- `count_unit_conflation`
+- `count_version_conflict`
+- `institutional_legibility_failure`
+- `expertise_bottleneck`
+- `catalogue_language_interface_failure`
+- `catalogue_shallow_inspection`
+
+Add event types:
+
+- `count`
+- `recount`
+- `segment`
+- `resegment`
+- `inspect_boundaries`
+- `inspect_full_object`
+- `identify_contents`
+- `competence_assessed`
+- `catalogue_entry_split`
+- `catalogue_entries_merged`
+- `count_version_superseded`
+
+These additions make catalogue error and collection cardinality empirically reconstructible rather than forcing them into free-text `notes`.
