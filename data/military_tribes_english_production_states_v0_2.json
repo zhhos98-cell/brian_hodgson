@@ -1,0 +1,144 @@
+{
+  "dataset": "military_tribes_english_production_states_v0_2",
+  "date": "2026-09-01",
+  "status": "chronology strengthened by authorial retrospective date; copy-direction unresolved",
+  "supersedes": "data/military_tribes_english_production_states_v0_1.json",
+  "central_claim": "The surviving English military-tribe materials preserve a sequence from 1831 rough classificatory working to October 1832 fair tabular copy states and 1833 print. Hodgson's own 1857 footnote says the paper had been written twenty-five years earlier, independently anchoring composition to approximately 1832 and strengthening the status of vol.6/1 as a date-aligned prepublication fair state without proving printer-copy identity.",
+  "states": [
+    {
+      "id": "MT-1831-ROUGH-V7-20",
+      "ref": "MSS EUR HODGSON/7 item 20 ff.123-137",
+      "date": "1831",
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writer": "Brian Houghton Hodgson",
+      "writing_state": "rough pen and pencil working",
+      "document_state": "source_pool_working",
+      "title": "Castes of Parbattiah army tribes",
+      "content_markers": ["Brahman family names", "Khasa thars", "Gorkha official castes", "Bara-Magarant", "Magar family names", "Gurung clans", "Pande groups", "Shah genealogy"],
+      "relation_to_print": "strong source-family ancestor; direct copying not proven",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol007.html"
+    },
+    {
+      "id": "MT-1832-FAIR-V6-1",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "date": "1832-10",
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writing_state": "fair",
+      "document_state": "fair_tabular_copy",
+      "title": "Origin and classification of the Military tribes of Nepal",
+      "format": "tabular view",
+      "content_markers": ["Brahman", "Khasa", "Magar", "Gurung family names"],
+      "historical_address_context": "volume retains original Box 2 / Item 12 metadata",
+      "catalogue_context": "vol.6 manuscripts described as copies and most as published",
+      "relation_to_print": "DATE_ALIGNED_PREPUBLICATION_FAIR_STATE_HIGH",
+      "direct_printers_copy": false,
+      "autograph_status": "not established; Cambridge calls vol.6 manuscripts copies",
+      "independent_date_support": [
+        "Oldfield later says his condensed table derives from a Hodgson paper dated October 1832",
+        "Hodgson's 1857 retrospective footnote says the paper was written twenty-five years earlier, pointing to c.1832"
+      ],
+      "microrevision_readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    },
+    {
+      "id": "MT-UNDATED-FAIR-V9-10",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "date": null,
+      "support": "MACHINE_MADE",
+      "language": "English",
+      "writing_state": "fair",
+      "document_state": "parallel_fair_copy",
+      "title": "Origin and classification of the military tribes of Nepal",
+      "relation_to_v6_1": "declared another-copy/copy-family relation; direction unresolved",
+      "microrevision_readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"}
+    },
+    {
+      "id": "MT-1833-READING",
+      "ref": "Asiatic Society meeting / publication process",
+      "date": "1833-01-09",
+      "document_state": "society_reading",
+      "title": "Origin and Classification of the Military Tribes of Nepal",
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf"
+    },
+    {
+      "id": "MT-1833-PRINT",
+      "ref": "Journal of the Asiatic Society of Bengal 2 (1833): 217-224",
+      "date": "1833-05",
+      "document_state": "printed_article",
+      "operations": ["narrative argument", "tabular classification"],
+      "secure_microreadings": {"cast_caste":"caste", "gorkha_date":"70 years ago"}
+    },
+    {
+      "id": "MT-1857-RETROSPECTIVE-DATE",
+      "ref": "Selections from the Records of the Government of Bengal No.27, reprint footnote",
+      "date": "1857",
+      "document_state": "authorial retrospective paratext on reprinted paper",
+      "statement_function": "dates the paper as written twenty-five years earlier while updating recruitment-policy history",
+      "composition_date_inference": "c.1832",
+      "relation_to_v6_1": "independent authorial date anchor aligns with 10-1832 fair state but does not identify that physical copy as the one Hodgson had in mind",
+      "source_url": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt"
+    },
+    {
+      "id": "MT-1880-OLDFIELD-CONDENSED",
+      "ref": "H. A. Oldfield, Sketches from Nipal, vol.1, chapter XIII",
+      "date": "1880",
+      "document_state": "later condensed reproduction",
+      "explicit_source_statement": "Condensed from a paper by Mr. Brian Hodgson, dated October 1832",
+      "importance": "independent triangulation of the October 1832 paper state"
+    }
+  ],
+  "relations": [
+    {
+      "from": "MT-1831-ROUGH-V7-20",
+      "to": "MT-1833-PRINT",
+      "type": "SOURCE_POOL_TO_PUBLICATION_FAMILY",
+      "strength": "strong",
+      "direct_copy": false
+    },
+    {
+      "from": "MT-1832-FAIR-V6-1",
+      "to": "MT-1833-PRINT",
+      "type": "DATE_ALIGNED_PREPUBLICATION_RELATION",
+      "strength": "high",
+      "evidence": "same title; October 1832 date; fair tabular state; catalogue publication link; Oldfield October 1832 attribution; Hodgson 1857 retrospective c.1832 composition dating",
+      "direct_copy": "unresolved"
+    },
+    {
+      "from": "MT-1832-FAIR-V6-1",
+      "to": "MT-UNDATED-FAIR-V9-10",
+      "type": "COPY_FAMILY",
+      "strength": "high",
+      "direction": "unresolved"
+    },
+    {
+      "from": "MT-1833-PRINT",
+      "to": "MT-1857-RETROSPECTIVE-DATE",
+      "type": "LATER_PARATEXT_DATES_EARLIER_COMPOSITION",
+      "strength": "high"
+    }
+  ],
+  "mechanisms": [
+    "ROUGH_SOURCE_POOL_TO_FAIR_PUBLICATION_STATE",
+    "PREPUBLICATION_FAIR_COPY_ON_MACHINE_PAPER",
+    "TABULAR_CLASSIFICATION_AS_DOCUMENTARY_REFORMATTING",
+    "VERSIONING_WITHIN_CONSTANT_SUPPORT_CLASS",
+    "AUTHORIAL_RETROSPECTIVE_DATE_ANCHORS_PREPUBLICATION_STATE",
+    "COMPOSITION_DATE_DISTINCT_FROM_PUBLICATION_DATE",
+    "COPY_DIRECTION_REQUIRES_SHARED_ERROR_CONTROL"
+  ],
+  "source_control_rules": [
+    "Chronology and title alignment do not establish copy direction.",
+    "Do not call vol.6/1 the printer's copy without shared-error/layout/compositor evidence.",
+    "Do not call vol.6/1 autograph; Cambridge describes the volume manuscripts as copies.",
+    "The 1857 twenty-five-year statement is approximate authorial dating and does not uniquely identify the surviving vol.6/1 object.",
+    "Keep composition, fair-copy production, society reading and journal printing as distinct operations."
+  ],
+  "next_actions": [
+    "Read the cast/caste and chronology loci in vol.6/1.",
+    "Read the same loci in vol.9/10.",
+    "Compare shared errors, omissions, spellings and table order against 1833 print.",
+    "Inspect vol.6/1 and vol.9/10 for submission, docket, wrapper, printer or compositor marks."
+  ]
+}
