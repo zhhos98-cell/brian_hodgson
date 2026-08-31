@@ -210,3 +210,157 @@ Wilson is not a direct historiographical model for a Hodgson article, because he
 The sharpest formulation to carry forward is:
 
 **Paper should be studied simultaneously as artefact, commodity, evidence, and operative medium. Its scientific significance lies in historically specific affordances and material biographies, not in an assumed symbolic meaning of paper type.**
+
+---
+
+# Deep-scan addendum — 2026-08-31
+
+## A. Wilson's actual book architecture matters
+
+The book is organized as Introduction + **Authorship / Composition / Form / Reuse** + Coda. For Hodgson, the transferable sequence underneath those literary categories is:
+
+**paper production before inscription → assembly/composition → physical transformation into operative forms → reuse/afterlife**.
+
+This is more useful than importing the literary chapter categories themselves.
+
+## B. Begin with the sheet, not the later archival object
+
+Wilson explicitly returns to the bibliographical principle that printers print sheets, not books, and follows Lothar Müller in taking the sheet as formed from pulp as the most basic stable unit.
+
+For Hodgson this means the default material unit should not be the later dossier, bound volume, portfolio, box, or catalogue entry. The census must be able to descend to:
+
+- sheet;
+- leaf;
+- slip;
+- cut fragment;
+- wrapper;
+- pasted layer;
+- mounted drawing support;
+- label/ticket.
+
+Then it can reconstruct how those units were later combined.
+
+## C. The *Essex Champion* case warns against paper-status binaries
+
+Wilson opens with a copy of *The Essex Champion* printed on rough brown paper containing visible plant/rag inclusions. This violates the expected hierarchy in which coarse brown paper is for wrapping and expensive white paper is for writing/printing.
+
+Direct Hodgson implication: paper category cannot stand in for function or epistemic status. Do not infer from `Whatman`, `wove`, `Nepali handmade`, `brown`, or `white` what the sheet was used for or what actors thought it was worth. Reconstruct actual operations.
+
+## D. Watermark analysis must be technologically specific
+
+Wilson's watermark model is based largely on early-modern mould-made paper: differential thickness, laid/chain structures, paired moulds, non-identical twins, and mould deformation over time.
+
+Hodgson crosses a different technological field: handmade Nepali paper, British mould-made papers, wove papers, and increasingly machine-made papers. Therefore:
+
+> never import mould-pair diagnostics automatically into a machine-paper case; identify the production technology first, then select the relevant watermark/formation diagnostics.
+
+This should become an explicit methodological safeguard in the paper census.
+
+## E. Paper evidence has two levels
+
+Wilson reconstructs New Bibliography's use of paper as a source of `fact`: format, folding, watermarks, collation, typesetting, and binding could solve chronology and production problems. But her own intervention is reflexive: she also asks why scholars notice some material qualities and ignore others.
+
+For Hodgson separate:
+
+### forensic/material questions
+- date;
+- batch;
+- mill/maker;
+- sheet pairing;
+- copy stage;
+- route;
+- rebinding or remounting event.
+
+### historiographical questions
+- why one repository records watermark but not thickness;
+- why `European paper` is sometimes named while `native paper` remains generic;
+- why manuscript supports receive material description while zoological drawing supports often do not;
+- when conservation technologies make previously invisible evidence legible.
+
+Paper is therefore both evidence about the archive and evidence about the changing rules of what archivists/scholars treated as evidence.
+
+## F. Composition/decomposition is better than `original vs later intervention`
+
+Wilson's volvelle cases are built from paper fragments plus thread, pins/other fittings, and bound sheets. Components can be cut out, attached, detached, lost, replaced, or preserved in a state that prevents their original manipulation.
+
+For Hodgson the better model is a chain of states:
+
+**sheet → cut/folded component → attached working unit → detached/lost → replaced/relabelled → rebound/remounted → digitized**.
+
+This should be used for manuscript wrappers, labels, foliation, mounted drawings, pasted notes, inserted slips, and specimen tickets.
+
+## G. Critical refinement: affordance includes a failure profile
+
+This is the strongest new finding from the full scan.
+
+In the volvelle discussion Wilson does not stop at the claim that paper's affordances enable readers to manipulate the device. She notes that a paper dial can:
+
+- drift;
+- get stuck;
+- tear;
+- return to the same position;
+- land across two sections;
+- otherwise intervene in the user's intended operation.
+
+Thus an analytically useful affordance is not just `what a material lets an actor do`.
+
+For this project use:
+
+**material affordance = enabled operation + constrained operation + characteristic failure behaviour under specific conditions.**
+
+This gives us a clean bridge from paper materiality to the failed-experiment/error-control argument already developing elsewhere in the project.
+
+Potential paper failure variables to test empirically:
+
+- tear at folds;
+- cracking/stiffness;
+- ink feathering or bleed;
+- wash cockling;
+- abrasion;
+- mould/insect damage;
+- water transmission;
+- drying speed;
+- paste/adhesion failure;
+- label detachment;
+- opacity/translucency;
+- dimensional instability;
+- wet strength;
+- brittleness with ageing;
+- bulk/weight in transport;
+- unsuitable surface for pencil, ink, wash, tracing or proof work;
+- cutting/mounting damage.
+
+These are candidate variables, not assumed properties.
+
+## H. Paper can become an instrument by changing shape
+
+Wilson's examples include volvelles, but also folded paper funnels for filtration, cones/horns for managing vapour, and rolled paper tubes for medical application. The transferable point is morphological:
+
+> changing a sheet's shape can convert support material into an operative instrument.
+
+Candidate Hodgson paper instruments therefore include:
+
+- specimen tickets;
+- labels;
+- questionnaires;
+- tabular lists;
+- folded packets and wrappers;
+- drying/interleaving sheets;
+- tracing/copying supports;
+- mounted comparative sheets;
+- numbered drawing systems;
+- paper surrogates of inscriptions.
+
+For each instrument ask: what transformation of paper makes the operation possible, what does the material constrain, and how can it fail?
+
+## I. Revised Hodgson working formula after the deep scan
+
+The weak formulation would be:
+
+`Nepali paper afforded durability.`
+
+The stronger form is:
+
+> **In operation X, paper type A was selected or reused because property P enabled action Y under conditions C; the same property created, prevented, or redistributed failure mode F relative to alternative paper B.**
+
+This formulation should guide future archival coding and any eventual article prose.
