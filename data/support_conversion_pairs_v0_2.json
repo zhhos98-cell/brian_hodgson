@@ -1,0 +1,223 @@
+{
+  "dataset": "support_conversion_pairs_v0_2",
+  "date": "2026-08-31",
+  "status": "search-saturated explicit-relation working corpus; not denominator-complete",
+  "scope": "Cambridge MSS EUR HODGSON inventory relation families in which an original/source, copy, translation, summary, abstract, register, report or synthesis is explicitly cross-referenced and paper support can be compared at least partly.",
+  "central_claim": "Knowledge conversion creates derivative documentary states whose paper support can switch, remain continuous, or branch within the same information lineage. Translation/language alone does not determine support.",
+  "relation_types": ["SWITCH", "CONTINUITY", "BRANCHING", "BRANCHING_PARTIAL", "SUPPORT_UNCLASSIFIED"],
+  "working_counts": {
+    "relation_families": 19,
+    "note": "Working corpus count only. Search retrieval and catalogue phrasing can miss relations; do not publish percentages from this dataset."
+  },
+  "relations": [
+    {
+      "id": "SC2-01-POPULATION-KATHMANDU",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.59/6","folios":"9-10","support":"NEPALI_HANDMADE","language":"Hindi + Nepali","state":"checked population/household data"},
+      "derivatives": [
+        {"ref":"vol.6/3","support":"MACHINE_MADE","language":"English","state":"survey/copy state"},
+        {"ref":"vol.3/16","catalogue_legacy_ref":"vol.3/15 in earlier working note","support":"MACHINE_MADE","language":"English","state":"English summary/translation section"}
+      ],
+      "mechanism":"SOURCE_TO_SURVEY_ABSTRACTION_SUPPORT_SWITCH",
+      "source_url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html",
+      "source_control":"Cambridge current cross-reference identifies vol.3/16; retain earlier vol.3/15 working reference as superseded until folio-level reconciliation."
+    },
+    {
+      "id": "SC2-02-BAISE-CAUVISE-REVENUE",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.74/14","support":"NEPALI_HANDMADE","language":"Nepali","state":"principalities/revenue list"},
+      "derivatives": [{"ref":"vol.7/10","support":"MACHINE_MADE","language":"English","state":"comparative revenue/salary working"}],
+      "mechanism":"LOCAL_ACCOUNT_TO_ANALYTICAL_TABLE_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-03-SALARIES-1836",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.53/16","support":"NEPALI_HANDMADE","language":"Nepali","state":"official salaries and landholder incomes"},
+      "derivatives": [{"ref":"vol.14/14","folios":"152-159","support":"MACHINE_MADE","language":"English","state":"abstract statement of annual khangi/salaries"}],
+      "mechanism":"SOURCE_TO_ABSTRACT_MATERIAL_RECODING"
+    },
+    {
+      "id": "SC2-04-NEWAR-FESTIVAL-CYCLE",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.58/11","support":"NEPALI_HANDMADE","language":"Nepali + Newari","state":"festival cycle and household duties source"},
+      "derivatives": [{"ref":"vol.20/5","support":"MACHINE_MADE","language":"English","state":"translated/analytical festival almanac notebook"}],
+      "mechanism":"TRANSLATION_AS_SUPPORT_CONVERSION"
+    },
+    {
+      "id": "SC2-05-TARAI-REVENUE-CONTRACTS",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.53/1","support":"NEPALI_HANDMADE","language":"Nepali + Avadhi","state":"revenue contracts/source records"},
+      "derivatives": [{"ref":"vol.14/6","support":"MACHINE_MADE","language":"English","state":"copy of government levy contracts"}],
+      "mechanism":"OFFICIAL_RECORD_TO_ENGLISH_COPY_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-06-PALM-LEAF-LAND-DOCUMENTS",
+      "relation_type": "SWITCH",
+      "source_chain": [
+        {"ref":"vol.53/29","support":"PALM_LEAF","language":"Newari","state":"original sealed land grant"},
+        {"ref":"vol.29/14","support":"NEPALI_HANDMADE","language":"Sanskrit + Newari","state":"copies of palm-leaf property documents with seal sketches"}
+      ],
+      "derivatives": [{"ref":"vol.14/17","folios":"208-218","support":"MACHINE_MADE","language":"Urdu","state":"translations of royal orders and palm-leaf documents"}],
+      "mechanism":"MULTISTAGE_SUPPORT_CONVERSION_CHAIN"
+    },
+    {
+      "id": "SC2-07-CONFISCATED-PROPERTY-KISHAN-JAISI",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.59/24","folios":"105-115","support":"NEPALI_HANDMADE","language":"Nepali","state":"confiscated-property source list"},
+      "derivatives": [{"ref":"vol.5/4","folios":"177-190","support":"MACHINE_MADE","language":"English","state":"translation/summary recoded for manners-and-customs analysis"}],
+      "mechanism":"ADMINISTRATIVE_SOURCE_TO_ETHNOGRAPHIC_RECODING_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-08-NIRKHI-CUSTOMS",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.53/26","folios":"133-150","support":"NEPALI_HANDMADE","language":"Nepali","state":"customs contract and clearance receipt"},
+      "derivatives": [{"ref":"vol.7/11","folios":"81-90","support":"MACHINE_MADE","language":"English","state":"Prices and wages / Nirikh Book register"}],
+      "mechanism":"FISCAL_SOURCE_TO_COMPARATIVE_REGISTER_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-09-KATHMANDU-PATAN-SHOPS",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.60/14","folios":"157-158","support":"NEPALI_HANDMADE","language":"Nepali","state":"shop list"},
+      "derivatives": [{"ref":"vol.6/5","folios":"42-76","support":"MACHINE_MADE","language":"English","state":"commerce report/copy package; merchant enumeration ff.74-76"}],
+      "mechanism":"LOCAL_MARKET_LIST_TO_COMMERCE_REPORT_SUPPORT_SWITCH",
+      "source_control":"A second vol.14 cross-reference has item/folio drift; use folio relation rather than silently normalizing item number."
+    },
+    {
+      "id": "SC2-10-HILL-TRIBES-SOURCE-FAMILY",
+      "relation_type": "SWITCH",
+      "sources": [
+        {"ref":"vol.56/18","support":"NEPALI_HANDMADE","state":"Tamang customs"},
+        {"ref":"vol.56/19","support":"NEPALI_HANDMADE","state":"Magar customs"},
+        {"ref":"vol.56/20","support":"NEPALI_HANDMADE","state":"Sunuwar customs"},
+        {"ref":"vol.57/1-8","support":"NEPALI_HANDMADE","state":"multi-group customs/manners corpus"},
+        {"ref":"vol.60/21","support":"NEPALI_HANDMADE","state":"Tamang Q&A"},
+        {"ref":"vol.60/23","support":"NEPALI_HANDMADE","state":"Lepcha account"}
+      ],
+      "derivatives": [{"ref":"vol.5/1","folios":"1-78","support":"MACHINE_MADE","language":"English","state":"Hill tribes synthesis notebook"}],
+      "mechanism":"MULTI_SOURCE_TO_SYNTHESIS_SUPPORT_SWITCH",
+      "source_control":"Source-family relation is explicit at catalogue level; do not claim one-to-one sentence descent without physical/textual collation."
+    },
+    {
+      "id": "SC2-11-KATHMANDU-BEIJING-ROUTE",
+      "relation_type": "BRANCHING",
+      "source": {"ref":"vol.59/23","folios":"97-104","support":"NEPALI_HANDMADE","language":"Nepali","state":"route used by Dalbhanjan Pande mission"},
+      "related_source_state": {"ref":"vol.58/28","support":"NEPALI_HANDMADE","language":"Nepali","state":"near-duplicate route state"},
+      "derivatives": [
+        {"ref":"vol.2/3","folios":"30-32","support":"IMPORTED_THICK","language":"English","state":"fair English summary"},
+        {"ref":"vol.102/19","folios":"112-113","support":"NEPALI_HANDMADE","language":"Urdu + Farsi","state":"incomplete translation"}
+      ],
+      "mechanism":"BRANCHED_DERIVATIVE_SUPPORT_STATES",
+      "interpretation":"One source lineage generates both support switch and support continuity; translation itself cannot explain support selection."
+    },
+    {
+      "id": "SC2-12-NEPALAVAMSAVALI",
+      "relation_type": "SWITCH",
+      "source": {"ref":"vol.74/13","folios":"105-109","support":"NEPALI_HANDMADE_HARITAL","language":"Nepali","state":"chronicle/genealogy source"},
+      "derivatives": [{"ref":"vol.18/5","folios":"39-97 within 27-99","support":"MACHINE_MADE","language":"English + Sanskrit","state":"translated historical synthesis with later corrections"}],
+      "mechanism":"CHRONICLE_TO_HISTORICAL_SYNTHESIS_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-13-GORKHA-GENEALOGY-LISTS",
+      "relation_type": "SWITCH",
+      "sources": [
+        {"ref":"vol.74/12","folios":"97-104","support":"NEPALI_HANDMADE","language":"Nepali"},
+        {"ref":"vol.26/19","folios":"116-117","support":"NEPALI_HANDMADE","language":"Sanskrit"}
+      ],
+      "derivatives": [
+        {"ref":"vol.18/2","folios":"2-7","support":"MACHINE_MADE","language":"English","state":"translated/updated genealogical list"},
+        {"ref":"vol.99/7","folios":"50-55b","support":"MACHINE_MADE","language":"Farsi","state":"genealogies of Gorkhali rulers and aristocrats"}
+      ],
+      "mechanism":"GENEALOGICAL_SOURCE_TO_UPDATED_ANALYTICAL_STATE_SUPPORT_SWITCH",
+      "source_control":"Cambridge references `vol.52/13 fol.165-171`, but current vol.52 inventory places fol.165-171 under item 14. Preserve folios as authoritative relation locator pending catalogue reconciliation."
+    },
+    {
+      "id": "SC2-14-ROYAL-CODES-SOURCE-FAMILY",
+      "relation_type": "SWITCH",
+      "sources": [
+        {"ref":"vol.51/10","support":"NEPALI_HANDMADE"},
+        {"ref":"vol.59/14","support":"NEPALI_HANDMADE"},
+        {"ref":"vol.59/22","support":"NEPALI_HANDMADE"},
+        {"ref":"vol.60/15-18","support":"NEPALI_HANDMADE"}
+      ],
+      "derivatives": [{"ref":"vol.11/4","folios":"102-146","support":"MACHINE_MADE","language":"English","state":"comparative code/institutes notebook"}],
+      "mechanism":"LEGAL_SOURCE_FAMILY_TO_COMPARATIVE_NOTEBOOK_SUPPORT_SWITCH"
+    },
+    {
+      "id": "SC2-15-BIRTA-DESCRIPTION",
+      "relation_type": "CONTINUITY",
+      "source": {"ref":"vol.53/19","folios":"99","support":"NEPALI_HANDMADE","language":"Nepali + Hindi","state":"tax-free land source description"},
+      "derivatives": [{"ref":"vol.7/21","folios":"138-139","support":"NEPALI_HANDMADE","language":"English","state":"English description of birta types"}],
+      "mechanism":"SUPPORT_CONTINUITY_THROUGH_KNOWLEDGE_CONVERSION"
+    },
+    {
+      "id": "SC2-16-SIDDHINARASIMHA-MALLA",
+      "relation_type": "CONTINUITY",
+      "source": {"ref":"vol.51/12","catalogue_crossref_variant":"vol.51/13 in current vol.21 description","folios":"183-185","support":"NEPALI_HANDMADE","language":"Nepali","state":"historical account/genealogy"},
+      "derivatives": [{"ref":"vol.21/3","folios":"2-10","support":"NEPALI_HANDMADE","language":"English","state":"translated/rewritten historical account; rough non-native English hand"}],
+      "mechanism":"SUPPORT_CONTINUITY_THROUGH_KNOWLEDGE_CONVERSION",
+      "source_control":"Catalogue item-number reference varies; folios 183-185 identify the source more securely than item number alone."
+    },
+    {
+      "id": "SC2-17-GORKHAVAMSAVALI-LONG",
+      "relation_type": "SUPPORT_UNCLASSIFIED",
+      "source": {"ref":"vol.51/3-4 relation","support":"NEPALI_HANDMADE","language":"Nepali + Hindi","state":"long Gorkha chronicle source"},
+      "derivatives": [{"ref":"vol.17/1","folios":"1-167","support":"UNSPECIFIED","language":"English","state":"four pre-bound translated notebooks in Hodgson/Campbell handwriting"}],
+      "mechanism":"RELATION_SECURE_SUPPORT_STATE_MISSING",
+      "source_control":"Do not infer machine-made support from pre-bound notebook form."
+    },
+    {
+      "id": "SC2-18-NEWAR-KINGS-CHRONICLE",
+      "relation_type": "BRANCHING_PARTIAL",
+      "source": {"ref":"vol.55/9","folios":"31-71","support":"NEPALI_HANDMADE","language":"Nepali","state":"popular chronicle of Kathmandu Valley rulers"},
+      "derivatives": [
+        {"ref":"vol.101/16","folios":"152-167","support":"NEPALI_HANDMADE","language":"Farsi + Urdu","state":"genealogical translation","support_relation":"CONTINUITY"},
+        {"ref":"vol.17/3","folios":"173-219","catalogue_legacy_folios":"178-219 in vol.55 cross-reference","support":"UNSPECIFIED","language":"English","state":"English chronicle/synthesis in pre-bound notebook","support_relation":"UNCLASSIFIED"}
+      ],
+      "mechanism":"SOURCE_LINEAGE_WITH_CONTINUITY_AND_MISSING_DERIVATIVE_SUPPORT",
+      "source_control":"Current vol.17 item begins at f.173 whereas source cross-reference says f.178; preserve both rather than silently harmonizing."
+    },
+    {
+      "id": "SC2-19-JUMLA-REVENUE",
+      "relation_type": "BRANCHING",
+      "source": {"ref":"vol.59/38","folios":"205-240","support":"NEPALI_HANDMADE","language":"Nepali","state":"detailed Jumla revenue and levies source"},
+      "derivatives": [
+        {"ref":"vol.8/1","folios":"1-8b","dimensions_cm":[48.5,38],"support":"MACHINE_MADE","language":"English","state":"large chart by Campbell","support_relation":"SWITCH"},
+        {"ref":"vol.102/21","folios":"115-116","support":"NEPALI_HANDMADE","language":"Farsi","state":"very neat revenue chart","support_relation":"CONTINUITY"}
+      ],
+      "mechanism":"BRANCHED_DERIVATIVE_SUPPORT_STATES",
+      "interpretation":"Even chart/tabular format does not by itself determine a support switch: the English administrative/calculational chart changes support while the Farsi chart retains country paper."
+    }
+  ],
+  "classification_summary": {
+    "switch_dominant": 13,
+    "continuity": 2,
+    "branching": 2,
+    "branching_partial": 1,
+    "support_unclassified": 1,
+    "caution": "Counts are relation-family classifications in this working dataset, not population frequencies."
+  },
+  "source_control_rules": [
+    "An explicit catalogue cross-reference establishes a declared relation, not necessarily exact line-by-line scribal descent.",
+    "Use folio range and content/title correspondence over item number alone when Cambridge cross-references conflict with current item boundaries.",
+    "Never infer support from binding form when paper class is not stated.",
+    "Machine-made is a formation class, not a secure national/maker attribution.",
+    "Nepali hand-made is a catalogue material class, not a secure Kathmandu manufacture location.",
+    "Treat original/source, copy, translation, summary, abstract, chart, register, notebook and report as distinct derivative states.",
+    "Do not publish switch percentages until the entire inventory has been searched and unresolved cross-references reconciled."
+  ],
+  "new_model": "target_support = source_support × available_stock × actor_workplace × derivative_format × intended_operation × custody_publication_pathway",
+  "priority_physical_pairs": [
+    "vol.59/23 -> vol.2/3 + vol.102/19 (route branching)",
+    "vol.59/38 -> vol.8/1 + vol.102/21 (Jumla revenue branching)",
+    "vol.53/19 -> vol.7/21 (birta continuity)",
+    "vol.51/12 -> vol.21/3 (historical continuity)",
+    "vol.58/11 -> vol.20/5 (festival switch)",
+    "vol.53/16 -> vol.14/14 ff.152-159 (salary abstract switch)"
+  ],
+  "next_steps": [
+    "Search remaining Cambridge inventory for exact cross-reference phrases and add resolvable edges.",
+    "Add actor_layer, derivative_format, binding_state, correction_density and publication_relation per derivative.",
+    "Resolve item/folio drift before article citation.",
+    "Physically inspect branching and continuity pairs to determine whether same support class also means same or different paper stock."
+  ]
+}
