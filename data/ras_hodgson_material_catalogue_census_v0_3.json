@@ -1,0 +1,123 @@
+{
+  "dataset": "ras_hodgson_material_catalogue_census_v0_3",
+  "date": "2026-08-31",
+  "supersedes": "data/ras_hodgson_material_catalogue_census_v0_2.json",
+  "source": "E. B. Cowell and J. Eggeling, Catalogue of Buddhist Sanskrit Manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection), JRAS 8.1 (1875), pp. 1-52; sequentially reviewed from uploaded OCR/VL scan",
+  "source_file": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+  "source_control": "The catalogue states that manuscript material is Indian paper unless otherwise stated. v0.3 corrects the palm-leaf support census after sequential entry-level review and records the result of an exact-work cross-support matched-witness search.",
+  "corpus_size": 79,
+  "support_census": {
+    "palm_leaf": 12,
+    "paper": 67,
+    "support_classified": 79,
+    "palm_leaf_entry_numbers": [1, 2, 13, 34, 37, 43, 46, 67, 68, 69, 70, 74],
+    "paper_entry_count_includes_catalogue_default": true,
+    "catalogue_default_rule": "Indian paper unless otherwise stated"
+  },
+  "correction_from_v0_2": {
+    "v0_2_palm_leaf_count": 10,
+    "v0_3_palm_leaf_count": 12,
+    "omitted_entries_recovered": [34, 37],
+    "cause": "Both recovered entries use the hyphenated OCR form 'palm-leaves'; a literal keyword census for 'palm leaves' undercounted them.",
+    "mechanism": "HYPHEN_VARIANT_CAUSES_KEYWORD_CENSUS_UNDERCOUNT"
+  },
+  "geometry_coverage": {
+    "usable_dimensions_for_palm_leaf": 12,
+    "usable_dimensions_for_paper": 66,
+    "usable_dimensions_total": 78,
+    "geometry_excluded_entry_numbers": [53],
+    "exclusion_reason": "MS 53 long-dimension fraction remains OCR-uncertain and requires image verification."
+  },
+  "support_format_summary": {
+    "palm_leaf": {
+      "median_long_in": 12.25,
+      "iqr_long_in": [12.0, 12.562],
+      "median_short_in": 2.0,
+      "iqr_short_in": [1.75, 2.25],
+      "median_aspect_ratio": 6.696,
+      "aspect_ratio_ge_5": 11,
+      "short_dimension_le_2_25": 10
+    },
+    "paper": {
+      "median_long_in": 11.5,
+      "iqr_long_in": [10.0, 13.0],
+      "median_short_in": 3.0,
+      "iqr_short_in": [2.75, 3.5],
+      "median_aspect_ratio": 3.64,
+      "aspect_ratio_ge_5": 8,
+      "short_dimension_le_2_25": 6
+    },
+    "interpretation": "The strongest corpus-level support distinction lies in short dimension and aspect ratio rather than long-axis scale. This is a cross-sectional support-format association, not a demonstrated copy transition."
+  },
+  "matched_witness_test": {
+    "secure_exact_work_cross_support_pairs": [],
+    "result": "No secure same-work palm-leaf/paper pair was identified among the 79 catalogue entries.",
+    "mechanisms": [
+      "NO_SECURE_EXACT_WORK_CROSS_SUPPORT_PAIR_IN_RAS79",
+      "CORPUS_ASSOCIATION_NOT_COPY_TRANSITION",
+      "MATCHED_WITNESS_REQUIREMENT_UNSATISFIED_IN_SINGLE_COLLECTION"
+    ],
+    "scope_warning": "This is a catalogue-level negative result and does not prove that no historical cross-support pair existed outside the RAS 79-entry corpus."
+  },
+  "controlled_cross_support_near_pair": {
+    "entries": [34, 35],
+    "relation": "Cowell and Eggeling describe MS 35 as another commentary on the same work represented by MS 34; the witnesses share the Namasangiti root-text ecology but are different commentaries, not matched copies.",
+    "MS34": {
+      "title": "Namasangiti-tika, Gudhapada",
+      "support": "palm leaf",
+      "leaves": 180,
+      "long_in": 12.0,
+      "short_in": 2.25,
+      "lines_per_page": 7,
+      "age_description": "Old"
+    },
+    "MS35": {
+      "title": "Namasangiti-tippani, Amritakanika",
+      "support": "paper",
+      "leaves": 62,
+      "long_in": 12.0,
+      "short_in": 2.0,
+      "lines_per_page": 10,
+      "age_description": "Very minutely written about the end of last century"
+    },
+    "material_result": "The paper witness is slightly narrower while preserving the same long dimension and increasing line density. This near-pair therefore does not reproduce the corpus-level paper-width expansion pattern.",
+    "mechanisms": [
+      "SAME_ROOT_TEXT_DIFFERENT_COMMENTARY",
+      "CROSS_SUPPORT_NEAR_PAIR_NOT_COPY_PAIR",
+      "SUPPORT_AFFORDANCE_NOT_FORMAT_DETERMINISM",
+      "NARROW_PAPER_POTHI_PERSISTENCE",
+      "LINE_DENSITY_MEDIATES_WRITING_FIELD"
+    ]
+  },
+  "same_support_controls": [
+    {
+      "entries": [56, 57],
+      "relation": "Same catalogue title: Pancharaksha; both paper.",
+      "MS56": {"leaves": 152, "long_in": 12.0, "short_in": 2.75, "lines_per_page": 5},
+      "MS57": {"leaves": 40, "long_in": 10.0, "short_in": 2.75, "lines_per_page": 5},
+      "warning": "Same title does not independently establish identical textual extent or copy lineage."
+    },
+    {
+      "entries": [59, 60],
+      "relation": "MS 60 is explicitly described as identical with the last portion of MS 59; both paper.",
+      "MS59": {"container_title": "Saptavara", "long_in": 8.5, "short_in": 2.5, "lines_per_page": 5, "embedded_text": "Grahamatrika-dharani"},
+      "MS60": {"title": "Grahamatrika", "long_in": 9.5, "short_in": 2.75, "lines_per_page": 5},
+      "material_result": "Explicitly identical textual content occupies different paper geometries, showing that text identity does not fix format even without support change.",
+      "mechanisms": [
+        "TEXT_IDENTITY_DOES_NOT_FIX_PAPER_GEOMETRY",
+        "SAME_SUPPORT_FORMAT_VARIABILITY",
+        "COLLECTION_CONTEXT_CHANGES_TEXTUAL_OBJECT_GEOMETRY"
+      ]
+    }
+  ],
+  "blackened_paper_family": {
+    "entry_numbers": [77, 78, 79],
+    "paper_state": "blackened paper, explicit at MS 77 and inherited by MSS 78-79 through catalogue cross-reference",
+    "shared_size_in": [8.0, 2.75],
+    "shared_fields": ["paper", "size", "handwriting"],
+    "warning": "Relational field inheritance does not prove one production event, workshop, scribe identity or procurement batch."
+  },
+  "article_level_claim": "Paper expands the available format space of the Hodgson RAS manuscript corpus, especially across the short axis, but support does not determine the geometry of any individual witness. The catalogue contains no secure same-work palm-leaf/paper pair that would justify turning this corpus association into a direct copy-transition history.",
+  "next_parse_requirement": "Search across collections for exact-work paper witnesses corresponding to the twelve RAS palm-leaf works. Distinguish exact work, recension, commentary, extract and shared textual family before declaring any matched pair.",
+  "method_warning": "Exact wording and numerical typography should be checked against page images before publication quotation. Catalogue-level support coding uses the declared Indian-paper default. Any claim of matched witness or copy transition requires independent textual and provenance control."
+}
