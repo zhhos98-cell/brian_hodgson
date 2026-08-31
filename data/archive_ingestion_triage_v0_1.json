@@ -1,0 +1,199 @@
+{
+  "dataset": "archive_ingestion_triage_v0_1",
+  "date": "2026-08-31",
+  "scope": "newly uploaded Linnean, Kew, SOAS and related Hodgson archive scans",
+  "status": "first-pass; OCR-derived claims restricted to secure readings",
+  "records": [
+    {
+      "id": "LINNEAN_SP514_1838",
+      "source_file": "Linnean DA-ENG-2-SP-514 Hodgson B. H, 尼泊尔生物目录（林奈风）纸张、布局、地方知识、转交痕迹、折痕.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Linnean Society of London",
+      "date": "1838-02-20",
+      "witness_type": "letter_plus_classified_catalogue",
+      "witness_state": "archival manuscript/copy state requires image verification",
+      "mechanisms": ["ACTIVE_CATALOGUE_STATE", "INSTITUTIONAL_TRANSMISSION", "PROVISIONAL_CLASSIFICATION"],
+      "secure_points": [
+        "submitted to the Linnean Society through Nathaniel Wallich",
+        "classified catalogue of mammals known to Hodgson as inhabitants of Nepal",
+        "characters of new forms inserted",
+        "some classificatory distinctions explicitly treated as provisional and subject to further enquiry"
+      ],
+      "priority": "P0",
+      "ocr_reliability": "medium_for_prose_high_for_headings",
+      "needs_manual_review": ["full catalogue transcription", "folds", "paper", "watermark", "transfer annotations"]
+    },
+    {
+      "id": "KEW_INWARDS_HODGSON_RHODODENDRON",
+      "source_file": "Adobe Scan 2025年3月26日 (1).pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Royal Botanic Gardens, Kew",
+      "date": "1848-1858 volume; entry OCR suggests Jan. 27",
+      "witness_type": "inwards_register",
+      "witness_state": "institutional receipt register",
+      "mechanisms": ["INSTITUTIONAL_RECEIPT_REGISTER", "CUSTODY_CHECKSUM", "INSTITUTIONAL_LEGIBILITY"],
+      "secure_points": [
+        "entry records material received from Mr Hodgson",
+        "Sikkim origin is OCR-visible",
+        "Rhododendron and hill bamboo are OCR-visible"
+      ],
+      "priority": "P0",
+      "ocr_reliability": "medium",
+      "needs_manual_review": ["exact date", "exact species count", "exact altitude/elevation notation", "handwriting"]
+    },
+    {
+      "id": "SOAS_LEPCHA_COPY_LAYOUT",
+      "source_file": "SOAS MS380882 Papers of Dr. Rene Nevesky - Wojkowitz.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "India Office Library / later SOAS-held scholarly papers",
+      "date": "later descriptive witness; Hodgson-era copies described",
+      "witness_type": "retrospective_manuscript_list",
+      "witness_state": "later institutional/scholarly description",
+      "mechanisms": ["TRANSLATION_READY_COPY_LAYOUT", "COPY_PRODUCTION", "MULTIPLE_HANDS"],
+      "secure_points": [
+        "Lepcha books described as copies prepared for Brian Hodgson with future translation in view",
+        "empty space to right of Lepcha text cited as physical evidence",
+        "Nepalese translation already inserted in places",
+        "at least two handwriting types distinguished"
+      ],
+      "priority": "P0_P1",
+      "ocr_reliability": "high_for_english_description",
+      "needs_manual_review": ["original Lepcha manuscript images", "copyist attribution", "dating of the descriptive list"]
+    },
+    {
+      "id": "PRINTED_ZOOLOGICAL_RETROSPECTIVE_TOTALS",
+      "source_file": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "printed retrospective source; exact publication identification required",
+      "date": "later than 1858",
+      "witness_type": "printed_retrospective_table",
+      "witness_state": "secondary/retrospective checksum",
+      "mechanisms": ["RETROSPECTIVE_DISTRIBUTION_CHECKSUM", "SHEET_SUBJECT_COUNT_ONTOLOGY", "DUPLICATE_DISTRIBUTION"],
+      "secure_points": [
+        "printed table gives 10500-range specimen total; OCR reads total 10,499",
+        "text states British Museum retained a series and duplicates were distributed",
+        "drawings table OCR reads 1,863 sheets",
+        "note explicitly says many sheets contain several subjects"
+      ],
+      "priority": "P0_checksum_P2_witness",
+      "ocr_reliability": "high_for_printed_text_and_table",
+      "needs_manual_review": ["identify publication/edition", "verify all table totals", "compare with ZSL 1844-45 states"]
+    },
+    {
+      "id": "INDIA_OFFICE_GIFT_1864_PRINTED_LIST",
+      "source_file": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "India Office Library",
+      "date": "1864-08",
+      "witness_type": "printed_copy_of_gift_list",
+      "witness_state": "later printed representation of gift/container structure",
+      "mechanisms": ["CONTAINER_HIERARCHY", "COUNTING_ONTOLOGY", "CATALOGUE_DISTRIBUTION"],
+      "secure_points": [
+        "heading: List of MSS. presented by Mr. Hodgson to the India Office Library, August 1864",
+        "trunk/bundle organization preserved",
+        "printed appendix headed Catalogues of Hodgson Collection (Copies distributed.)"
+      ],
+      "priority": "P1",
+      "ocr_reliability": "high_for_printed_headings_medium_for_counts",
+      "needs_manual_review": ["full trunk/bundle transcription", "compare with original India Office accession material"]
+    },
+    {
+      "id": "HODGSON_TESTIMONIALS_1868",
+      "source_file": "Adobe Scan 2025年3月28日 (5).pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "personal/self archive",
+      "date": "1868-03-12",
+      "witness_type": "bound_testimonial_dossier",
+      "witness_state": "Hodgson-curated retrospective evidence collection",
+      "mechanisms": ["SELF_CURATED_REPUTATION_DOSSIER", "RECURSIVE_ARCHIVE", "DISCIPLINARY_JUXTAPOSITION"],
+      "secure_points": [
+        "Hodgson labels the volume Testimonials to the value of my labours in literature, science and education",
+        "volume collects external assessments of his work"
+      ],
+      "priority": "P1",
+      "ocr_reliability": "medium_for_handwriting_high_for_printed_excerpts",
+      "needs_manual_review": ["table of contents/order", "source of each testimonial", "pasting/copying chronology", "paper and binding"]
+    },
+    {
+      "id": "LINNEAN_RECOMMENDATION_1834",
+      "source_file": "Linnean DA-EN-G-1-CR-48 Certificates of Recommendation including Brian Houghton Hodgson 纸张（水印）、折痕、事业巅峰.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Linnean Society of London",
+      "date": "1834-11",
+      "witness_type": "certificate_of_recommendation",
+      "witness_state": "institutional credential document",
+      "mechanisms": ["INSTITUTIONAL_CREDENTIAL_ASSEMBLY", "TESTIMONIAL_NETWORK"],
+      "secure_points": [
+        "proposal date in November 1834",
+        "multiple recommending signatures",
+        "Thomas Bell, N. B. Ward, S. B. Booth and W. A. Broderich are OCR-visible among signatories"
+      ],
+      "priority": "P1",
+      "ocr_reliability": "low_medium",
+      "needs_manual_review": ["full wording", "full signatory list", "watermark", "folds", "paper"]
+    },
+    {
+      "id": "LINNEAN_RANGERS_LETTER_1861",
+      "source_file": "Linnean DA-ENG-9-LL-8 Hodgeson信件 纸张、布局、衰退期的自我拒绝-印度办公室-.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Linnean Society of London",
+      "date": "1861-05-15",
+      "witness_type": "letter",
+      "witness_state": "handwritten archival letter",
+      "mechanisms": ["NEEDS_IMAGE_TRANSCRIPTION"],
+      "secure_points": ["The Rangers/Dursley location", "15 May 1861 date"],
+      "priority": "P0_transcription_P2_argument",
+      "ocr_reliability": "low",
+      "needs_manual_review": ["entire letter; no substantive claim should be based on current OCR"]
+    },
+    {
+      "id": "KEW_HOOKER_HODGSON_CORRESPONDENCE",
+      "source_file": "Kew JDH-2-22-2 Letters between Hooker and Hodgson.pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Royal Botanic Gardens, Kew",
+      "date": "multiple dates",
+      "witness_type": "correspondence_file",
+      "witness_state": "high-value handwriting corpus with unstable OCR",
+      "mechanisms": ["HANDWRITING_OCR_UNSAFE"],
+      "secure_points": ["Hooker-Hodgson correspondence file exists and is extensive"],
+      "priority": "P1_reservoir",
+      "ocr_reliability": "low",
+      "needs_manual_review": ["date/sender/recipient/page-level transcription before synthesis"]
+    },
+    {
+      "id": "BUDDHIST_SYMBOLS_CORRECTED_AUTOGRAPH_1860",
+      "source_file": "Adobe Scan 2025年3月28日 (3) (1).pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Royal Asiatic Society context",
+      "date": "1860-09-26",
+      "witness_type": "corrected_autograph_or_corrected_publication_witness",
+      "witness_state": "corrected state; exact physical relation to printed version requires checking",
+      "mechanisms": ["ABANDONED_EXPLANATION_CORPUS", "CORRECTED_PUBLICATION_STATE", "VISUAL_COPY_PROTOCOL"],
+      "secure_points": [
+        "Notice on Buddhist Symbols by B. H. Hodgson",
+        "143-symbol corpus described",
+        "Nepal symbols copied and supervised by men of the Buddhist creed",
+        "planned explanatory work was not completed before later publication"
+      ],
+      "priority": "P1",
+      "ocr_reliability": "high_for_printed_text_medium_for_annotations",
+      "needs_manual_review": ["identify exact witness state", "map autograph corrections to printed edition"]
+    },
+    {
+      "id": "SOAS_LIMBU_TRANSLATION_LAYER",
+      "source_file": "SOAS PPMS 77-2-2 Misc texts in the Hoghson Collection (Limbu Texts).pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "India Office/SOAS collection history",
+      "date": "Hodgson-era source material with later translation layer",
+      "witness_type": "later_translation_and_notes",
+      "witness_state": "secondary translation/provenance layer",
+      "mechanisms": ["LATER_TRANSLATION_LAYER", "LOCAL_TEXT_PROVENANCE"],
+      "secure_points": ["Limbu texts in Hodgson Collection", "later translation attributed to I. S. Chemjong"],
+      "priority": "P2",
+      "ocr_reliability": "medium_high_for_typed_english",
+      "needs_manual_review": ["identify original source texts", "separate 1840s authorship from later translation"]
+    },
+    {
+      "id": "KEW_1873_77_W_HODGSON_HOLD",
+      "source_file": "Adobe Scan 2025年3月26日 (2).pdf_by_PaddleOCR-VL-1.6.json",
+      "institution": "Royal Botanic Gardens, Kew",
+      "date": "1873-1877",
+      "witness_type": "inwards_register",
+      "witness_state": "later Kew register",
+      "mechanisms": ["ATTRIBUTION_HOLD"],
+      "secure_points": ["OCR contains an entry From W. Hodgson"],
+      "priority": "HOLD",
+      "ocr_reliability": "medium",
+      "needs_manual_review": ["do not attribute W. Hodgson to Brian Houghton Hodgson without independent identification"]
+    }
+  ]
+}
