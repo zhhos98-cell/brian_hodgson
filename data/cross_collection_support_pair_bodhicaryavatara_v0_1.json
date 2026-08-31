@@ -1,0 +1,71 @@
+{
+  "dataset": "cross_collection_support_pair_bodhicaryavatara_v0_1",
+  "date": "2026-08-31",
+  "work": "Bodhicaryavatara",
+  "comparison_class": "EXACT_WORK_CROSS_SUPPORT_PAIR_WITHOUT_COPY_LINEAGE",
+  "text_control": {
+    "same_named_work": true,
+    "same_section_count": 10,
+    "explicit_catalogue_cross_reference": "Bendall Add. 869 directs readers to R.A.S. Cat. No. 13",
+    "copy_lineage_established": false,
+    "recension_identity_fully_established": false,
+    "container_relation_warning": "Cambridge Add. 869 is described in relation to the Asokavadanamala as its ninth section."
+  },
+  "witnesses": [
+    {
+      "id": "RAS_HODGSON_MS_13",
+      "repository": "Royal Asiatic Society",
+      "provenance": "Acquired by Brian Houghton Hodgson in Nepal; gift to RAS 1835-36",
+      "support": "palm leaf",
+      "leaves": 47,
+      "long_in": 12.5,
+      "short_in": 1.75,
+      "lines_per_page": 5,
+      "aspect_ratio": 7.142857,
+      "area_proxy_sq_in": 21.875,
+      "section_count": 10,
+      "hand_age_description": "old; unusual shapes of some numerals and letters",
+      "source": "Cowell and Eggeling 1875, RAS Hodgson MS 13"
+    },
+    {
+      "id": "CAMBRIDGE_ADD_869",
+      "repository": "Cambridge University Library",
+      "support": "paper",
+      "leaves": 66,
+      "long_in": 10.25,
+      "short_in": 4.5,
+      "lines_per_page": 7,
+      "aspect_ratio": 2.277778,
+      "area_proxy_sq_in": 46.125,
+      "section_count": 10,
+      "hand_age_description": "modern ordinary Devanagari hand",
+      "source": "Cecil Bendall, Catalogue of the Buddhist Sanskrit Manuscripts in the University Library, Cambridge (1883), p. 6, Add. 869"
+    }
+  ],
+  "relative_geometry_using_ras_as_baseline": {
+    "paper_long_axis_ratio": 0.82,
+    "paper_short_axis_ratio": 2.571429,
+    "paper_area_proxy_ratio": 2.108571,
+    "aspect_ratio_change": {
+      "from": 7.142857,
+      "to": 2.277778
+    },
+    "lines_per_page_change": {
+      "from": 5,
+      "to": 7
+    }
+  },
+  "mechanisms": [
+    "EXACT_WORK_CROSS_SUPPORT_PAIR_WITHOUT_COPY_LINEAGE",
+    "TEXT_CONTROLLED_SUPPORT_COMPARISON",
+    "SHORT_AXIS_EXPANSION_WITH_LONG_AXIS_REDUCTION",
+    "PAPER_PAGE_AREA_EXPANSION",
+    "EXTREME_OBLONG_TO_BROAD_OBLONG_SHIFT",
+    "SUPPORT_AFFORDANCE_VISIBLE_UNDER_TEXT_CONTROL",
+    "SUPPORT_DATE_HAND_CONFOUND",
+    "TEXTUAL_CONTAINER_CONFOUND",
+    "LEAF_COUNT_NOT_DIRECT_EFFICIENCY_METRIC"
+  ],
+  "interpretation": "Holding the named work and ten-section structure relatively constant, the paper witness occupies a much broader page regime. The comparison supports a material affordance argument but does not establish direct palm-leaf-to-paper recopying because copy lineage, chronology, hand and container relation remain uncontrolled.",
+  "next_step": "Search the remaining RAS palm-leaf works in Cambridge and other manuscript catalogues for paper witnesses, preserving exact-work versus commentary/recension distinctions."
+}
