@@ -1,0 +1,101 @@
+{
+  "dataset": "hodgson_paper_custody_branching_v0_1",
+  "date": "2026-08-31",
+  "scope": "Custody events affecting access to Hodgson-associated paper objects after research use. Material identity and custody identity are kept separate.",
+  "central_claim": "Current access to Hodgson paper evidence is shaped by later institutional accession, private collecting, auction splitting and catalogue/shelfmark change.",
+  "formula": "paper_object_history = production_history × supply_history × stock_history × research_operation × post_use_custody_history",
+  "events": [
+    {
+      "id": "HPC-BL-5338-MIXED-SUPPORT",
+      "object_or_corpus": "British Library Add Or 5338(1-17)",
+      "event_type": "current_institutional_custody_and_catalogue_description",
+      "holder": "British Library",
+      "current_identifier": "Add Or 5338(1-17)",
+      "date_range_of_objects": "1820-1843",
+      "material_description": "Nepalese and European paper",
+      "source_url": "https://searcharchives.bl.uk/?f%5Brelated_subjects_ssim%5D%5B%5D=Buddhist+divinities&page=1&per_page=100&sort=hierarchy",
+      "confidence": "high catalogue-level",
+      "mechanisms": ["MIXED_SUPPORT_WITHIN_HODGSON_BUDDHIST_VISUAL_CORPUS", "COLLECTION_SHELFMARK_COMPRESSES_SHEET_MATERIAL_HETEROGENEITY"]
+    },
+    {
+      "id": "HPC-BL-5332-5334",
+      "object_or_corpus": "British Library Add Or 5332-5334",
+      "event_type": "institutional_custody_after_international_circulation",
+      "holder": "British Library",
+      "current_identifier": "Add Or 5332-5334",
+      "material_description": "Nepalese country paper; ink and pencil; 44 × 34 cm",
+      "earlier_custody_candidate": "Institut Impérial de France / Académie des Inscriptions et Belles Lettres",
+      "earlier_custody_status": "catalogue says apparently once in that collection",
+      "source_url": "https://searcharchives.bl.uk/catalog/032-003279156",
+      "confidence": "high for current BL description; medium for earlier French custody",
+      "mechanisms": ["LOCAL_PAPER_LONG_DISTANCE_INSTITUTIONAL_CIRCULATION", "SUPPORT_TYPE_CAN_SURVIVE_CUSTODY_CHANGE"]
+    },
+    {
+      "id": "HPC-CHR-1997-LOT172-COLDWELL",
+      "object_or_corpus": "Eight sheets of Darjeeling/Nepalese School reptile and fish studies",
+      "event_date": "1997-06-10",
+      "event_type": "auction_acquisition",
+      "auction": "Christie's Visions of India, London",
+      "historical_identifier": "lot 172 (part)",
+      "new_holder": "Justin Coldwell",
+      "new_location": "Linley Hall, Shropshire",
+      "source_url": "https://electronicsandbooks.com/edt/manual/Art/Auction/Christies/2016/20160309%20CKS12451%20Linley%20Hall%2C%20Shropshire%20Property%20from%20The%20Collection%20of%20The%20Late%20Sir%20Jasper%20%26%20Lady%20More%20%5B7%5D.pdf",
+      "confidence": "high from later auction provenance transcription",
+      "mechanisms": ["AUCTION_INDUCED_CUSTODY_BRANCHING"]
+    },
+    {
+      "id": "HPC-CHR-2016-LINLEY-159",
+      "object_or_corpus": "Eight sheets of Darjeeling/Nepalese School reptile and fish studies",
+      "event_date": "2016",
+      "event_type": "resale",
+      "auction": "Christie's Linley Hall sale",
+      "historical_identifier": "2016 lot 159",
+      "previous_holder": "Justin Coldwell / Linley Hall",
+      "previous_identifier": "Christie's 10 June 1997 lot 172 (part)",
+      "current_public_custody_after_event": "unresolved",
+      "source_url": "https://electronicsandbooks.com/edt/manual/Art/Auction/Christies/2016/20160309%20CKS12451%20Linley%20Hall%2C%20Shropshire%20Property%20from%20The%20Collection%20of%20The%20Late%20Sir%20Jasper%20%26%20Lady%20More%20%5B7%5D.pdf",
+      "confidence": "high for provenance to 2016; unresolved after sale",
+      "mechanisms": ["PUBLIC_PROVENANCE_BREAK_NOT_OBJECT_LOSS"]
+    },
+    {
+      "id": "HPC-OLD-OIOC-5339-CONFLICT",
+      "object_or_corpus": "Hodgson preliminary natural-history drawing series cited by J. P. Losty",
+      "event_type": "published_shelfmark_to_current_catalogue_conflict",
+      "published_identifier": "British Library OIOC Add.Or.5339",
+      "published_claim": "Christie's 1997 lot 171 became OIOC Add.Or.5339; preliminary natural-history drawings on late-1840s/1850s watermarked paper",
+      "current_catalogue_identifier": "Add Or 5339",
+      "current_catalogue_status": "Not used",
+      "published_source_url": "https://www.discoveringbuddha.org/wp-content/uploads/2024/10/2005-Origins-of-Himalayan-Studies-Brian-H-Hodgson-by-Waterhouse.pdf",
+      "current_catalogue_url": "https://searcharchives.bl.uk/?f%5Bcollection_area_ssi%5D%5B%5D=Visual+Arts&f%5Bmaterial_type_si%5D%5B%5D=Archives+and+Manuscripts&per_page=20&search_field=all_fields",
+      "resolution_status": "unresolved",
+      "candidate_explanations": ["renumbering", "cancelled or temporary OIOC identifier", "catalogue migration issue", "printed citation error", "transfer to another BL or Natural History Museum sequence"],
+      "source_control": "Preserve both identifiers/statuses until an accession ledger or BL concordance resolves them.",
+      "mechanisms": ["SHELFMARK_CATALOGUE_DRIFT", "VERSIONED_CUSTODY_IDENTIFIER"]
+    },
+    {
+      "id": "HPC-CHR-BIRD-PUBLIC-BREAK",
+      "object_or_corpus": "Christie's Hodgson-associated Darjeeling/Nepalese bird corpus with Wave 26 watermarks",
+      "event_type": "current_public_provenance_status",
+      "historical_source": "Christie's Visions of India catalogue page",
+      "watermark_classes": ["MOINIER'S PATENT 1848", "JOYNSON 1848", "I NEWEY DARNFORD 1847", "BRITANNIA", "1840"],
+      "current_public_custody": "unresolved",
+      "source_control": "Do not code as lost or private collection merely because a named holder is absent from currently located public records.",
+      "mechanisms": ["PUBLIC_PROVENANCE_BREAK_NOT_OBJECT_LOSS"]
+    }
+  ],
+  "source_control_rules": [
+    "Keep material identity separate from custody identity.",
+    "Auction lot number is not a stable object identifier across later splitting or resale.",
+    "Old published shelfmark and current catalogue shelfmark/status must both be retained when they conflict.",
+    "A public provenance gap is not proof of physical loss.",
+    "Do not generalize one lot's private-custody route to neighbouring lots.",
+    "Collection-level support descriptions require sheet-level material verification."
+  ],
+  "next_actions": [
+    "Obtain the printed 10 June 1997 Christie's catalogue and map lots 170-173 exactly.",
+    "Ask British Library for accession/concordance history of OIOC Add.Or.5339 and Add Or 5338.",
+    "Trace the purchaser or later location of Christie's 2016 lot 159.",
+    "Complete a sheet-level Nepalese-versus-European support census for Add Or 5338.",
+    "Link custody-event records to hodgson_imported_paper_object_marks_v0_1 by stable corpus and sheet identifiers where available."
+  ]
+}
