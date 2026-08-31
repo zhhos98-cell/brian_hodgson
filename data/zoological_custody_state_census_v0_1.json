@@ -1,0 +1,140 @@
+{
+  "dataset": "zoological_custody_state_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "drawing custody failures, recovery and prospective routing from 1837 to 1875",
+  "status": "v0.1; object-level joins remain deliberately unresolved where lists have not been transcribed",
+  "states": [
+    "DESPATCH_CLAIMED",
+    "INSTITUTIONAL_RECEIPT_NEGATIVE",
+    "INTERMEDIARY_ARRIVAL_KNOWN",
+    "ONWARD_STATE_UNKNOWN",
+    "REDISCOVERED_AT_INSTITUTION",
+    "DELIVERY_AWAITING_INSTRUCTION",
+    "RECOVERED_FROM_PRIOR_CUSTODY",
+    "REINTEGRATED_WITH_PROVENANCE",
+    "METADATA_REPAIR_REQUIRED",
+    "PHYSICAL_RECOVERY_UNLIKELY",
+    "DESTINATION_PREASSIGNED",
+    "DESTINATION_REVISED",
+    "TEMPORARY_RESEARCH_CUSTODY",
+    "FINAL_RECEIPT_UNPROVEN"
+  ],
+  "events": [
+    {
+      "id": "RAS_1837_NEGATIVE_RECEIPT",
+      "date": "1837-11-07",
+      "source": "NZSL/HOD/5/2/24",
+      "expected_units": {"drawings_sheets": 26, "second_consignment": "public transcription conflict: 5 vs 8 boxes/units"},
+      "route": ["Hodgson", "Captain Robinson / conditional routing", "Royal Asiatic Society"],
+      "sender_state": "DESPATCH_CLAIMED",
+      "receiver_state": "INSTITUTIONAL_RECEIPT_NEGATIVE",
+      "mechanisms": ["NEGATIVE_RECEIPT_EVENT", "CONDITIONAL_ROUTING_AMBIGUITY", "NEGATIVE_CUSTODY_CHECKSUM"],
+      "join_status": "failure location unresolved"
+    },
+    {
+      "id": "TORRENS_1842_31_SHEETS",
+      "date_sent": "1842-05-13",
+      "complaint_date": "1843-01-12",
+      "source": "NZSL/HOD/5/2/4",
+      "count": 31,
+      "unit": "large drawing sheets",
+      "package_scope": ["ethnographic/human figures", "mammals", "birds"],
+      "sender_state": "DESPATCH_CLAIMED",
+      "intermediary_state": "INTERMEDIARY_ARRIVAL_KNOWN",
+      "onward_state": "ONWARD_STATE_UNKNOWN",
+      "mechanisms": ["KNOWN_INTERMEDIARY_ARRIVAL", "ONWARD_ACCOUNTABILITY_GAP", "CROSS_DOMAIN_TRANSFER_PACKAGE"],
+      "join_status": "not yet linked to later recovered drawings"
+    },
+    {
+      "id": "ZSL_1844_50_BIRD_DRAWINGS_FOUND",
+      "date": "1844-12",
+      "source": "J. E. Gray to Hodgson; ZSL HOD/5/2 context",
+      "count": 50,
+      "unit": "bird drawings",
+      "institution": "Zoological Society of London",
+      "state": "REDISCOVERED_AT_INSTITUTION",
+      "next_state": "DELIVERY_AWAITING_INSTRUCTION",
+      "mechanisms": ["INSTITUTIONAL_REDISCOVERY", "DELIVERY_AWAITING_OWNER_INSTRUCTION", "RECOVERY_CANDIDATE_NOT_IDENTIFIED"],
+      "join_status": "identity with 1837/1842 consignments unproved"
+    },
+    {
+      "id": "ZSL_1845_NEW_SERIES_RECOVERY_LIST",
+      "date": "1845-03",
+      "source": "NZSL/HOD/1/1",
+      "document": "List of Drawings (new series) received from the Zoological Society, March 1845",
+      "state": "RECOVERED_FROM_PRIOR_CUSTODY",
+      "mechanisms": ["RECOVERY_LIST_SURFACE", "CUSTODY_EVENT_AS_LIST_IDENTITY"],
+      "join_status": "priority transcription target; exact count/content not yet extracted"
+    },
+    {
+      "id": "GRAY_MEMO_PRIOR_ZSL_PROVENANCE",
+      "date": "undated; c.1845 context",
+      "source": "NZSL/HOD/5/2/26",
+      "distinction": ["recent drawings given to Gray/Gerrard", "drawings first received from Zoological Society"],
+      "state": "REINTEGRATED_WITH_PROVENANCE",
+      "mechanisms": ["PROVENANCE_PRESERVING_REINTEGRATION", "PARALLEL_RECENT_AND_RECOVERED_DRAWING_STATES"]
+    },
+    {
+      "id": "GRAY_LIST_COPYIST_ERROR",
+      "date": "undated; c.1845 context",
+      "source": "NZSL/HOD/5/2/27",
+      "state": "METADATA_REPAIR_REQUIRED",
+      "observed_error": "numbers said correct while names were badly corrupted by copier",
+      "mechanisms": ["IDENTIFIER_SURVIVES_NAME_CORRUPTION", "COPYIST_METADATA_ERROR", "RECOVERY_CORRECTION_LOOP"],
+      "warning": "same correspondence corpus also contains numbering-collision concerns; do not generalize number infallibility"
+    },
+    {
+      "id": "HOWARD_MAMMAL_DRAWINGS_1845",
+      "date_request": "1845-02",
+      "date_assessment": "1845-03-04",
+      "source": "NZSL/HOD/5/4 sequence",
+      "state": "PHYSICAL_RECOVERY_UNLIKELY",
+      "prior_possessor": "Mr Howard",
+      "recovery_context": "British Museum judged realistic recovery from Howard's receiver unlikely",
+      "mechanisms": ["KNOWN_OBJECT_PHYSICAL_RECOVERY_FAILURE"],
+      "join_status": "historically addressable; physical recovery not demonstrated"
+    },
+    {
+      "id": "POSTHUMOUS_ZSL_PORTFOLIO_DESTINATION_1869",
+      "date": "1869-08",
+      "source": "NZSL/HOD/1/1",
+      "objects": {"mammal_portfolios": 2, "bird_portfolios": 4},
+      "current_state": "private custody",
+      "future_state": "DESTINATION_PREASSIGNED",
+      "future_destination": "Zoological Society of London",
+      "trigger": "Hodgson's death",
+      "mechanisms": ["POSTHUMOUS_DESTINATION_PREASSIGNMENT"],
+      "interpretation": "prospective provenance"
+    },
+    {
+      "id": "ETHNOGRAPHIC_DESTINATION_REVISION_1873",
+      "date_initial": "1873-01",
+      "date_revised": "1873-05",
+      "source": "NZSL/HOD/1/1",
+      "initial_destination": "Sir John Lubbock",
+      "revised_destination": "Christie Collection",
+      "state": "DESTINATION_REVISED",
+      "mechanisms": ["DESTINATION_REVISION_BEFORE_TRANSFER"],
+      "warning": "routing annotation does not prove receipt"
+    },
+    {
+      "id": "HUME_BIRD_DRAWINGS_1875",
+      "date": "1875-01-30",
+      "source": "NZSL/HOD/5/3/19",
+      "current_user": "A. O. Hume",
+      "current_state": "TEMPORARY_RESEARCH_CUSTODY",
+      "future_destination": "Zoological Society of London",
+      "mechanisms": ["TEMPORARY_USER_WITH_DEFERRED_DESTINATION"],
+      "join_status": "final ZSL receipt chain requires further reconstruction"
+    }
+  ],
+  "source_control_rules": [
+    "Do not infer receipt from dispatch.",
+    "Do not infer onward transfer from known intermediary arrival.",
+    "Do not identify rediscovered material with an earlier missing set without list/number comparison.",
+    "Do not treat intended destination as accomplished receipt.",
+    "Preserve recovery provenance when later lists distinguish prior custody.",
+    "Treat counts as dated operational states rather than timeless collection totals."
+  ],
+  "umbrella_hypothesis": "Hodgson's audit infrastructure made custody failure classifiable: drawings could be sent but not received, arrive and become unaccounted for, be rediscovered pending instructions, re-enter a collection with prior custody preserved, or remain historically identifiable while physically unrecoverable."
+}
