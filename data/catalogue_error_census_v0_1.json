@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Catalogue segmentation and re-identification failures in Hodgson manuscript collections, initialized from Rajendralal Mitra 1882 and related Hunter/Cowell-Eggeling catalogue states.",
+  "source_core": {
+    "citation": "Rajendralal Mitra, The Sanskrit Buddhist Literature of Nepal, Asiatic Society of Bengal, 1882",
+    "url": "https://archive.org/stream/cu31924007399342/cu31924007399342_djvu.txt"
+  },
+  "error_types": {
+    "FALSE_SPLIT": "one textual work represented under two or more names as separate works",
+    "FALSE_LUMP": "two or more textual works represented under one name/entry",
+    "PHYSICAL_TEXTUAL_COLLAPSE": "physical codex or volume boundary assumed to equal textual-work boundary",
+    "BOUNDARY_SAMPLING_ERROR": "inspection of first/last page or other limited boundary sample misses internal work transitions",
+    "LATER_REIDENTIFICATION": "identity corrected through deeper inspection or comparison with other witnesses/lists",
+    "CATALOGUE_VERSION_OBSOLESCENCE": "printed or institutional catalogue preserves an earlier known-imperfect descriptive state"
+  },
+  "records": [
+    {
+      "id": "CE-ASB-01",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts / Calcutta collection",
+      "error_type": "FALSE_SPLIT",
+      "historical_actor_diagnosis": "Mitra states the preserved list sometimes described the same work under two or three names as different works.",
+      "physical_cause": "not individually specified for false-split cases",
+      "inspection_protocol": "earlier list/catalogue state, details unresolved",
+      "effect_on_count": "inflates perceived textual-work count",
+      "evidence_status": "DIRECT_MITRA_1882",
+      "correction_basis": "Mitra reanalysis and comparison",
+      "article_value": "Catalogue error can change cardinality without material loss or acquisition."
+    },
+    {
+      "id": "CE-ASB-02",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts / Calcutta collection",
+      "error_type": "FALSE_LUMP",
+      "historical_actor_diagnosis": "Mitra states one name was sometimes given to four, five, or more different works.",
+      "physical_cause": "multiple different works written continuously in a single physical volume without a break in pagination",
+      "inspection_protocol": "cursory examination reading only first and last page of each codex to determine volume name",
+      "effect_on_count": "deflates perceived textual-work count",
+      "evidence_status": "DIRECT_MITRA_1882",
+      "correction_basis": "deeper codex inspection / textual segmentation",
+      "article_value": "Direct material mechanism for false object segmentation."
+    },
+    {
+      "id": "CE-ASB-03",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts / Calcutta collection",
+      "error_type": "PHYSICAL_TEXTUAL_COLLAPSE",
+      "historical_actor_diagnosis": "Distinct textual works could share one continuously paginated volume.",
+      "physical_cause": "bound/assembled codex unity plus uninterrupted pagination",
+      "inspection_protocol": "physical-volume boundary treated as proxy for textual-work boundary",
+      "effect_on_count": "physical volume and textual work become falsely equated",
+      "evidence_status": "DIRECT_MITRA_1882",
+      "correction_basis": "internal textual inspection",
+      "article_value": "Material unity biases catalogue ontology."
+    },
+    {
+      "id": "CE-ASB-04",
+      "date_of_diagnosis": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts / Calcutta collection",
+      "error_type": "BOUNDARY_SAMPLING_ERROR",
+      "historical_actor_diagnosis": "Only first and last page of codex were read during cursory naming.",
+      "physical_cause": "internal textual boundaries not sampled",
+      "inspection_protocol": "first_page + last_page only",
+      "effect_on_count": "internal works remain invisible as separate catalogue objects",
+      "evidence_status": "DIRECT_MITRA_1882",
+      "correction_basis": "increased inspection depth",
+      "article_value": "Catalogue accuracy depends on sampling protocol, not only linguistic competence."
+    },
+    {
+      "id": "CE-HUNTER-1881-05",
+      "date_of_catalogue": 1881,
+      "institution": "cross-collection printed catalogue",
+      "collection": "Hodgson Sanskrit manuscripts distributed to multiple institutions",
+      "error_type": "CATALOGUE_VERSION_OBSOLESCENCE",
+      "catalogue": "W. W. Hunter, Catalogue of Sanskrit Manuscripts collected in Nepal and presented to various Libraries and Learned Societies by Brian Houghton Hodgson, 1881",
+      "provenance_of_calcutta_list": "Mitra states he compiled it from records of the Asiatic Society office for Hunter",
+      "later_diagnosis": "Mitra 1882 states the Calcutta list was not correct because of the false-split/false-lump mechanisms",
+      "effect_on_count": "printed catalogue fixes a known-imperfect intermediate identity state",
+      "evidence_status": "DIRECT_MITRA_1882_PLUS_BIBLIOGRAPHIC_RECORD",
+      "article_value": "Published catalogue is a versioned historical event rather than timeless metadata."
+    },
+    {
+      "id": "CE-MITRA-1882-06",
+      "date_of_catalogue": 1882,
+      "institution": "Asiatic Society of Bengal",
+      "collection": "Hodgson Sanskrit Buddhist manuscripts",
+      "error_type": "LATER_REIDENTIFICATION",
+      "catalogue": "Rajendralal Mitra, The Sanskrit Buddhist Literature of Nepal",
+      "inspection_protocol": "detailed manuscript analysis including material/codicological fields and textual contents",
+      "example": {
+        "identifier": "B.26",
+        "title": "Abhidhanottara alias Avadana-stotra Tantra",
+        "material_fields_observed": ["yellow Nepalese paper", "dimensions", "folia count", "lines per page"]
+      },
+      "effect_on_count": "supports finer segmentation and more stable identification",
+      "evidence_status": "DIRECT_MITRA_1882",
+      "article_value": "More intensive material inspection can change textual identity and catalogue cardinality."
+    },
+    {
+      "id": "CE-RAS-1875-07",
+      "date_of_catalogue": 1875,
+      "institution": "Royal Asiatic Society",
+      "collection": "Hodgson Buddhist Sanskrit manuscripts",
+      "error_type": "IDENTIFICATION_PROTOCOL_CONTROL",
+      "catalogue": "E. B. Cowell and J. Eggeling, Catalogue of Buddhist Sanskrit Manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection)",
+      "stated_goal": "brief description sufficient for identification",
+      "stated_limit": "detailed analysis may be difficult or impossible without comparison with other copies",
+      "inspection_protocol": "brief identification-oriented description with explicit recognition of comparison requirements",
+      "evidence_status": "DIRECT_PUBLISHED_CATALOGUE_INTRODUCTION",
+      "article_value": "Contemporary cataloguers explicitly calibrated description depth to identification task."
+    }
+  ],
+  "count_conversion_evidence": [
+    {
+      "source": "Mitra 1882",
+      "from_unit": "bundle",
+      "from_value": 85,
+      "to_unit": "separate textual works",
+      "to_value": 144,
+      "institution": "Asiatic Society of Bengal",
+      "warning": "Do not generalize this ratio to Fort William or other shipments; it proves only that bundle and work counts are non-identical and can have many-to-many relations."
+    }
+  ],
+  "proposed_fields_for_general_provenance_schema": [
+    "inspection_depth",
+    "pages_or_leaves_examined",
+    "internal_title_checks",
+    "pagination_continuity",
+    "work_boundary_visible",
+    "physical_volume_count",
+    "textual_work_count",
+    "catalogue_entry_count",
+    "segmentation_error_type",
+    "reidentification_basis",
+    "comparison_witnesses",
+    "catalogue_version_date"
+  ],
+  "testable_claims": [
+    "Material codex unity could be mistaken for textual unity when inspection sampled only boundary pages.",
+    "Catalogue practices could alter the perceived number of works without any physical acquisition or loss.",
+    "Increasing inspection depth can change segmentation and therefore object identity.",
+    "Printed catalogues should be treated as versioned interventions in the identity history of collections."
+  ]
+}
