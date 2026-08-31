@@ -1,0 +1,71 @@
+{
+  "dataset": "zoological_relation_graph_v0_1",
+  "date": "2026-08-31",
+  "scope": "numbered drawing/specimen/behavioural-note/custody relations reconstructed in archive research wave 29",
+  "status": "v0.1; image-level checks still required for HOD/5/2/24 box count and Marshall manifest/receipt mismatch",
+  "nodes": [
+    {"id":"SHIKARI_ORAL_OBSERVATION","type":"knowledge_input","actor":"native sportsmen / Shikarees","operation":"viva voce statements about manners and habits of birds"},
+    {"id":"WRITER_TRANSLATION","type":"mediation","actor":"Hodgson's writer","operation":"translate/write shikaree statements"},
+    {"id":"BEHAVIOURAL_MEMORANDUM","type":"document","shelfmark":"NZSL/HOD/1/3","date_range":"1846-1857","number_ranges":["1-169","340-488","755-855"]},
+    {"id":"NATIVE_PAINTER_HINDI_LIST","type":"document","actor":"native painter","scope":"whole bird collection including Sikkim","attested_in":"NZSL/HOD/5/3/9"},
+    {"id":"HODGSON_MS_BIRD_LIST","type":"document","actor":"B. H. Hodgson","scope":"Nepal bird collection","attested_in":"NZSL/HOD/5/3/9"},
+    {"id":"HODGSON_TARAI_MEMOS","type":"document","actor":"B. H. Hodgson","date":"1846","scope":"Sikkim Tarai field memoranda"},
+    {"id":"DRAWING_NUMBER","type":"identifier","attested_by_1837":true,"count_by_1837":721,"semantics":"cross-media key; initially systematic then increasingly accretive"},
+    {"id":"MASTER_DRAWING","type":"visual_master","relation":"source for transmission copies","source":"NZSL/HOD/5/4/8"},
+    {"id":"TRANSMISSION_DRAWING_COPY","type":"visual_copy","format":"about 20 x 12 inches for later nearly complete series","ordering":"regular numerical order"},
+    {"id":"SPECIMEN_LOCALITY_LABEL","type":"label","fields":["date","locality","local name"]},
+    {"id":"SPECIMEN_DRAWING_LABEL","type":"label","fields":["drawing number"],"ink":"normally red per Dickinson/Gray & Gray"},
+    {"id":"PRINTED_CATALOGUE","type":"publication_state","examples":["Zoological Miscellany 1844","Calcutta reprint 1846"]},
+    {"id":"BIG_DEAL_BOX_1870","type":"container","contents_surface":"sender manifest in Hodgson to Marshall 11 Feb 1870"},
+    {"id":"MARSHALL_RECEIPT_1870","type":"receipt","actor":"G. F. L. Marshall","date":"1870-02","status":"acknowledges major package contents but omits eight unbound Darjeeling manners volumes named by sender"},
+    {"id":"RAS_1837_EXPECTED_STATE","type":"expected_receipt_state","contents":["26 drawing sheets","Captain Robinson boxes; public transcription conflict 5 vs 8"]},
+    {"id":"RAS_1837_OBSERVED_STATE","type":"receipt_state","value":"none of the above articles received"},
+    {"id":"RAS_1842_31_SHEETS","type":"received_then_unlocated_state","date_sent":"1842-05-13","count_sheets":31,"status":"known arrival but later alleged disappearance per Hodgson 12 Jan 1843"},
+    {"id":"HOWARD_DRAWINGS_1845","type":"unrecoverable_custody_state","status":"British Museum correspondence judged no realistic chance of recovery from Howard's receiver"}
+  ],
+  "edges": [
+    {"from":"SHIKARI_ORAL_OBSERVATION","to":"WRITER_TRANSLATION","relation":"spoken_to_translated_text"},
+    {"from":"WRITER_TRANSLATION","to":"BEHAVIOURAL_MEMORANDUM","relation":"written_record"},
+    {"from":"BEHAVIOURAL_MEMORANDUM","to":"DRAWING_NUMBER","relation":"keyed_according_to_numbers_attached_to_drawings"},
+    {"from":"DRAWING_NUMBER","to":"MASTER_DRAWING","relation":"identifies_visual_series"},
+    {"from":"MASTER_DRAWING","to":"TRANSMISSION_DRAWING_COPY","relation":"copied_for_transmission_to_England"},
+    {"from":"DRAWING_NUMBER","to":"SPECIMEN_DRAWING_LABEL","relation":"identifier_carried_on_specimen_label"},
+    {"from":"SPECIMEN_LOCALITY_LABEL","to":"SPECIMEN_DRAWING_LABEL","relation":"paired_labels_on_specimen"},
+    {"from":"HODGSON_MS_BIRD_LIST","to":"DRAWING_NUMBER","relation":"parallel_collection_metadata"},
+    {"from":"NATIVE_PAINTER_HINDI_LIST","to":"DRAWING_NUMBER","relation":"parallel_vernacular_collection_metadata"},
+    {"from":"HODGSON_TARAI_MEMOS","to":"DRAWING_NUMBER","relation":"parallel_field_metadata_probable; exact entry-level joins require image check"},
+    {"from":"PRINTED_CATALOGUE","to":"DRAWING_NUMBER","relation":"published_taxonomic_state_cross-references collection identity"},
+    {"from":"BIG_DEAL_BOX_1870","to":"MARSHALL_RECEIPT_1870","relation":"sender_to_receiver_reconciliation"},
+    {"from":"RAS_1837_EXPECTED_STATE","to":"RAS_1837_OBSERVED_STATE","relation":"expected_vs_received_failure"},
+    {"from":"RAS_1842_31_SHEETS","to":"HOWARD_DRAWINGS_1845","relation":"different missing-drawing episodes; do_not_merge"}
+  ],
+  "failure_events": [
+    {
+      "id":"FAIL_1837_RAS_ROUTING",
+      "code":"CONDITIONAL_ROUTING_RECEIPT_FAILURE",
+      "expected":"26 sheets plus Captain Robinson boxes conditionally routed to RAS if prior stores no longer at ZSL",
+      "observed":"RAS minute says none received",
+      "source_state_warning":"public ZSL transcriptions disagree on 5 vs 8 boxes"
+    },
+    {
+      "id":"FAIL_1842_43_DOWNSTREAM_UNKNOWN",
+      "code":"RECEIVED_BUT_DOWNSTREAM_STATE_UNKNOWN",
+      "expected":"31 sheets sent for RAS inspection and possible onward transmission to England",
+      "observed":"Hodgson says their arrival was known but subsequent location unexplained"
+    },
+    {
+      "id":"FAIL_1845_HOWARD_RECOVERY",
+      "code":"CUSTODY_CHAIN_TERMINATION",
+      "expected":"recover missing mammal drawings from Howard/receiver",
+      "observed":"British Museum correspondence judged recovery unrealistic"
+    },
+    {
+      "id":"FAIL_1870_MANIFEST_RECEIPT",
+      "code":"SENDER_RECEIPT_MANIFEST_MISMATCH",
+      "sender_state":"includes eight unbound Darjeeling volumes of manners of birds",
+      "receiver_state":"Marshall memorandum omits those eight volumes",
+      "interpretation_rule":"mismatch only; do not infer physical loss without later return/receipt evidence"
+    }
+  ],
+  "core_hypothesis":"Hodgson's drawing number functioned as a cross-media relational key linking visual, specimen, behavioural, vernacular and catalogue surfaces. Local field knowledge became transportable not simply through translation but through insertion into this addressable identifier system. The surviving custody and manifest failures reveal where the relation graph could become incomplete even when other nodes survived."
+}
