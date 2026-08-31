@@ -1,0 +1,161 @@
+{
+  "dataset": "military_tribes_transmission_states_v0_1",
+  "date": "2026-09-01",
+  "scope": "Transmission states for Hodgson's military-tribes paper from manuscript/print through Phoenix and 1874, with direct readings distinguished from predicted readings.",
+  "central_claim": "The 1874 collected text derives from Phoenix reprints that had already incorporated manuscript marginalia from Hodgson's own earlier printed copies. Phoenix is therefore an intermediate material-textual state, not merely a bibliographic reprint.",
+  "states": [
+    {
+      "id": "MT-1831-ROUGH",
+      "ref": "MSS EUR HODGSON/7 item 20",
+      "date": "1831",
+      "material_state": "machine-made paper manuscript",
+      "document_state": "Hodgson rough pen+pencil classificatory working",
+      "role": "source-pool ancestor",
+      "confidence": "high catalogue-level"
+    },
+    {
+      "id": "MT-1832-FAIR",
+      "ref": "MSS EUR HODGSON/6 item 1",
+      "date": "1832-10",
+      "material_state": "machine-made paper manuscript",
+      "document_state": "fair tabular copy",
+      "role": "high-confidence prepublication state",
+      "target_readings": {
+        "chronology": "UNREAD",
+        "cast_caste": "UNREAD"
+      }
+    },
+    {
+      "id": "MT-1833-JASB",
+      "date": "1833",
+      "material_state": "journal print",
+      "document_state": "first publication",
+      "target_readings": {
+        "chronology": "70 years ago",
+        "cast_caste": "UNRESOLVED_FROM_PAGE_IMAGE"
+      },
+      "confidence": {
+        "chronology": "high",
+        "cast_caste": "unresolved"
+      }
+    },
+    {
+      "id": "MT-1857-SELECTIONS",
+      "date": "1857",
+      "material_state": "government-record print",
+      "document_state": "reprint",
+      "target_readings": {
+        "chronology": "seventy years ago",
+        "cast_caste": "general caste and character"
+      },
+      "confidence": "direct full-text reading"
+    },
+    {
+      "id": "MT-1857-POSTPRINT-MARGINALIA",
+      "date_range": "after 1857, before/during Phoenix reprinting",
+      "material_state": "handwriting on Hodgson's own printed Selections/Illustrations copies",
+      "document_state": "authorial manuscript-on-print revision layer",
+      "evidence": "1874 editor notice plus 1875 Indian Antiquary review",
+      "target_readings": {
+        "chronology": "UNREAD",
+        "cast_caste": "UNREAD"
+      }
+    },
+    {
+      "id": "MT-1872-PHOENIX",
+      "date": "1872-08",
+      "bibliography": "The Phoenix vol.III no.26 pp.31-35",
+      "material_state": "monthly serial print; original issue described as thin-paper, paper-wrap, string-tied fascicle",
+      "document_state": "serial reprint incorporating marginalia from Hodgson's earlier printed copies",
+      "target_readings": {
+        "chronology_direct": "UNREAD",
+        "cast_caste_direct": "UNREAD",
+        "chronology_predicted_from_transmission": "some years ago",
+        "cast_caste_predicted_from_transmission": "caste"
+      },
+      "prediction_confidence": "probable but not direct",
+      "source_control": "Do not promote predicted Phoenix readings to direct readings until pp.31-35 are inspected."
+    },
+    {
+      "id": "MT-1874-BASE",
+      "date": "1874",
+      "material_state": "collected book print",
+      "document_state": "base text reprinting Phoenix state",
+      "target_readings": {
+        "chronology": "some years ago",
+        "cast_caste": "caste"
+      },
+      "confidence": "direct text plus near-contemporary transmission evidence"
+    },
+    {
+      "id": "MT-1874-CORRECTIONS",
+      "date": "1874",
+      "material_state": "printed Additions and Corrections apparatus",
+      "document_state": "edition-level instructed revision",
+      "target_readings": {
+        "chronology": "some -> about 100",
+        "cast_caste": "caste -> cast"
+      },
+      "confidence": "direct"
+    },
+    {
+      "id": "MT-POST1874-ANNOTATED-COPIES",
+      "date_range": "1874-1890s+",
+      "material_state": "handwriting on individual 1874 printed copies",
+      "document_state": "copy-specific branching",
+      "military_tribes_evidence": "at least one Alderley Oct 1874 copy has annotation recorded on Part II p.37; content unread",
+      "source_control": "Do not treat all annotated author copies as one witness."
+    },
+    {
+      "id": "MT-1972-SAHA",
+      "date": "1972",
+      "material_state": "modern reprint with supplement",
+      "document_state": "selective print extraction from handwritten annotations in an author's copy",
+      "military_tribes_target_entries": "UNREAD",
+      "source_control": "The exact physical corrected copy used by Saha and completeness of extraction require verification."
+    }
+  ],
+  "transmission_edges": [
+    {
+      "from": "MT-1857-SELECTIONS",
+      "to": "MT-1857-POSTPRINT-MARGINALIA",
+      "relation": "printed copy reopened as authorial manuscript surface",
+      "confidence": "high"
+    },
+    {
+      "from": "MT-1857-POSTPRINT-MARGINALIA",
+      "to": "MT-1872-PHOENIX",
+      "relation": "marginal notes introduced into serial text",
+      "confidence": "high from 1875 review"
+    },
+    {
+      "from": "MT-1872-PHOENIX",
+      "to": "MT-1874-BASE",
+      "relation": "1874 papers reprinted from Phoenix state",
+      "confidence": "high from 1875 review; word-level identity not assumed"
+    },
+    {
+      "from": "MT-1874-BASE",
+      "to": "MT-1874-CORRECTIONS",
+      "relation": "printed correction apparatus instructs further revision",
+      "confidence": "direct"
+    },
+    {
+      "from": "MT-1874-BASE",
+      "to": "MT-POST1874-ANNOTATED-COPIES",
+      "relation": "individual printed copies become new manuscript surfaces",
+      "confidence": "high"
+    }
+  ],
+  "microrevision_summary": {
+    "chronology": "1833 70 -> 1857 seventy -> Phoenix unread/probable some -> 1874 base some -> 1874 correction about 100",
+    "cast_caste": "1833 unresolved -> 1857 caste -> Phoenix unread/probable caste -> 1874 base caste -> 1874 correction cast"
+  },
+  "source_control_rules": [
+    "Direct witness reading outranks transmission prediction.",
+    "Near-contemporary statements about reprint direction do not guarantee diplomatic word-for-word identity.",
+    "Edition-level and copy-specific states must remain distinct.",
+    "Do not infer the 1832 manuscript reading from either 1833 or 1874.",
+    "Do not infer Phoenix word-level readings until a direct No.26 text/image witness is read."
+  ]
+}
