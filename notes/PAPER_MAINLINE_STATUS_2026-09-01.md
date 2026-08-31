@@ -1,18 +1,18 @@
 # Hodgson paper mainline status — 2026-09-01
 
-Status: active paper-centred article mainline, superseding `PAPER_MAINLINE_STATUS_2026-08-31.md` for current work. Updated through Wave 34.
+Status: active paper-centred article mainline, superseding `PAPER_MAINLINE_STATUS_2026-08-31.md` for current work. Updated through Wave 35.
 
-## Current paper-centred question
+## Current question
 
-How did paper move through manufacture, procurement, stock, allocation, documentary versioning and custody, and how did those material transitions affect what Hodgson and collaborators could write, translate, tabulate, revise, publish and later reconstruct?
+How did paper move through manufacture, procurement, stock, work allocation, documentary versioning, provenance control and later custody, and how did those transitions affect what Hodgson and collaborators could translate, tabulate, revise, publish, bundle and reconstruct?
 
-## Current combined model
+## Combined model
 
-`paper-object history = production history × supply/stock history × work allocation × documentary versioning × provenance marking × custody reorganisation`.
+`paper-object history = production history × supply/stock history × work allocation × documentary versioning × provenance marking × custody architecture`.
 
-Paper remains one field inside a larger material version state rather than a symbolic proxy for local/colonial knowledge.
+Paper is one material field inside a larger version state rather than a symbolic proxy for local/colonial knowledge.
 
-## Current argument stack
+## Argument stack
 
 ### A. Production history
 
@@ -42,9 +42,7 @@ Mechanisms:
 
 ### D. Work allocation
 
-Cambridge evidence suggests support tracks task/work setting and version state more strongly than subject or actor nationality.
-
-The simple `British writer -> imported paper / local writer -> local paper` hypothesis is falsified.
+Cambridge evidence suggests support tracks task/work setting and version state more strongly than subject or actor nationality. The simple `British writer -> imported paper / local writer -> local paper` hypothesis is falsified.
 
 Mechanisms:
 
@@ -55,13 +53,13 @@ Mechanisms:
 
 ### E. Documentary versioning
 
-Explicit source families show three outcomes:
+Explicit source families show:
 
 - `SWITCH`;
 - `CONTINUITY`;
 - `BRANCHING`.
 
-The strongest current model is:
+Working model:
 
 `documentary version state = information selection + language + writer + support + format + scale + correction state + completeness + intended next operation`.
 
@@ -82,15 +80,15 @@ Peking:
 
 `8 Nepali source folios -> 3 English imported-paper folios -> 2 incomplete Urdu/Farsi folios`.
 
-Folio counts are not yet surface-area ratios; dimensions must be measured before quantitative compression claims.
+Folio counts are not surface-area ratios; physical dimensions are required before quantitative compression claims.
 
 Mechanism: `DERIVATIVE_COMPRESSION_AS_VERSIONING`.
 
-### G. Provenance grammar on the derivative surface
+### G. Provenance grammar on derivative surfaces
 
-Hodgson's 1856 Peking-route publication states that the route papers were literal translations and that his own inserted information was distinguished by brackets, with further additions in footnotes.
+Hodgson's 1856 Peking-route paper describes the route papers as literal translations and says his inserted information was distinguished by brackets, with further additions in footnotes.
 
-The English derivative/publication surface can therefore visibly separate:
+The derivative/publication surface can therefore distinguish:
 
 `source-derived translation`
 
@@ -104,52 +102,57 @@ from
 
 Mechanism: `PROVENANCE_GRAMMAR_ON_DERIVATIVE_SURFACE`.
 
-Physical comparison is required before asserting that surviving `vol.2/3` itself carries exactly the same bracket convention as print.
+Physical comparison is required before asserting that surviving `vol.2/3` itself carries exactly the same graphical convention as print.
 
-### H. Custody recombination
+### H. Custody recombination and version-family archival design
 
-Hunter's reproduction of the August 1864 India Office transfer list states that the sixth large bundle contained the Jumla revenue statement `in Khas and in English`.
+Wave 34 showed the Jumla case: Hunter's reproduction of the August 1864 India Office transfer list says one large bundle contained the Jumla revenue statement `in Khas and in English`.
 
-Thus materially differentiated documentary versions could later be intentionally regrouped in one transfer unit.
+Wave 35 shows that this was systematic rather than exceptional.
+
+The 1864 transfer repeatedly co-bundles multilingual/source/derivative states:
+
+- Newari chronicles: source histories + Persian translation + Jit Mohan abstract + repetitions + two volumes of English translations + Persian addenda;
+- Gurkhali chronicles: twelve source/history states followed explicitly by five volumes of `English translations of the above` made by Hodgson's office people;
+- itineraries: one custody family described as `Various Itineraries, in Nagri, in Persian, and in English`;
+- Newar institutions: original palm-leaf title deeds retained with materials translated into English or Persian;
+- army/classification/judicial/customs materials: English volumes retained with Persian and Khas papers on the same subjects;
+- Jumla revenue: Khas + English states in one large bundle.
+
+The historical transfer ontology therefore preserved **version families**, not merely language classes or paper types.
 
 Mechanisms:
 
+- `VERSION_FAMILY_CO_BUNDLING_AS_ARCHIVAL_DESIGN`
 - `CUSTODY_RECOMBINES_VERSION_STATES`
-- `CONTAINER_RELATION_DIFFERS_FROM_VERSION_RELATION`
-- `TRANSFER_BUNDLE_AS_VERSION_FAMILY_UNIT`.
-
-This joins documentary versioning directly to the custody argument.
+- `TRANSFER_CONTAINER_PRESERVES_DERIVATIVE_RELATIONS`
+- `ARCHIVAL_PACKING_AS_RELATIONAL_METADATA`
+- `MODERN_SHELFMARK_DISPERSION_OBSCURES_HISTORICAL_VERSION_FAMILY`.
 
 ### I. Denominator/source control
 
-The conversion corpus continues to distinguish:
+The conversion corpus distinguishes:
 
 - Tier A explicit/declared edges;
 - Tier B source-family/synthesis relations;
 - Tier C similarity links.
 
-`SUPPORT_UNSPECIFIED_IN_CATALOGUE` remains in the denominator.
+`SUPPORT_UNSPECIFIED_IN_CATALOGUE` remains in the denominator. No publication percentage should be reported until coverage is demonstrably exhaustive.
 
-No publication percentage should be reported until inventory coverage is demonstrably exhaustive.
-
-## Strongest empirical scenes now
+## Strongest empirical scenes
 
 1. Cowan British remanufacture failure.
-2. Darjeeling transfer of skilled makers after material transfer failure.
+2. Darjeeling transfer of skilled makers after material-transfer failure.
 3. Serampore machine-interface mismatch.
 4. Christie's lot 170 watermark plurality.
 5. RAS 1841/1821 watermark stock-time evidence.
 6. BL `Add Or 5338` mixed Nepalese/European support corpus.
-7. Jumla branching:
-   - `vol.59/38` Nepali handmade source;
-   - `vol.8/1` Campbell English machine-paper 48.5×38 cm chart;
-   - `vol.102/21` Farsi Nepali-paper neat table.
-8. Jumla 1864 custody recombination: Khas + English in one large transfer bundle.
-9. Peking branching:
-   - `vol.59/23` Nepali handmade source;
-   - `vol.2/3` fair corrected English imported-paper route-book state;
-   - `vol.102/19` poor incomplete Urdu/Farsi Nepali-paper state.
-10. Peking publication provenance grammar: literal translation distinguished from Hodgson additions by brackets and footnotes.
+7. Jumla branching: `vol.59/38 -> vol.8/1 + vol.102/21`.
+8. Jumla 1864 custody recombination: Khas + English in one transfer bundle.
+9. Peking branching: `vol.59/23 -> vol.2/3 + vol.102/19`.
+10. Peking provenance grammar: literal translation separated from Hodgson additions by brackets/footnotes in the 1856 publication state.
+11. 1864 chronicle co-bundling: source, Persian, abstract and English office-translation states retained within the same large custody family.
+12. 1864 itinerary co-bundling: Nagri, Persian and English route states treated as one functional transfer class.
 
 ## Active datasets
 
@@ -162,6 +165,7 @@ No publication percentage should be reported until inventory coverage is demonst
 - `data/support_conversion_denominator_v0_1.json`
 - `data/support_actor_workplace_pilot_v0_1.json`
 - `data/branching_derivative_state_reconstruction_v0_1.json`
+- `data/india_office_1864_version_family_manifest_v0_1.json`
 
 ## Active article/source notes
 
@@ -169,22 +173,23 @@ No publication percentage should be reported until inventory coverage is demonst
 - `notes/PAPER_ARGUMENT_SUPPORT_CONVERSION_V0_2.md`
 - `notes/PAPER_ARGUMENT_MATERIAL_VERSIONING_AND_PROVENANCE_SURFACE_V0_1.md`
 - `sources/WEB_RESEARCH_2026-09-01_WAVE34_BRANCHING_DERIVATIVE_STATE_RECONSTRUCTION.md`
+- `sources/WEB_RESEARCH_2026-09-01_WAVE35_1864_VERSION_FAMILY_COBUNDLING.md`
 
 Earlier versions remain in repo as source-control history.
 
 ## Immediate research order
 
-1. Physically compare `vol.59/38 -> vol.8/1 + vol.102/21`; check column-by-column retention and measure sheet sizes.
-2. Identify the writer of `vol.102/21` and compare with other Farsi revenue hands.
-3. Compare `vol.59/23`, `vol.58/28`, `vol.2/3`, `vol.102/19` line-by-line and determine the local-source stemma.
-4. Inspect `vol.2/3` for brackets, pencil layers and other provenance marking; compare against 1856 print.
-5. Reconstruct the 1864 Jumla large-bundle structure from original India Office accession/packing records if surviving.
-6. Search the 1864 manifest for additional cases where originals/Khas/Hindi and English translations are deliberately co-bundled.
-7. Continue Tier A denominator expansion without collapsing `summary`, `similar`, `related`, `translation` and `copy` into one relation.
+1. Build a manifest-to-modern-shelfmark crosswalk for the 1864 version families, beginning with chronicles and itineraries.
+2. Search for the English and Hindi content lists Hodgson says were already in the India Office librarian's hands in 1864.
+3. Locate original India Office accession/packing records and test Hunter's transcription/container hierarchy.
+4. Physically compare `vol.59/38 -> vol.8/1 + vol.102/21`; measure sheets and compare columns/information retention.
+5. Identify the writer of `vol.102/21` and compare other Farsi revenue hands.
+6. Compare `vol.59/23`, `vol.58/28`, `vol.2/3`, `vol.102/19` line-by-line; inspect `vol.2/3` for brackets/pencil layers and compare against 1856 print.
+7. Continue Tier A denominator expansion without collapsing `summary`, `similar`, `related`, `translation` and `copy`.
 8. Resolve Christie's 1997 lot 171 and BL old/new shelfmark conflict.
 9. Run sheet-level support census on BL `Add Or 5338`.
 10. Inspect MSS EUR HODGSON/6 paper sample against the 1831/32 manufacturing description.
 
 ## Guardrail
 
-Do not recast the project as a biography, disciplinary survey, `local versus colonial paper` symbolism, or personnel-nationality model. The active object is paper inside operational histories of manufacture, stock, work allocation, versioning, provenance control and custody.
+Do not recast the project as biography, disciplinary survey, `local versus colonial paper` symbolism, or personnel-nationality model. The active object is paper inside operational histories of manufacture, stock, work allocation, documentary versioning, provenance control and custody architecture.
