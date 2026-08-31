@@ -1,0 +1,158 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Zoological delivery, redistribution, list reconciliation, label/drawing relations and event-proof limits in Hodgson collections, centered on 1845 British Museum handling and the 1870 Marshall verification package.",
+  "records": [
+    {
+      "id": "ZD-1845-01",
+      "date": "1845-01-03",
+      "source": "ZSL NZSL/HOD/5/4/9",
+      "event_type": "formal_delivery",
+      "recipient": "British Museum",
+      "counts": {
+        "animal_drawings": 15,
+        "bird_drawings": 70,
+        "drawings_total": 85,
+        "mammal_skins": 402,
+        "bird_skins": 4444,
+        "skins_total": 4846,
+        "mammal_osteology": 406,
+        "bird_osteology": 663,
+        "osteology_total": 1069,
+        "grand_total": 5996
+      },
+      "institutional_intervention": "osteological specimens added after keeper inspection/suggestion",
+      "mechanism": "receiving-side expansion of evidential package",
+      "evidence_status": "DIRECT_ARCHIVAL_TRANSCRIPTION"
+    },
+    {
+      "id": "ZD-1845-02",
+      "date": "1845-02",
+      "source": "ZSL NZSL/HOD/5/4/16",
+      "event_type": "redistribution_matrix",
+      "material_classes": ["bird_skins", "mammal_skins", "bird_bones", "mammal_bones_horns"],
+      "destinations": [
+        {"name": "British Museum", "bird_skins": 1753, "mammal_skins": 170, "bird_bones": 337, "mammal_bones_horns": 195},
+        {"name": "India House", "bird_skins": 655, "mammal_skins": 102, "bird_bones": 79, "mammal_bones_horns": 45},
+        {"name": "Leyden", "bird_skins": 536, "mammal_skins": 78, "bird_bones": 40},
+        {"name": "Paris", "bird_skins": 462, "mammal_skins": 48, "bird_bones": 52},
+        {"name": "Berlin", "bird_skins": 411, "mammal_skins": 37},
+        {"name": "Frankfurt", "bird_skins": 352, "mammal_skins": 7},
+        {"name": "Edinburgh", "bird_skins": 321},
+        {"name": "Dublin", "bird_skins": 290},
+        {"name": "Newcastle", "bird_skins": 259},
+        {"name": "Canterbury", "bird_skins": 237, "mammal_skins": 2},
+        {"name": "Manchester", "bird_skins": 213},
+        {"name": "Earl Derby", "bird_skins": 205},
+        {"name": "H. Strickland", "bird_skins": 169},
+        {"name": "Royal College of Surgeons", "bird_skins": 140, "mammal_bones_horns": 58},
+        {"name": "Haslar College/Hospital", "bird_skins": 1, "bird_bones": 79}
+      ],
+      "warning": "HTML archival transcription has degraded table formatting; verify exact row/column alignment against digital image before publication calculations.",
+      "mechanism": "received collection converted into retained reference and geographically distributed duplicate series",
+      "evidence_status": "DIRECT_ARCHIVAL_TRANSCRIPTION_WITH_FORMAT_WARNING"
+    },
+    {
+      "id": "ZD-1845-03",
+      "date": "1845-02-06",
+      "source": "ZSL NZSL/HOD/5/2/15",
+      "event_type": "inventory_reconciliation",
+      "exceptions": [
+        {
+          "object": "Tibetan pheasant",
+          "failure": "not marked on bird list",
+          "cause": "specimen was at the stuffer when list was prepared",
+          "status": "temporary_location_metadata_omission"
+        },
+        {
+          "object": "Ganges Pelican",
+          "failure": "full specimens absent",
+          "received_state": "head only",
+          "status": "partial_object"
+        },
+        {
+          "object": "numerous specimens",
+          "failure": "poor condition",
+          "effect": "unsuitable for distribution"
+        }
+      ],
+      "list_operations": ["compile detailed list of every specimen received 1840-1845", "send mammal/bone distribution list", "request bird list back to add later distributions"],
+      "mechanism": "mutable list updated through post-receipt physical reconciliation",
+      "evidence_status": "DIRECT_ARCHIVAL_TRANSCRIPTION"
+    },
+    {
+      "id": "ZD-1845-04",
+      "date": "1845-02-13",
+      "source": "ZSL NZSL/HOD/5/2/16",
+      "event_type": "sorting_and_duplicate_selection",
+      "series": [
+        {"name": "British Museum", "specimens": 352},
+        {"name": "Collection 1", "specimens": 140},
+        {"name": "Collection 2", "specimens": 79},
+        {"name": "Collection 3", "specimens": 40},
+        {"name": "problem_or_low_use_group", "specimens": 52}
+      ],
+      "low_use_basis": "unnamed or problematic naming",
+      "reference_policy": "retain complete series of mammalian skulls/horns and bird bones; set aside obvious duplicates",
+      "mechanism": "institutional comparison creates reference versus duplicate status",
+      "evidence_status": "DIRECT_ARCHIVAL_TRANSCRIPTION"
+    },
+    {
+      "id": "ZD-LABEL-05",
+      "date": "Hodgson-period; reconstructed 2006",
+      "source": "Dickinson 2006 citing Gray & Gray 1847 and surviving labels",
+      "event_type": "relational_identifier_system",
+      "label_system": [
+        {"label_role": "collection_metadata", "fields": ["collection_date", "locality", "local_name"]},
+        {"label_role": "representation_link", "fields": ["Hodgson_drawing_number"], "typical_ink": "red"}
+      ],
+      "relations": ["specimen_to_drawing", "specimen_to_locality", "specimen_to_local_name", "specimen_to_collection_date"],
+      "institutional_afterlife": "many original labels removed at British Museum; some drawing-number labels or copied information survive elsewhere",
+      "mechanism": "physical skin survives while relational metadata can be degraded",
+      "evidence_status": "MODERN_SCHOLARLY_RECONSTRUCTION_WITH_PRIMARY_REFERENCE"
+    },
+    {
+      "id": "ZD-TYPE-06",
+      "date": "later type-history reconstruction",
+      "source": "Dickinson et al. 2006 type studies",
+      "event_type": "historical_event_proof",
+      "available_identifiers": ["Hodgson drawing number", "surviving/or copied Hodgson label", "British Museum accession number"],
+      "can_support": ["object identification", "relation to master drawing", "approximate institutional receipt history"],
+      "cannot_automatically_support": ["proof that this exact specimen was present before the describing author at the relevant date"],
+      "failure_causes": ["drawing number reused across comparable specimens", "collection date often absent", "later accessioning or registration ambiguity"],
+      "status_levels": ["IDENTIFIED_OBJECT", "RELATIONALLY_LINKED_OBJECT", "EVENT_PARTICIPATION_PROBABLE", "EVENT_PARTICIPATION_PROVED"],
+      "mechanism": "identifier survival has graded evidential strength",
+      "evidence_status": "MODERN_TYPE_HISTORY"
+    },
+    {
+      "id": "ZD-1870-07",
+      "date": "1870-02",
+      "source": "ZSL Marshall memorandum",
+      "event_type": "composite_verification_package",
+      "container": "four portfolios",
+      "contents": [
+        {"type": "ornithological_drawings", "count": 1104, "unit": "sheets"},
+        {"type": "Hodgson_manuscript_bird_list", "scope": "Nepal collection"},
+        {"type": "native_painter_Hindi_list", "scope": "whole collection including Sikkim"},
+        {"type": "behaviour_notebook", "production": "writer from viva voce statements of shikaris"},
+        {"type": "Sikkim_Tarai_field_memos", "date": 1846},
+        {"type": "London_printed_catalogue", "count": 2},
+        {"type": "Calcutta_catalogue_reprint", "count": 6},
+        {"type": "author_offprints", "count": null}
+      ],
+      "mechanism": "visual, numerical, vernacular, behavioural, manuscript and printed witnesses travel as one verification apparatus",
+      "evidence_status": "DIRECT_ARCHIVAL_TRANSCRIPTION"
+    }
+  ],
+  "addressability_model": {
+    "PHYSICAL_ADDRESSABILITY": "institution can locate the object",
+    "RELATIONAL_ADDRESSABILITY": "object can be reconnected to labels, drawings, lists and distributed representations",
+    "EVENT_PROOF_ADDRESSABILITY": "surviving evidence can demonstrate participation of this exact object in a specific historical event"
+  },
+  "cross_domain_comparison": {
+    "shared_problem": "maintaining auditable relations through movement and institutional transformation",
+    "manuscript_dominant_failure": "segmentation and work-boundary construction",
+    "zoology_dominant_failure": "relation loss, identifier collision, naming error and event-identity uncertainty",
+    "rule": "Do not collapse manuscript and zoological object ontologies merely because their infrastructure is comparable."
+  }
+}
