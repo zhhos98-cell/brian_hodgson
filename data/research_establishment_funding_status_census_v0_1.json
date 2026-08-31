@@ -1,0 +1,102 @@
+{
+  "dataset": "research_establishment_funding_status_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "fiscal and administrative status of Hodgson's local research labour",
+  "status": "v0.1; actor-specific payment reconstruction pending direct account transcription",
+  "source_control_rule": "distinguish archival-biographical statements about Hodgson retaining assistants at his own expense from direct account entries and from administrative titles/status",
+  "evidence": [
+    {
+      "id": "PRIVATE_ASSISTANT_ORIENTATION",
+      "source": "Cambridge Hodgson Papers intro and ZSL/AIM25 biographical description",
+      "claim": "Hodgson retained at his own expense a group of local research assistants and trained some staff as naturalists",
+      "evidence_type": "modern archival-biographical synthesis",
+      "confidence": "high_orientation_not_payroll"
+    },
+    {
+      "id": "JITMOHAN_DUAL_STATUS",
+      "source": "MSS EUR HODGSON/79 inventory description",
+      "actor": "Khardar Jitmohan",
+      "administrative_status": "learned official of the British Residency",
+      "research_status": "principal research assistant to Hodgson",
+      "payment_source": null,
+      "mechanism": "DUAL_ADMINISTRATIVE_RESEARCH_ROLE",
+      "confidence": "very_high_for_status_labels_unknown_for_funding"
+    },
+    {
+      "id": "HELPER_PAYMENT_ACCOUNT",
+      "source": "MSS EUR HODGSON/56",
+      "surface": "rough notes of account of money paid to helpers",
+      "payees": null,
+      "amounts": null,
+      "tasks": null,
+      "mechanism": "HELPER_PAYMENT_ACCOUNT_SURFACE",
+      "confidence": "very_high_surface_details_pending"
+    },
+    {
+      "id": "LACHUMAN_1857_ACCOUNT",
+      "source": "MSS EUR HODGSON/58 ff.19-22",
+      "surface": "personal/kitchen and other expenses incurred by Lachuman/Laxman, including names of regular paid workers/kullis",
+      "payees": "present in primary folios but not exposed by inventory",
+      "research_relation": "unresolved",
+      "mechanism": "HOUSEHOLD_EXPENSE_LEDGER",
+      "confidence": "very_high_surface_caution_on_role"
+    },
+    {
+      "id": "DARJEELING_ARCHIVE_ISSUE_CONTROL",
+      "source": "MSS EUR HODGSON/59 f.54b",
+      "surface": "record of manuscript issuance and documents borrowed by Hodgson and wife",
+      "labour_actor": null,
+      "mechanism": "ARCHIVE_MAINTENANCE_LABOUR",
+      "confidence": "high_for_control_system_unknown_for_operator"
+    },
+    {
+      "id": "RAJMAN_MOBILE_SKILLED_LABOUR",
+      "source": "MSS EUR HODGSON/58 f.59b plus ZSL artist records",
+      "actor": "Rajman Singh Chitrakar",
+      "roles": ["artist", "bird selection/recommendation", "shipment-related mediator"],
+      "funding_status": null,
+      "continuity_question": "track Kathmandu-to-Darjeeling payments/tasks across Hodgson's 1844 resignation",
+      "mechanism": "MOBILE_SKILLED_STAFF_CONTINUITY"
+    }
+  ],
+  "funding_status_model": [
+    {
+      "category": "PRIVATE_HODGSON_FUNDS",
+      "evidence": "archival biographies and helper/household account surfaces",
+      "actor_specificity": "not yet fully reconstructed"
+    },
+    {
+      "category": "RESIDENCY_OFFICIAL_STATUS_OR_SALARY",
+      "evidence": "Jitmohan and other munshi/khardar roles institutionally embedded",
+      "actor_specificity": "official status secure for some actors; whether research task itself was official/paid separately unresolved"
+    },
+    {
+      "category": "PIECEWORK_OR_COMMISSION",
+      "evidence": "historically plausible for artists/copyists/specialists but requires direct accounts",
+      "actor_specificity": "hypothesis only until payment records located"
+    },
+    {
+      "category": "HOUSEHOLD_LOGISTICAL_LABOUR",
+      "evidence": "regular paid workers/kullis and household expense records",
+      "actor_specificity": "names exist in primary folios; research role unresolved"
+    }
+  ],
+  "required_fields_for_actor_payment_join": [
+    "actor",
+    "historical_title",
+    "administrative_role",
+    "research_role",
+    "household_role",
+    "payment_date",
+    "amount",
+    "currency",
+    "payment_source",
+    "payment_type",
+    "task",
+    "location",
+    "document_or_object_output",
+    "source_folio",
+    "confidence"
+  ],
+  "core_hypothesis": "Hodgson's research establishment was fiscally heterogeneous and institutionally hybrid: private expenditure supported research capacity, while key actors could also occupy Residency offices and household/logistical roles. Research labour, administrative status and payment source should therefore be reconstructed independently rather than inferred from one another."
+}
