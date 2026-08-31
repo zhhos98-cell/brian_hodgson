@@ -1,0 +1,171 @@
+{
+  "dataset": "historical_container_metadata_crosswalk_v0_1",
+  "date": "2026-09-01",
+  "status": "first direct old-container-to-modern-shelfmark crosswalk",
+  "scope": "Surviving pre-1921 container identifiers and content-control leaves embedded in modern MSS EUR HODGSON volumes, linked where possible to RAS list states and modern shelfmarks.",
+  "central_claim": "The 1921 dimension-based rebinding dispersed older shipment/container families, but original box/sack/bundle identifiers survived on paper surfaces and can be used to reconstruct historical relations across modern volumes.",
+  "mechanisms": [
+    "OLD_CONTAINER_METADATA_SURVIVES_REBINDING",
+    "RELATION_RECONSTRUCTION_FROM_MATERIAL_REMAINDERS",
+    "MODERN_VOLUME_ORDER_CAN_SEPARATE_HISTORICAL_CONTAINER_MEMBERS",
+    "PAPER_IDENTIFIER_AS_RELATIONAL_CHECKSUM",
+    "PHYSICAL_SUPPORT_CAN_BOTH_DISPERSE_AND_RESTORE_RELATION"
+  ],
+  "direct_edges": [
+    {
+      "id": "OCX-SACK8-CONTENT-TO-LIMBU",
+      "historical_container": "original shipment sack No. 8",
+      "control_surface": {
+        "modern_ref": "MSS EUR HODGSON/58 item 18, f.65",
+        "support": "Nepali hand-made paper",
+        "language": "Nepali",
+        "catalogue_description": "Content of manuscripts from sack No. 8 of the original shipment; list of manuscripts relating to customs and manners of different ethnic communities.",
+        "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html"
+      },
+      "surviving_member": {
+        "modern_ref": "MSS EUR HODGSON/85 item 4, ff.95-108",
+        "title": "Limbu text on traditional beliefs, rituals and prayers related to agricultural cultivation, harvesting and marriage",
+        "support": "hand-made Nepali paper with a small mixed acidic section",
+        "catalogue_identifier_evidence": "original sack number (8) is mentioned in Nepali on the title description",
+        "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol085.html"
+      },
+      "relation_strength": "very high: same explicit historical sack number survives on control leaf and member object",
+      "historical_implication": "A manuscript historically controlled under sack 8 is now bound in vol.85, whereas the sack 8 contents leaf is in vol.58. The historical container relation therefore crosses modern shelfmarks.",
+      "source_control": "Do not infer that every ethnographic manuscript in vol.56-60 or vol.83-85 belonged to sack 8 without explicit surviving number or a legible sack-8 contents list."
+    }
+  ],
+  "container_control_surfaces": [
+    {
+      "id": "OCS-BOX3-V55",
+      "modern_ref": "MSS EUR HODGSON/55 item 20, f.129v",
+      "historical_identifier": "box No. 3 of original shipment",
+      "surface_type": "box content page",
+      "support_context": "within a mixed group of mostly Nepali hand-made paper with some machine-made official/revenue documents",
+      "nearby_old_metadata": "ff.126-128 are cover pages of different original bundles",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol055.html",
+      "mapping_status": "container number secure; member-level crosswalk unresolved",
+      "source_control": "Do not equate this box 3 automatically with Box 3 in the 1837 five-box list until the content text is physically compared."
+    },
+    {
+      "id": "OCS-SACK8-V58",
+      "modern_ref": "MSS EUR HODGSON/58 item 18, f.65",
+      "historical_identifier": "sack No. 8 of original shipment",
+      "surface_type": "sack contents list",
+      "support": "Nepali hand-made paper",
+      "content_class": "customs and manners of different ethnic communities",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html",
+      "mapping_status": "one direct member identified in vol.85/4; more members to recover"
+    },
+    {
+      "id": "OCS-KATHMANDU-SHIPMENT-V94",
+      "modern_ref": "MSS EUR HODGSON/94 item 7, ff.40-44",
+      "historical_identifier": "bundle numbers within original Kathmandu shipment",
+      "surface_type": "separated title/content leaves",
+      "support": "Nepali hand-made paper",
+      "language": "Farsi with Nepali title description",
+      "catalogue_description": "list of content of the original shipment with details of bundle number and categories; title folio relates to castes of Newars and other hill people",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol094.html",
+      "mapping_status": "bundle numbers exist but are not transcribed in current online catalogue; object/image inspection required"
+    },
+    {
+      "id": "OCS-SINCE1821-V58",
+      "modern_ref": "MSS EUR HODGSON/58 item 14, f.59",
+      "historical_identifier": "papers sent to India from Kathmandu since VE 1881 / 1821",
+      "surface_type": "shipment-history contents list",
+      "support": "Nepali hand-made paper",
+      "content_scope": "army salaries, wars, routes, guns, castes, life-cycle rites, agriculture, weapons, mines, genealogies, marriage expenses",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html",
+      "mapping_status": "shipment history secure; item-level conversion not yet reconstructed"
+    }
+  ],
+  "modern_objects_preserving_old_numbers": [
+    {
+      "modern_ref": "MSS EUR HODGSON/5 item 3",
+      "object_type": "pre-bound machine-paper notebooks",
+      "title": "The Jatamala of the Newars, Volumes 1 & 2",
+      "old_metadata": "titles and original sack numbers written in Nepali on notebook covers",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol005.html",
+      "number_value_online": "not specified in catalogue text"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/4 items 1-4",
+      "object_type": "four pre-bound machine-paper notebooks",
+      "old_metadata": "in most cases Nepali title plus original shipment number in Nepali language/script on cover pages",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol004.html",
+      "number_value_online": "not specified in catalogue text"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/85 item 4",
+      "object_type": "Limbu ethnographic/religious manuscript",
+      "old_metadata": "original sack number 8 explicitly preserved in Nepali",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol085.html",
+      "number_value_online": 8
+    }
+  ],
+  "early_inventory_comparators": [
+    {
+      "ref": "RAS BHH/11/1",
+      "date": "1837-1844",
+      "description": "List of Buddha Books & drawings, & of Statistics of Nepaul left in Residency in five Boxes; each box individually listed; sixth package also listed; later note says boxes were repacked in 1844 to take home.",
+      "url": "https://royalasiaticarchives.org/index.php/informationobject/browse?names=2296&sort=endDate&sortDir=asc&topLod=0",
+      "relation_to_crosswalk": "candidate ancestor for later box identifiers, but box-number continuity must be physically demonstrated"
+    },
+    {
+      "ref": "RAS BHH/11/2",
+      "date": "1837-1844",
+      "description": "List of MSS relative to Nepal; Hodgson later notes translated items and that originals plus translations were with him aboard the Hardwicke in February 1844.",
+      "url": "https://royalasiaticarchives.org/index.php/informationobject/browse?names=2296&sort=endDate&sortDir=asc&topLod=0",
+      "relation_to_crosswalk": "early explicit version-family + custody statement"
+    },
+    {
+      "ref": "RAS BHH/11/3",
+      "date": "1842-1844",
+      "description": "Details of Contents of Bastas or Bundles in Trunk No.1 Cathmandu; includes Buddhism, Vaisavalis, Jatmalas, Army details, Catalogues & Sastras; later note says repacked in 1844 and put aboard the Hardwicke.",
+      "url": "https://royalasiaticarchives.org/index.php/informationobject/browse?repos=452&showAdvanced=1&sort=endDate&sortDir=asc&subjects=643&topLod=0&view=table",
+      "relation_to_crosswalk": "historical trunk/basta ontology preceding 1864 transfer"
+    },
+    {
+      "ref": "RAS BHH/11/10",
+      "date": "1852",
+      "description": "Memo for Dr Withecombe: list of literary papers in trunks left at Darjeeling in December 1852.",
+      "url": "https://royalasiaticarchives.org/index.php/informationobject/browse?levels=241&page=599&sf_culture=nl&showAdvanced=1&sort=identifier&sortDir=desc&topLod=0",
+      "relation_to_crosswalk": "mid-career trunk inventory state"
+    },
+    {
+      "ref": "RAS BHH/11/12",
+      "date": "1855",
+      "description": "List of pictorial illustration of Nepalese and Tibetan Buddhism on cloth and paper, with further list of papers in Trunk No.2, prepared at Darjeeling.",
+      "url": "https://royalasiaticarchives.org/index.php/buddhism?listLimit=10&listPage=49&page=13&sort=alphabetic&sortDir=desc",
+      "relation_to_crosswalk": "late private-store trunk state before 1858 store list"
+    },
+    {
+      "ref": "RAS BHH/11/14",
+      "date": "1858-1864",
+      "description": "Store list compiled in 1858 that became the list of MSS presented to the India Office in 1864; survives with copy of donation letter to Sir Charles Wood.",
+      "url": "https://www.royalasiaticarchives.org/index.php/informationobject/browse?collection=673&creators=2578&showAdvanced=1&sort=identifier&sortDir=asc&topLod=0",
+      "relation_to_crosswalk": "closest handwritten precursor to 1864 institutional transfer manifest"
+    },
+    {
+      "ref": "RAS BHH/19/5",
+      "date": "August 1864",
+      "description": "Printed List of MSS Presented by Mr Hodgson to the India Office Library, with annotations.",
+      "url": "https://www.royalasiaticarchives.org/index.php/informationobject/browse?media=print&names=4706&sf_culture=en&sort=alphabetic&sortDir=asc&topLod=0",
+      "relation_to_crosswalk": "printed transfer-state comparator"
+    }
+  ],
+  "source_control_rules": [
+    "A repeated number across different inventory dates is not presumed identical until content is compared.",
+    "Modern adjacency is not evidence of historical co-custody after 1921 rebinding.",
+    "Historical co-custody does not prove direct textual descent.",
+    "Catalogue descriptions establish existence of old labels; exact wording and numbers should be checked on the physical/image object before diplomatic transcription.",
+    "Treat surviving cover/content leaves as archival artefacts in their own right, not merely catalogue aids."
+  ],
+  "next_actions": [
+    "Inspect/transcribe vol.58 f.65 sack-8 list and enumerate every named manuscript/category.",
+    "Search all Cambridge volumes for explicit sack number 8 and match members to the sack-8 list.",
+    "Inspect vol.55 f.129v and test whether its Box 3 contents match any box in RAS BHH/11/1.",
+    "Inspect vol.94 ff.40-44 and transcribe bundle numbers/categories, then search for those numbers on surviving covers and notebooks.",
+    "Recover explicit shipment numbers on vol.4 and vol.5 notebook covers.",
+    "Build a graph whose nodes are historical containers and modern shelfmarks, with edge strength based on surviving identifiers rather than thematic similarity."
+  ]
+}
