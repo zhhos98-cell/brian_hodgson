@@ -1,0 +1,143 @@
+{
+  "dataset": "military_tribes_microrevision_chain_v0_1",
+  "date": "2026-09-01",
+  "status": "publication-level microrevision chain with decisive manuscript witness unresolved",
+  "central_claim": "The military-tribes paper changed across print and copy states in ways that cannot be reduced to simple typographical correction. A chronological claim moves 70 -> some -> about 100; a physiognomic phrase retained as caste in 1857 is corrected to cast in 1874. Later physical copies branch again through manuscript annotation.",
+  "nodes": [
+    {
+      "id": "MT-1832-FAIR-V6-1",
+      "date": "1832-10",
+      "type": "fair_manuscript",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "support": "MACHINE_MADE",
+      "state": "fair writing, tabular classification",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html",
+      "importance": "decisive witness for restoration-vs-retrospective-revision test"
+    },
+    {
+      "id": "MT-1832-PARALLEL-V9-10",
+      "date": "1832 candidate",
+      "type": "parallel_fair_copy",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "support": "MACHINE_MADE",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "relation": "Cambridge says another copy of vol.6/1",
+      "importance": "can distinguish shared manuscript reading from later print change"
+    },
+    {
+      "id": "MT-1833-JASB",
+      "date": "1833-05",
+      "type": "printed_article",
+      "support": "PRINT",
+      "gorkha_date_reading": "70 years ago",
+      "cast_caste_reading": "image-level reading unresolved in this wave",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf",
+      "source_control": "PDF searchable text available; screenshot endpoint returned 403"
+    },
+    {
+      "id": "MT-1857-SELECTIONS",
+      "date": "1857",
+      "type": "printed_reprint",
+      "support": "PRINT",
+      "cast_caste_reading": "general caste and character",
+      "gorkha_date_reading": "UNRESOLVED",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1857%20Papers%20on%20Colonization%20Commerce%20Physical%20Geography%20%26c.%20%26c.%20to%20Himalaya%20Mountains%20and%20Nepal%20by%20Hodgson%20s.pdf",
+      "source_control": "indexed text confirms caste; direct PDF fetch returned 403"
+    },
+    {
+      "id": "MT-1874-BASE",
+      "date": "1874",
+      "type": "printed_collected_edition_base_text",
+      "support": "PRINT",
+      "gorkha_date_reading": "some years ago",
+      "cast_caste_reading": "caste in printed body implied by correction apparatus",
+      "source": "https://www.scribd.com/document/299772597/Hodgson-Essays-on-the-Language"
+    },
+    {
+      "id": "MT-1874-CORRECTION-APPARATUS",
+      "date": "1874",
+      "type": "printed_correction_apparatus",
+      "support": "PRINT",
+      "corrections": [
+        {"page": 39, "line": 17, "from": "caste", "to": "cast", "mechanism": "RETROSPECTIVE_SEMANTIC_DISAMBIGUATION"},
+        {"page": 40, "line": "4 top", "from": "some", "to": "about 100", "mechanism": "RETROSPECTIVE_CHRONOLOGICAL_RECALIBRATION"}
+      ],
+      "source": "https://www.scribd.com/document/299772597/Hodgson-Essays-on-the-Language"
+    },
+    {
+      "id": "MT-1874-ALDERLEY-COPY",
+      "date": "1874-10",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "BHHodgson / Alderley Oct 1874",
+      "military_tribes_annotation_evidence": "Part II p.37 included in Joshi annotated-page census",
+      "annotation_content": "UNRECOVERED",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/2002%20Harihar-Indus%20Bibliography%20of%20Hodgson--bibliography%20of%20fugitive%20but%20extant%20materials%20by%20Joshi%20s.pdf",
+      "source_control": "searchable lines available; screenshot endpoint returned 403"
+    },
+    {
+      "id": "MT-1874-CORRECTED-1876-COPY",
+      "date": "1876+",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "Own Copy corrected 1876",
+      "relation_to_1972": "Joshi asserts Amsterdam edition was based on material from his collection and says Saha omitted some annotations",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/2002%20Harihar-Indus%20Bibliography%20of%20Hodgson--bibliography%20of%20fugitive%20but%20extant%20materials%20by%20Joshi%20s.pdf",
+      "source_control": "exact exemplar relation to Saha remains unverified from Saha's own preface"
+    },
+    {
+      "id": "MT-1972-SAHA",
+      "date": "1972",
+      "type": "printed_editorial_derivative",
+      "support": "PRINT",
+      "description": "35-page Supplement of additions and corrections edited from handwritten annotations in the author's copy",
+      "editor": "Mahadeva Prasad Saha",
+      "selection_state": "selective editorial extraction",
+      "military_tribes_entries": "UNRECOVERED",
+      "source_control": "bibliographic descriptions confirm supplement; full supplement text not yet recovered"
+    }
+  ],
+  "microchains": [
+    {
+      "id": "MT-DATING",
+      "variable": "Gorkha expansion date phrase",
+      "states": [
+        {"node": "MT-1833-JASB", "reading": "70 years ago"},
+        {"node": "MT-1857-SELECTIONS", "reading": "UNRESOLVED"},
+        {"node": "MT-1874-BASE", "reading": "some years ago"},
+        {"node": "MT-1874-CORRECTION-APPARATUS", "reading": "about 100 years ago"}
+      ],
+      "interpretation": "non-monotonic precision: precise -> vague -> newly precise",
+      "mechanism": "RETROSPECTIVE_CHRONOLOGICAL_RECALIBRATION"
+    },
+    {
+      "id": "MT-PHYSIOGNOMY",
+      "variable": "general cast/caste and character",
+      "states": [
+        {"node": "MT-1832-FAIR-V6-1", "reading": "UNREAD"},
+        {"node": "MT-1833-JASB", "reading": "UNRESOLVED_IMAGE_LEVEL"},
+        {"node": "MT-1857-SELECTIONS", "reading": "caste"},
+        {"node": "MT-1874-CORRECTION-APPARATUS", "reading": "cast"}
+      ],
+      "interpretation": "at minimum a later printed state retains caste before 1874 corrects it to cast",
+      "mechanism": "RETROSPECTIVE_SEMANTIC_DISAMBIGUATION"
+    }
+  ],
+  "model": "manuscript -> print -> reprint -> collected-print base -> printed correction apparatus -> copy-specific manuscript-on-print branches -> selective editorial print extraction",
+  "source_control_rules": [
+    "Do not call the 1874 corrections restorations until the October 1832 manuscript readings are inspected.",
+    "Do not assume the 1972 'author's copy' is the Alderley Oct 1874 copy.",
+    "Keep all known annotated 1874 exemplars as separate physical witnesses.",
+    "Joshi's statement about Saha's source copy is evidence from Joshi, not yet confirmation from Saha's own editorial apparatus.",
+    "A correction list records intended reading but the uncorrected body remains a distinct printed state."
+  ],
+  "next_actions": [
+    "Read MSS EUR HODGSON/6 item 1 at both microrevision loci.",
+    "Read vol.9/10 at the same loci.",
+    "Recover the 1857 date phrase.",
+    "Recover Saha supplement entries for Part II pp.37-44.",
+    "Recover Alderley p.37 marginalia.",
+    "Identify Saha's physical exemplar from editorial/publisher provenance."
+  ]
+}
