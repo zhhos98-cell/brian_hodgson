@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Operation-specific uses of redundancy in Hodgson manuscript and zoological infrastructures.",
+  "controlled_redundancy_purposes": [
+    "CUSTODY_CONFIRMATION",
+    "TEXTUAL_COLLATION",
+    "REFERENCE_SERIES",
+    "DISTRIBUTION_SET",
+    "EXCHANGE_DUPLICATE",
+    "BACKUP_COPY",
+    "PUBLICATION_SYNCHRONIZATION",
+    "UNKNOWN"
+  ],
+  "records": [
+    {
+      "id": "RV-MSS-1837-01",
+      "domain": "manuscript",
+      "date": "1837-07-15",
+      "actors": ["Eugene Burnouf", "Brian Houghton Hodgson"],
+      "operation": "request multiple copies of same Buddhist texts",
+      "redundancy_purpose": "TEXTUAL_COLLATION",
+      "problem_being_verified": "scribal error and ambiguous textual reading",
+      "mechanism": "compare two or more partially independent copies to stabilize difficult passages",
+      "source_status": "published transcription/citation of Burnouf letter; archive letter also catalogued",
+      "evidence_strength": "high",
+      "archive_tests": ["identify copy genealogy", "compare paper/copyist/colophon", "map requested copies to surviving shelfmarks"]
+    },
+    {
+      "id": "RV-MSS-1837-02",
+      "domain": "manuscript",
+      "date": "1837-07",
+      "actors": ["Eugene Burnouf", "Jules Mohl", "Societe Asiatique"],
+      "operation": "multiple acknowledgements of same three-crate arrival",
+      "redundancy_purpose": "CUSTODY_CONFIRMATION",
+      "problem_being_verified": "transport/custody event",
+      "mechanism": "independent or separate institutional acknowledgements corroborate arrival of shipment units",
+      "source_status": "RAS archival descriptions of Burnouf 15 Jul and Mohl 29 Jul letters",
+      "evidence_strength": "high"
+    },
+    {
+      "id": "RV-ZOO-1845-03",
+      "domain": "zoology",
+      "date": "1845-02",
+      "actors": ["J. E. Gray", "British Museum", "Brian Houghton Hodgson"],
+      "operation": "retain complete comparative series while separating obvious duplicates",
+      "redundancy_purpose": "REFERENCE_SERIES",
+      "problem_being_verified": "taxonomic/anatomical comparison",
+      "mechanism": "institution keeps representative skull/horn/bone series after comparison",
+      "source_status": "ZSL direct archival transcription",
+      "evidence_strength": "high"
+    },
+    {
+      "id": "RV-ZOO-1845-04",
+      "domain": "zoology",
+      "date": "1845-02",
+      "actors": ["J. E. Gray", "British Museum", "Brian Houghton Hodgson"],
+      "operation": "create numbered specimen series for other recipients",
+      "redundancy_purpose": "DISTRIBUTION_SET",
+      "problem_being_verified": "distributed access to representative zoological material",
+      "mechanism": "museum comparison/selection converts received multiples into destination-specific series",
+      "source_status": "ZSL direct archival transcription",
+      "evidence_strength": "high"
+    },
+    {
+      "id": "RV-ZOO-1847-05",
+      "domain": "zoology",
+      "date": "1847-04-29",
+      "actors": ["Brian Houghton Hodgson", "British Museum Trustees"],
+      "operation": "send catalogue copies to institutions that received duplicate specimens",
+      "redundancy_purpose": "PUBLICATION_SYNCHRONIZATION",
+      "problem_being_verified": "shared interpretation/identification of separated specimen sets",
+      "mechanism": "metadata copies are distributed along physical duplicate network",
+      "source_status": "ZSL direct archival transcription of Hodgson to Forshall",
+      "evidence_strength": "high"
+    }
+  ],
+  "general_rule": "Never code duplicate/redundant objects without an operation-specific purpose where evidence permits.",
+  "cross_domain_claim": "Controlled redundancy can make distributed knowledge more auditable, but its epistemic function differs by operation: textual collation, custody confirmation, reference comparison, physical distribution, or metadata synchronization.",
+  "failure_warning": "Redundancy creates additional identity-management requirements; copies/specimens/catalogues can diverge, collide, or lose their relations even while multiplication increases available witnesses."
+}
