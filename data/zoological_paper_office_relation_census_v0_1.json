@@ -1,0 +1,164 @@
+{
+  "dataset": "zoological_paper_office_relation_census_v0_1",
+  "version": "0.1",
+  "date": "2026-08-31",
+  "scope": "role, operation, relation-key and unit-ontology reconstruction for Hodgson's bird-behaviour notebooks, numbered drawings and later sheet-count states",
+  "status": "catalogue-description and local-scan grounded; direct object comparison required before number-to-sheet reconciliation",
+  "source_control": {
+    "primary_archive_record": "Zoological Society of London NZSL/HOD/1/3",
+    "supporting_archive_records": [
+      "Zoological Society of London NZSL/HOD/1/1",
+      "Zoological Society of London NZSL/HOD/5/3"
+    ],
+    "local_scan": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json, Appendix C, current digital pages c.156-157",
+    "critical_warning": "HOD/1/3 drawing identifiers must not be equated with later physical sheet totals without a demonstrated historical conversion relation"
+  },
+  "records": [
+    {
+      "id": "ZSL_HOD_1_3_BEHAVIOUR_NOTEBOOK_CHAIN",
+      "archive_ref": "NZSL/HOD/1/3",
+      "date_range": "1846-1857",
+      "object_type": "notebook series",
+      "hodgson_title": "Memoranda of manners and habits of birds of my Collection (according to the numbers attached to the drawings). Done by my native sportsmen or Shikarees and translated by my writer",
+      "explicit_roles": [
+        {
+          "actor_id": "SHIKAREES",
+          "actor_label": "native sportsmen or Shikarees",
+          "operation": "produce/report observations of bird manners and habits",
+          "source_status": "explicit in Hodgson title as catalogued by ZSL",
+          "confidence": "very_high"
+        },
+        {
+          "actor_id": "HODGSON_WRITER",
+          "actor_label": "my writer",
+          "operation": "translate the shikaree-produced memoranda",
+          "source_status": "explicit in Hodgson title as catalogued by ZSL",
+          "confidence": "very_high_role_identity_unknown"
+        }
+      ],
+      "hodgson_role": {
+        "actor_id": "B_H_HODGSON",
+        "operation": "commission/collect/organize the corpus and define its title/reference architecture",
+        "source_status": "high-confidence organizational inference; physical inscription/editing requires page inspection",
+        "confidence": "high"
+      },
+      "relation_key": {
+        "type": "number attached to drawing",
+        "links": ["notebook description", "numbered drawing"],
+        "secure": true,
+        "possible_additional_links_not_yet_demonstrated": ["specimen", "catalogue entry", "institutional list"]
+      },
+      "surviving_serial_ranges": [
+        {"volume": "No.1 Vol.1", "start": 1, "end": 169},
+        {"volume": "No.3 Vol.3", "start": 340, "end": 488},
+        {"volume": "No.6 Vol.6", "start": 755, "end": 855}
+      ],
+      "seriality_warning": "surviving range gaps do not establish original research gaps or lost observations",
+      "workflow": [
+        "field observation",
+        "linguistic conversion/translation",
+        "serial notebook inscription",
+        "number-based cross-reference",
+        "reassociation with numbered drawing"
+      ],
+      "mechanisms": [
+        "OBSERVATION_TRANSLATION_SERIALIZATION_CHAIN",
+        "ROLE_SPECIFIC_LOCAL_KNOWLEDGE_PIPELINE",
+        "TRANSLATION_AS_PRE_CIRCULATION_INFRASTRUCTURE",
+        "NUMBER_AS_CROSS_MEDIA_RELATION_KEY",
+        "SURVIVING_SERIAL_RANGE_NOT_ORIGINAL_COMPLETENESS",
+        "PAPER_MEDIATED_DISTRIBUTED_ZOOLOGICAL_AUTHORSHIP",
+        "DISTRIBUTED_MODAL_EVIDENCE_PACKAGE",
+        "ZOOLOGICAL_RESEARCH_ESTABLISHMENT_AS_PAPER_OFFICE"
+      ],
+      "unknowns": [
+        "first recording medium",
+        "language of first shikaree report",
+        "physical hand of surviving notebook entries",
+        "extent of Hodgson line-by-line editing",
+        "whether identifier refers to subject, drawing object, sheet or a historically mixed unit"
+      ]
+    },
+    {
+      "id": "LATER_ZOOLOGICAL_DRAWING_SHEET_COUNT_STATE",
+      "source": "Appendix C in local Hodgson scan corpus",
+      "count_unit": "physical drawing sheet",
+      "format_note": "folio-size sheets",
+      "counts": {
+        "bird_sheets": 1241,
+        "mammal_sheets": 557,
+        "reptile_etc_sheets": 55,
+        "total_sheets": 1863
+      },
+      "cardinality_note": "many sheets contain several subjects",
+      "ontology_constraints": [
+        "sheet_count != represented_subject_count",
+        "sheet_count != species_count",
+        "drawing_identifier_count != necessarily sheet_count",
+        "notebook_entry_count != necessarily sheet_count"
+      ],
+      "mechanisms": [
+        "SHEET_AS_OPERATIONAL_COUNT_UNIT",
+        "MATERIAL_SEMANTIC_CARDINALITY_DIVERGENCE",
+        "IDENTIFIER_UNIT_SHEET_UNIT_SEPARATION"
+      ],
+      "confidence": "high for printed count state and footnote; direct original-source identification still desirable"
+    },
+    {
+      "id": "HUME_BIRD_DRAWING_REUSE_STATE_1870_1874",
+      "source": "Appendix C in local Hodgson scan corpus; compare ZSL HOD/1/1 and HOD/5/3",
+      "date_start": "1870",
+      "date_end": "1874",
+      "count_unit": "bird drawing sheets",
+      "sheets_lent_to_hume": 1115,
+      "current_user_1870": "A. Hume",
+      "purpose": "projected ornithological work",
+      "future_destination": "Zoological Society of London",
+      "transfer_to_zsl": "1874",
+      "relation_to_HOD_1_3_numbers": "unproven; requires direct identifier comparison",
+      "mechanisms": [
+        "SERIAL_PAPER_CORPUS_REUSED_ACROSS_RESEARCH_GENERATIONS",
+        "TEMPORARY_USER_WITH_DEFERRED_DESTINATION"
+      ],
+      "confidence": "high for custody/use sequence; low for identifier continuity"
+    }
+  ],
+  "unit_ontology": [
+    {
+      "unit": "notebook entry identifier",
+      "function": "serial/reference address",
+      "must_not_be_collapsed_with": ["physical drawing sheet", "represented subject", "species", "specimen"]
+    },
+    {
+      "unit": "drawing identifier",
+      "function": "relation key/address to visual object or subject; exact historical referent requires inspection",
+      "must_not_be_collapsed_with": ["physical sheet"]
+    },
+    {
+      "unit": "physical drawing sheet",
+      "function": "material support and later custody/count unit",
+      "must_not_be_collapsed_with": ["represented subject", "species", "notebook entry"]
+    },
+    {
+      "unit": "represented subject",
+      "function": "semantic/visual subject on a drawing sheet",
+      "cardinality_relation": "one sheet may contain several subjects"
+    },
+    {
+      "unit": "specimen",
+      "function": "physical zoological object carrying bodily/material evidence",
+      "must_not_be_collapsed_with": ["drawing", "sheet", "notebook entry"]
+    }
+  ],
+  "core_hypothesis": "Hodgson's zoological establishment operated partly as a paper office in which local behavioural observations were translated, serialized and linked by numbers to visual paper objects. The identifier system made distributed labour and evidence reconnectable, while later sheet-count evidence demonstrates that relational identifiers and physical paper units formed different ontologies and must be reconciled only through direct historical mappings.",
+  "next_tests": [
+    "inspect HOD/1/3 hands, ruling, paper, watermark/countermark, corrections and repeated entry schema",
+    "determine physical inscriber of translated entries",
+    "compare controlled HOD/1/3 identifiers with surviving bird drawings",
+    "determine whether drawing identifiers refer to subject, drawing object or sheet",
+    "investigate missing notebook Vols.2, 4 and 5 as archive-survival states",
+    "check 20 July 1867 Gunther printing-of-memorandum correspondence",
+    "compare Hume-used 1870 sheets with HOD/1/3 identifiers",
+    "preserve separate totals for sheets, subjects, entries, drawing identifiers and specimens until conversion evidence is found"
+  ]
+}
