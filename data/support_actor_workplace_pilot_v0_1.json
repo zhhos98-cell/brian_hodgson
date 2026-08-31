@@ -1,0 +1,130 @@
+{
+  "dataset":"support_actor_workplace_pilot_v0_1",
+  "date":"2026-08-31",
+  "status":"falsification pilot",
+  "question":"Does writer identity/origin explain support choice among English research states?",
+  "result":"No. Current cases falsify a British/local actor binary. Named local research assistants can write on machine-made paper, while Hodgson can write English on Nepali handmade paper.",
+  "records":[
+    {
+      "ref":"vol.21/3 ff.2-10",
+      "writer":"unidentified non-native user of English",
+      "role":"local/native writer or assistant candidate",
+      "language":"English",
+      "support":"NEPALI_HANDMADE",
+      "operation":"translated/rewritten historical account",
+      "state":"rough with corrections",
+      "relation":"linked to Nepali original",
+      "evidential_use":"supports local-writer handmade cluster"
+    },
+    {
+      "ref":"vol.21/6 ff.25-57",
+      "writer":"unidentified native writer",
+      "role":"local/native writer",
+      "language":"English",
+      "support":"NEPALI_HANDMADE",
+      "operation":"Buddhist account/translation-summary environment",
+      "state":"rough",
+      "evidential_use":"supports local-writer handmade cluster"
+    },
+    {
+      "ref":"vol.21/1 ff.1,11-13",
+      "writer":"unidentified non-native user of English",
+      "role":"local/native writer or assistant candidate",
+      "language":"English",
+      "support":"NEPALI_HANDMADE",
+      "operation":"account of Buddhist rites extracted from Pujakanda",
+      "state":"rough with corrections",
+      "evidential_use":"supports local-writer handmade cluster"
+    },
+    {
+      "ref":"vol.9/12 ff.72-89",
+      "writer":"Ashraf Ali / associated hands",
+      "role":"Kashmiri trader and Hodgson research assistant",
+      "language":"English",
+      "support":"MACHINE_MADE",
+      "operation":"questions and answers about Tibetans",
+      "state":"poor hands with corrections/addenda",
+      "evidential_use":"falsifies local-assistant -> handmade rule"
+    },
+    {
+      "ref":"vol.14/10",
+      "writer":"Ramtanu (Ram Tunnu)",
+      "role":"Hodgson assistant",
+      "language":"English",
+      "support":"MACHINE_MADE",
+      "operation":"note on exported goods/trade",
+      "state":"fair",
+      "evidential_use":"falsifies local-assistant -> handmade rule"
+    },
+    {
+      "ref":"vol.8/1 ff.1-8b",
+      "writer":"Archibald Campbell",
+      "role":"British assistant/Residency collaborator",
+      "language":"English",
+      "support":"MACHINE_MADE",
+      "operation":"Jumla revenue derivative chart",
+      "state":"chart; good condition",
+      "dimensions_cm":[48.5,38],
+      "evidential_use":"supports machine-stock analytical chart cluster"
+    },
+    {
+      "ref":"vol.3/4 ff.18-21",
+      "writer":"Archibald Campbell with Hodgson corrections",
+      "role":"Residency analytical collaboration",
+      "language":"English",
+      "support":"MACHINE_MADE",
+      "operation":"route description",
+      "state":"fine writing with pencil corrections",
+      "evidential_use":"supports shared Residency machine-stock access"
+    },
+    {
+      "ref":"vol.7/23 f.151",
+      "writer":"Brian Houghton Hodgson",
+      "role":"Resident/principal researcher",
+      "language":"English",
+      "support":"NEPALI_HANDMADE",
+      "operation":"route description",
+      "state":"sloppy own hand",
+      "evidential_use":"falsifies Hodgson -> machine/imported rule"
+    },
+    {
+      "ref":"vol.18/1 f.1",
+      "writer":"Brian Houghton Hodgson",
+      "role":"Resident/principal researcher",
+      "language":"English",
+      "support":"MACHINE_MADE",
+      "operation":"rough chronological analytical note",
+      "state":"rough pen and pencil",
+      "evidential_use":"shows rough state can also use machine paper"
+    },
+    {
+      "ref":"vol.29/5 f.16",
+      "writer":"Brian Houghton Hodgson",
+      "role":"Resident/principal researcher",
+      "language":"English + Sanskrit",
+      "support":"MACHINE_MADE",
+      "operation":"list of Buddhist objects shipped to Calcutta",
+      "state":"Hodgson writing",
+      "evidential_use":"machine paper in forwarding/shipment operation"
+    }
+  ],
+  "falsified_simple_rules":[
+    "local/native writer -> Nepali handmade",
+    "British writer -> machine/imported",
+    "English language -> machine/imported",
+    "rough working state -> Nepali handmade"
+  ],
+  "revised_candidate_model":"support_selection = stock_access × workplace × task_state × format × writer_role × intended_next_operation",
+  "source_control_rules":[
+    "Writer attribution must remain separate from ethnic/national identity.",
+    "Do not infer who supplied the paper from who wrote on it.",
+    "A cluster in vol.21 does not establish a collection-wide actor rule.",
+    "Residency workplace is a candidate context, not proven paper-issue provenance without procurement or handwriting/object evidence."
+  ],
+  "next_steps":[
+    "Add writer/role fields to all Tier-A conversion targets.",
+    "Compare support allocation within the same named assistant where multiple objects survive.",
+    "Test whether machine-paper access clusters by Residency notebook/report/forwarding workflows rather than writer origin.",
+    "Use handwriting plus paper-stock inspection to distinguish writer practice from later compilation/remounting."
+  ]
+}
