@@ -1,0 +1,187 @@
+{
+  "dataset": "military_tribes_witness_matrix_v0_1",
+  "date": "2026-09-01",
+  "status": "active witness-control matrix",
+  "purpose": "Separate witness existence/location, physical state, textual readability, and actual readings for the military-tribes microrevision chain.",
+  "variables": ["gorkha_date_phrase", "cast_caste_phrase"],
+  "witnesses": [
+    {
+      "id": "W-1832-V6-1",
+      "date": "1832-10",
+      "witness": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "material_state": "fair manuscript on machine-made paper",
+      "location_state": "catalogued",
+      "text_access_state": "target prose loci unread",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "physical manuscript target; decisive",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    },
+    {
+      "id": "W-1832-V9-10",
+      "date": "1832 candidate",
+      "witness": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "material_state": "parallel fair manuscript copy on machine-made paper",
+      "location_state": "catalogued",
+      "text_access_state": "target prose loci unread",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "physical manuscript target",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "W-1833-JASB",
+      "date": "1833-05",
+      "witness": "Journal of the Asiatic Society of Bengal II, no.17, pp.217-224",
+      "material_state": "journal print",
+      "location_state": "multiple public-domain digital witnesses located",
+      "text_access_state": "chronology readable; cast/caste target not yet image-verified",
+      "gorkha_date_phrase": "70 years ago",
+      "cast_caste_phrase": "UNRESOLVED",
+      "evidence_rank": "primary print; chronology direct searchable text",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf",
+      "additional_witness_state": "full JASB vol.2 located through Wikisource/Wikimedia; target page image access not completed"
+    },
+    {
+      "id": "W-1857-SELECTIONS",
+      "date": "1857",
+      "witness": "Selections from the Records of the Government of Bengal XXVII",
+      "material_state": "government-record reprint",
+      "location_state": "Internet Archive full-text witness readable",
+      "text_access_state": "both target readings direct searchable full text",
+      "gorkha_date_phrase": "seventy years ago",
+      "cast_caste_phrase": "general caste and character",
+      "evidence_rank": "primary reprint, direct full text",
+      "source": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt"
+    },
+    {
+      "id": "W-1872-PHOENIX-OXFORD",
+      "date": "1872-08",
+      "witness": "The Phoenix III no.26 pp.31-35 — Oxford scan",
+      "material_state": "serial print digitization",
+      "google_books_id": "aTBBAQAAMAAJ",
+      "location_state": "located",
+      "text_access_state": "target text unread",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "independent digital witness location only"
+    },
+    {
+      "id": "W-1872-PHOENIX-NETHERLANDS",
+      "date": "1872-08",
+      "witness": "The Phoenix III no.26 pp.31-35 — National Library of the Netherlands scan",
+      "material_state": "serial print digitization",
+      "google_books_id": "LXlRAAAAcAAJ",
+      "location_state": "located",
+      "text_access_state": "target text unread",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "independent digital witness location only"
+    },
+    {
+      "id": "W-1872-PHOENIX-ROME",
+      "date": "1872-08",
+      "witness": "The Phoenix III no.26 pp.31-35 — Biblioteca Nazionale Centrale di Roma scan",
+      "material_state": "serial print digitization",
+      "google_books_id": "0eaqUKm_xQIC",
+      "location_state": "located; table of contents exposes Vol III No 26 August 1872",
+      "text_access_state": "target text unread; text-only endpoint 403 / export CAPTCHA during research",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "strongest issue-location digital witness, no target reading"
+    },
+    {
+      "id": "W-1872-PHOENIX-NYPL",
+      "date": "1872-08",
+      "witness": "The Phoenix III — New York Public Library scan",
+      "material_state": "serial print digitization",
+      "google_books_id": "pYIrO0HAJMoC",
+      "digitization_note": "Google Books result identifies NYPL copy, digitized 2023",
+      "location_state": "located",
+      "text_access_state": "target No.26 text not surfaced by search",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "fourth independent digital witness location"
+    },
+    {
+      "id": "W-1874-BASE",
+      "date": "1874",
+      "witness": "Essays on the Languages, Literature, and Religion of Nepal and Tibet, Part II",
+      "material_state": "collected reprint base text",
+      "location_state": "multiple digital witnesses readable/searchable",
+      "text_access_state": "both target base readings recoverable",
+      "gorkha_date_phrase": "some years ago",
+      "cast_caste_phrase": "caste",
+      "evidence_rank": "primary collected print",
+      "source": "https://www.scribd.com/document/299772597/Hodgson-Essays-on-the-Language"
+    },
+    {
+      "id": "W-1874-CORR",
+      "date": "1874",
+      "witness": "List of Additions and Corrections in Essays",
+      "material_state": "printed correction apparatus",
+      "location_state": "readable/searchable",
+      "text_access_state": "direct correction entries",
+      "gorkha_date_phrase": "for some read about 100",
+      "cast_caste_phrase": "for caste read cast",
+      "evidence_rank": "primary printed correction apparatus"
+    },
+    {
+      "id": "W-1874-ALDERLEY",
+      "date": "1874-10",
+      "witness": "BHHodgson / Alderley Oct 1874 physical copy",
+      "material_state": "print plus copy-specific manuscript annotation",
+      "location_state": "described by Joshi",
+      "text_access_state": "p.37 annotation existence known; content unread",
+      "gorkha_date_phrase": "UNKNOWN",
+      "cast_caste_phrase": "UNKNOWN",
+      "evidence_rank": "secondary description of physical annotated copy"
+    },
+    {
+      "id": "W-1876-CORRECTED-COPY",
+      "date": "1876+",
+      "witness": "Own Copy corrected 1876",
+      "material_state": "print plus evolving manuscript annotation",
+      "location_state": "described by Joshi",
+      "text_access_state": "military-tribes loci not recovered",
+      "gorkha_date_phrase": "UNKNOWN",
+      "cast_caste_phrase": "UNKNOWN",
+      "evidence_rank": "secondary description; candidate source branch for later editorial extraction"
+    },
+    {
+      "id": "W-1972-SAHA",
+      "date": "1972",
+      "witness": "Philo Press Amsterdam reprint with Saha supplement",
+      "material_state": "editorial print extracted from handwritten annotations in an author's copy",
+      "location_state": "bibliographically secure",
+      "text_access_state": "Part II supplement entries unread",
+      "gorkha_date_phrase": "UNREAD",
+      "cast_caste_phrase": "UNREAD",
+      "evidence_rank": "printed derivative; source exemplar provenance incomplete"
+    }
+  ],
+  "control_rules": [
+    "Witness location is not textual access.",
+    "Multiple digitizations do not increase confidence in a reading until the target text is actually read.",
+    "OCR/searchable text and image-verified reading are separate evidence states.",
+    "A correction apparatus records intended correction while leaving the base printed body as a distinct material state.",
+    "Physical annotated copies must be treated individually, not collapsed into a singular author's copy."
+  ],
+  "current_hard_results": [
+    "1833 chronology = 70 years ago",
+    "1857 chronology = seventy years ago",
+    "1857 physiognomic phrase = general caste and character",
+    "1874 base chronology = some years ago",
+    "1874 correction = about 100 years ago",
+    "1874 correction = caste -> cast",
+    "Phoenix Aug 1872 exists in at least four located digital witnesses but target readings remain unread"
+  ],
+  "next_actions": [
+    "Read Phoenix no.26 pp.31-35 in any one of the four located digital/library witnesses.",
+    "Read October 1832 MSS EUR HODGSON/6 item 1 at both loci.",
+    "Read vol.9/10 at both loci.",
+    "Image-verify 1833 cast/caste phrase from a full-volume scan.",
+    "Recover 1972 Saha Part II supplement entries and identify the physical source exemplar.",
+    "Recover Alderley p.37 marginalia."
+  ]
+}
