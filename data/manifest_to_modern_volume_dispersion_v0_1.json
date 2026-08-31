@@ -1,0 +1,223 @@
+{
+  "dataset": "manifest_to_modern_volume_dispersion_v0_1",
+  "date": "2026-09-01",
+  "scope": "Crosswalk from selected 1864 India Office transfer/version families to modern MSS EUR HODGSON volume locations, with 1921 dimension-based rebinding treated as an explicit collection-level dispersion mechanism.",
+  "central_claim": "Version families co-custodied in 1864 are now dispersed across modern volumes; the Cambridge catalogue states that 1921 arrangement partly grouped documents by physical dimensions and could separate originals from translations simply because their paper sizes differed.",
+  "collection_history": {
+    "deposit": "Hodgson papers deposited in India Office Library in 1864",
+    "rebinding_date": 1921,
+    "historical_bound_volume_count": 95,
+    "historical_numbering_note": "numbering runs to 108 because 13 scrolls were present in sequence",
+    "binding_rule": "partly by physical dimensions, grouping items of similar size",
+    "documented_effect": "items belonging together, including original manuscripts and translations, were sometimes bound in different places because written on different sizes of paper",
+    "modern_catalogue_item_count": 972,
+    "modern_catalogue_folio_estimate": 15300,
+    "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/intro.html",
+    "current_bl_fonds_extent": "90 volumes; 15 rolls",
+    "current_bl_fonds_url": "https://searcharchives.bl.uk/catalog/032-002305420",
+    "count_state_warning": "Historical and current extent counts differ and must remain unreconciled until cataloguing history is reconstructed."
+  },
+  "families": [
+    {
+      "id": "MVX-JUMLA-REVENUE",
+      "1864_container": "Trunk 2, sixth large bundle",
+      "1864_manifest_relation": "Statement of Revenue of Jumla in Khas and English",
+      "relation_strength": "strong explicit co-custody",
+      "modern_states": [
+        {
+          "ref": "MSS EUR HODGSON/59/38",
+          "folios": "205-240",
+          "state": "Nepali/Khas source",
+          "language": "Nepali",
+          "support": "Nepali hand-made paper",
+          "folio_count_approx": 36,
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/8/1",
+          "folios": "1-8b",
+          "state": "English chart derivative",
+          "language": "English",
+          "support": "machine-made paper",
+          "dimensions_cm": [48.5, 38.0],
+          "writer": "A. Campbell",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol008.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/102/21",
+          "folios": "115-116",
+          "state": "Farsi table derivative",
+          "language": "Farsi",
+          "support": "Nepali hand-made paper",
+          "writing_state": "very neat",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol102.html",
+          "manifest_warning": "This Farsi state is related in the modern catalogue but not named in the 1864 Jumla manifest entry."
+        }
+      ],
+      "modern_volume_set": [59, 8, 102],
+      "modern_distinct_volume_count": 3,
+      "mechanisms": ["VERSION_FAMILY_TO_MULTIVOLUME_DISPERSION", "CUSTODY_RECOMBINES_VERSION_STATES", "PAPER_DIMENSION_DRIVES_ARCHIVAL_REBINDING_CANDIDATE"]
+    },
+    {
+      "id": "MVX-PEKING-ROUTE",
+      "1864_container": "Trunk 1, second large bundle, lesser bundle 2: various itineraries in Nagri, Persian and English",
+      "1864_manifest_relation": "multilingual itinerary family",
+      "relation_strength": "family-level 1864 custody plus strong modern direct cross-references",
+      "modern_states": [
+        {
+          "ref": "MSS EUR HODGSON/59/23",
+          "folios": "97-104",
+          "state": "Nepali source",
+          "language": "Nepali",
+          "support": "Nepali hand-made paper",
+          "folio_count": 8,
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/2/3",
+          "folios": "30-32",
+          "state": "English fair route derivative",
+          "language": "English",
+          "support": "imported thick paper",
+          "writing_state": "fair hand, corrections and addenda in pencil",
+          "folio_count": 3,
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol002.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/102/19",
+          "folios": "112-113",
+          "state": "Urdu/Farsi incomplete derivative",
+          "language": "Urdu/Farsi",
+          "support": "Nepali hand-made paper",
+          "writing_state": "poor hand; incomplete translation",
+          "folio_count": 2,
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol102.html"
+        }
+      ],
+      "modern_volume_set": [59, 2, 102],
+      "modern_distinct_volume_count": 3,
+      "mechanisms": ["MULTILINGUAL_ITINERARY_FAMILY_DISPERSED_BY_LATER_BINDING", "DERIVATIVE_COMPRESSION_AS_VERSIONING", "MODERN_SHELFMARK_DISPERSION_OBSCURES_HISTORICAL_VERSION_FAMILY"]
+    },
+    {
+      "id": "MVX-NEWAR-CHRONICLE",
+      "1864_container": "Trunk 1, first large bundle, Newari chronicle parcel",
+      "1864_manifest_relation": "source chronicles + Persian translation + Jit Mohan abstract + repetition states + two English translation volumes + Persian addenda",
+      "relation_strength": "mixed strong explicit translation/abstract relations and family co-custody",
+      "modern_states": [
+        {
+          "ref": "MSS EUR HODGSON/55/9",
+          "folios": "31-71",
+          "state": "Nepali vaṃśāvali source",
+          "language": "Nepali",
+          "support": "Nepali hand-made paper",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol055.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/101/16",
+          "folios": "152-167",
+          "state": "Farsi/Urdu genealogical derivative",
+          "language": "Farsi/Urdu",
+          "support": "Nepali hand-made paper",
+          "writing_state": "neat and poor hands",
+          "direct_cross_reference": "catalogue identifies vol.55/9 as Nepali original",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol101.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/17/3",
+          "folios": "173-219",
+          "state": "English Newar Kings Volume I / Buddhist-Brahmanical account",
+          "language": "English",
+          "support": "unspecified in current online catalogue",
+          "binding_state": "separate pre-bound notebook",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol017.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/16/1-2",
+          "folios": "1-105",
+          "state": "English Newar chronicle Volume II and related notices",
+          "language": "English",
+          "support": "unspecified in current online catalogue",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol016.html"
+        }
+      ],
+      "modern_volume_set": [55, 101, 17, 16],
+      "modern_distinct_volume_count": 4,
+      "mechanisms": ["CHRONICLE_TRANSFER_FAMILY_TO_MODERN_MULTIVOLUME_STEMMA", "ARCHIVAL_REBINDING_BREAKS_VERSION_FAMILIES"]
+    },
+    {
+      "id": "MVX-GURKHALI-CHRONICLE",
+      "1864_container": "Trunk 1, first large bundle, Gurkhali chronicle parcel",
+      "1864_manifest_relation": "twelve source/history states followed by English translations of the above in five volumes by Hodgson's office people",
+      "relation_strength": "strong source-set -> translation-set relation",
+      "modern_states": [
+        {
+          "ref": "MSS EUR HODGSON/51/3",
+          "folios": "5-107",
+          "state": "principal Gorkhāvaṃśāvali source",
+          "language": "Nepali/Hindi",
+          "support": "Nepali hand-made paper",
+          "writer": "Jitman/Jitmohan candidate",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol051.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/51/15-16 and /52/5,11,12,18",
+          "state": "additional scattered Gorkhāvaṃśāvali source continuations/fragments",
+          "support": "varies; object-level census required",
+          "catalogue_statement": "vol.51 catalogue explicitly says the account has been scattered in various places in two volumes",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol051.html"
+        },
+        {
+          "ref": "MSS EUR HODGSON/17/1",
+          "folios": "1-167",
+          "state": "English Gorkha Vaṃśāvali translation set",
+          "language": "English translated from Nepali",
+          "support": "unspecified in current online catalogue",
+          "binding_state": "four separate pre-bound notebooks",
+          "writers": "Hodgson and Campbell",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol017.html"
+        }
+      ],
+      "modern_volume_set_minimum": [51, 52, 17],
+      "modern_distinct_volume_count_minimum": 3,
+      "mechanisms": ["REBINDING_CAN_FRAGMENT_BOTH_SOURCE_AND_DERIVATIVE_FAMILIES", "SOURCE_SET_PLUS_TRANSLATION_SET_CO_BUNDLING"]
+    },
+    {
+      "id": "MVX-NEWAR-INSTITUTIONS-PALMLEAF",
+      "1864_container": "Trunk 1, second large bundle, lesser bundle 3",
+      "1864_manifest_relation": "Newar institutions plus original Talpatras/title deeds and some English/Persian translations",
+      "relation_strength": "family-level; exact manifest-to-item mapping requires original packing list/accession concordance",
+      "modern_candidate_chain": [
+        "MSS EUR HODGSON/53/29 original palm-leaf land document",
+        "MSS EUR HODGSON/29/14 Nepal-paper copies of palm-leaf property documents",
+        "MSS EUR HODGSON/14/17 machine-paper Urdu translations of royal orders/palm-leaf documents"
+      ],
+      "modern_volume_set_candidate": [53, 29, 14],
+      "mechanisms": ["CROSS_SUPPORT_VERSION_FAMILY_CO_BUNDLING", "MEDIUM_CONVERSION_PLUS_MODERN_DISPERSION"],
+      "source_control": "Keep as candidate family-level mapping until the 1864 lesser-bundle contents are matched item by item."
+    }
+  ],
+  "collection_level_mechanisms": [
+    "PAPER_DIMENSION_DRIVES_ARCHIVAL_REBINDING",
+    "ARCHIVAL_REBINDING_BREAKS_VERSION_FAMILIES",
+    "MATERIAL_FORMAT_HAS_LONG_ARCHIVAL_AFTERLIFE",
+    "MODERN_SHELFMARK_DISPERSION_IS_PARTLY_SIZE_PRODUCED",
+    "CATALOGUE_REPAIRS_RELATIONS_BROKEN_BY_REBINDING",
+    "ARCHIVAL_COUNT_STATE_IS_VERSIONED"
+  ],
+  "source_control_rules": [
+    "The collection-level 1921 dimension rule is explicit; do not claim that size caused a specific item's separation without binding-level evidence.",
+    "Same 1864 large bundle does not mean same immediate wrapper or sheet adjacency.",
+    "Modern direct cross-references vary in strength; preserve original/translation/copy wording separately from broad similarity links.",
+    "Support unspecified in pre-bound English notebooks remains unspecified.",
+    "The current BL fonds extent of 90 volumes and 15 rolls must not be silently reconciled with the catalogue-history statement of 95 bound volumes and numbering to 108 with 13 scrolls.",
+    "Modern volume count is not equivalent to 1864 transfer-unit count."
+  ],
+  "next_actions": [
+    "Map all seven Wave 35 manifest families to modern volume/item references.",
+    "Recover dimensions and old covers for source/derivative pairs where available.",
+    "Locate 1921 bindery instructions or India Office correspondence on arrangement by size.",
+    "Use surviving original bundle cover pages and box-content pages to reconstruct pre-1921 containers.",
+    "Inspect vol.55/20 f.129 verso, catalogued as content page of box No.3 of original shipment.",
+    "Compare 1937 Kaye-Johnston K474 arrangement with current catalogue."
+  ]
+}
