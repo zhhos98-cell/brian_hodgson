@@ -1,0 +1,72 @@
+{
+  "dataset": "ras_hodgson_material_catalogue_census_v0_1",
+  "date": "2026-08-31",
+  "source": "E. B. Cowell and J. Eggeling, Catalogue of Buddhist Sanskrit Manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection), JRAS 8.1 (1875), pp. 1-52; parsed from uploaded OCR/VL scan",
+  "source_control": "The catalogue states at the outset that the manuscript material is Indian paper unless otherwise stated. Therefore 'default paper' is a declared catalogue baseline and is not expected to be repeated in every individual entry.",
+  "corpus_size": 79,
+  "coverage": {
+    "leaf_count_recorded": 77,
+    "dimensions_recorded": 76,
+    "lines_per_page_recorded": 78,
+    "explicit_palm_leaf_entries": 10,
+    "default_or_special_paper_entries": 69,
+    "blackened_paper_entries": 1,
+    "wrapper_mentioned": 4,
+    "ticket_mentioned": 1,
+    "continuous_roll_entries": 2,
+    "modern_hand_or_writing_marked": 20,
+    "old_or_oldish_marked": 14,
+    "supplied_or_replacement_leaves_marked": 2
+  },
+  "support_exceptions": {
+    "palm_leaf_entry_numbers": [1, 2, 13, 43, 46, 67, 68, 69, 70, 74],
+    "blackened_paper_entry_numbers": [77],
+    "blackened_paper_note": "MS 77 is described as 21 leaves of blackened paper, written in alternating yellow and white paint/lines; MSS 78-79 inherit size/paper/hand from the preceding manuscript by cross-reference."
+  },
+  "high_information_form_exceptions": [
+    {
+      "entry": 31,
+      "feature": "46 leaves in one continuous roll; writing covers 69 pages",
+      "mechanism": "ROLL_FORM_AS_BIBLIOGRAPHICAL_IDENTITY"
+    },
+    {
+      "entry": 55,
+      "feature": "wrapper mentioned as a title/identity surface",
+      "mechanism": "WRAPPER_AS_SEMANTIC_IDENTITY_SURFACE"
+    },
+    {
+      "entry": 59,
+      "feature": "collection title explicitly reported from wrapper",
+      "mechanism": "WRAPPER_AS_SEMANTIC_IDENTITY_SURFACE"
+    },
+    {
+      "entry": 67,
+      "feature": "69 palm leaves; title stated to be given on wrapper only",
+      "mechanism": "WRAPPER_DEPENDENT_TEXT_IDENTITY"
+    },
+    {
+      "entry": 72,
+      "feature": "40 leaves folded into one continuous roll; work called by title on wrapper",
+      "mechanism": "FOLDING_STATE_AS_BIBLIOGRAPHICAL_IDENTITY"
+    },
+    {
+      "entry": 79,
+      "feature": "ticket pasted on back of last leaf carries descriptive/donor note",
+      "mechanism": "PASTED_TICKET_AS_METADATA_LAYER"
+    }
+  ],
+  "photographic_plate_features": [
+    "old dated manuscripts reproduced photographically for scholarly comparison",
+    "text columns separated by blank stripes containing cord holes",
+    "facsimile date numerals added to blank stripe in reproduction",
+    "reproduction therefore selects and augments visible material features rather than functioning as a transparent copy"
+  ],
+  "interpretation": [
+    "Material description is systematic rather than occasional: leaf count, dimensions and line density are recorded for almost the entire 79-entry corpus.",
+    "Support follows a baseline/exception information economy: Indian paper is the declared default; palm leaf and treated/special paper states are explicitly marked.",
+    "Rare wrapper, pasted-ticket and folding notes carry unusually high evidential value because they record identity/provenance/form relations not contained in the text alone.",
+    "The catalogue converts unique manuscript paper objects into portable descriptive tuples for remote scholarly identification and comparison.",
+    "The near-universal recording of form metrics makes this a strong case of material codicology functioning as nineteenth-century scholarly infrastructure."
+  ],
+  "method_warning": "Counts are derived from OCR-parsed headings and descriptors. Exact entry wording and numerical typography should be verified against page images before publication quotation. The overall coverage counts are robust enough for corpus-level orientation because the catalogue structure is highly regular."
+}
