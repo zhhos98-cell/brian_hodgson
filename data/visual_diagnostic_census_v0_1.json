@@ -1,0 +1,97 @@
+{
+  "dataset": "visual_diagnostic_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "Buddhist visual knowledge operations in Hodgson corpus, 1827-1872",
+  "status": "v0.1 after archive research wave 27",
+  "records": [
+    {
+      "id": "BUDDHIST_MATERIALS_TRANSMISSION_1827",
+      "date": "1827-08-11",
+      "actor": "Brian Houghton Hodgson",
+      "recipient_or_interface": "Calcutta / Nathaniel Wallich context",
+      "object_state": "materials for investigation",
+      "operation": "collect locally and transmit materials for distant investigation",
+      "mechanisms": ["MATERIALS_FOR_DISTANT_INVESTIGATION"],
+      "source_file": "书籍 2025年3月28日(OCR).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high_for_printed_reprint"
+    },
+    {
+      "id": "ESOTERIC_ACCESS_1827",
+      "date": "1827-10-17",
+      "actor": "Brian Houghton Hodgson",
+      "local_roles": ["Vajra Acharya friend", "Buddhist Chitrakar", "Bhotiya image provider", "Hodgson textual examination"],
+      "object_state": "restricted doctrines and images becoming partially accessible",
+      "operation": "obtain differentiated access through trust, specialist roles and textual competence",
+      "mechanisms": ["ACCESS_DEPENDENT_EVIDENCE_PRODUCTION"],
+      "source_file": "书籍 2025年3月28日(OCR).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high_for_printed_reprint"
+    },
+    {
+      "id": "FOUR_FEATURE_SCHEMA_1827",
+      "date": "1827; exact letter-date placement requires sequence check",
+      "actor": "Brian Houghton Hodgson",
+      "recipient_or_interface": "Nathaniel Wallich",
+      "object_state": "sculptures/images sent for comparison",
+      "diagnostic_fields": ["mudra/hand position", "supporters", "cognizances", "colour"],
+      "operation": "reduce image differentiation to explicit comparative diagnostic fields",
+      "mechanisms": ["DIAGNOSTIC_FEATURE_SCHEMA"],
+      "source_file": "书籍 2025年3月28日(OCR).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high_for_fields_medium_for_exact_date"
+    },
+    {
+      "id": "DIAGNOSTIC_REIDENTIFICATION_1827",
+      "date": "1827 and later reprinted examples",
+      "actor": "Brian Houghton Hodgson",
+      "object_state": "previously misidentified Buddhist/Jaina/Brahmanical figures",
+      "operation": "use pictures and diagnostic accessories to reject or correct existing identifications",
+      "mechanisms": ["DIAGNOSTIC_REIDENTIFICATION"],
+      "source_file": "书籍 2025年3月28日(OCR).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high"
+    },
+    {
+      "id": "SYMBOL_CORPUS_1860",
+      "date": "1860-09-26",
+      "actor": "Brian Houghton Hodgson",
+      "object_state": "detached symbol sheets compiled from coins, architecture, sculpture, pictures and manuscripts",
+      "operation": "abstract diagnostic signs from source objects into portable comparative corpus",
+      "mechanisms": ["DIAGNOSTIC_ABSTRACTION", "ABANDONED_CORPUS_REACTIVATION"],
+      "failure_mode": "planned learned-Saugata explanations apparently not obtained",
+      "source_file": "Adobe Scan 2025年3月28日 (3) (1).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high_for_printed_text"
+    },
+    {
+      "id": "FRANCE_REHOSTING_1860_63",
+      "date": "1860 donation state; 1863 retrospective report",
+      "actor": "Brian Houghton Hodgson / Institute of France",
+      "object_state": "large Buddhist visual collection",
+      "provenance_classes": ["drawings copied from sculptural/architectural monuments", "original images obtained from believers"],
+      "operation": "move visual corpus into new institutional research setting while preserving provenance distinctions",
+      "mechanisms": ["VISUAL_CORPUS_INSTITUTIONAL_REHOSTING"],
+      "source_file": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "medium_high_pending_donation_date_reconciliation"
+    },
+    {
+      "id": "YULE_DELEGATED_DISCRETION_1870",
+      "date": "1870",
+      "actor": "Brian Houghton Hodgson",
+      "recipient_or_interface": "Henry Yule",
+      "object_state": "letter plus original sketch of mutilated figure from Surakarta",
+      "operation": "transfer object and interpretation together with permission for recipient to decide use",
+      "mechanisms": ["DELEGATED_PUBLICATION_DISCRETION"],
+      "source_file": "Adobe Scan 2025年3月28日 (3) (1).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high"
+    },
+    {
+      "id": "YULE_BUFFERING_1870_72",
+      "date": "1870-1872",
+      "actor": "Henry Yule",
+      "recipient_or_interface": "Royal Asiatic Society",
+      "object_state": "Hodgson letter and original sketch held privately after receipt",
+      "operation": "delay communication while waiting for a less isolated publication context; later submit when further delay judged undesirable",
+      "mechanisms": ["RECIPIENT_BUFFERING", "PUBLICATION_GATEKEEPING_STATE"],
+      "source_file": "Adobe Scan 2025年3月28日 (3) (1).pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "very_high_for_printed_Yule_note"
+    }
+  ],
+  "working_claim": "The Hodgson Buddhist visual corpus was governed by explicit diagnostic schemas, socially differentiated access, repeated reformatting and multiple publication gates; circulation latency therefore included epistemic and editorial buffering as well as transport."
+}
