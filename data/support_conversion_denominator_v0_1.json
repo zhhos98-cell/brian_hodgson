@@ -1,0 +1,330 @@
+{
+  "dataset": "support_conversion_denominator_v0_1",
+  "date": "2026-08-31",
+  "status": "working explicit-edge denominator; search-saturated but not yet inventory-complete",
+  "purpose": "Prevent selection bias by counting explicit documentary relation edges whether target support is known, mixed, or unspecified, and by separating direct/declared derivative relations from source-family and similarity relations.",
+  "relation_strength": {
+    "A1_RECIPROCAL_EXPLICIT": "source and target mutually identify original/translation/summary/copy relation",
+    "A2_UNILATERAL_EXPLICIT": "one catalogue entry explicitly identifies the other as original or derivative, but reciprocal wording is absent/not yet checked",
+    "B_SOURCE_FAMILY": "catalogue explicitly links multiple source documents to a synthesis/summary but not one-to-one descent",
+    "C_RELATED_OR_SIMILAR": "see also/similar/can be compared; excluded from direct denominator"
+  },
+  "direct_denominator_edges": [
+    {
+      "id":"DEN-001",
+      "family":"Kathmandu population",
+      "source":"vol.59/6 ff.9-10",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.6/3",
+      "target_support":"MACHINE_MADE",
+      "operation":"source data -> English survey/copy",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-002",
+      "family":"Kathmandu population",
+      "source":"vol.59/6 ff.9-10",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.3/16 ff.139-148 (current source cross-reference)",
+      "target_support":"MACHINE_MADE",
+      "operation":"source data -> English summary/translation state",
+      "support_relation":"SWITCH",
+      "strength":"A2_UNILATERAL_EXPLICIT",
+      "catalogue_control":"Earlier working note used vol.3/15; current vol.59 page says vol.3/16. Resolve by folio inspection."
+    },
+    {
+      "id":"DEN-003",
+      "family":"Salaries and khangi",
+      "source":"vol.53/16",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.14/14 ff.152-159",
+      "target_support":"MACHINE_MADE",
+      "operation":"official source -> English abstract statement",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-004",
+      "family":"Newar festival cycle",
+      "source":"vol.58/11",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.20/5",
+      "target_support":"MACHINE_MADE",
+      "operation":"source -> English translated almanac/notebook",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-005",
+      "family":"Tarai revenue contracts",
+      "source":"vol.53/1",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.14/6",
+      "target_support":"MACHINE_MADE",
+      "operation":"official contracts -> English copies",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-006",
+      "family":"Palm-leaf land documents",
+      "source":"vol.53/29 original palm-leaf state",
+      "source_support":"PALM_LEAF",
+      "target":"vol.29/14 paper copies",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"original document -> paper copy with seal sketches",
+      "support_relation":"SUPPORT_MEDIUM_CONVERSION",
+      "strength":"A2_UNILATERAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-007",
+      "family":"Palm-leaf land documents",
+      "source":"vol.29/14 paper-copy state",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.14/17 ff.208-218",
+      "target_support":"MACHINE_MADE",
+      "operation":"copied source -> Urdu translation",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-008",
+      "family":"Confiscated property of Kishan Jaisi",
+      "source":"vol.59/24 ff.105-115",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.5/4 ff.177-190",
+      "target_support":"MACHINE_MADE",
+      "operation":"administrative source -> English translation/ethnographic summary",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-009",
+      "family":"Nirkhi customs/prices and wages",
+      "source":"vol.53/26 ff.133-150",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.7/11 ff.81-90",
+      "target_support":"MACHINE_MADE",
+      "operation":"customs source -> English comparative register",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-010",
+      "family":"Kathmandu-Beijing route",
+      "source":"vol.59/23 ff.97-104",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.2/3 ff.30-32",
+      "target_support":"IMPORTED_THICK",
+      "operation":"route source -> fair English summary",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-011",
+      "family":"Kathmandu-Beijing route",
+      "source":"vol.59/23 ff.97-104",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.102/19 ff.112-113",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"route source -> incomplete Urdu/Farsi translation",
+      "support_relation":"CONTINUITY",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-012",
+      "family":"Nepalavamsavali / account of Nepal",
+      "source":"vol.74/13 ff.105-109",
+      "source_support":"NEPALI_HANDMADE_HARITAL",
+      "target":"vol.18/5 ff.39-97 within ff.27-99",
+      "target_support":"MACHINE_MADE",
+      "operation":"chronicle source -> English historical synthesis",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-013",
+      "family":"Gorkha genealogy",
+      "source":"vol.74/12 ff.97-104",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.18/2 ff.2-7",
+      "target_support":"MACHINE_MADE",
+      "operation":"genealogical list -> English translated/updated list",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-014",
+      "family":"Birta land types",
+      "source":"vol.53/19 f.99",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.7/21 ff.138-139",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"source description -> English description",
+      "support_relation":"CONTINUITY",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-015",
+      "family":"Siddhinarasimha Malla account",
+      "source":"vol.51 fols.183-185 (item-number cross-reference unstable)",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.21/3 ff.2-10",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"Nepali chronicle/source -> English translated/rewritten account",
+      "support_relation":"CONTINUITY",
+      "strength":"A2_UNILATERAL_EXPLICIT",
+      "actor_signal":"target is rough hand of a non-native user of English"
+    },
+    {
+      "id":"DEN-016",
+      "family":"Jumla revenue",
+      "source":"vol.59/38 ff.205-240",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.8/1 ff.1-8b",
+      "target_support":"MACHINE_MADE",
+      "operation":"detailed revenue source -> English chart",
+      "support_relation":"SWITCH",
+      "strength":"A1_RECIPROCAL_EXPLICIT",
+      "target_actor":"Campbell",
+      "target_dimensions_cm":[48.5,38]
+    },
+    {
+      "id":"DEN-017",
+      "family":"Jumla revenue",
+      "source":"vol.59/38 ff.205-240",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.102/21 ff.115-116",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"detailed revenue source -> Farsi revenue chart",
+      "support_relation":"CONTINUITY",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-018",
+      "family":"Newar kings chronicle",
+      "source":"vol.55/9 ff.31-71",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.101/16 ff.152-167",
+      "target_support":"NEPALI_HANDMADE",
+      "operation":"Nepali chronicle -> Farsi/Urdu genealogical translation",
+      "support_relation":"CONTINUITY",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-019",
+      "family":"Newar kings chronicle",
+      "source":"vol.55/9 ff.31-71",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.17/3 current ff.173-219; source cross-reference says ff.178-219",
+      "target_support":"UNSPECIFIED_IN_CATALOGUE",
+      "operation":"Nepali chronicle -> English chronicle/summary notebook",
+      "support_relation":"UNSPECIFIED",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-020",
+      "family":"Gorkhavamsavali long translation",
+      "source":"vol.51 Gorkhavamsavali source (current item mapping requires folio reconciliation)",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.17/1 ff.1-167",
+      "target_support":"UNSPECIFIED_IN_CATALOGUE",
+      "operation":"Nepali/Hindi chronicle -> English translation in four pre-bound notebooks",
+      "support_relation":"UNSPECIFIED",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-021",
+      "family":"Bhaktapur/Patan revenue",
+      "source":"vol.59/36 ff.170-181 and related original revenue states",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.13/3 ff.139-178",
+      "target_support":"UNSPECIFIED_IN_CATALOGUE",
+      "operation":"Nepali revenue originals -> English Bhaktapur revenue summary notebook",
+      "support_relation":"UNSPECIFIED",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-022",
+      "family":"Bhaktapur/Patan revenue",
+      "source":"vol.59/36 ff.170-181 and related original revenue states",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.13/4 ff.179-222",
+      "target_support":"UNSPECIFIED_IN_CATALOGUE",
+      "operation":"Nepali revenue originals -> English Patan/Bhaktapur revenue notebook",
+      "support_relation":"UNSPECIFIED",
+      "strength":"A1_RECIPROCAL_EXPLICIT"
+    },
+    {
+      "id":"DEN-023",
+      "family":"Kathmandu/Patan shops and commerce",
+      "source":"vol.60/14 ff.157-158",
+      "source_support":"NEPALI_HANDMADE",
+      "target":"vol.6/5 ff.42-76",
+      "target_support":"MACHINE_MADE",
+      "operation":"local shop list -> English commerce reporting state",
+      "support_relation":"SWITCH",
+      "strength":"A2_UNILATERAL_EXPLICIT",
+      "catalogue_control":"A second vol.14 cross-reference has item/folio drift and is excluded from this edge until resolved."
+    }
+  ],
+  "source_family_relations_excluded_from_direct_denominator": [
+    {
+      "family":"Hill tribes",
+      "sources":"vol.56/18-20, vol.57/1-8, vol.60/21, vol.60/23 and related local manuscripts",
+      "target":"vol.5/1 ff.1-78",
+      "source_support":"NEPALI_HANDMADE",
+      "target_support":"MACHINE_MADE",
+      "strength":"B_SOURCE_FAMILY",
+      "reason":"Explicit synthesis relation, but many-to-one and not one-to-one scribal descent."
+    },
+    {
+      "family":"Royal codes",
+      "sources":"vol.27/10, vol.51/10, vol.59/14, vol.59/22, vol.60/15-18",
+      "target":"vol.11/4 ff.102-146",
+      "source_support":"mostly NEPALI_HANDMADE",
+      "target_support":"MACHINE_MADE",
+      "strength":"B_SOURCE_FAMILY",
+      "reason":"English comparative notebook synthesises several code/version sources."
+    },
+    {
+      "family":"Gorkha genealogical list family",
+      "sources":"vol.26/19, vol.52 fols.165-171, vol.74/12 and related states",
+      "targets":"vol.18/2; vol.99/7 and related list states",
+      "strength":"B_SOURCE_FAMILY",
+      "reason":"Catalogue presents several overlapping genealogical source states; exact one-to-one descent among all states requires collation."
+    }
+  ],
+  "broad_version_ecologies_excluded_from_direct_denominator": [
+    {
+      "family":"Buddhist account/chronicle of Nepal around vol.52/2",
+      "source_support":"NEPALI_HANDMADE",
+      "known_related_support_states":["NEPALI_HANDMADE English", "MACHINE_MADE English", "NEPALI_HANDMADE Farsi"],
+      "reason":"Cambridge mixes `summary`, `similar`, and broad cross-reference relations; valuable for version ecology but edge strengths are heterogeneous."
+    }
+  ],
+  "current_edge_counts": {
+    "direct_edges_total": 23,
+    "known_support_target_edges": 19,
+    "target_support_unspecified_edges": 4,
+    "switch_edges_among_known_targets": 14,
+    "continuity_edges_among_known_targets": 4,
+    "support_medium_conversion_edges_among_known_targets": 1,
+    "warning":"These are working-table counts, not publication statistics. Inventory search is not yet proven complete and several references require folio reconciliation."
+  },
+  "denominator_rules": [
+    "Never drop target-support-unspecified edges from the total explicit-relation denominator.",
+    "Report known-support coverage before reporting switch/continuity proportions.",
+    "Keep Tier B source-family relations separate from Tier A direct/declared edges.",
+    "Exclude Tier C similar/related references from direct transformation counts.",
+    "Use volume+folio+content+relation phrase as primary relation locator; item number is a versioned catalogue field.",
+    "Do not infer machine paper from pre-bound notebook form."
+  ],
+  "next_steps": [
+    "Exhaust Cambridge relation phrases across all volumes and append new A1/A2 edges.",
+    "Physically fill support for vol.17/1, vol.17/3, vol.13/3 and vol.13/4.",
+    "Add actor, dimensions, binding and fair/rough state to all known targets.",
+    "Resolve vol.3, vol.51, vol.52 and vol.17 item/folio cross-reference drift before citation."
+  ]
+}
