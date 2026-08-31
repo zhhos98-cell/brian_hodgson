@@ -1,0 +1,564 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "status": "stress-test dataset",
+  "scope": "Five manually coded Hodgson cases used to test the provenance/event/relation model before archive-scale ingestion.",
+  "rules": {
+    "container_date_not_object_date_by_default": true,
+    "safe_arrival_verifies_only_stated_granularity": true,
+    "identifiers_are_historical_entities": true,
+    "catalogues_are_versioned_operational_objects": true,
+    "relations_can_change_state_over_time": true
+  },
+  "cases": [
+    {
+      "case_id": "HOD-CASE-001",
+      "title": "1837 Societe Asiatique three-case manuscript arrival",
+      "domain": "buddhist_manuscripts",
+      "workflow_id": "HOD-WF-1837-SA",
+      "entities": [
+        {
+          "entity_id": "HOD-CNT-000001",
+          "entity_type": "container_group",
+          "container_type": "case_or_crate",
+          "count": 3,
+          "destination": "Societe Asiatique, Paris"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "HOD-EVT-000001",
+          "workflow_id": "HOD-WF-1837-SA",
+          "event_type": "safe_arrival_acknowledged",
+          "date_from": "1837-07-15",
+          "agent_to": "Eugene Burnouf",
+          "institution_to": "Societe Asiatique",
+          "container_entity_ids": ["HOD-CNT-000001"],
+          "verification_granularity": "container_count",
+          "receipt_container_count_reported": 3,
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000001"]
+        },
+        {
+          "event_id": "HOD-EVT-000002",
+          "workflow_id": "HOD-WF-1837-SA",
+          "event_type": "receive",
+          "date_from": "1837-07-29",
+          "agent_to": "Jules Mohl",
+          "institution_to": "Societe Asiatique",
+          "container_entity_ids": ["HOD-CNT-000001"],
+          "verification_granularity": "container_count",
+          "receipt_container_count_reported": 3,
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000002"]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "HOD-REL-000001",
+          "subject_entity_id": "HOD-EVT-000002",
+          "predicate": "corroborates",
+          "object_entity_id": "HOD-EVT-000001",
+          "confidence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "HOD-SRC-000001",
+          "source_type": "institutional_catalogue_transcription",
+          "repository_or_site": "Royal Asiatic Society",
+          "shelfmark_or_url": "GB 891 BHH-BHH/1-BHH/1/35",
+          "date": "1837-07-15",
+          "transcription_status": "institutional catalogue summary",
+          "citation_ready": true
+        },
+        {
+          "source_id": "HOD-SRC-000002",
+          "source_type": "institutional_catalogue_transcription",
+          "repository_or_site": "Royal Asiatic Society",
+          "shelfmark_or_url": "GB 891 BHH-BHH/1-BHH/1/39",
+          "date": "1837-07-29",
+          "transcription_status": "institutional catalogue summary",
+          "citation_ready": true
+        }
+      ],
+      "open_questions": [
+        "Do item-level manuscript inventories survive for the three cases?",
+        "Can dispatch date, route and case-level contents be reconstructed?"
+      ]
+    },
+    {
+      "case_id": "HOD-CASE-002",
+      "title": "1844-1847 British Museum zoological reconciliation and repair loop",
+      "domain": "zoology",
+      "workflow_id": "HOD-WF-1844-47-BM",
+      "entities": [
+        {
+          "entity_id": "HOD-OBJ-000001",
+          "entity_type": "object_group",
+          "object_class": "zoological_collection",
+          "short_description": "Hodgson specimens, drawings, osteological material, lists and notes received and redistributed by the British Museum"
+        },
+        {
+          "entity_id": "HOD-OBJ-000002",
+          "entity_type": "object",
+          "object_class": "zoological_specimen",
+          "short_description": "Tibetan pheasant temporarily at the stuffer when list prepared"
+        },
+        {
+          "entity_id": "HOD-OBJ-000003",
+          "entity_type": "object",
+          "object_class": "partial_zoological_specimen",
+          "short_description": "Ganges Pelican represented only by a head"
+        },
+        {
+          "entity_id": "HOD-ID-000001",
+          "entity_type": "identifier",
+          "identifier_type": "specimen_or_drawing_number",
+          "status": "collision",
+          "short_description": "Gray feared two very different kinds shared the same number"
+        },
+        {
+          "entity_id": "HOD-CAT-000001",
+          "entity_type": "catalogue",
+          "title": "General Catalogue of the Mammals and Birds of Nepal",
+          "status": "versioned_operational_object"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "HOD-EVT-000010",
+          "workflow_id": "HOD-WF-1844-47-BM",
+          "event_type": "receive",
+          "date_from": "1844-12-23",
+          "institution_to": "British Museum",
+          "object_entity_ids": ["HOD-OBJ-000001"],
+          "resulting_state": "Trustees agree to receive material, select duplicates, attach lists to distributed sets, and prepare catalogue",
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000010"]
+        },
+        {
+          "event_id": "HOD-EVT-000011",
+          "workflow_id": "HOD-WF-1844-47-BM",
+          "event_parent_id": "HOD-EVT-000010",
+          "event_type": "inventory_reconciliation",
+          "date_from": "1845-02-06",
+          "institution_to": "British Museum",
+          "object_entity_ids": ["HOD-OBJ-000001", "HOD-OBJ-000002", "HOD-OBJ-000003"],
+          "verification_granularity": "item_and_distribution_list",
+          "failure_or_exception": [
+            "Tibetan pheasant escaped list because at stuffer",
+            "Ganges Pelican represented only by head",
+            "some specimens too defective for useful distribution",
+            "50 bird drawings located at Zoological Society"
+          ],
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000011"]
+        },
+        {
+          "event_id": "HOD-EVT-000012",
+          "workflow_id": "HOD-WF-1844-47-BM",
+          "event_type": "identifier_collision",
+          "institution_to": "British Museum",
+          "identifier_entity_ids": ["HOD-ID-000001"],
+          "failure_or_exception": "Two differing kinds apparently carried the same number; copied names also diverged from numbers",
+          "exception_status": "open_in_source",
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000012"]
+        },
+        {
+          "event_id": "HOD-EVT-000013",
+          "workflow_id": "HOD-WF-1844-47-BM",
+          "event_type": "catalogue_distributed",
+          "date_from": "1844-12-23",
+          "date_to": "1847-04-29",
+          "object_entity_ids": ["HOD-CAT-000001"],
+          "resulting_state": "Catalogue/list intended to travel with distributed duplicate specimen sets and to Hodgson",
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000010", "HOD-SRC-000013"]
+        },
+        {
+          "event_id": "HOD-EVT-000014",
+          "workflow_id": "HOD-WF-1844-47-BM",
+          "event_type": "replacement_sent",
+          "date_from": "1847-04-29",
+          "object_entity_ids": ["HOD-OBJ-000001"],
+          "resulting_state": "Hodgson promises fresh and superior samples for material still defective or missing",
+          "exception_status": "repair_planned",
+          "claim_status": "direct",
+          "confidence": "high",
+          "source_entity_ids": ["HOD-SRC-000013"]
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "HOD-REL-000010",
+          "subject_entity_id": "HOD-CAT-000001",
+          "predicate": "distributed_with",
+          "object_entity_id": "HOD-OBJ-000001",
+          "notes": "Catalogue/list served as synchronization layer for distributed duplicate sets"
+        },
+        {
+          "relation_id": "HOD-REL-000011",
+          "subject_entity_id": "HOD-EVT-000011",
+          "predicate": "triggers",
+          "object_entity_id": "HOD-EVT-000014",
+          "notes": "Reconciliation and catalogue work define defective/missing states that trigger replacement"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "HOD-SRC-000010",
+          "source_type": "institutional_full_transcription",
+          "repository_or_site": "ZSL Digital Archive",
+          "shelfmark_or_url": "NZSL/HOD/5/4/6",
+          "date": "1844-12-23",
+          "transcription_status": "institutional full transcription",
+          "citation_ready": true
+        },
+        {
+          "source_id": "HOD-SRC-000011",
+          "source_type": "institutional_full_transcription",
+          "repository_or_site": "ZSL Digital Archive",
+          "shelfmark_or_url": "NZSL/HOD/5/2/15",
+          "date": "1845-02-06",
+          "transcription_status": "institutional full transcription",
+          "citation_ready": true
+        },
+        {
+          "source_id": "HOD-SRC-000012",
+          "source_type": "institutional_full_transcription",
+          "repository_or_site": "ZSL Digital Archive",
+          "shelfmark_or_url": "NZSL/HOD/5/2/27",
+          "date": null,
+          "transcription_status": "institutional full transcription",
+          "citation_ready": true
+        },
+        {
+          "source_id": "HOD-SRC-000013",
+          "source_type": "institutional_full_transcription",
+          "repository_or_site": "ZSL Digital Archive",
+          "shelfmark_or_url": "NZSL/HOD/5/2/21",
+          "date": "1847-04-29",
+          "transcription_status": "institutional full transcription",
+          "citation_ready": true
+        }
+      ],
+      "completeness_claim": {
+        "status": "aspirational_and_recursive",
+        "basis": "Hodgson explicitly promises replacement of defective or missing specimens/drawings to make collection complete",
+        "date": "1847-04-29",
+        "scope": "British Museum Nepal mammal/bird specimen and drawing corpus"
+      },
+      "open_questions": [
+        "Exact chronology and overlap of 1843, 1844 and 1845 deliveries",
+        "Which specific 50 ZSL drawings correspond to the recovered 65 drawings?",
+        "Which number collisions can be tied to surviving specimens/drawings?"
+      ]
+    },
+    {
+      "case_id": "HOD-CASE-003",
+      "title": "1858 Institut de France waterproof routing and container chronology",
+      "domain": "buddhist_mixed_media",
+      "workflow_id": "HOD-WF-1858-INSTITUT",
+      "entities": [
+        {
+          "entity_id": "HOD-CNT-000010",
+          "entity_type": "container",
+          "container_type": "roll",
+          "historical_container_name": "roll"
+        },
+        {
+          "entity_id": "HOD-CNT-000011",
+          "entity_type": "container",
+          "container_type": "waterproof_box",
+          "historical_container_name": "purpose-built waterproof box"
+        },
+        {
+          "entity_id": "HOD-CNT-000012",
+          "entity_type": "container",
+          "container_type": "box",
+          "historical_container_name": "other box"
+        },
+        {
+          "entity_id": "HOD-OBJ-000010",
+          "entity_type": "object_group",
+          "object_class": "mixed_media_buddhist_collection",
+          "short_description": "Paintings, drawings, Sanskrit explanatory material and Hodgson notes"
+        },
+        {
+          "entity_id": "HOD-ID-000010",
+          "entity_type": "identifier",
+          "identifier_type": "container_note_date",
+          "identifier_value_as_written": "1866",
+          "status": "misinterpreted_as_first_shipment_date"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "HOD-EVT-000020",
+          "workflow_id": "HOD-WF-1858-INSTITUT",
+          "event_type": "route_change",
+          "date_from": "1858-07-19",
+          "resulting_state": "Embassy route rejected after prior non-arrival/delay; Molini agent route chosen",
+          "claim_status": "direct",
+          "confidence": "high"
+        },
+        {
+          "event_id": "HOD-EVT-000021",
+          "workflow_id": "HOD-WF-1858-INSTITUT",
+          "event_type": "waterproof",
+          "date_from": "1858-07-19",
+          "container_entity_ids": ["HOD-CNT-000010", "HOD-CNT-000011"],
+          "resulting_state": "Roll placed in waterproof box",
+          "claim_status": "direct",
+          "confidence": "high"
+        },
+        {
+          "event_id": "HOD-EVT-000022",
+          "workflow_id": "HOD-WF-1858-INSTITUT",
+          "event_type": "safe_arrival_acknowledged",
+          "date_from": "1858-10-26",
+          "container_entity_ids": ["HOD-CNT-000011", "HOD-CNT-000012"],
+          "verification_granularity": "parcel_count",
+          "receipt_container_count_reported": 2,
+          "institution_to": "Academie des Inscriptions et Belles-Lettres",
+          "claim_status": "direct",
+          "confidence": "high"
+        },
+        {
+          "event_id": "HOD-EVT-000023",
+          "workflow_id": "HOD-WF-1858-INSTITUT",
+          "event_type": "catalogue_misidentification",
+          "date_from": "1897",
+          "date_to": "1902",
+          "identifier_entity_ids": ["HOD-ID-000010"],
+          "chronology_role": "later_container_or_storage_note",
+          "failure_or_exception": "Foucher apparently interpreted note found in case as evidence collection was sent in 1866, although Saint-Hilaire discussed collection in 1863",
+          "exception_status": "later_corrected",
+          "claim_status": "direct_for_reported_error_strong_inference_for_note_role",
+          "confidence": "high"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "HOD-REL-000020",
+          "subject_entity_id": "HOD-CNT-000010",
+          "predicate": "contained_in",
+          "object_entity_id": "HOD-CNT-000011"
+        },
+        {
+          "relation_id": "HOD-REL-000021",
+          "subject_entity_id": "HOD-ID-000010",
+          "predicate": "does_not_establish",
+          "object_entity_id": "HOD-EVT-000022",
+          "notes": "1866 case note cannot represent first arrival because collection described in 1863"
+        }
+      ],
+      "sources": [],
+      "open_questions": [
+        "Match the roll and other box to surviving Institut case/bundle identifiers",
+        "Determine exact physical attachment and wording of the 1866 note",
+        "Determine when explanatory manuscripts became separated from paintings/drawings"
+      ]
+    },
+    {
+      "case_id": "HOD-CASE-004",
+      "title": "1870 big deal box and four ornithological portfolios",
+      "domain": "ornithology",
+      "workflow_id": "HOD-WF-1870-MARSHALL",
+      "entities": [
+        {
+          "entity_id": "HOD-CNT-000020",
+          "entity_type": "container",
+          "container_type": "box",
+          "historical_container_name": "big deal box"
+        },
+        {
+          "entity_id": "HOD-CNT-000021",
+          "entity_type": "container_group",
+          "container_type": "portfolio",
+          "count": 4
+        },
+        {
+          "entity_id": "HOD-OBJ-000020",
+          "entity_type": "object_group",
+          "object_class": "drawing",
+          "count": 1104,
+          "short_description": "Ornithological drawing sheets"
+        },
+        {
+          "entity_id": "HOD-OBJ-000021",
+          "entity_type": "object_group",
+          "object_class": "mixed_research_apparatus",
+          "short_description": "Hodgson bird list, native painter Hindi list, shikari-derived behavioural notebooks, Tarai memoranda, printed catalogues and papers"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "HOD-EVT-000030",
+          "workflow_id": "HOD-WF-1870-MARSHALL",
+          "event_type": "pack",
+          "date_from": "1870-02-11",
+          "container_entity_ids": ["HOD-CNT-000020", "HOD-CNT-000021"],
+          "object_entity_ids": ["HOD-OBJ-000020", "HOD-OBJ-000021"],
+          "resulting_state": "Cross-media evidence apparatus reassembled into one transport unit",
+          "claim_status": "direct",
+          "confidence": "high"
+        },
+        {
+          "event_id": "HOD-EVT-000031",
+          "workflow_id": "HOD-WF-1870-MARSHALL",
+          "event_type": "safe_arrival_requested",
+          "date_from": "1870-02-11",
+          "container_entity_ids": ["HOD-CNT-000020"],
+          "verification_granularity": "outer_box",
+          "claim_status": "direct",
+          "confidence": "high"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "HOD-REL-000030",
+          "subject_entity_id": "HOD-CNT-000021",
+          "predicate": "contained_in",
+          "object_entity_id": "HOD-CNT-000020"
+        },
+        {
+          "relation_id": "HOD-REL-000031",
+          "subject_entity_id": "HOD-OBJ-000020",
+          "predicate": "contained_in",
+          "object_entity_id": "HOD-CNT-000021"
+        },
+        {
+          "relation_id": "HOD-REL-000032",
+          "subject_entity_id": "HOD-OBJ-000021",
+          "predicate": "packed_with",
+          "object_entity_id": "HOD-OBJ-000020",
+          "notes": "Lists, notebooks, testimony-derived texts and catalogues travelled with drawings"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "HOD-SRC-000030",
+          "source_type": "institutional_full_transcription",
+          "repository_or_site": "ZSL Digital Archive",
+          "shelfmark_or_url": "NZSL/HOD/5/3/9",
+          "date": "1870-02-11",
+          "transcription_status": "institutional full transcription",
+          "citation_ready": true
+        }
+      ],
+      "open_questions": [
+        "Map individual drawing sheets to portfolio numbers and species groups",
+        "Determine subsequent custody and whether the same nested order survived transfer"
+      ]
+    },
+    {
+      "case_id": "HOD-CASE-005",
+      "title": "RAS Hodgson MS 67 wrapper title and later re-identification",
+      "domain": "buddhist_manuscripts",
+      "workflow_id": "HOD-WF-RAS-MS67",
+      "entities": [
+        {
+          "entity_id": "HOD-OBJ-000030",
+          "entity_type": "object",
+          "object_class": "manuscript_coding_unit",
+          "support_material": "palm_leaf",
+          "current_repository": "Royal Asiatic Society",
+          "current_shelfmark_accession": "Hodgson MS 67",
+          "condition_current": "incomplete"
+        },
+        {
+          "entity_id": "HOD-ID-000030",
+          "entity_type": "identifier",
+          "identifier_type": "wrapper_title",
+          "identifier_value_as_written": "Anumanakhandam",
+          "status": "superseded_as_codex_identity"
+        },
+        {
+          "entity_id": "HOD-ID-000031",
+          "entity_type": "identifier",
+          "identifier_type": "modern_textual_identification",
+          "normalized_value": "Ratnakirti, Sthirasiddhidusana (beginning)"
+        },
+        {
+          "entity_id": "HOD-ID-000032",
+          "entity_type": "identifier",
+          "identifier_type": "modern_textual_identification",
+          "normalized_value": "Arcata, Hetubindutika (substantial incomplete portion)"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "HOD-EVT-000040",
+          "workflow_id": "HOD-WF-RAS-MS67",
+          "event_type": "catalogue_misidentification",
+          "date_from": "1875",
+          "object_entity_ids": ["HOD-OBJ-000030"],
+          "identifier_entity_ids": ["HOD-ID-000030"],
+          "resulting_state": "Wrapper-derived title stabilised as catalogue identity",
+          "claim_status": "strong_inference",
+          "confidence": "high"
+        },
+        {
+          "event_id": "HOD-EVT-000041",
+          "workflow_id": "HOD-WF-RAS-MS67",
+          "event_type": "reidentify",
+          "date_from": "2016",
+          "object_entity_ids": ["HOD-OBJ-000030"],
+          "identifier_entity_ids": ["HOD-ID-000031", "HOD-ID-000032"],
+          "resulting_state": "Codex recognised as containing two incomplete works; older wrapper-derived identity superseded",
+          "exception_status": "repaired_at_catalogue_level",
+          "claim_status": "direct_from_modern_collection_reexamination",
+          "confidence": "high"
+        }
+      ],
+      "relations": [
+        {
+          "relation_id": "HOD-REL-000040",
+          "subject_entity_id": "HOD-ID-000030",
+          "predicate": "historically_attached_to",
+          "object_entity_id": "HOD-OBJ-000030"
+        },
+        {
+          "relation_id": "HOD-REL-000041",
+          "subject_entity_id": "HOD-ID-000031",
+          "predicate": "corrects",
+          "object_entity_id": "HOD-ID-000030"
+        },
+        {
+          "relation_id": "HOD-REL-000042",
+          "subject_entity_id": "HOD-ID-000032",
+          "predicate": "corrects",
+          "object_entity_id": "HOD-ID-000030"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "HOD-SRC-000040",
+          "source_type": "modern_collection_database",
+          "repository_or_site": "Royal Asiatic Society Collections",
+          "shelfmark_or_url": "RAS Hodgson MS 67",
+          "date": "2016",
+          "transcription_status": "modern collection re-examination summary",
+          "citation_ready": true
+        }
+      ],
+      "open_questions": [
+        "When and by whom was the wrapper title supplied?",
+        "Can wrapper, foliation and manuscript physical sequence be reconstructed from images?"
+      ]
+    }
+  ],
+  "implementation_notes": {
+    "next_step": "Normalize this five-case nested JSON into entity, event, relation, source and workflow tables only after validating identifiers and dates against digital images where available.",
+    "do_not_do_yet": "Do not bulk-ingest the entire Hodgson archive before the five-case model survives contradiction and version queries."
+  }
+}
