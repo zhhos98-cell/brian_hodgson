@@ -67,7 +67,29 @@ https://zsl-archive.maxarchiveservices.co.uk/index.php/informationobject/browse?
 
 This connects property, custody, copying, and scientific auditability. An object's evidential chain could fail because the object was legally inaccessible, physically missing, or incorrectly represented in a distribution table.
 
-## 6. Hodgson's manuscript wrappers could determine — and misdetermine — textual identity
+## 6. Institutional handling created a natural experiment in provenance survival
+
+The later systematic history of Hodgson's collections records that original Hodgson labels survive especially on specimens that **did not pass through the BMNH during the Grays' tenure**.
+
+- Some Cambridge University Museum of Zoology specimens from the Strickland/Jardine collections retain Hodgson labels, in some cases with numbers in black ink.
+- Frederic Moore at the East India Company Museum did not remove Hodgson's original labels; Sharpe later explicitly praised this.
+- Leiden later relabelled its entire collection (1897–1904), leaving uncertainty about whether Hodgson specimens arrived there with original labels or with BMNH replacements.
+
+Source:
+https://www.researchgate.net/publication/228490048_Systematic_notes_on_Asian_birds_52_An_introduction_to_the_bird_collections_of_Brian_Houghton_Hodgson_1801-1894
+
+This gives a strong comparative design: **the same donor's specimens passed through different curatorial regimes, and those regimes produced different levels of twenty-first-century auditability**.
+
+## 7. Delayed unpacking was itself a curatorial variable
+
+A history of Hodgson's zoological collections reports that when the Russian traveller Fedchenko visited the India Museum in 1874 he was unable to inspect the Hodgson bird skins because they were still not unpacked. The East India Company collection was later transferred to the British Museum when the India Museum was dissolved.
+
+Source:
+https://www.discoveringbuddha.org/wp-content/uploads/2024/10/2005-Origins-of-Himalayan-Studies-Brian-H-Hodgson-by-Waterhouse.pdf
+
+This extends the chain beyond packing for outbound transport. **A packed state could persist for decades inside a receiving institution**, delaying comparison, description, and scholarly access while potentially preserving some original associations that active recataloguing might later destroy.
+
+## 8. Hodgson's manuscript wrappers could determine — and misdetermine — textual identity
 
 ### RAS Hodgson MS 66, Prayogamukham
 
@@ -85,7 +107,7 @@ https://royalasiaticcollections.org/ras-hodgson-ms-67-hetubindu%E1%B9%ADika/
 
 This is direct evidence that **packaging/paracontent can stabilise a wrong object identity for more than a century**.
 
-## 7. Hodgson slips were themselves bibliographic instruments
+## 9. Hodgson slips were themselves bibliographic instruments
 
 Cowell and Eggeling's 1875 catalogue records cases in which a text had no internal title and the designation came from a Hodgson slip. One example is their no. 53, `Gītapustakam`, where the catalogue explicitly says the manuscript is a collection of vernacular hymns without title and that the designation was given on Hodgson's slip. The same catalogue records missing leaves and physical condition such as worm damage.
 
@@ -98,7 +120,7 @@ This suggests a hierarchy of identity-bearing inscriptions worth separating:
 
 Each layer can correct or overwrite an earlier one.
 
-## 8. Modern foliation can also become a misleading archival intervention
+## 10. Modern foliation can also become a misleading archival intervention
 
 A detailed study of RAS Hodgson MS 35 (the `Vanaratna Codex`) finds damaged/lost folios and an apparent jump in the original foliation. A modern hand, possibly connected with earlier cataloguing, later supplied Arabic-numeral folio numbers in pencil. The modern numbering does not necessarily agree with the manuscript's original foliation logic and may embody an earlier reconstruction rather than an original fact.
 
@@ -107,7 +129,7 @@ https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/21/75/89/06/
 
 Analytic implication: later `repair` of sequence can itself become a source of epistemic noise.
 
-## 9. Divyāvadāna: copy age, correctness, and legibility do not align simply
+## 11. Divyāvadāna: copy age, correctness, and legibility do not align simply
 
 Cowell and Neil's later editorial history of the *Divyāvadāna* gives an unusually clear comparison of witnesses:
 
@@ -121,7 +143,7 @@ https://www.discoveringbuddha.org/wp-content/uploads/2024/10/2008-Divine-Stories
 
 This provides a major historical point: **a copy can become a better witness than its source once the source deteriorates**. `Original` therefore does not automatically equal `best evidence`.
 
-## 10. A stronger concept than simple portability: auditability
+## 12. A stronger concept than simple portability: auditability
 
 The two evidence domains now expose a common problem.
 
@@ -139,7 +161,7 @@ A textual claim must be traceable across:
 
 `Portability` explains how objects can move. `Auditability` asks whether, after movement and re-handling, scholars can still reconstruct why a particular body, leaf, copy, title, or number should count as evidence for a particular claim.
 
-## 11. Packaging and paper as preservation interfaces
+## 13. Packaging and paper as preservation interfaces
 
 Hooker's 1849 letter from the field is unusually explicit about paper functions. He asks Hodgson to send two kinds of white paper, one for drawings and the other for specimen tickets. He says they can be placed between quires and tied tightly with Nepal or brown paper used for drying plants so that they arrive safely.
 
@@ -161,7 +183,7 @@ This gives paper at least five distinct field/logistical functions:
 
 This is a better model than assigning a fixed epistemic meaning to a paper type.
 
-## 12. BL procurement confirms a separate packing-material economy
+## 14. BL procurement confirms a separate packing-material economy
 
 The BL Hodgson inventory records an 1843 bill for 1,012 bundles of Nepali paper plus three pieces of wax cloth, thread, and twine, cross-referenced to manuscript production/packing accounts.
 
@@ -170,7 +192,7 @@ https://hodgson.socanth.cam.ac.uk/chunkhtml/vol012.html
 
 Direct Hodgson-specific evidence for cotton/straw/tow as void-filling material remains unlocated. Wax cloth, thread/twine, brown/Nepal paper, boxes, packages, crates, carpenters, and porters are confirmed; cushioning/filling should remain a live question rather than a finding.
 
-## 13. Revised working proposition
+## 15. Revised working proposition
 
 A stronger formulation now seems testable:
 
@@ -178,7 +200,7 @@ A stronger formulation now seems testable:
 
 This formulation preserves real differences between manuscripts and zoological specimens while making their comparison historically specific.
 
-## 14. Next targets
+## 16. Next targets
 
 1. Build 3–5 zoological microcases in which a Hodgson drawing number materially changes later type identification.
 2. Build 3–5 manuscript microcases in which wrapper, slip, foliation, copy-state, missing leaves, or later cataloguing changes textual identity.
@@ -186,3 +208,4 @@ This formulation preserves real differences between manuscripts and zoological s
 4. Track which original Hodgson labels survive outside BMNH (Cambridge/Strickland/Jardine/East India Company-derived collections) and whether survival correlates with easier type identification.
 5. Track `original` vs `copy` rhetoric across Burnouf, Cowell/Eggeling, Mitra, Gray, Strickland, and later museum catalogues.
 6. Distinguish physical object integrity from documentary audit integrity: an object can survive while its evidential linkage fails, and vice versa.
+7. Treat institutional handling as an empirical variable: compare label removal, non-opening, relabelling, rebinding and redistributive practices across BMNH, India Museum, Cambridge, Leiden, RAS, Asiatic Society and Paris.
