@@ -1,0 +1,120 @@
+{
+  "dataset": "paper_support_conversion_events_v0_1",
+  "date": "2026-08-31",
+  "scope": "Documented copy/support relations relevant to the Hodgson paper project, beginning with Cambridge Buddhist Sanskrit manuscript evidence and one explicit Hodgson archetype chain.",
+  "analytical_rule": "Textual genealogy and support transition are coded separately. A copy relation does not imply support change; different supports do not imply copy lineage.",
+  "events": [
+    {
+      "event_id": "CAMBRIDGE_ADD_1644_FINAL_LEAF",
+      "work": "Pancaraksha",
+      "repository": "Cambridge University Library",
+      "manuscript": "Add. 1644",
+      "relation_type": "SUPPLY_LEAF_COPY_FROM_DAMAGED_ORIGINAL",
+      "source_support": "palm leaf",
+      "target_support": "paper",
+      "scope_of_conversion": "final leaf only",
+      "source_object_date": "Nepal Samvat 325 / A.D. 1205",
+      "target_material_date": "modern relative to original; exact replacement date unstated",
+      "target_copies_old_date": true,
+      "catalogue_evidence": [
+        "The last leaf is much mutilated, and is supplied by a paper leaf.",
+        "The paper supply appears to be a copy of the real last leaf when it was in a rather more perfect condition.",
+        "Bendall states that the modern hand and paper demonstrate a copied date and interprets it as testimony to the antiquity of the perishing original leaf."
+      ],
+      "possible_secondary_exemplar_comparison": true,
+      "confidence": "very_high_catalogue_explicit",
+      "mechanisms": [
+        "PALM_LEAF_DAMAGE_TO_PAPER_SUPPLY",
+        "SUPPORT_CONVERSION_AS_PRESERVATION_REPAIR",
+        "PAPER_SURROGATE_PRESERVES_PERISHING_LEAF",
+        "COPIED_DATE_AS_MATERIAL_MEMORY",
+        "PARTIAL_SUPPORT_CONVERSION_WITHIN_MANUSCRIPT_OBJECT",
+        "LEAF_LEVEL_SUPPORT_CONVERSION",
+        "MATERIAL_DATE_VS_REPRESENTED_DATE"
+      ]
+    },
+    {
+      "event_id": "CAMBRIDGE_ADD_1475_FINAL_LEAF",
+      "work": "Pancaraksha",
+      "repository": "Cambridge University Library",
+      "manuscript": "Add. 1475",
+      "relation_type": "REPLACEMENT_COPY_OF_DAMAGED_LEAF",
+      "source_support": "paper",
+      "target_support": "paper, different from main manuscript paper",
+      "scope_of_conversion": "final leaf only",
+      "main_manuscript_description": {
+        "original_leaf_count": 114,
+        "lines_per_page": 5,
+        "dimensions_in": [12.0, 2.0],
+        "catalogue_age": "seventeenth century"
+      },
+      "replacement_description": "different paper and slightly more recent hand",
+      "copied_date": "Nepal Samvat 802 / A.D. 1682",
+      "confidence": "very_high_catalogue_interpretation",
+      "mechanisms": [
+        "PAPER_TO_PAPER_REPLACEMENT_LEAF",
+        "SUPPORT_STATE_CHANGE_WITHOUT_SUPPORT_CLASS_CHANGE",
+        "COPIED_DATE_DOES_NOT_DATE_REPLACEMENT_SUPPORT"
+      ]
+    },
+    {
+      "event_id": "CAMBRIDGE_ADD_1478_TO_HODGSON_IO_MS15",
+      "work": "Siksha-samuccaya",
+      "source_repository": "Cambridge University Library",
+      "source_manuscript": "Add. 1478",
+      "source_support": "paper",
+      "source_description": {
+        "leaves": 166,
+        "lines_per_page": "6-8",
+        "dimensions_in": "approximately 13 3/4 x 2 according to parsed catalogue text; verify fraction against image",
+        "hand": "chiefly Bengali",
+        "catalogue_age": "14th-15th century"
+      },
+      "target_repository_historical": "India Office",
+      "target_manuscript_historical_designation": "Hodgson MS No. 15",
+      "target_support": "unresolved",
+      "relation_type": "EXPLICIT_ARCHETYPE_OF_HODGSON_COPY",
+      "catalogue_wording": "This MS. is the archetype of the Hodgson MS. (No. 15) in the India Office.",
+      "confidence_genealogy": "very_high_catalogue_explicit",
+      "confidence_support_transition": "not_classifiable_until_target_resolved",
+      "rejected_identification": {
+        "candidate": "General Collection No. 15 -> Catalogue No. 957",
+        "reason": "Catalogue No. 957 is Rayamukuta's Padacandrika, not Siksha-samuccaya; this is a numbering collision.",
+        "mechanism": "NUMBERING_COLLISION_REJECTED_BY_TITLE_CONTROL"
+      },
+      "mechanisms": [
+        "EXPLICIT_ARCHETYPE_TO_HODGSON_COPY_CHAIN",
+        "TARGET_SUPPORT_UNRESOLVED"
+      ]
+    },
+    {
+      "event_id": "CAMBRIDGE_ADD_865_COMMISSIONED_COPY",
+      "work": "Divyavadana",
+      "repository": "Cambridge University Library",
+      "manuscript": "Add. 865",
+      "support": "paper",
+      "leaves": 258,
+      "lines_per_page": "14-15",
+      "dimensions_in": [14.0, 6.5],
+      "hand": "modern Nepalese",
+      "date": 1873,
+      "relation_type": "COPIED_TO_ORDER_FROM_EARLY_KATHMANDU_MANUSCRIPT",
+      "catalogue_evidence": "Copied to order for the University Library, through Dr D. Wright, from the only early copy known to exist, still preserved at Katmandu.",
+      "source_support": "not stated in the quoted catalogue passage",
+      "confidence_genealogy": "very_high_catalogue_explicit",
+      "mechanisms": [
+        "INSTITUTIONALLY_COMMISSIONED_MANUSCRIPT_SURROGATE",
+        "COPY_TO_ORDER_AS_COLLECTION_TECHNOLOGY",
+        "TEXTUAL_ACCESS_BY_NEW_PAPER_OBJECT"
+      ]
+    }
+  ],
+  "comparative_result": {
+    "copy_relation_can_change_support": "Add. 1644 palm leaf -> paper",
+    "copy_relation_can_retain_support_class": "Add. 1475 paper -> paper",
+    "explicit_full_work_genealogy_with_target_support_pending": "Add. 1478 -> Hodgson India Office MS No. 15",
+    "institutional_commissioned_copy": "Add. 865",
+    "mechanism": "COPY_GENEALOGY_ORTHOGONAL_TO_SUPPORT_TRANSITION"
+  },
+  "next_step": "Resolve India Office Hodgson MS No. 15 by title and collection-specific numbering, then mine India Office Hodgson entries for explicit copy/source relations."
+}
