@@ -1,0 +1,215 @@
+{
+  "dataset": "item12_thar_multilingual_microstemmata_v0_1",
+  "date": "2026-09-01",
+  "status": "relation-network micro-stemma; directionality deliberately limited",
+  "scope": "Family-name/thar/classification manuscripts linked by explicit Cambridge cross-references and shared published references, investigated as the classification branch of the probable 1864 Trunk 2 / second large bundle / item 12 multilingual family.",
+  "central_claim": "One classificatory problem survives across English machine-paper, Farsi machine-paper, Nepali handmade-paper and Urdu handmade-paper documentary states. Language does not select paper support, and the version family cannot be reduced to a local-source/European-derivative binary.",
+  "network_nodes": [
+    {
+      "id": "THAR-E-V6-1",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "language": "English",
+      "support": "MACHINE_MADE",
+      "date": "1832-10",
+      "title": "Origin and classification of the Military tribes of Nepal",
+      "state": "fair-writing copy/tabular classification; vol.6 as a whole is described as copies and mostly published",
+      "content": "tabular family names of Brahman, Khasa, Magar and Gurung; two unrelated folios; trade leaves intrude into item",
+      "historical_container_context": "vol.6 title layer carries original Box 2 / Item 12",
+      "relations": [
+        {"target":"THAR-E-V9-10","type":"ANOTHER_COPY_EXPLICIT","strength":"A"},
+        {"target":"THAR-N-V56-2","type":"RECIPROCAL_TOPIC_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V51-14","type":"RECIPROCAL_TOPIC_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-P-1833","type":"PUBLISHED_STATE_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    },
+    {
+      "id": "THAR-E-V9-10",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "language": "English",
+      "support": "MACHINE_MADE",
+      "title": "Origin and classification of the military tribes of Nepal",
+      "state": "fair writing, fine condition",
+      "content": "family names of Bahun, Thakuri, Chetri, Magar and Gurung; Bahun/Chetri partly classified under Khasa",
+      "relations": [
+        {"target":"THAR-E-V6-1","type":"COPY_FAMILY_CROSS_REFERENCE","strength":"A"},
+        {"target":"THAR-F-V101-8","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE_FROM_FARSI_NODE","strength":"B"},
+        {"target":"THAR-N-V56-2","type":"RECIPROCAL_TOPIC_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-P-1833","type":"PUBLISHED_STATE_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "THAR-E-V7-20",
+      "ref": "MSS EUR HODGSON/7 item 20 ff.123-137",
+      "language": "English",
+      "support": "MACHINE_MADE",
+      "date": "1831",
+      "title": "Castes and clans of various hill ethnic groups, genealogy of ruling Shah dynasty",
+      "state": "Hodgson rough working in pen and pencil",
+      "content": "Brahman family names, Khasa thars, official castes, Newar castes, Magar family names, Gurung clans, Pande lists, Shah genealogy",
+      "relation_status": "BROADER_WORKING_FAMILY_CANDIDATE",
+      "mechanism": "ROUGH_ANALYTICAL_STATE_WITHIN_SAME_CLASSIFICATORY_PROBLEM",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol007.html"
+    },
+    {
+      "id": "THAR-N-V56-2",
+      "ref": "MSS EUR HODGSON/56 item 2 ff.21-24",
+      "language": "Nepali",
+      "support": "NEPALI_HANDMADE",
+      "title": "List of family names of Bahuns and Chhetris",
+      "state": "local-language family-name/gotra list",
+      "content": "thar and gotra of Bahuns and Chhetris",
+      "relations": [
+        {"target":"THAR-E-V6-1","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-E-V9-10","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V51-14","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V58-1","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-U-V103-18","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-P-1833","type":"PUBLISHED_STATE_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol056.html"
+    },
+    {
+      "id": "THAR-N-V51-14",
+      "ref": "MSS EUR HODGSON/51 item 14 ff.200-203",
+      "language": "Sanskrit + Nepali",
+      "support": "NEPALI_HANDMADE",
+      "title": "List of kings of the Shah dynasty of Gorkha and major family names (thara) of Bahun and Chhetri",
+      "state": "genealogy + family-name composite source state",
+      "relations": [
+        {"target":"THAR-E-V6-1","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-E-V9-10","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V56-2","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V58-1","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-U-V103-18","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol051.html"
+    },
+    {
+      "id": "THAR-N-V58-1",
+      "ref": "MSS EUR HODGSON/58 item 1 ff.1-2",
+      "language": "Nepali",
+      "support": "NEPALI_HANDMADE",
+      "title": "Family names of Bahuns and description of the Khatri",
+      "state": "short local-language family-name/social-classification note",
+      "relations": [
+        {"target":"THAR-N-V51-14","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V56-2","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-U-V103-18","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html"
+    },
+    {
+      "id": "THAR-N-V57-2",
+      "ref": "MSS EUR HODGSON/57 item 2 ff.9b-14b",
+      "language": "Nepali",
+      "support": "NEPALI_HANDMADE",
+      "title": "The Khasas",
+      "state": "broader customs-and-manners ethnographic source state",
+      "content": "customs, life-cycle rites, rituals, dress, ornaments and social hierarchy of Khasas",
+      "relations": [
+        {"target":"THAR-F-V101-8","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE_FROM_FARSI_NODE","strength":"C_BROADER_CONTEXT"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol057.html"
+    },
+    {
+      "id": "THAR-F-V101-8",
+      "ref": "MSS EUR HODGSON/101 item 8 ff.117v-118",
+      "language": "Farsi",
+      "support": "MACHINE_MADE",
+      "title": "Principal family names of the Khasas of Nepal",
+      "state": "fair-hand list",
+      "content": "Khasa thars from Thapa through Khatri and Bohara",
+      "relations": [
+        {"target":"THAR-E-V9-10","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V56-2","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V57-2","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"C_BROADER_CONTEXT"},
+        {"target":"CATALOGUE-XREF-V22-9","type":"CATALOGUE_CROSS_REFERENCE_SEMANTIC_MISMATCH","strength":"X"},
+        {"target":"THAR-P-1833","type":"PUBLISHED_STATE_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol101.html"
+    },
+    {
+      "id": "THAR-U-V103-18",
+      "ref": "MSS EUR HODGSON/103 item 18 ff.151-155",
+      "language": "Urdu",
+      "support": "NEPALI_HANDMADE",
+      "title": "Various family names of Hindu Hill Brahmins and Chetris",
+      "state": "very neat family-name list with Nepali title description",
+      "relations": [
+        {"target":"THAR-N-V58-1","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V51-14","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"},
+        {"target":"THAR-N-V56-2","type":"EXPLICIT_CATALOGUE_CROSS_REFERENCE","strength":"B"}
+      ],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol103.html"
+    },
+    {
+      "id": "THAR-F-V96-14",
+      "ref": "MSS EUR HODGSON/96 item 14 ff.102-104b",
+      "language": "Farsi",
+      "support": "NEPALI_HANDMADE",
+      "title": "Genealogy of the Gorkha rulers and the family names of the Khasas",
+      "state": "very neat broader genealogy/family-name state",
+      "relation_status": "THEMATIC_VERSION_CANDIDATE_NO_DIRECT_XREF_RECOVERED",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol096.html"
+    },
+    {
+      "id": "THAR-P-1833",
+      "ref": "Hodgson 1833, pp.217-224",
+      "language": "English print",
+      "support": "PRINTED_PAPER_NOT_OBJECT_CENSUSED",
+      "title": "Origin and classification of the military tribes of Nepal",
+      "state": "published convergence/reference state",
+      "relation_status": "multiple manuscript nodes independently point to this publication; exact printer-copy stemma unresolved"
+    },
+    {
+      "id": "CATALOGUE-XREF-V22-9",
+      "ref": "MSS EUR HODGSON/22 item 9 ff.186-243",
+      "language": "English",
+      "support": "MACHINE_MADE",
+      "title": "Comparative vocabulary and sample sentences of different ethnic dialects of Nepal",
+      "state": "rough tabular vocabulary with corrections",
+      "relation_status": "CATALOGUE_CROSS_REFERENCE_SEMANTIC_MISMATCH",
+      "note": "vol.101/8 links here, but the modern description is comparative vocabulary rather than a family-name/thar list. Preserve link as a catalogue anomaly until physical content check.",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol022.html"
+    }
+  ],
+  "relation_strength_key": {
+    "A": "explicit copy/another-copy relation or especially close title/content duplicate",
+    "B": "explicit catalogue cross-reference within same classificatory/family-name problem",
+    "C_BROADER_CONTEXT": "explicit catalogue cross-reference to broader ethnographic context, not same document form",
+    "X": "catalogue cross-reference whose modern descriptions are semantically mismatched; do not use as stemma edge without inspection"
+  },
+  "material_patterns": [
+    "English fair-copy/classification states occur on machine-made paper (vol.6/1, vol.9/10).",
+    "Farsi family-name state can also occur on machine-made paper (vol.101/8), so machine support is not an English-language marker.",
+    "Nepali family-name/genealogy states occur on Nepali handmade paper (vol.56/2, vol.51/14, vol.58/1).",
+    "Urdu family-name state can remain on Nepali handmade paper (vol.103/18), so handmade support is not a Nepali-language marker.",
+    "Farsi can also occur on Nepali handmade paper (vol.96/14), showing variation even within one language.",
+    "The same classificatory operation therefore crosses support regimes in both directions."
+  ],
+  "mechanisms": [
+    "MULTILINGUAL_THAR_VERSION_ECOLOGY",
+    "SAME_CLASSIFICATORY_OPERATION_CROSSES_SUPPORT_REGIMES",
+    "VERSION_FAMILY_NOT_LANGUAGE_PAPER_BINARY",
+    "PRINT_AS_CONVERGENCE_STATE_WITHOUT_FORCED_STEMMA",
+    "CATALOGUE_RELATION_REQUIRES_SEMANTIC_CONTROL"
+  ],
+  "source_control_rules": [
+    "Do not force directional descent among B-strength nodes without handwriting/textual comparison.",
+    "Shared publication reference does not prove all manuscript nodes directly generated the printed state.",
+    "vol.57/2 is broader Khasa ethnography and should not be treated as a direct family-name copy solely because vol.101/8 cross-references it.",
+    "vol.22/9 is a catalogue-link anomaly: preserve it but exclude it from the direct micro-stemma until object inspection.",
+    "Farsi, Urdu, Nepali/Khas and historical Persian labels remain distinct until scripts/texts are physically controlled.",
+    "Machine-made is formation class, not secure production origin."
+  ],
+  "next_actions": [
+    "Compare vol.6/1 and vol.9/10 line-by-line to determine copy direction and whether one is a printer-facing state for Hodgson 1833.",
+    "Compare vol.56/2, vol.51/14, vol.58/1 and vol.103/18 name sequences to establish textual overlap and branching.",
+    "Compare vol.101/8 name order with English and Nepali states to test translation/copy relation.",
+    "Inspect vol.96/14 to determine whether its Khasa names overlap the core family or belong to a distinct genealogy compilation.",
+    "Inspect vol.22/9 where vol.101/8 points, testing whether family-name material is hidden within the vocabulary item or the catalogue cross-reference is erroneous.",
+    "Search old cover/container marks on vol.101/8 and vol.103/18 to test 1864 item-12 co-custody."
+  ]
+}
