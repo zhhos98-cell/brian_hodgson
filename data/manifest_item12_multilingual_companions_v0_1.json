@@ -1,0 +1,123 @@
+{
+  "dataset": "manifest_item12_multilingual_companions_v0_1",
+  "date": "2026-09-01",
+  "status": "candidate reconstruction of the multilingual companion ecology around 1864 Trunk No.2 / second large bundle / item 12",
+  "manifest_description": "Three Volumes in English, on the Classification of the People (thar); on the Judicial System; on the Customs (Jagat-bhansar); and on the Army, with some papers in Persian and in Khas on the same subject.",
+  "manifest_source_url": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/24484/GIPE-000910-Contents.pdf?isAllowed=y&sequence=2",
+  "english_core_candidate": {
+    "modern_ref": "MSS EUR HODGSON/6",
+    "historical_address": "original Box 2 / Item 12",
+    "old_title": "Tribes of people, judicial system, trade, army, topography",
+    "support": "overwhelmingly machine-made",
+    "relation_status": "A_NEAR_CERTAIN_CANDIDATE",
+    "basis": "exact item number 12, candidate box/trunk number 2, and high content overlap"
+  },
+  "persian_companion_candidates": [
+    {
+      "modern_ref": "MSS EUR HODGSON/101 item 4 ff.12-25v",
+      "language": "Farsi",
+      "support": "machine-made",
+      "topic": "Gorkhali courts of Nepal",
+      "manifest_category": "JUDICIAL_SYSTEM",
+      "cross_references": ["vol.53/2", "vol.12/1", "vol.54/4"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol101.html",
+      "relation_status": "STRONG_TOPIC_VERSION_CANDIDATE"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/101 item 8 ff.117v-118",
+      "language": "Farsi",
+      "support": "machine-made",
+      "topic": "Principal family names (thar) of the Khasas of Nepal",
+      "manifest_category": "CLASSIFICATION_OF_PEOPLE_THAR",
+      "cross_references": ["vol.9/10", "vol.22/9", "vol.56/2", "vol.57/2"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol101.html",
+      "relation_status": "STRONG_TOPIC_VERSION_CANDIDATE",
+      "note": "The same thar family is directly linked through Cambridge cross-references to English classification states including vol.9/10, which itself cross-references vol.6/1."
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/101 item 9 ff.119-121v",
+      "language": "Farsi",
+      "support": "machine-made",
+      "topic": "Custom duties on various traded commodities",
+      "manifest_category": "CUSTOMS_JAGAT_BHANSAR",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol101.html",
+      "relation_status": "STRONG_TOPIC_VERSION_CANDIDATE"
+    }
+  ],
+  "persian_urdu_army_candidates": [
+    {
+      "modern_ref": "MSS EUR HODGSON/103 item 8 ff.46-50",
+      "language": "Urdu",
+      "support": "machine-made",
+      "topic": "Salaries of army and civil officials",
+      "manifest_category": "ARMY",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol103.html",
+      "relation_status": "LANGUAGE_LABEL_MISMATCH_CANDIDATE"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/103 item 12 ff.75-78",
+      "language": "Urdu",
+      "support": "Nepali hand-made",
+      "topic": "Salaries paid to soldiers and officials",
+      "manifest_category": "ARMY",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol103.html",
+      "relation_status": "LANGUAGE_LABEL_MISMATCH_CANDIDATE"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/103 item 14 ff.97-110",
+      "language": "Urdu",
+      "support": "Nepali hand-made",
+      "topic": "Salaries and special grants to army personnel",
+      "manifest_category": "ARMY",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol103.html",
+      "relation_status": "LANGUAGE_LABEL_MISMATCH_CANDIDATE"
+    }
+  ],
+  "khas_nepali_companion_candidates": [
+    {
+      "modern_ref": "MSS EUR HODGSON/56 item 2 ff.21-24",
+      "language": "Nepali/Khas",
+      "support": "Nepali hand-made",
+      "topic": "family names (thar) of Bahuns and Chhetris",
+      "manifest_category": "CLASSIFICATION_OF_PEOPLE_THAR",
+      "cross_references": ["vol.6/1", "vol.9/10", "vol.51/14", "vol.58/1", "vol.103/18"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol056.html",
+      "relation_status": "EXPLICIT_CROSS_REFERENCE_FAMILY"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/56 item 14 ff.43-52",
+      "language": "Nepali/Khas",
+      "support": "Nepali hand-made",
+      "topic": "major family names of different ethnic communities",
+      "manifest_category": "CLASSIFICATION_OF_PEOPLE_THAR",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol056.html",
+      "relation_status": "TOPIC_FAMILY_CANDIDATE"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/60 item 7 ff.39-132",
+      "language": "Nepali + Hindi",
+      "support": "Nepali hand-made + machine-made",
+      "topic": "law and justice, courts, crimes and punishment",
+      "manifest_category": "JUDICIAL_SYSTEM",
+      "cross_references": ["vol.6/2", "vol.6/7", "vol.11/1", "vol.12/1", "vol.54/1", "vol.54/4", "vol.59/27"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol060.html",
+      "relation_status": "EXPLICIT_CROSS_REFERENCE_FAMILY"
+    }
+  ],
+  "key_pattern": "The modern catalogue preserves the same four semantic categories named in 1864 item 12 across English, Farsi, Urdu and Nepali/Khas documentary states. Farsi vol.101 items 4, 8 and 9 are especially striking because they cover judicial system, thar classification and customs respectively, all on machine-made paper.",
+  "interpretation": "The multilingual companion ecology strengthens the identification of 1864 item 12 as a version family rather than a simple subject bundle. It also suggests that modern 1921 volumes 56/60/101/103 may contain companion states dispersed from the same or closely related transfer family. Direct historical container labels are still required for identity-level mapping.",
+  "source_control_rules": [
+    "Do not translate the manifest's label 'Persian' automatically into modern catalogue 'Urdu'. Preserve the mismatch until scripts/texts are physically compared.",
+    "Topic overlap and Cambridge cross-reference establish version-family proximity, not 1864 co-custody identity by themselves.",
+    "Modern vol.101 adjacency is produced by later archival arrangement and cannot be treated as original item-12 adjacency.",
+    "Khas in the 1864 manifest is a historical language label; modern catalogue Nepali/Khas attribution must be controlled object by object.",
+    "The strongest direct historical identifier remains vol.6 Box 2 / Item 12."
+  ],
+  "next_actions": [
+    "Inspect RAS BHH/11/14 and BHH/19/5 item 12 for wording, sub-list references and annotations.",
+    "Inspect vol.101 items 4, 8 and 9 for old cover/bundle/container marks and compare handwriting/title layers.",
+    "Trace the army companion named as Persian in 1864: search Farsi/Urdu army papers for old titles or cross-references to the English item-12 family.",
+    "Compare vol.56/2 and vol.60/7 title/cover metadata with the old item-12 Khas-paper statement.",
+    "Test whether dimensions of candidate companion papers explain their 1921 dispersion into vols.56, 60, 101 and 103."
+  ]
+}
