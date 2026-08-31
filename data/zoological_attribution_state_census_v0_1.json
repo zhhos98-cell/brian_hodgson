@@ -1,0 +1,132 @@
+{
+  "dataset": "zoological_attribution_state_census_v0_1",
+  "version": "0.1",
+  "date": "2026-08-31",
+  "scope": "changes in visible labour provenance as Hodgson's bird-behaviour material moves from local production and transfer records into metropolitan processing and print",
+  "status": "source-controlled state comparison; direct passage-level collation required to establish identity of individual notes across states",
+  "records": [
+    {
+      "state_id": "S1_ZSL_HOD_1_3_ARCHIVE_TITLE",
+      "date_range": "1846-1857",
+      "source": "NZSL/HOD/1/3",
+      "document_state": "manners notebook series / archival title",
+      "attribution_surface": "Hodgson title as catalogued by ZSL",
+      "visible_actors": [
+        {"actor": "native sportsmen or Shikarees", "operation": "produce/report manners and habits"},
+        {"actor": "writer", "operation": "translate"},
+        {"actor": "Hodgson", "operation": "collection/organizational frame; exact inscription role not established"}
+      ],
+      "relation_key_visible": "numbers attached to drawings",
+      "provenance_granularity": "high",
+      "mechanisms": [
+        "ROLE_SPECIFIC_LOCAL_KNOWLEDGE_PIPELINE",
+        "OBSERVATION_TRANSLATION_SERIALIZATION_CHAIN"
+      ],
+      "confidence": "very_high for explicit role wording"
+    },
+    {
+      "state_id": "S2_1870_HODGSON_SENDER_MANIFEST",
+      "date": "1870-02-11",
+      "source": "NZSL/HOD/5/3/9",
+      "document_state": "sender-side transfer manifest",
+      "visible_actors": [
+        {"actor": "Shikaris", "operation": "viva voce behavioural statements"},
+        {"actor": "writer", "operation": "make/record Nepal manners volume from Shikari statements"},
+        {"actor": "native painter", "operation": "Hindi list of whole collection including Sikkim"},
+        {"actor": "Hodgson", "operation": "own manuscript list; Sikkim Tarai memoranda; printed catalogue/author-copy layer"},
+        {"actor": "artists/drawing system", "operation": "1,104 drawing sheets; exact individual artists not named in this manifest"}
+      ],
+      "material_components": [
+        "four drawing portfolios",
+        "Hodgson manuscript list",
+        "native painter Hindi list",
+        "one red-bound Nepal manners volume",
+        "eight unbound Darjeeling manners volumes",
+        "Hodgson 1846 Tarai memoranda",
+        "printed catalogues/reprints/author copies"
+      ],
+      "provenance_granularity": "very_high",
+      "mechanisms": [
+        "MANIFEST_PRESERVES_DISTRIBUTED_LABOUR_PROVENANCE",
+        "MULTI_LAYER_ORNITHOLOGICAL_EVIDENCE_PACKAGE"
+      ],
+      "confidence": "very_high"
+    },
+    {
+      "state_id": "S3_1870_MARSHALL_RECEIPT",
+      "date": "1870-02",
+      "source": "receipt memorandum attached to NZSL/HOD/5/3/9",
+      "document_state": "receiver-side acknowledgment",
+      "visible_actors": [
+        {"actor": "Hodgson", "operation": "owner/source of drawings and notes"},
+        {"actor": "native painter", "operation": "Hindi collection list"},
+        {"actor": "writer", "operation": "make Nepal manners volume from Shikari statements"},
+        {"actor": "Shikaris", "operation": "viva voce behavioural statements"}
+      ],
+      "omission_relative_to_sender_manifest": "eight unbound Darjeeling manners volumes are not separately enumerated",
+      "provenance_granularity": "high but materially incomplete relative to sender state",
+      "mechanisms": [
+        "SENDER_RECEIPT_MANIFEST_MISMATCH",
+        "RECEIVER_DESCRIPTION_REDUCES_COMPONENT_VISIBILITY"
+      ],
+      "confidence": "very_high for documentary mismatch; no inference of physical loss"
+    },
+    {
+      "state_id": "S4_1870_MARSHALL_PROCESSING_LANGUAGE",
+      "date_range": "1870-02-07 to 1870-05-20",
+      "sources": [
+        "NZSL/HOD/5/3/7",
+        "NZSL/HOD/5/3/11",
+        "NZSL/HOD/5/3/12"
+      ],
+      "document_state": "metropolitan sorting, abstraction and publication planning",
+      "operations": [
+        "abstract Capitonidae-relevant memoranda",
+        "arrange and systematize the Notes",
+        "use figures for species identification",
+        "consider publication by family in The Ibis",
+        "consider recombination of notes and selected figures"
+      ],
+      "dominant_attribution_language": ["your notes", "your manuscripts", "Hodgson collection/material"],
+      "named_local_labour_visibility": "low in the processing-language excerpts despite high visibility in sender manifest",
+      "provenance_granularity": "medium",
+      "mechanisms": [
+        "PORTFOLIO_SCATTER_TO_SPECIES_REASSEMBLY",
+        "TAXON_SELECTIVE_MEMORANDUM_EXTRACTION",
+        "ARRANGEMENT_BEFORE_PUBLICATION",
+        "PAPER_STATE_CHANGE_RECONFIGURES_PROVENANCE_VISIBILITY"
+      ],
+      "confidence": "high"
+    },
+    {
+      "state_id": "S5_1870_1871_CAPITONIDAE_PRINT",
+      "date_range": "1870-1871",
+      "source": "C.H.T. Marshall and G.F.L. Marshall, A Monograph of the Capitonidae or Scansorial Barbets",
+      "document_state": "published monograph",
+      "observed_formula": "notes taken from Mr. B. H. Hodgson's manuscript observations on the ornithology of Nepal",
+      "observed_context": "published treatment of Megalaima asiatica; the manuscript material is praised as exceptionally careful/exhaustive",
+      "visible_named_source_actor": "B. H. Hodgson",
+      "visible_shikaree_writer_provenance_in_observed_formula": false,
+      "provenance_granularity": "low in observed bibliographic attribution formula",
+      "candidate_mechanism": "PUBLICATION_CREDIT_COMPRESSION_OF_DISTRIBUTED_PROVENANCE",
+      "critical_caution": "the 1870 transfer contains both shikaree/writer manners material and Hodgson's own field memoranda; direct text-level collation is required before the published passage can be assigned to either source class",
+      "confidence": "very_high for printed attribution formula; medium-low for identity with a specific HOD/1/3 entry"
+    }
+  ],
+  "state_sequence": [
+    "role-differentiated local production",
+    "role-differentiated sender manifest",
+    "partially reduced receiver inventory",
+    "metropolitan taxon-based sorting/abstraction",
+    "bibliographic attribution under Hodgson in observed print formula"
+  ],
+  "working_hypothesis": "The visibility of distributed labour provenance decreases across some documentary transformations from local production/transfer records to metropolitan working language and print. This may constitute publication credit compression, but the mechanism must be demonstrated by matching specific printed passages to specific shikaree/writer manuscript entries rather than inferred from labels alone.",
+  "falsification_tests": [
+    "build complete list of Capitonidae passages explicitly sourced to Hodgson manuscripts",
+    "collate each printed passage against surviving HOD/1/3 entries",
+    "collate against Hodgson's own 1846 Sikkim Tarai memoranda",
+    "record whether any published passage preserves local names, speaker markers or writer traces",
+    "test whether other Marshall/Hume publications use more granular source attributions",
+    "separate bibliographic attribution, semantic authorship and material/documentary labour in all coding"
+  ]
+}
