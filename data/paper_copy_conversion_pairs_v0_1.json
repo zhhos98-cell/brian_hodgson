@@ -1,0 +1,161 @@
+{
+  "dataset": "paper_copy_conversion_pairs_v0_1",
+  "date": "2026-08-31",
+  "purpose": "Controlled sample testing whether support change correlates with translation/copy-state change. The sample is deliberately designed to include both positive and negative cases.",
+  "core_result": "Support change can coincide with documentary conversion, but there is no invariant mapping such as translation = machine-made paper. Paper support is one state variable among language, hand, format, copy relation and intended use.",
+  "pairs": [
+    {
+      "id": "PAIR-PALMLEAF-LAND-ENGLISH-1832",
+      "source_state": {
+        "shelfmark": "MSS EUR HODGSON/29 ff.131-154",
+        "content": "copies of 24 land/property documents originally on palm leaf",
+        "support": "Nepali hand-made paper",
+        "language": ["Sanskrit", "Newari"],
+        "features": ["content list", "rough sketches of seals"],
+        "relation_to_prior_support": "palm-leaf originals -> Nepali-paper surrogates"
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/7 ff.60-62",
+        "content": "English translations of four selected palm-leaf land transaction documents",
+        "support": "machine-made paper",
+        "language": ["English"],
+        "hands": "two hands",
+        "condition": "fine"
+      },
+      "relation": "selected documentary content crosses palm leaf -> Nepali paper surrogate -> machine-paper English translation",
+      "support_change": true,
+      "language_change": true,
+      "format_change": true,
+      "mechanisms": ["SUPPORT_CHANGE_AS_COPY_STATE_CONVERSION", "PALM_LEAF_TO_PAPER_SURROGATE", "TRANSLATION_STATE_MATERIAL_CHANGE"],
+      "confidence": "very_high_catalogue_cross_reference"
+    },
+    {
+      "id": "PAIR-PALMLEAF-LAND-URDU-1830S",
+      "source_state": {
+        "shelfmark": "MSS EUR HODGSON/29 ff.131-154 plus related originals",
+        "content": "palm-leaf and royal-order documentary corpus",
+        "support": "Nepali hand-made paper for copied palm-leaf corpus; related originals elsewhere"
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/14 ff.208-218",
+        "content": "Urdu translations of 8 royal orders and 19 palm-leaf documents",
+        "support": "machine-made paper",
+        "language": ["Urdu"],
+        "hands": "excellent hands",
+        "features": ["pencil corrections and addenda"]
+      },
+      "relation": "older/local documentary witnesses -> machine-paper Urdu translation dossier",
+      "support_change": true,
+      "language_change": true,
+      "format_change": true,
+      "mechanisms": ["SUPPORT_CHANGE_AS_COPY_STATE_CONVERSION", "TRANSLATION_STATE_MATERIAL_CHANGE", "STRATIFIED_INSCRIPTION_TIME_ON_PAPER"],
+      "confidence": "very_high_catalogue_cross_reference"
+    },
+    {
+      "id": "PAIR-NEWAR-VAMSAVALI-FARSI",
+      "source_state": {
+        "shelfmark": "MSS EUR HODGSON/55 ff.31-71",
+        "content": "Newar/Nepali genealogical chronicle of Kathmandu Valley rulers",
+        "support": "Nepali hand-made paper",
+        "language": ["Nepali"],
+        "features": ["folios not in proper order"]
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/101 ff.152-167",
+        "content": "Farsi/Urdu genealogical translation including a section cross-referenced to the vol.55 original",
+        "support": "Nepali hand-made paper",
+        "language": ["Farsi", "Urdu"],
+        "hands": "neat and poor hands",
+        "features": ["f.167 blank"]
+      },
+      "relation": "translation across languages without change from Nepali hand-made support",
+      "support_change": false,
+      "language_change": true,
+      "format_change": "unknown/partial",
+      "mechanisms": ["TRANSLATION_WITHOUT_SUPPORT_CHANGE", "HAND_LANGUAGE_SUPPORT_NONCOINCIDENCE"],
+      "confidence": "high_catalogue_cross_reference"
+    },
+    {
+      "id": "PAIR-GORKHA-VAMSAVALI-ENGLISH",
+      "source_state": {
+        "shelfmark": "MSS EUR HODGSON/51 ff.5-107",
+        "content": "Gorkha Vamsavali collected from the Royal Palace",
+        "support": "Nepali hand-made paper",
+        "language": ["Nepali", "Hindi"],
+        "hand": "Khardar Jitmohan/Jitman, very neat"
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/17 ff.1-167",
+        "content": "English translation in four separate pre-bound notebooks",
+        "support": "not specified in current online catalogue extract",
+        "language": ["English"],
+        "hands": ["Hodgson", "Campbell"],
+        "format": "four separate pre-bound notebooks"
+      },
+      "relation": "local manuscript chronicle -> English notebook translation",
+      "support_change": "unknown",
+      "language_change": true,
+      "format_change": true,
+      "mechanisms": ["FORMAT_CHANGE_AS_TRANSLATION_STATE", "PAPER_SUPPORT_VERIFICATION_REQUIRED"],
+      "confidence": "very_high_relation_low_support_specificity"
+    },
+    {
+      "id": "PAIR-ROYAL-CODES-ENGLISH-SUMMARY",
+      "source_state": {
+        "shelfmarks": ["MSS EUR HODGSON/59 ff.62b-65", "MSS EUR HODGSON/59 ff.93-96", "MSS EUR HODGSON/60 ff.165-172", "MSS EUR HODGSON/51 ff.176-180", "MSS EUR HODGSON/27 ff.74-88"],
+        "content": "multiple Nepali royal codes/regulations/copies",
+        "support": "predominantly Nepali hand-made paper in the securely described examples",
+        "language": ["Nepali", "Sanskrit/Newari in related states"]
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/11 ff.102-146",
+        "content": "English summaries/translations of multiple royal codes",
+        "support": "not yet securely recovered from catalogue search",
+        "language": ["English"]
+      },
+      "relation": "several source manuscripts normalized into one comparative English summary/translation surface",
+      "support_change": "unknown",
+      "language_change": true,
+      "format_change": true,
+      "mechanisms": ["MULTIPLE_SOURCE_TO_COMPARATIVE_TRANSLATION_SURFACE", "PAPER_SUPPORT_VERIFICATION_REQUIRED"],
+      "confidence": "high_relation_low_support_specificity"
+    },
+    {
+      "id": "PAIR-ROUTE-TRANSLATED-ON-HANDMADE",
+      "source_state": {
+        "shelfmark": "cross-referenced Nepali route originals; exact original states vary",
+        "content": "routes between Nepal, Tibet and eastern regions",
+        "support": "Nepali hand-made paper in multiple source witnesses",
+        "language": ["Nepali"]
+      },
+      "derived_state": {
+        "shelfmark": "MSS EUR HODGSON/7 ff.171-196",
+        "content": "English route descriptions explicitly translated from Nepali original",
+        "support": "Nepali hand-made paper",
+        "language": ["English"],
+        "hands": "different fair/sloppy hands",
+        "features": ["corrections/addenda", "some fading ink"]
+      },
+      "relation": "translation into English while retaining Nepali hand-made paper",
+      "support_change": false,
+      "language_change": true,
+      "format_change": "partial/unknown",
+      "mechanisms": ["TRANSLATION_WITHOUT_SUPPORT_CHANGE", "HAND_LANGUAGE_SUPPORT_NONCOINCIDENCE"],
+      "confidence": "high_catalogue_description"
+    }
+  ],
+  "provisional_pattern": {
+    "supported": [
+      "Some documentary conversions coincide with support conversion, especially palm-leaf/local documentary witnesses translated onto machine-made paper.",
+      "Format may change even where support type is not known or remains local, as in pre-bound notebook translations.",
+      "Translation can remain on Nepali hand-made paper, so support origin is not a simple marker of linguistic or epistemic stage."
+    ],
+    "rejected_or_not_supported": [
+      "machine-made paper = translation",
+      "Nepali hand-made paper = original",
+      "English/Farsi/Urdu = imported support",
+      "support type alone identifies epistemic authority"
+    ],
+    "next_test": "Expand pair sample and model support, language, hand, format, date, destination and copy relation as independent variables; then test recurring combinations rather than binary correlations."
+  }
+}
