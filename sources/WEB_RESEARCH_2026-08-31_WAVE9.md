@@ -72,7 +72,34 @@ This gives the July 1858 route redesign additional significance: Hodgson had alr
 
 Do not assume without further matching that every January paper/drawing and every July box was exactly the same shipment stage; the chronology and collection context are strongly connected but should be reconstructed item by item.
 
-## 5. Later catalogues themselves introduced shipment-date errors
+## 5. Bundles contained another relational layer: image + Sanskrit note + European naming
+
+Foucher's later catalogue distinguished the painting collection from Hodgson's **`liasses de dessins`** (bundles/batches of drawings). These were mostly reproductions/copies in pencil or India ink made by indigenous draughtsmen from reliefs or paintings in Nepalese temples. Foucher notes that each drawing also carried:
+
+- an accompanying Sanskrit note due to Hodgson's pandits;
+- its name written in European form.
+
+A modern study quotes Foucher's description and discusses the collection history.
+
+Source:
+https://www.discoveringbuddha.org/wp-content/uploads/2024/10/2005-Origins-of-Himalayan-Studies-Brian-H-Hodgson-by-Waterhouse.pdf
+
+Thus the `bundle` is not simply a stack of pictures. Individual sheets were already composite documentary witnesses:
+
+**visual copy → Sanskrit explanatory annotation → European-form identifier/name**.
+
+## 6. Visual verification standards changed after transport
+
+Foucher, writing roughly half a century after the drawings were made, explicitly argued that photographs were now required and distrusted Hodgson's indigenous draughtsmen for sometimes allowing too much `fantaisie` into their representations.
+
+Source:
+https://www.discoveringbuddha.org/wp-content/uploads/2024/10/2005-Origins-of-Himalayan-Studies-Brian-H-Hodgson-by-Waterhouse.pdf
+
+This should not be accepted at face value as an objective verdict on the drawings. It is evidence for a **change in visual epistemic standards**: drawings that had functioned as portable witnesses in Hodgson's network were retrospectively downgraded as photography became the preferred evidential medium.
+
+The project can therefore ask not only whether objects survived transport, but whether the **media format in which they survived continued to count as trustworthy evidence**.
+
+## 7. Later catalogues themselves introduced shipment-date errors
 
 Alfred Foucher's 1897 catalogue of the Institut Hodgson paintings apparently inferred from a note found in a case that the collection had been sent in **1866**. A contemporary JRAS note objected that Barthélemy Saint-Hilaire had already discussed the whole collection in 1863, so the paintings/drawings could not have arrived in 1866.
 
@@ -81,7 +108,7 @@ https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/DE9E
 
 This is structurally comparable to the Hodgson Kanjur/Tanjur 1835/1838 chronology problem: **a later note/catalogue field can overwrite or flatten the actual acquisition/transport chronology**.
 
-## 6. The packaging question also appears explicitly in Hodgson's Nepal commerce work
+## 8. The packaging question also appears explicitly in Hodgson's Nepal commerce work
 
 W. W. Hunter's 1896 biography quotes Hodgson's discussion of Himalayan load engineering. Hodgson argued that goods should be made up in parcels of **two Calcutta bazaar maunds each**. A single mountaineer could carry such a load, whereas packages above that threshold had to be broken apart on the road because two men could not effectively combine their strength, causing `great hazard and inconvenience`. He further recommended carrying apparatus for fixing two such parcels across a bullock's saddle.
 
@@ -95,7 +122,7 @@ https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html
 
 The quoted packing passage has not yet been directly located in Hodgson's own digitised 1874 text in this wave. Until then, cite it explicitly as **Hunter quoting Hodgson**, not as a directly inspected Hodgson passage.
 
-## 7. Transport units routinely crossed modern disciplinary boundaries
+## 9. Transport units routinely crossed modern disciplinary boundaries
 
 RAS records already show that Hodgson packed and repacked heterogeneous materials together:
 
@@ -105,7 +132,7 @@ RAS records already show that Hodgson packed and repacked heterogeneous material
 
 Analytic implication: **transport unit ≠ disciplinary unit**. Boxes, trunks and bastas preserved assemblages that later libraries and scholarly disciplines separated.
 
-## 8. Packaging surfaces could themselves function as catalogue surfaces
+## 10. Packaging surfaces could themselves function as catalogue surfaces
 
 RAS `Photos of Himal-races` (1854–1879) consists of a list enclosed inside a **large sheet of paper folded as a packet**, while a similar list is written directly on the packet itself. A newspaper header was also reused as an inscribed series marker.
 
@@ -121,7 +148,7 @@ https://www.royalasiaticarchives.org/index.php/informationobject/browse?collecti
 
 This supports treating lists as mutable custody instruments rather than static bibliographic descriptions.
 
-## 9. A 1870 zoological box deliberately reassembled a distributed research apparatus
+## 11. A 1870 zoological box deliberately reassembled a distributed research apparatus
 
 On 11 February 1870 Hodgson told G. F. L. Marshall that he would send a **big deal box** containing the material to be used for Hume's proposed ornithology of India. The contents included:
 
@@ -136,19 +163,25 @@ On 11 February 1870 Hodgson told G. F. L. Marshall that he would send a **big de
 
 Hodgson explicitly asked to hear of the **safe arrival of the box**.
 
+A surviving memorandum quantifies the contents as **1,104 sheets of drawings** plus the lists, behavioural notebooks, memoranda and printed materials.
+
 Source:
-https://zsl-archive.maxarchiveservices.co.uk/index.php/informationobject/browse?collection=12410&media=print&places=53595&sf_culture=en&sort=identifier&sortDir=desc&subjects=56987&topLod=0&view=table
+https://zsl-archive.maxarchiveservices.co.uk/index.php/informationobject/browse?collection=12410&media=print&places=53692&showAdvanced=1&sort=identifier&sortDir=desc&topLod=0
 
 Marshall's related correspondence says the four portfolios were so large and internally scattered that proper inspection required substantial room to lay them out and reassemble by species/group the materials dispersed among the four receptacles.
 
 Source:
 https://zsl-archive.maxarchiveservices.co.uk/index.php/informationobject/browse?levels=237&names=4543&onlyMedia=1&showAdvanced=1&sort=identifier&sortDir=asc&topLod=0&view=table
 
+This gives a nested material structure:
+
+**big deal box → four portfolios → 1,104 drawing sheets + manuscript/printed apparatus**.
+
 The box was therefore not a container for a single genre. It reassembled a **cross-media evidence system**:
 
 **field testimony → writer/translation → manuscript behavioural notes → drawings → manuscript lists → printed catalogues/reprints**.
 
-## 10. Boxes could preserve relations or prevent use
+## 12. Boxes could preserve relations or prevent use
 
 Natural-history evidence shows opposite effects of institutional handling.
 
@@ -158,7 +191,7 @@ Natural-history evidence shows opposite effects of institutional handling.
 
 Packing therefore has no single epistemic effect. A closed box may preserve original associations while blocking comparison; active unpacking/cataloguing may enable knowledge production while destroying relational traces.
 
-## 11. Direct padding/filling evidence remains unresolved
+## 13. Direct padding/filling evidence remains unresolved
 
 Targeted searches in this wave did **not** locate a Hodgson-specific use of cotton, tow, straw, shavings or similar void-filling material for zoological boxes.
 
@@ -174,7 +207,7 @@ Confirmed Hodgson-network preservation/packing materials now include:
 
 Swainson 1822 remains a useful contemporary comparator for cotton/tow filling, but it should not be converted into Hodgson evidence.
 
-## 12. Revised mechanism: container as relation-preserving device
+## 14. Revised mechanism: container as relation-preserving device
 
 A useful proposition emerging from this wave is:
 
@@ -188,7 +221,7 @@ This suggests separating at least three functions:
 
 These functions can conflict.
 
-## 13. Immediate next targets
+## 15. Immediate next targets
 
 1. Match the June–July 1858 `roll` and `other box` to Foucher/Institut item numbers, and determine whether original case/bundle numbers survive.
 2. Inspect Saint-Hilaire 1863 and Foucher 1897 for physical descriptions of rolls, bundles, labels, explanatory manuscripts and case notes.
@@ -196,3 +229,4 @@ These functions can conflict.
 4. Search preservation chemistry around Hodgson's zoological material (arsenic, spirits, oils, insect deterrents, waterproofing), keeping specimen preparation separate from box filling.
 5. Compare `safe arrival` rhetoric across the 1837 Paris manuscripts, 1858 Institut images/texts, 1870 ornithological box, and failed/missing zoological shipments.
 6. Treat package/container identifiers as a distinct provenance layer in the eventual census.
+7. Track changes in the accepted evidential status of media: drawing/copy/photograph, as well as original/copy in manuscripts and specimen/drawing in zoology.
