@@ -1,0 +1,110 @@
+{
+  "dataset": "ras_hodgson_material_catalogue_census_v0_2",
+  "date": "2026-08-31",
+  "supersedes": "data/ras_hodgson_material_catalogue_census_v0_1.json",
+  "source": "E. B. Cowell and J. Eggeling, Catalogue of Buddhist Sanskrit Manuscripts in the possession of the Royal Asiatic Society (Hodgson Collection), JRAS 8.1 (1875), pp. 1-52; parsed from uploaded OCR/VL scan",
+  "source_control": "The catalogue states at the outset that manuscript material is Indian paper unless otherwise stated. v0.2 additionally distinguishes explicitly printed material descriptors from descriptors inherited through relational phrases such as 'as in the preceding MS' and 'as in preceding MSS'.",
+  "corpus_size": 79,
+  "coverage": {
+    "leaf_count_recorded": 77,
+    "dimensions_recorded": 76,
+    "lines_per_page_recorded": 78,
+    "explicit_palm_leaf_entries": 10,
+    "default_or_special_paper_entries": 69,
+    "explicit_blackened_paper_mentions": 1,
+    "blackened_paper_by_direct_field_inheritance": 2,
+    "effective_blackened_paper_material_family_entries": 3,
+    "wrapper_mentioned": 4,
+    "ticket_mentioned": 1,
+    "continuous_roll_entries": 2,
+    "modern_hand_or_writing_marked": 20,
+    "old_or_oldish_marked": 14,
+    "supplied_or_replacement_leaves_marked": 2
+  },
+  "support_exceptions": {
+    "palm_leaf_entry_numbers": [1, 2, 13, 43, 46, 67, 68, 69, 70, 74],
+    "explicit_blackened_paper_entry_numbers": [77],
+    "blackened_paper_inherited_entry_numbers": [78, 79],
+    "effective_blackened_paper_material_family_entry_numbers": [77, 78, 79]
+  },
+  "material_field_inheritance": [
+    {
+      "source_entry": 77,
+      "target_entry": 78,
+      "inheritance_phrase": "Size, paper and handwriting as in the preceding MS.",
+      "inherited_fields": ["size", "paper", "handwriting"],
+      "effective_material_relation": "MS 78 inherits the blackened-paper, 8 x 2 3/4 in., and handwriting descriptors of MS 77",
+      "confidence": "very_high_catalogue_explicit"
+    },
+    {
+      "source_entry": "preceding MSS including 77-78",
+      "target_entry": 79,
+      "inheritance_phrase": "Paper, size and handwriting as in preceding MSS.",
+      "inherited_fields": ["paper", "size", "handwriting"],
+      "independent_confirmation": "MS 79 is additionally described as generally having three white and two yellow lines per page",
+      "effective_material_relation": "MS 79 belongs to the same catalogued paper/size/hand family as MSS 77-78",
+      "confidence": "very_high_catalogue_explicit"
+    }
+  ],
+  "material_family_77_79": {
+    "entry_numbers": [77, 78, 79],
+    "family_type": "CATALOGUED_MATERIAL_FAMILY",
+    "secure_shared_fields": ["paper", "size", "handwriting"],
+    "paper_state": "blackened paper, established explicitly at MS 77 and inherited by MSS 78-79",
+    "size": "8 x 2 3/4 in., established at MS 77 and inherited by MSS 78-79",
+    "writing_colour_regime": {
+      "MS77": "five lines per page alternating yellow and white paint, three of one and two of the other",
+      "MS79": "generally three white and two yellow lines per page",
+      "MS78": "colour sequence not independently stated in the catalogue; do not infer beyond inherited paper/size/hand until object inspection"
+    },
+    "production_warning": "Shared catalogue material fields do not by themselves prove one production event, workshop, scribe identity, procurement batch or original bundle."
+  },
+  "high_information_form_exceptions": [
+    {
+      "entry": 31,
+      "feature": "46 leaves in one continuous roll; writing covers 69 pages",
+      "mechanism": "ROLL_FORM_AS_BIBLIOGRAPHICAL_IDENTITY"
+    },
+    {
+      "entry": 55,
+      "feature": "wrapper mentioned as a title/identity surface",
+      "mechanism": "WRAPPER_AS_SEMANTIC_IDENTITY_SURFACE"
+    },
+    {
+      "entry": 59,
+      "feature": "collection title explicitly reported from wrapper",
+      "mechanism": "WRAPPER_AS_SEMANTIC_IDENTITY_SURFACE"
+    },
+    {
+      "entry": 67,
+      "feature": "69 palm leaves; title stated to be given on wrapper only",
+      "mechanism": "WRAPPER_DEPENDENT_TEXT_IDENTITY"
+    },
+    {
+      "entry": 72,
+      "feature": "40 leaves folded into one continuous roll; work called by title on wrapper",
+      "mechanism": "FOLDING_STATE_AS_BIBLIOGRAPHICAL_IDENTITY"
+    },
+    {
+      "entry": 79,
+      "feature": "ticket pasted on back of last leaf carries descriptive/donor note",
+      "mechanism": "PASTED_TICKET_AS_METADATA_LAYER"
+    }
+  ],
+  "new_mechanisms": [
+    "CATALOGUE_MATERIAL_FIELD_INHERITANCE",
+    "RELATIONAL_MATERIAL_DESCRIPTION",
+    "EXPLICIT_MENTION_VS_EFFECTIVE_ATTRIBUTE",
+    "CATALOGUE_COMPRESSION_BY_PRECEDING_ENTRY",
+    "PRINTED_REFERENCE_RECONSTRUCTS_MATERIAL_SIMILARITY"
+  ],
+  "interpretation": [
+    "Material description is systematic rather than occasional: leaf count, dimensions and line density are recorded for almost the entire 79-entry corpus.",
+    "Support follows a baseline/exception information economy: Indian paper is the declared default; palm leaf and treated/special paper states are explicitly marked.",
+    "Some material attributes are encoded relationally rather than repeated locally. Keyword frequency therefore undercounts effective material attributes when catalogue entries inherit paper, size or hand from preceding entries.",
+    "MSS 77-79 form a catalogued material family because the catalogue explicitly propagates paper, size and handwriting through cross-reference.",
+    "The catalogue converts unique manuscript paper objects into portable descriptive tuples and, in some cases, into dependency relations between printed descriptions."
+  ],
+  "next_parse_requirement": "Re-parse all 79 entries for relational descriptors including preceding MS, preceding MSS, same as, as above, ditto and equivalent phrases. Store source_entry, target_entry and inherited_fields separately from explicit fields.",
+  "method_warning": "Exact wording and numerical typography should be checked against page images before publication quotation. Inherited attributes must be limited to the fields explicitly named by the catalogue relation; do not propagate unstated properties such as colour sequence, age or date unless independently specified."
+}
