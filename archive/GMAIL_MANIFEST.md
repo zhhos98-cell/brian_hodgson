@@ -11,6 +11,7 @@ This manifest records Hodgson-related material recovered from Gmail. It distingu
 - Subject: `Hodgson Draft`
 - Timestamp: 2026-02-21 (message says this is a 2025-08 SOAS graduation/dissertation draft)
 - Attachment: `Hodgson draft.pdf`, 5,818,605 bytes, 4 pages, image-based.
+- SHA-256: `cd2c98637246e64d5bf874789d26d0c750274d086c95dc29388c3602828f058a`
 - Current inspection: the attachment is a photographic scan of handwritten planning sheets/mind maps rather than a typeset dissertation chapter. It contains the earlier persona/Buddhism-centered architecture and is therefore archival evidence for the project's conceptual development, not the current argument.
 
 A reply in the same thread (`19c7ecf867c3b4e0`) identifies the thread as a SOAS coursework/archive backup and carries a large bundle of unrelated SOAS assignments. Those unrelated attachments are excluded.
@@ -41,7 +42,7 @@ The original application describes the project as focusing on the material infra
 
 The panel response says the project was considered very interesting and encouraged a future application, while the funding application itself was unsuccessful.
 
-A later SOAS mailbox backup (`19ef3c0c3f3644fa`, subject `soas mail box 3`) contains the SHNH correspondence as an attached RFC822 message. This is a duplicate archival copy, not a separate intellectual source.
+A later SOAS mailbox backup (`19ef3c0c3f3644fa`, subject `soas mail box 3`) contains the SHNH correspondence as an attached RFC822 message. This duplicate archival copy has SHA-256 `9b0e7702e924cf84d4dcff23726a50a669b87978d2f95c97a07c1d6321649003` for the recovered RFC822 attachment.
 
 ### 4. 2025 CV: `Paper Empires`
 
@@ -49,6 +50,7 @@ A later SOAS mailbox backup (`19ef3c0c3f3644fa`, subject `soas mail box 3`) cont
 - Date: 2025-06-15
 - Context: CV sent to JHI Blog after Graduate Student Symposium submission.
 - Attachment: `CV of Haohao ZHANG.pdf`
+- SHA-256: `3a46a4cf5cce8ca7585723b21b677ebac98862cb8adcfc838e586d70ca0a311a`
 
 The CV contains a dedicated project entry:
 
@@ -62,6 +64,7 @@ This is the principal earlier framing to retain and develop.
 
 - Source mailbox backup: Gmail message ID `19e5407d6912a25c`, subject `论文备份`, 2026-05-23.
 - Attachment: `BASAS.docx`.
+- SHA-256: `1a8a00ff1807c25a0f72780fb56fe9d31dc06beae9f4f331a6f2e5934b207712`
 
 Title: **The Self as Archive: Brian Houghton Hodgson and the Epistemic Politics of Buddhist Knowledge**.
 
@@ -72,6 +75,7 @@ Status in current project: superseded as an overall framing. Retain only recover
 - Gmail message ID: `19a79752a00bf2cb`
 - Context: materials sent to Joshua Nall.
 - Attachment checked: `CV-2025 Cambridge HPS.pdf`.
+- SHA-256: `55cc51a618558f6b1e722a3fad7686dfcb486cafa86b49a36bd451dbbd4bb4ed`
 
 The CV lists a BASAS presentation titled **The Self as Archive: Brian Houghton Hodgson and the Epistemic Politics of Buddhist Knowledge**.
 
@@ -82,6 +86,7 @@ The research proposal attached to the same email concerns Victorian glass/househ
 - Gmail message ID: `1963095331744ee2`
 - Date: 2025-04-13
 - Attachment: `Submission-of-Abstract-2025-WHN-Conference-.docx`.
+- SHA-256: `7f21db9aedf1277a6eef123e5f503e1537cdcfd1df42c61050e211fc5af9699a`
 
 The short bio says the current work included Brian Houghton Hodgson's annotation practices and Edward F. Griffith's wartime archives, using paper techniques and marginalia to study how knowledge is produced and rearranged.
 
@@ -115,6 +120,8 @@ Gmail was searched with variants including:
 - `"Paper Empires"`
 - `"The Self as Archive"`
 - `"paper technologies"`
-- combinations with `lokta`, `Whatman`, `Towgood`, `blue papers`, `marginalia`, `annotation`, and `annotations`.
+- combinations with `lokta`, `Whatman`, `Towgood`, `blue papers`, `marginalia`, `annotation`, and `annotations`
+- scientific-history back-searches using `Zoology of Nipal`, `ZSL`, `natural history`, `classification`, `watermark`, `survey`, and `Everest`
+- a targeted search for `Lowther` / `Zoological Society`, which resolved only to the 2026 SHNH/ZSL circular already listed above.
 
-This manifest should be expanded if further variants or attachment-level searches reveal additional material.
+At this stage the search variants converge on the same core set of messages. Further expansion should focus on attachment-level titles, repository names, and archival shelfmarks rather than repeatedly searching the personal name alone.
