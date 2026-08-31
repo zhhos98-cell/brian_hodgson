@@ -1,0 +1,104 @@
+{
+  "dataset": "india_office_1864_version_family_manifest_v0_1",
+  "date": "2026-09-01",
+  "source": "William Wilson Hunter, Life of Brian Houghton Hodgson (1896), Appendix B, reproducing Hodgson's August 1864 presentation list",
+  "source_url": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/24484/GIPE-000910-Contents.pdf?isAllowed=y&sequence=2",
+  "central_claim": "The 1864 transfer repeatedly co-bundled source, translation, abstract and multilingual derivative states, preserving version-family relations at custody level.",
+  "units": [
+    {
+      "id": "IO1864-T1-LB1-NEWARI",
+      "container": "Trunk 1, first large bundle, Newari chronicles parcel",
+      "relation_strength": "mixed: explicit translations/abstract plus family co-custody",
+      "states": [
+        "multiple Newari dynastic chronicle/source states",
+        "Persian translation of one chronicle state",
+        "Jit Mohan abstract of preceding materials",
+        "sundry/repetition states",
+        "English translations of the Vasavalis in two volumes",
+        "Persian addenda"
+      ],
+      "translation_labour": "English translations and Persian addenda attributed to Hodgson's office people",
+      "mechanisms": ["CHRONICLE_VERSION_FAMILY_CO_CUSTODY", "VERSION_FAMILY_CO_BUNDLING_AS_ARCHIVAL_DESIGN"]
+    },
+    {
+      "id": "IO1864-T1-LB1-GURKHALI",
+      "container": "Trunk 1, first large bundle, Gurkhali chronicles parcel",
+      "relation_strength": "strong declared source-set -> translation-set relation",
+      "source_states_count_manifest": 12,
+      "derivative_state": "English translations of the above, by my office people, in five volumes",
+      "source_examples": ["large royal chronicle roll", "Garhwal conquest history", "Royal and Thapa Vasavalis", "genealogies", "chronology", "court-munshi Vasavali", "Ran Bahadur account"],
+      "mechanisms": ["SOURCE_SET_PLUS_TRANSLATION_SET_CO_BUNDLING", "OFFICE_TRANSLATION_LABOUR_PRESERVED_WITH_SOURCE_FAMILY"]
+    },
+    {
+      "id": "IO1864-T1-LB2-ITINERARIES",
+      "container": "Trunk 1, second large bundle, lesser bundle 2",
+      "relation_strength": "functional family; direct descent varies",
+      "manifest_description": "Various Itineraries, in Nagri, in Persian, and in English",
+      "languages": ["Nagri-script local-language states", "Persian", "English"],
+      "mechanisms": ["ITINERARY_VERSION_FAMILY_AS_CUSTODY_UNIT", "LANGUAGE_DIVERSITY_WITHIN_CUSTODY_UNIT"]
+    },
+    {
+      "id": "IO1864-T1-LB2-NEWAR-INSTITUTIONS",
+      "container": "Trunk 1, second large bundle, lesser bundle 3",
+      "relation_strength": "explicit originals plus some translations",
+      "states": [
+        "Newar institutions/customs account",
+        "annual festivals and caste classification",
+        "agriculture materials",
+        "large collection of original Talpatras/title deeds",
+        "some English translations",
+        "some Persian translations"
+      ],
+      "mechanisms": ["CROSS_SUPPORT_VERSION_FAMILY_CO_BUNDLING", "TRANSFER_CONTAINER_PRESERVES_DERIVATIVE_RELATIONS"]
+    },
+    {
+      "id": "IO1864-T2-LB2-ARMY",
+      "container": "Trunk 2, second large bundle",
+      "relation_strength": "subject/version family",
+      "states": [
+        "army pay and stations source/record states",
+        "English scraps on army",
+        "English volume on army",
+        "three English volumes on classification, judicial system, customs and army",
+        "Persian papers on same subjects",
+        "Khas papers on same subjects"
+      ],
+      "mechanisms": ["MULTILINGUAL_SUBJECT_VERSION_CO_CUSTODY", "LANGUAGE_DIVERSITY_WITHIN_CUSTODY_UNIT"]
+    },
+    {
+      "id": "IO1864-T2-LB3-REVENUE-JUDICIAL",
+      "container": "Trunk 2, third large bundle",
+      "relation_strength": "mixed explicit original reference and subject-family relation",
+      "states": [
+        "Patan/Bhatgaon revenue records",
+        "questions and answers on judicial system with originals referenced in another manifest item",
+        "five English volumes and scraps on Nepal land revenue",
+        "two English volumes plus Hindi scraps on Tarai revenue",
+        "English sundries"
+      ],
+      "mechanisms": ["REVENUE_VERSION_FAMILY_CO_CUSTODY", "TRANSFER_CONTAINER_PRESERVES_DERIVATIVE_RELATIONS"]
+    },
+    {
+      "id": "IO1864-T2-LB6-JUMLA",
+      "container": "Trunk 2, sixth large bundle",
+      "relation_strength": "strong multilingual co-custody",
+      "manifest_description": "in Khas and in English, Statement of the Revenue of the Province of Jumla",
+      "modern_candidate_states": ["vol.59/38 Khas/Nepali source", "vol.8/1 English Campbell chart"],
+      "modern_related_state_not_named_in_manifest": "vol.102/21 Farsi table",
+      "mechanisms": ["CUSTODY_RECOMBINES_VERSION_STATES", "TRANSFER_BUNDLE_AS_VERSION_FAMILY_UNIT"]
+    }
+  ],
+  "interpretive_rules": [
+    "Language diversity within one custody unit does not by itself prove direct textual descent.",
+    "Phrases such as 'English translations of the above' are stronger relation evidence than 'papers on the same subject'.",
+    "Large-bundle co-custody must not be rewritten as same lesser wrapper or sheet adjacency.",
+    "Modern shelfmark dispersion can obscure historical container relations.",
+    "Paper support must be recovered from modern object/catalogue inspection, not inferred from 1864 language labels."
+  ],
+  "next_actions": [
+    "Build manifest-to-modern shelfmark crosswalk by version family.",
+    "Prioritize itineraries and chronicle parcels because their multilingual relations are explicit.",
+    "Locate the English and Hindi content lists Hodgson says were already with the India Office librarian.",
+    "Locate original 1864 accession/packing records to verify Hunter's transcription and container hierarchy."
+  ]
+}
