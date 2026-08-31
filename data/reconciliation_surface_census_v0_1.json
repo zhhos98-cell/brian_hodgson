@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Object-near census of 1844-1845 Hodgson/British Museum reconciliation devices reconstructed from ZSL digital archive records.",
+  "core_concept": {
+    "term": "reconciliation_surface",
+    "definition": "A list, table, catalogue, receipt or annotated copy on which expected and observed collection states can be compared, exceptions recorded, and a corrected or synchronized state requested or propagated."
+  },
+  "records": [
+    {
+      "id": "RS-1845-01",
+      "date": "1845-01-03",
+      "source": "NZSL/HOD/5/4/9",
+      "source_kind": "copy_of_letter",
+      "surface_kind": "delivery_count_copy",
+      "states_compared": ["delivered batch", "arithmetic total", "later prose count within same copy"],
+      "counting_units": ["drawings", "skins", "osteological specimens"],
+      "direct_counts": {
+        "drawings_mammals": 15,
+        "drawings_birds": 70,
+        "drawings_tabulated_total": 85,
+        "skins_mammals": 402,
+        "skins_birds": 4444,
+        "skins_total": 4846,
+        "osteological_mammals": 406,
+        "osteological_birds": 663,
+        "osteological_total": 1069,
+        "grand_total_stated": 5996,
+        "later_prose_drawings_total": 81
+      },
+      "derived_checks": {
+        "with_85_drawings": 6000,
+        "with_81_drawings": 5996
+      },
+      "exception_type": "COPY_STATE_COUNTING_CONFLICT",
+      "image_verified": true,
+      "interpretive_warning": "The surviving witness is a copy. Do not infer that the dispatched original contained the same inconsistency.",
+      "article_value": "Arithmetic reveals incompatible count states inside the archival witness itself."
+    },
+    {
+      "id": "RS-1845-02",
+      "date": "1845-01-03",
+      "source": "NZSL/HOD/5/4/9",
+      "source_kind": "copy_of_letter",
+      "surface_kind": "numbered_catalogue_expected_state_register",
+      "states_compared": ["drawings expected from numbered catalogue", "drawings physically forthcoming/present"],
+      "counting_units": ["catalogue number", "drawing", "species"],
+      "direct_counts": {
+        "mammal_species_nepal": 126,
+        "bird_species_nepal": 656,
+        "mammal_species_tibet": 47
+      },
+      "exception_type": "MISSING_OR_NOT_FORTHCOMING_DRAWINGS",
+      "direct_mechanism": "Hodgson states numbered catalogues provide a ready clue to how many drawings ought to be forthcoming.",
+      "warning": "Species count is not drawing count; Hodgson states many species had several delineations.",
+      "article_value": "Direct historical statement of catalogue-as-checksum."
+    },
+    {
+      "id": "RS-1845-03",
+      "date": "1845-02-04",
+      "source": "NZSL/HOD/5/4/13",
+      "source_kind": "letter_copy",
+      "surface_kind": "requested_reconciliation_statement",
+      "states_compared": ["received", "retained", "distributed"],
+      "counting_units": ["skins", "bones", "drawings"],
+      "required_outputs": ["summary totals", "availability report", "catalogue"],
+      "downstream_action": "destination letters and physical duplicate distribution",
+      "article_value": "Hodgson explicitly requests a three-state institutional reconciliation before completing distribution."
+    },
+    {
+      "id": "RS-1845-04",
+      "date": "1845-02-05",
+      "source": "NZSL/HOD/5/4/14",
+      "source_kind": "destination_letter_template",
+      "surface_kind": "global_catalogue_with_destination_subset_mask",
+      "destination_example": "Leyden Museum",
+      "global_scope": "all birds and mammals discovered by Hodgson in Nepal",
+      "local_subset_encoding": "prefixed cross in annexed catalogue",
+      "subset_marker_semantics": "species physically transmitted to recipient",
+      "direct_counts": {
+        "leyden_birds": 536,
+        "leyden_mammals_text": 69,
+        "leyden_mammals_pencilled_amendment": 70
+      },
+      "exception_type": "COUNT_VERSION_OR_AMENDMENT",
+      "article_value": "Distributed specimen set is mapped onto a global descriptive universe by an explicit graphical subset marker."
+    },
+    {
+      "id": "RS-1845-05",
+      "date": "1845-02_to_1845-03",
+      "sources": ["NZSL/HOD/5/4/16", "NZSL/HOD/5/4/17"],
+      "source_kind": "distribution_memo_plus_reply_with_marginalia",
+      "surface_kind": "mutable_distribution_table",
+      "states_compared": ["museum tabulation", "Hodgson expected/correct state"],
+      "exception_type": "OMISSIONS_AND_INACCURACIES",
+      "correction_event": "Hodgson requests a copy when corrected and offers to pay for copying.",
+      "article_value": "A tabular institutional account becomes a negotiated correction surface rather than final metadata."
+    },
+    {
+      "id": "RS-1845-06",
+      "date": "1845",
+      "source": "NZSL/HOD/5/4/31",
+      "source_kind": "letter",
+      "surface_kind": "cross_media_identifier_system",
+      "linked_object_classes": ["osteological specimens", "skins", "drawings"],
+      "identifier_function": "numbers on osteological remains refer to skin/drawing series and allow species identification",
+      "addressability_level": "RELATIONAL",
+      "warning": "Species-level linkage does not automatically prove same biological individual across representations.",
+      "article_value": "Direct statement that numbering bridges physically separated media."
+    },
+    {
+      "id": "RS-1844-07",
+      "date": "1844-12-25",
+      "source": "NZSL/HOD/5/2/12",
+      "source_kind": "Gray_letter",
+      "surface_kind": "catalogue_as_recordability_interface",
+      "problem": "Indian publications containing Hodgson descriptions were rare in London and scarcer on the Continent.",
+      "catalogue_functions": ["locate prior descriptions", "synchronize specimen names", "prevent names being treated as mere manuscript names", "support recordability and priority"],
+      "article_value": "Institutional legibility includes bibliographic synchronization, not only object labels."
+    },
+    {
+      "id": "RS-1845-08",
+      "date": "1845",
+      "source": "NZSL/HOD/5/4/35",
+      "source_kind": "Gray_publication_note",
+      "surface_kind": "corrected_catalogue_distribution_version",
+      "intended_distribution": ["with specimen sets", "to Hodgson"],
+      "version_status": "CORRECTED",
+      "article_value": "Corrected metadata version is designed to travel with physical duplicates."
+    },
+    {
+      "id": "RS-1845-09",
+      "date": "1845-05_to_1845-06",
+      "sources": ["NZSL/HOD/5/4/19", "NZSL/HOD/5/4/21"],
+      "source_kind": "recipient_letters",
+      "surface_kind": "distributed_series_evidentiary_use",
+      "recipient": "H. E. Strickland",
+      "bird_specimens": 205,
+      "recipient_description": "original and authentic types",
+      "operational_use": "identifying Hodgson's new species",
+      "article_value": "Duplicate/distributed status does not entail low evidentiary standing."
+    }
+  ],
+  "cross_record_rules": [
+    "Expected-state counts and observed-state counts must be stored separately.",
+    "A surviving copy can contain a count conflict without proving that the dispatched original did.",
+    "Global catalogue scope and destination physical subset must be represented as separate layers.",
+    "Graphical subset markers such as crosses, ticks, underlining or destination initials are first-class metadata.",
+    "Received, retained and distributed are distinct collection states.",
+    "A corrected catalogue can be part of the physical distribution protocol itself.",
+    "Identifiers can support object, relational or historical-event addressability at different evidential strengths.",
+    "Duplicate is an operational/distribution status and does not automatically determine evidentiary rank."
+  ],
+  "archive_upload_fields_to_prioritize": [
+    "copy_state",
+    "sent_original_or_retained_copy",
+    "expected_count",
+    "observed_count",
+    "received_count",
+    "retained_count",
+    "distributed_count",
+    "counting_unit",
+    "subset_marker",
+    "subset_marker_semantics",
+    "marginal_correction",
+    "recalculated_total",
+    "cross_media_identifier",
+    "identifier_relation_strength",
+    "corrected_copy_requested",
+    "corrected_version_propagated"
+  ]
+}
