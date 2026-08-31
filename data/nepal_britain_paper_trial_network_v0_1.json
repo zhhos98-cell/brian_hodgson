@@ -1,0 +1,96 @@
+{
+  "dataset": "nepal_britain_paper_trial_network_v0_1",
+  "date": "2026-08-31",
+  "scope": "Named actors, institutions, material states and evidential limits in the 1831-1833 British trial of Nepali paper material.",
+  "primary_event": {
+    "event_id": "NBPT-1831-33",
+    "material": "Nipal/Nepal paper stuff dried and formed into transport bricks",
+    "origin_chain": "Himalayan/Nepal paper-material network -> Calcutta/Bengal government forwarding -> Edinburgh scientific relay -> Scottish papermaker trial",
+    "published_report": "Journal of the Asiatic Society of Bengal 2 (1833), Asiatic Society Proceedings, p.93",
+    "result": "British remanufacture failed to reproduce the softness and toughness of finished Nepal-made sheets."
+  },
+  "actors": [
+    {
+      "name": "George Swinton",
+      "role": "Chief Secretary to the Government of Bengal; material/specimen forwarder and administrative-commercial broker",
+      "location": "Calcutta/Fort William",
+      "secure_evidence": ["JASB says dried pulp was sent home by G. Swinton in 1831", "BL India Office catalogue identifies Swinton as Chief Secretary and documents parallel trans-imperial material-testing operations"],
+      "mechanisms": ["CALCUTTA_AS_SAMPLE_FORWARDING_NODE", "SWINTON_TRANSIMPERIAL_MATERIAL_TESTING_PROGRAM"]
+    },
+    {
+      "name": "John Robison",
+      "role": "General Secretary, Royal Society of Edinburgh; scientific-society broker",
+      "location": "Edinburgh",
+      "secure_evidence": ["JASB calls him Sec. Ed. Roy. Society", "contemporary records identify John Robison as RSE General Secretary 1828-1840"],
+      "mechanisms": ["SCIENTIFIC_SOCIETY_AS_MATERIAL_TEST_BROKER"]
+    },
+    {
+      "name": "Charles Cowan",
+      "role": "professional Scottish papermaker; worked up Nepal pulp and supplied specimens/notes/valuation",
+      "location": "Penicuik/Edinburgh paper industry",
+      "secure_evidence": ["JASB first says Mr C. Cowan, then explicitly names Mr Charles Cowan and calls him the manufacturer", "Charles Cowan was a professional papermaker associated with the Cowan Penicuik/Valleyfield enterprise"],
+      "industrial_context": ["Valleyfield Fourdrinier machine installed 1821", "Cowan family operated several Penicuik-area paper mills"],
+      "not_yet_secure": ["exact mill where Nepal trial was performed", "whether trial sheets were machine-formed", "specific apparatus/process used for the trial"],
+      "mechanisms": ["MATERIAL_SAMPLE_TO_INDUSTRIAL_TRIAL", "INDUSTRIAL_CONTEXT_NOT_TRIAL_METHOD"]
+    }
+  ],
+  "institutions": [
+    {
+      "name": "Government of Bengal / Calcutta",
+      "role": "sample transmission, administrative and commercial evaluation node"
+    },
+    {
+      "name": "Royal Society of Edinburgh",
+      "role": "scientific relay and specialist-testing broker"
+    },
+    {
+      "name": "Scottish papermaking industry / Cowan enterprise",
+      "role": "technical working-up, specimen production, grade/value assessment"
+    },
+    {
+      "name": "Asiatic Society of Bengal",
+      "role": "publication and recirculation of technical result in India"
+    }
+  ],
+  "material_state_sequence": [
+    "local Himalayan paper material",
+    "prepared pulp",
+    "dried transport pulp brick/tile",
+    "stored/shipped experimental material",
+    "Cowan working-up furnish",
+    "British trial sheet/specimen",
+    "commercial-grade candidate",
+    "published technical report"
+  ],
+  "comparative_control": {
+    "material": "thin finished sheets made in Nepal and sent to Britain in 1829",
+    "reported_properties": ["exceedingly tough", "flexible", "not quite white", "resembled India paper", "took minute bank-note plate impression with perfect fidelity"],
+    "significance": "Finished sheets preserved high-performance properties that British remanufacture from dried pulp failed to reproduce."
+  },
+  "Cowan_trial_properties": {
+    "negative": ["brittle", "stiff", "transparent/varnish-like", "gritty brown spots", "poor whiteness", "obstinate water retention", "marked drying shrinkage"],
+    "commercial_assessment": ["cakes valued £6-8 per ton", "nearly double if fit for cartridge paper", "no hopes for more refined use after trial"],
+    "exact_figures_warning": "Bleaching reagent quantities in searchable OCR should be image-verified before publication quotation."
+  },
+  "Swinton_comparative_program": {
+    "parallel_case": "IOR/F/4/1330/52529 — Burmese redwood dye",
+    "procedure": "Calcutta experiment/material -> Government note -> Court of Directors/England -> specialist market testing",
+    "interpretation": "The Nepal paper trial belongs to a broader administrative technique of trans-imperial material sampling and commercial/scientific evaluation."
+  },
+  "research_priority": [
+    "Search Royal Society of Edinburgh incoming correspondence to John Robison 1831-33 for Swinton/Cowan/Nipal paper material",
+    "Search Alexander Cowan & Sons / Valleyfield business archive and Charles Cowan papers for Nepal/Nipal paper trial notes",
+    "Locate trial sheets and strongly bleached specimen if surviving",
+    "Determine exact sheet-formation method of Cowan trial",
+    "Compare any surviving British trial sheet with Hodgson-period finished Nepali paper at fibre/formation/surface level"
+  ],
+  "mechanisms": [
+    "CALCUTTA_EDINBURGH_PAPER_TEST_NETWORK",
+    "MATERIAL_SAMPLE_TO_INDUSTRIAL_TRIAL",
+    "TECHNICAL_PROPERTY_TO_MARKET_GRADE_TRANSLATION",
+    "SCIENTIFIC_SOCIETY_AS_MATERIAL_TEST_BROKER",
+    "SWINTON_TRANSIMPERIAL_MATERIAL_TESTING_PROGRAM",
+    "MATERIAL_OBJECT_RECLASSIFIED_ACROSS_INSTITUTIONS",
+    "REPEATED_INDUSTRIAL_INTERFACE_MISMATCH"
+  ]
+}
