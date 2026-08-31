@@ -1,0 +1,155 @@
+{
+  "dataset": "paper_unit_ontology_v0_1",
+  "date": "2026-08-31",
+  "purpose": "Separate material, graphic, semantic, transport and archival units in Hodgson paper evidence; prevent arithmetic or conceptual collapse across unit classes.",
+  "core_rule": "A numerical relation between two paper/document units is never assumed unless a historical witness supplies the conversion relation.",
+  "units": [
+    {
+      "unit": "sheet",
+      "class": "material_support_unit",
+      "historical_operations": ["manufacture", "purchase", "drawing", "printing", "visual aggregation", "counting"],
+      "Hodgson_witnesses": [
+        "1843 Wallich bill: Nepali paper purchased in bundles stated to contain ten sheets each",
+        "later zoological table: bird, mammal and reptile drawings counted by folio sheets",
+        "1860 Buddhist symbol corpus: 143 symbols arranged collectively on two sheets"
+      ],
+      "non_equivalences": ["sheet != subject", "sheet != species", "sheet != drawing event", "sheet != work", "sheet != leaf after folding/binding unless demonstrated"],
+      "mechanisms": ["SHEET_AS_OPERATIONAL_COUNT_UNIT", "MATERIAL_SEMANTIC_CARDINALITY_DIVERGENCE"]
+    },
+    {
+      "unit": "leaf",
+      "class": "physical_codicological_unit",
+      "historical_operations": ["manuscript copying", "loose-leaf handling", "folio counting", "shipment", "binding"],
+      "Hodgson_witnesses": [
+        "1829 Fort William receipt distinguishes loose leaves, packages and copies",
+        "palm-leaf originals recopied onto Nepali paper",
+        "BL catalogue describes separated leaves and later bound folios"
+      ],
+      "non_equivalences": ["leaf != work", "leaf != copy", "leaf != page", "leaf != sheet without folding/conjugacy evidence"],
+      "mechanisms": ["PHYSICAL_UNIT_SEMANTIC_UNIT_SEPARATION"]
+    },
+    {
+      "unit": "folio",
+      "class": "archival_codicological_address_unit",
+      "historical_operations": ["catalogue location", "recto-verso addressing", "binding", "modern archival citation"],
+      "Hodgson_witnesses": [
+        "BL Hodgson catalogue organizes c.15,300 folios within items/volumes",
+        "1843 Wallich bill recto and army-note verso occupy one archival folio/sheet state"
+      ],
+      "non_equivalences": ["folio number != historical page number", "folio != work", "folio != original pre-1921 gathering"],
+      "mechanisms": ["ARCHIVAL_ADDRESSABILITY", "ARCHIVAL_RECOMPOSITION"]
+    },
+    {
+      "unit": "page",
+      "class": "graphic_spatial_unit",
+      "historical_operations": ["writing", "translation layout", "image-text composition", "blank-space allocation", "printing"],
+      "Hodgson_witnesses": [
+        "Lepcha copies reserve right-side page space for future translation",
+        "printed papers later receive manuscript corrections/addenda",
+        "broad-sheet diagrams use planar page area for complex relations"
+      ],
+      "non_equivalences": ["page != leaf", "blank page/zone != unused by definition", "page != textual work"],
+      "mechanisms": ["PAPER_LAYOUT_AS_FUTURE_OPERATION_RESERVE", "PAPER_AS_HETEROGENEOUS_COMPOSITION_SURFACE"]
+    },
+    {
+      "unit": "bundle_dhyap",
+      "class": "procurement_material_unit",
+      "historical_operations": ["paper purchase", "price accounting", "stock handling"],
+      "Hodgson_witnesses": ["1843 bill: 1,012 bundles (dhyap) of Nepali paper; ten sheets stated per bundle"],
+      "historical_conversion_relations": ["for this bill only: 1 bundle = 10 sheets"],
+      "non_equivalences": ["paper bundle/dhyap != manuscript bundle unless source explicitly equates them"],
+      "mechanisms": ["LOCAL_PAPER_AS_QUANTIFIED_COMMODITY"]
+    },
+    {
+      "unit": "manuscript_bundle",
+      "class": "transport_collection_unit",
+      "historical_operations": ["packing", "shipment", "receipt", "institutional census"],
+      "Hodgson_witnesses": ["1827 Fort William receipt for 109 bundles of Oriental manuscripts", "later manuscript catalogues distinguish bundle count from work/volume counts"],
+      "non_equivalences": ["manuscript bundle != work", "manuscript bundle != physical volume", "manuscript bundle != paper procurement dhyap"],
+      "mechanisms": ["COUNTING_ONTOLOGY", "CUSTODY_CHECKSUM"]
+    },
+    {
+      "unit": "package",
+      "class": "transport_unit",
+      "historical_operations": ["packing", "receipt", "internal grouping"],
+      "Hodgson_witnesses": ["1829 Fort William receipt distinguishes 13 packages from 103 loose leaves and 101 copies"],
+      "non_equivalences": ["package != copy", "package != leaf", "package != textual work"],
+      "mechanisms": ["TRANSPORT_UNIT_DISCIPLINARY_UNIT_NONCOINCIDENCE"]
+    },
+    {
+      "unit": "box",
+      "class": "transport_custody_unit",
+      "historical_operations": ["shipment", "custody handoff", "receipt", "storage"],
+      "Hodgson_witnesses": ["1829 seven boxes of Nepali/Tibetan books", "1843 six boxes received in London through Calcutta", "zoological correspondence records box-level transfer states"],
+      "non_equivalences": ["box receipt != internal item completeness", "box count != manuscript/specimen count"],
+      "mechanisms": ["CUSTODY_CHECKSUM", "CONTAINER_CHRONOLOGY"]
+    },
+    {
+      "unit": "portfolio",
+      "class": "visual_collection_container",
+      "historical_operations": ["drawing storage", "loan", "research reuse", "future donation"],
+      "Hodgson_witnesses": ["1870 ornithological package contains four drawing portfolios", "1869 prospective ZSL destination memo assigns bird/mammal portfolios"],
+      "non_equivalences": ["portfolio != drawing sheet", "portfolio != taxonomic group unless demonstrated"],
+      "mechanisms": ["RELATIONAL_CONTAINER", "TEMPORARY_USER_WITH_DEFERRED_DESTINATION"]
+    },
+    {
+      "unit": "copy",
+      "class": "documentary_semantic_state",
+      "historical_operations": ["reproduction", "translation", "transmission", "replacement", "fair-copy production"],
+      "Hodgson_witnesses": ["palm-leaf documents copied to Nepali paper", "master zoological drawings copied for transmission", "multiple route accounts survive on differing supports"],
+      "non_equivalences": ["copy != physical leaf count", "copy != work", "copy != identical material state"],
+      "mechanisms": ["SUPPORT_CHANGE_AS_COPY_STATE_CONVERSION", "MASTER_DRAWING_TRANSMISSION_COPY"]
+    },
+    {
+      "unit": "work",
+      "class": "semantic_textual_unit",
+      "historical_operations": ["identification", "cataloguing", "segmentation", "translation", "publication"],
+      "Hodgson_witnesses": ["multi-work manuscript codices later falsely lumped or split in catalogues", "Fort William bundle/volume/work counts diverge"],
+      "non_equivalences": ["work != physical volume", "work != bundle", "work != catalogue entry"],
+      "mechanisms": ["SEGMENTATION_FAILURE", "FALSE_LUMP_FALSE_SPLIT"]
+    },
+    {
+      "unit": "subject",
+      "class": "represented_visual_semantic_unit",
+      "historical_operations": ["drawing", "comparison", "taxonomic interpretation"],
+      "Hodgson_witnesses": ["later zoological table explicitly states many folio drawing sheets contain several subjects"],
+      "non_equivalences": ["subject != sheet", "subject != taxon", "subject != specimen"],
+      "mechanisms": ["MATERIAL_SEMANTIC_CARDINALITY_DIVERGENCE"]
+    },
+    {
+      "unit": "bound_volume",
+      "class": "codicological_or_archival_container",
+      "historical_operations": ["reading", "storage", "cataloguing", "later rebinding"],
+      "Hodgson_witnesses": ["pre-bound notebooks survive as historical production objects", "India Office Library bound Hodgson papers into 95 volumes in 1921 partly by dimensions"],
+      "non_equivalences": ["bound volume != original gathering", "bound volume != work", "modern volume adjacency != historical relation"],
+      "mechanisms": ["PAPER_DIMENSION_AS_ARCHIVAL_RECLASSIFIER", "SIZE_BASED_RELATIONAL_BREAK"]
+    }
+  ],
+  "conversion_examples": [
+    {
+      "source": "1843 Wallich paper bill",
+      "relation": "bundle/dhyap -> sheet",
+      "status": "explicit",
+      "conversion": "10 sheets per bundle"
+    },
+    {
+      "source": "later zoological drawing table",
+      "relation": "sheet -> represented subjects",
+      "status": "explicitly non-unitary",
+      "conversion": "many sheets contain several subjects; no fixed ratio supplied"
+    },
+    {
+      "source": "1829 Fort William receipt",
+      "relation": "box / loose leaf / package / copy",
+      "status": "simultaneously reported but no complete conversion relation",
+      "conversion": null
+    },
+    {
+      "source": "1921 India Office binding",
+      "relation": "historical item -> later bound volume",
+      "status": "physical dimensions partly govern reassignment",
+      "conversion": null
+    }
+  ],
+  "research_rule": "Always state what historical operation is doing the counting. If an archive says 1,863 sheets, retain sheets. If a catalogue says works, retain works. Convert only when a contemporary or reconstructible relation makes conversion historically demonstrable."
+}
