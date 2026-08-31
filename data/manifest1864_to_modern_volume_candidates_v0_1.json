@@ -1,0 +1,105 @@
+{
+  "dataset": "manifest1864_to_modern_volume_candidates_v0_1",
+  "date": "2026-09-01",
+  "status": "candidate crosswalk; relation tiers explicitly separated",
+  "scope": "Trunk No.2, second large bundle in the 1864 India Office transfer manifest, compared with surviving Cambridge/BL bound states and historical address metadata.",
+  "source_manifest": "Hunter 1896 Appendix B reproduction of August 1864 list; event-near RAS BHH/11/14 and BHH/19/5 remain higher-priority witnesses for future direct comparison.",
+  "manifest_source_url": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/24484/GIPE-000910-Contents.pdf?isAllowed=y&sequence=2",
+  "central_claim": "The exact old address Box 2 / Item 12 on modern MSS EUR HODGSON/6 aligns strikingly with Trunk No.2, second large bundle, item 12 of the 1864 manifest in both number and content. This is a probable transfer-stage mapping, not yet a diplomatically proven identity because the manifest includes an intermediate large-bundle level and event-near list states have not been compared page-by-page.",
+  "relation_tiers": {
+    "A_NEAR_CERTAIN": "explicit historical identifier plus strong content/hierarchy match, with only terminology/hierarchy reconciliation outstanding",
+    "B_PROBABLE": "strong content/object-form match but no surviving exact old number on current catalogue record",
+    "C_THEMATIC_CANDIDATE": "subject and documentary-state match only; multiple alternatives remain"
+  },
+  "manifest_units": [
+    {
+      "manifest_address": "Trunk No.2 / second large bundle / item 10",
+      "manifest_text_summary": "Sundry scraps in English relative to the Army",
+      "modern_candidates": [
+        {
+          "modern_ref": "MSS EUR HODGSON/7 items 2 and 5",
+          "relation_tier": "C_THEMATIC_CANDIDATE",
+          "basis": "miscellaneous English army statements, mixed rough/fair states, multiple cross-referenced duplicates"
+        },
+        {
+          "modern_ref": "MSS EUR HODGSON/9 items 15-23",
+          "relation_tier": "C_THEMATIC_CANDIDATE",
+          "basis": "rough and duplicate English army notes/memoirs, many loose working states"
+        }
+      ],
+      "source_control": "Do not choose among scattered modern army scraps without old labels or detailed manifest-to-folio comparison."
+    },
+    {
+      "manifest_address": "Trunk No.2 / second large bundle / item 11",
+      "manifest_text_summary": "A Volume in English, on the Army, etc.",
+      "modern_candidates": [
+        {
+          "modern_ref": "MSS EUR HODGSON/10",
+          "relation_tier": "B_PROBABLE",
+          "support": "machine-made paper",
+          "object_form": "one pre-bound notebook",
+          "language": "English",
+          "content": "Hodgson's 1825 Memoir on the Army of Nepal",
+          "basis": "singular English army volume matches manifest object form unusually well",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol010.html"
+        }
+      ],
+      "source_control": "Probable, not proven: recover old title/container mark or compare BHH/11/14 and BHH/19/5 annotations before identity claim."
+    },
+    {
+      "manifest_address": "Trunk No.2 / second large bundle / item 12",
+      "manifest_text_summary": "Three Volumes in English, on the Classification of the People (thar); on the Judicial System; on the Customs (Jagat-bhansar); and on the Army, with Persian and Khas papers on the same subject",
+      "modern_candidates": [
+        {
+          "modern_ref": "MSS EUR HODGSON/6",
+          "relation_tier": "A_NEAR_CERTAIN",
+          "historical_address_on_object": "original Box 2 / Item 12",
+          "support": "overwhelmingly machine-made paper",
+          "language": "English corpus with Nepali old-address/title layer",
+          "old_english_title": "Tribes of people, judicial system, trade, army, topography",
+          "old_nepali_title": "thar-tharko, adālatko, phaujako vayān",
+          "content_overlap": ["classification/tribes", "judicial system", "trade/customs-adjacent commerce", "army"],
+          "additional_content": ["topography/households", "military road", "Nepali paper-making"],
+          "basis": "exact item number 12 + box/trunk number 2 candidate + high lexical/content overlap + old Hodgson title layer",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html",
+          "unresolved_hierarchy": "1864 manifest address is Trunk 2 / second large bundle / item 12, whereas Cambridge reports original Box 2 / Item 12; determine whether 'Box 2' corresponds to Trunk 2, second large bundle, or another inventory generation."
+        },
+        {
+          "modern_ref": "MSS EUR HODGSON/11",
+          "relation_tier": "B_PROBABLE_PARTIAL_DESCENDANT_OR_COMPANION",
+          "support": "machine-made paper",
+          "object_form": "six separate pre-bound English notebooks",
+          "content_overlap": ["judicial system/courts", "revenue/customs-adjacent material", "classification/institutes", "army"],
+          "basis": "material/object form and thematic cluster strongly resemble the manifest's three-English-volume family; several items retain Nepali titles/bundle descriptions",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol011.html",
+          "source_control": "No exact Box 2 / Item 12 mark is currently transcribed for vol.11; it may represent another old volume, later aggregation, or companion material."
+        },
+        {
+          "modern_ref": "MSS EUR HODGSON/9",
+          "relation_tier": "C_THEMATIC_CANDIDATE",
+          "support": "mostly machine-made paper",
+          "content_overlap": ["ethnographic classification", "customs/manners", "army"],
+          "basis": "substantial subject overlap but heterogeneous object states and no old item-12 identifier in online description",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+        }
+      ],
+      "key_interpretation": "MSS EUR HODGSON/6 is currently the strongest candidate modern survival of at least part of 1864 item 12. The exact historical item number and matching content jointly exceed thematic coincidence, but direct BHH/11/14-BHH/19/5 comparison is required before calling it proven."
+    }
+  ],
+  "crosswalk_hypothesis": "At least part of the modern vol.6/10/11 cluster may preserve or descend from the English-volume portion of Trunk No.2's second large bundle, while rough army scraps dispersed into vol.7/9. The 1921 size-based binding may have re-segmented these older transfer units.",
+  "falsification_tests": [
+    "Read RAS BHH/11/14 and BHH/19/5 item 12 and compare wording/annotations against Hunter 1896.",
+    "Inspect the old leather/title layer of vol.6 to determine whether Box 2 / Item 12 is an 1864 transfer address or an earlier shipment address.",
+    "Inspect vol.10 for old cover/container labels; a matching Box/Item address would strengthen item 11 mapping.",
+    "Inspect all six vol.11 notebook covers for old numbers/bundle descriptions and test whether three historical English volumes can be reconstructed.",
+    "Compare physical dimensions and binding structures to see whether 1921 could have combined/split the old English volumes.",
+    "Locate Persian/Khas companion papers named in manifest item 12 and test whether modern cross-references converge on the same English states."
+  ],
+  "source_control_rules": [
+    "Content overlap plus number match supports a high-confidence candidate but is not identical to diplomatic identity proof.",
+    "Do not collapse 'Trunk No.2', 'second large bundle', and Cambridge 'Box 2' into one hierarchy without physical list comparison.",
+    "The 1864 'three volumes' need not equal three modern 1921 volume numbers.",
+    "Modern vol.11's six pre-bound notebooks may be remnants of multiple historical volumes or a later combination.",
+    "Hunter 1896 is a downstream reproduction; event-near RAS list states outrank it once directly inspected."
+  ]
+}
