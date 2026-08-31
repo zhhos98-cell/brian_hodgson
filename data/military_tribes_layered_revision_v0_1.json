@@ -1,0 +1,84 @@
+{
+  "dataset": "military_tribes_layered_revision_v0_1",
+  "date": "2026-09-01",
+  "central_claim": "Hodgson's military-tribes paper was revised asynchronously by epistemic/documentary layer. In 1857, a new retrospective recruitment footnote was added while older historical and physiognomic base-text readings remained unchanged; later publication states revised those other layers separately.",
+  "layers": [
+    {
+      "id": "MTRL-POLICY-RECRUITMENT",
+      "layer": "recruitment_policy",
+      "1833_state": "argument for desirability/reliability of Gorkhali recruitment",
+      "1857_state": "new retrospective footnote explicitly says subsequent experience tested value/availability and regrets earlier recruitment policy was not followed",
+      "revision_timing": "updated by 1857",
+      "material_mode": "new typeset footnote appended to retained reprint body",
+      "mechanism": "PARATEXTUAL_REVISION_WITH_BASE_TEXT_RETENTION"
+    },
+    {
+      "id": "MTRL-GORKHA-DATE",
+      "layer": "historical_dating",
+      "1833_state": "70 years ago",
+      "1857_state": "seventy years ago",
+      "1872_state": "UNREAD; transmission predicts some",
+      "1874_base": "some years ago",
+      "1874_correction": "about 100 years ago",
+      "revision_timing": "no change through 1857; later at least two transformations",
+      "mechanism": "RETROSPECTIVE_CHRONOLOGICAL_RECALIBRATION"
+    },
+    {
+      "id": "MTRL-PHYSIOGNOMY",
+      "layer": "physiognomic_semantics",
+      "1833_state": "general Calmak caste and character",
+      "1857_state": "general caste and character",
+      "1872_state": "UNREAD; transmission predicts caste",
+      "1874_base": "caste",
+      "1874_correction": "cast",
+      "revision_timing": "caste stable in published tradition for at least 1833-1857 and still present in 1874 base; explicit cast correction is late",
+      "mechanism": "LATE_SEMANTIC_RECALIBRATION_AFTER_LONG_PRINT_STABILITY",
+      "source_control": "1832 manuscript reading remains unread; cast may still restore an unpublished early reading, but it does not restore the 1833 printed reading"
+    },
+    {
+      "id": "MTRL-CLASSIFICATION-TABLE",
+      "layer": "tabular_classification",
+      "1833_state": "detailed table present",
+      "1857_state": "table retained/reprinted",
+      "1874_corrections": "no explicit correction located in pp.42-44 table within printed Additions and Corrections apparatus",
+      "revision_timing": "explicit apparatus shows relative stability compared with surrounding prose",
+      "source_control": "absence from correction list does not prove diplomatic identity of every table entry"
+    }
+  ],
+  "1857_composite_state": {
+    "base_text_times": ["1833/earlier descriptive readings retained"],
+    "new_paratext_time": "1857 retrospective policy footnote",
+    "formula": "1857 print state = retained older body + new retrospective footnote",
+    "mechanisms": ["PRINTED_PAGE_CAN_HOST_DIFFERENT_VERSION_TIMES_SIMULTANEOUSLY", "ASYNCHRONOUS_REVISION_PRESERVED_ON_PRINT_SURFACES"]
+  },
+  "sources": [
+    {
+      "id": "SRC-1833-JASB",
+      "url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf",
+      "supports": ["1833 caste reading", "1833 70-year reading"]
+    },
+    {
+      "id": "SRC-1857-SELECTIONS",
+      "url": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt",
+      "supports": ["1857 caste reading", "1857 seventy-year reading", "1857 retrospective recruitment footnote"]
+    },
+    {
+      "id": "SRC-1875-INDIAN-ANTIQUARY",
+      "url": "https://jainqq.org/booktext/Indian_Antiquary_Vol_04_Romanized/032496",
+      "supports": ["Phoenix incorporated Hodgson marginal notes into text", "1874 papers reprinted from Phoenix states"]
+    }
+  ],
+  "source_control_rules": [
+    "Do not collapse a new footnote into a claim that the entire 1857 body was revised.",
+    "Do not treat layer-specific change dates as one document-wide revision date.",
+    "Do not call cast a restoration until 1832 manuscripts are directly read.",
+    "Phoenix target readings remain unread even though transmission predicts likely values.",
+    "Absence of a table correction in 1874 apparatus is not proof that no typographic or editorial changes occurred."
+  ],
+  "next_actions": [
+    "Read 1832 manuscript loci for cast/caste and chronology.",
+    "Read Phoenix No.26 target lines directly.",
+    "Track whether 1857 recruitment footnote is carried unchanged into Phoenix and 1874 or recoded into another layer.",
+    "Recover post-1874 annotated-copy changes touching the military-tribes paper."
+  ]
+}
