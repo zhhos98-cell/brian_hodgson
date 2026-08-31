@@ -1,0 +1,62 @@
+{
+  "dataset": "catalogue_distribution_clock_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "British Museum processing and distribution of Hodgson zoological collections, especially Jan-Mar 1845",
+  "status": "v0.1 reconstructed from ZSL transcriptions; object-level destination joins remain to be completed",
+  "clocks": [
+    {"id":"RECEIPT_CLOCK","operation":"physical receipt/unpacking"},
+    {"id":"PREPARATION_CLOCK","operation":"stuffing/preparation/repair; can temporarily remove object from inventory surface"},
+    {"id":"SORTING_CLOCK","operation":"reference/duplicate set construction"},
+    {"id":"NAMING_CLOCK","operation":"identification and name stabilization"},
+    {"id":"DESTINATION_CLOCK","operation":"assignment of set to institution/person"},
+    {"id":"DESPATCH_CLOCK","operation":"physical onward distribution"},
+    {"id":"LIST_UPDATE_CLOCK","operation":"write distribution/corrections back into mutable list"},
+    {"id":"CATALOGUE_CLOCK","operation":"compile detailed catalogue"},
+    {"id":"CATALOGUE_PROPAGATION_CLOCK","operation":"send catalogue/reference layer with distributed set"},
+    {"id":"RECONCILIATION_CLOCK","operation":"compare/correct omissions and inaccuracies after distribution"}
+  ],
+  "events": [
+    {
+      "id":"GRAY_PLEDGE_1844",
+      "date":"1844",
+      "state":"planned",
+      "claims":["describe new species within ~1 month","catalogue within 3-4 months","catalogue distributed with each duplicate set"],
+      "mechanism":"CATALOGUE_AS_DISTRIBUTED_REFERENCE_LAYER"
+    },
+    {
+      "id":"GRAY_1845_02_06",
+      "date":"1845-02-06",
+      "source":"NZSL/HOD/5/2/15",
+      "states":[
+        "Tibetan pheasant escaped marking because at stuffer when list prepared",
+        "birds already distributed according to list",
+        "catalogue still being prepared",
+        "mammal distribution already represented on list",
+        "bird list requested back so subsequent distributions could be added"
+      ],
+      "mechanisms":["PROCESS_STAGE_VISIBILITY_GAP","DISTRIBUTION_BEFORE_CATALOGUE_COMPLETION","POST_HOC_DISTRIBUTION_WRITEBACK"]
+    },
+    {
+      "id":"GRAY_1845_02_13",
+      "date":"1845-02-13",
+      "source":"NZSL/HOD/5/2/16",
+      "set_counts":{"British_Museum":352,"Collection_1":140,"Collection_2":79,"Collection_3":40,"poorly_or_un_named":52},
+      "states":["boxes examined and divided into four collections","Collection 1-3 destinations not yet assigned","52 specimens of comparatively little use due naming deficit"],
+      "mechanisms":["SET_CONSTRUCTION_BEFORE_DESTINATION_ASSIGNMENT","NAMING_DEFICIT_AS_USE_CONSTRAINT","PHYSICAL_SORTING_AHEAD_OF_SEMANTIC_STABILIZATION"]
+    },
+    {
+      "id":"HODGSON_CORRECTION_1845_03",
+      "date":"1845-03",
+      "state":"reconciliation",
+      "claim":"distribution statement full of omissions and inaccuracies; corrected copy requested",
+      "mechanism":"RECONCILIATION_AFTER_ASYNCHRONOUS_PROCESSING"
+    }
+  ],
+  "failure_types": [
+    {"id":"TEMPORARY_PROCESS_ABSENCE","example":"specimen at stuffer absent from list marking","not_equivalent_to":"loss"},
+    {"id":"SEMANTIC_DEFICIT","example":"unnamed/poorly named specimens physically present but low institutional use","not_equivalent_to":"bad physical condition"},
+    {"id":"PHYSICAL_CONDITION_DEFICIT","example":"specimens too damaged for distribution/use","not_equivalent_to":"unnamed specimen"},
+    {"id":"EXPORTED_INTERMEDIATE_METADATA","example":"destination set may be formed/despatched while naming/catalogue still changing","not_equivalent_to":"later recipient corruption"}
+  ],
+  "core_hypothesis":"Physical sorting, naming, destination assignment, distribution and catalogue construction ran on asynchronous clocks and modified one another. Destination collections could therefore inherit distinct metadata states at the moment of distribution. Later divergence may preserve initial processing-state differences rather than solely later institutional corruption."
+}
