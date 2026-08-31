@@ -1,0 +1,110 @@
+{
+  "dataset": "pre1921_identifier_surface_census_v0_1",
+  "date": "2026-09-01",
+  "status": "pilot census of explicit historical shipment/container identifiers surviving on modern bound objects",
+  "central_claim": "Historical shipment/container identifiers survive across support types, languages and documentary states. They are relational keys, not markers of a single material or linguistic class.",
+  "records": [
+    {
+      "id": "IDS-V58-SACK8-CONTROL",
+      "modern_ref": "MSS EUR HODGSON/58 item 18 f.65",
+      "identifier_type": "sack_contents_control",
+      "identifier_value": "8",
+      "identifier_context": "sack No. 8 of original shipment",
+      "support": "Nepali hand-made paper",
+      "language": "Nepali",
+      "document_state": "contents list",
+      "content_scope": "customs and manners of different ethnic communities",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html"
+    },
+    {
+      "id": "IDS-V85-4-SACK8-MEMBER",
+      "modern_ref": "MSS EUR HODGSON/85 item 4 ff.95-108",
+      "identifier_type": "member_object_sack_number",
+      "identifier_value": "8",
+      "identifier_context": "original sack number (8) mentioned in Nepali title description",
+      "support": "hand-made Nepali paper with small mixed acidic section",
+      "language": "Limbu + Nepali",
+      "document_state": "local religious/agricultural/marriage text",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol085.html",
+      "direct_relation": "same historical sack number as IDS-V58-SACK8-CONTROL"
+    },
+    {
+      "id": "IDS-V1-8-BOX-SACK",
+      "modern_ref": "MSS EUR HODGSON/1 item 8 ff.281-290",
+      "identifier_type": "member_object_box_and_sack_number",
+      "identifier_value": "not transcribed in online catalogue",
+      "identifier_context": "original box and sack number at time of shipment given in Nepali on final page",
+      "support": "imported paper",
+      "dimensions": "33.7 x 20.5 cm",
+      "language": "English with Nepali title/identifier layer",
+      "writer": "Campbell",
+      "document_state": "second English copy of Nepalese narrative of Britain-Nepal relations",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol001.html",
+      "mechanism": "SHIPMENT_IDENTIFIER_CROSSES_SUPPORT_AND_LANGUAGE"
+    },
+    {
+      "id": "IDS-V4-NOTEBOOKS",
+      "modern_ref": "MSS EUR HODGSON/4 pre-bound notebooks",
+      "identifier_type": "original_shipment_number_on_cover",
+      "identifier_value": "not transcribed in online catalogue",
+      "identifier_context": "in most cases Nepali title and original shipment number in Nepali language/script on cover page",
+      "support": "machine-made paper notebooks; item 5 includes two machine-made paper types",
+      "language": "English working texts with Nepali cover metadata",
+      "document_states": ["ethnography", "Buddhist scripture list", "geographical account", "routes to Tibet/Peking"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol004.html",
+      "mechanism": "OLD_SHIPMENT_METADATA_ON_MACHINE_PAPER_WORKING_NOTEBOOK"
+    },
+    {
+      "id": "IDS-V5-NOTEBOOKS",
+      "modern_ref": "MSS EUR HODGSON/5 pre-bound notebooks",
+      "identifier_type": "original_shipment_or_sack_number_on_cover",
+      "identifier_value": "not transcribed in online catalogue",
+      "identifier_context": "covers normally bear Nepali title and original shipment number; Jatamala notebooks explicitly preserve original sack numbers",
+      "support": "machine-made paper",
+      "language": "English working/summary states with Nepali cover metadata",
+      "writers": ["Hodgson", "Campbell"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol005.html",
+      "mechanism": "OLD_SHIPMENT_METADATA_ON_MACHINE_PAPER_DERIVATIVE"
+    },
+    {
+      "id": "IDS-V55-BOX3",
+      "modern_ref": "MSS EUR HODGSON/55 item 20 f.129v",
+      "identifier_type": "box_contents_control",
+      "identifier_value": "3",
+      "identifier_context": "content page of box No. 3 of original shipment",
+      "support": "within mixed support item, mostly Nepali hand-made with some machine-made",
+      "language": "Nepali/Hindi/Avadhi-Kaithi context",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol055.html",
+      "source_control": "box 3 continuity with RAS BHH/11/1 1837 Box 3 unresolved"
+    },
+    {
+      "id": "IDS-V94-BUNDLE-LIST",
+      "modern_ref": "MSS EUR HODGSON/94 item 7 ff.40-44",
+      "identifier_type": "bundle_number_and_category_list",
+      "identifier_value": "not transcribed in online catalogue",
+      "identifier_context": "original Kathmandu shipment bundle numbers and categories on separated content/title leaves",
+      "support": "Nepali hand-made paper",
+      "language": "Farsi with Nepali title description",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol094.html",
+      "mechanism": "CONTAINER_METADATA_SURVIVES_AFTER_MEMBER_SEPARATION"
+    }
+  ],
+  "cross_class_findings": [
+    "Shipment/container identifiers occur on Nepali hand-made paper, imported paper and machine-made paper.",
+    "They occur on local-language source texts, English derivative/copy states and bilingual/multilingual metadata surfaces.",
+    "The same identifier system can therefore link documents across material and linguistic classes.",
+    "Historical container identity must be coded separately from support, language and modern shelfmark."
+  ],
+  "source_control_rules": [
+    "Do not reconstruct unread identifier values omitted by the online catalogue.",
+    "Do not equate box/sack numbers across dates without content-level confirmation.",
+    "A cover number proves historical container assignment, not direct textual descent.",
+    "Identifier language does not determine the language or origin of the underlying document."
+  ],
+  "next_actions": [
+    "Physically recover identifier values on vol.1 item 8, vol.4 and vol.5 covers.",
+    "Transcribe vol.94 bundle-number list and search matching numerals/titles across the corpus.",
+    "Compare Box 3 in vol.55 f.129v against RAS BHH/11/1 contents.",
+    "Expand census with every explicit original shipment/sack/bundle identifier in Cambridge inventory."
+  ]
+}
