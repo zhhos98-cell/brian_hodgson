@@ -1,0 +1,80 @@
+{
+  "dataset": "post1874_annotated_print_branches_v0_1",
+  "date": "2026-09-01",
+  "status": "secondary eyewitness reconstruction; physical-copy verification pending",
+  "central_claim": "Multiple physical copies of Hodgson's 1874 Essays acquired divergent handwritten annotation histories. Edition identity therefore does not equal version identity.",
+  "source": {
+    "citation": "Harihar Raj Joshi and Indu Joshi, bibliography of Hodgson fugitive/extant materials, 2002",
+    "url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/2002%20Harihar-Indus%20Bibliography%20of%20Hodgson--bibliography%20of%20fugitive%20but%20extant%20materials%20by%20Joshi%20s.pdf",
+    "evidence_level": "secondary eyewitness/cataloguing observations",
+    "visual_verification_current_session": "failed: PDF screenshots returned 403"
+  },
+  "copies": [
+    {
+      "id": "APB-OWN-COPY-CORRECTED",
+      "printed_base": "Essays, 1874",
+      "inscription": "own copy corrected",
+      "annotation_media": ["lead pencil", "black ink"],
+      "layering": "black ink sometimes written over earlier pencil annotation",
+      "additional_material": "annotated/corrected map of Nepal and Tibet",
+      "dating_evidence": ["annotation sequence begins by 1876 according to Joshi", "contains references to publications after 1890"],
+      "military_tribes_specific_page_reported": "not specified in available page-list excerpt",
+      "mechanisms": ["LONG_DURATION_AUTHOR_COPY_REVISION", "PENCIL_TO_INK_ANNOTATION_LAYERING"]
+    },
+    {
+      "id": "APB-YET-ANOTHER-COPY",
+      "printed_base": "Essays, 1874",
+      "description": "Joshi section 'Yet Another Annotated copy of Hodgson's Essays of 1874'",
+      "part_ii_annotated_pages": [1,4,13,14,15,16,29,30,32,33,34,46,55,61,65,66,67,68,83],
+      "military_tribes_pages_37_44_listed": false,
+      "mechanism": "COPY_SPECIFIC_ANNOTATION_DIVERGENCE"
+    },
+    {
+      "id": "APB-ALDERLEY-OCT1874",
+      "printed_base": "Essays, 1874",
+      "title_page_marks": ["BHHodgson", "Alderley Oct 1874"],
+      "part_ii_annotated_pages": [2,3,4,9,13,14,29,30,31,32,33,34,37,45,61,65,66,67,68,76,81,92,97,104,121],
+      "military_tribes_opening_page_37_annotated": true,
+      "annotation_content_page_37": "unresolved/not transcribed in Joshi excerpt",
+      "mechanisms": ["MILITARY_TRIBES_PRINT_REOPENED_FOR_HANDWRITTEN_REVISION", "POSTPUBLICATION_ANNOTATED_PRINT_BRANCHING"]
+    },
+    {
+      "id": "APB-TOWNSHEND-PRESENTATION",
+      "printed_base": "Essays, 1874",
+      "inscription": "To Mr. Townshend / with the affectionate regards of / the author / Alderley / Oct. 1. 1874",
+      "later_provenance_note": "Joshi reports presentation by the author's great-nephew in 1974",
+      "reported_annotation_pages": [14,30,61,120],
+      "military_tribes_pages_37_44_listed": false,
+      "mechanism": "PRESENTATION_COPY_AS_INDEPENDENT_VERSION_BRANCH"
+    }
+  ],
+  "later_reprint_interface": {
+    "id": "APB-SAHA-1972-SUPPLEMENT",
+    "description": "1972 Amsterdam reprint includes a Supplement of additions and corrections edited by Mahadeva Prasad Saha from handwritten annotations in the author's copy",
+    "exact_source_copy_identity": "unresolved",
+    "military_tribes_entries": "not yet recovered",
+    "mechanisms": ["HANDWRITTEN_MARGINALIA_REENTER_PRINT_IN_1972", "ANNOTATED_COPY_REQUIRES_WITNESS_IDENTITY_CONTROL"]
+  },
+  "graph_model": "1874 edition -> multiple copy-specific handwritten branches -> possible later editorial extraction/reprint",
+  "mechanisms": [
+    "POSTPUBLICATION_ANNOTATED_PRINT_BRANCHING",
+    "PRINT_COPY_BECOMES_MANUSCRIPT_VERSION",
+    "AUTHOR_COPY_AS_LONG_DURATION_REVISION_SURFACE",
+    "PARALLEL_ANNOTATED_PRINT_STATES",
+    "PRINT_MANUSCRIPT_RECURSION",
+    "PRINTED_FINALITY_REVERSED_BY_ANNOTATION"
+  ],
+  "source_control_rules": [
+    "Do not infer annotation content from page presence alone.",
+    "Do not merge the physical copies into one corrected-author text.",
+    "Joshi's provenance speculation about the copies' journey to Nepal is not established custody evidence.",
+    "Physically verify handwriting and page annotations before publication-level claims.",
+    "Identify the exact Saha source witness before connecting the 1972 supplement to any one copy branch."
+  ],
+  "next_actions": [
+    "Recover Part II p.37 annotation in APB-ALDERLEY-OCT1874.",
+    "Locate full 1972 Saha supplement and search Part II pp.37-44.",
+    "Locate current holders/call numbers of the annotated copies.",
+    "Compare post-1874 annotations with the 1874 printed correction apparatus."
+  ]
+}
