@@ -2,13 +2,14 @@
   "dataset": "pre1921_identifier_surface_census_v0_1",
   "date": "2026-09-01",
   "status": "pilot census of explicit historical shipment/container identifiers surviving on modern bound objects",
-  "central_claim": "Historical shipment/container identifiers survive across support types, languages and documentary states. They are relational keys, not markers of a single material or linguistic class.",
+  "central_claim": "Historical shipment/container identifiers survive across support types, languages and documentary states. They are relational keys, not markers of a single material or linguistic class. Exact numeric addresses must be separated from identifier-present-but-unread cases.",
   "records": [
     {
       "id": "IDS-V58-SACK8-CONTROL",
       "modern_ref": "MSS EUR HODGSON/58 item 18 f.65",
       "identifier_type": "sack_contents_control",
       "identifier_value": "8",
+      "identifier_status": "EXACT_NUMERIC",
       "identifier_context": "sack No. 8 of original shipment",
       "support": "Nepali hand-made paper",
       "language": "Nepali",
@@ -21,6 +22,7 @@
       "modern_ref": "MSS EUR HODGSON/85 item 4 ff.95-108",
       "identifier_type": "member_object_sack_number",
       "identifier_value": "8",
+      "identifier_status": "EXACT_NUMERIC",
       "identifier_context": "original sack number (8) mentioned in Nepali title description",
       "support": "hand-made Nepali paper with small mixed acidic section",
       "language": "Limbu + Nepali",
@@ -29,10 +31,26 @@
       "direct_relation": "same historical sack number as IDS-V58-SACK8-CONTROL"
     },
     {
+      "id": "IDS-V6-BOX2-ITEM12",
+      "modern_ref": "MSS EUR HODGSON/6 volume-level title/identifier layer",
+      "identifier_type": "box_and_item_address",
+      "identifier_value": {"box": 2, "item": 12},
+      "identifier_status": "EXACT_TWO_LEVEL_NUMERIC_ADDRESS",
+      "identifier_context": "Nepali title description mentions original box and Item number, 2 and 12 respectively",
+      "support": "volume overwhelmingly machine-made paper; all manuscripts are copies and most published",
+      "language": "English document corpus with Nepali title/identifier layer",
+      "document_states": ["copy", "fair copy", "published-source copy", "report", "table/list", "letter"],
+      "content_scope": ["ethnic/military classification", "law", "Kathmandu households", "military road", "commerce", "Nepali papermaking", "judicial system/police", "army survey"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html",
+      "mechanisms": ["HISTORICAL_ADDRESS_SURVIVES_AS_EXACT_TWO_LEVEL_KEY", "OLD_CONTAINER_ADDRESS_ON_MACHINE_PAPER_COPY_VOLUME"],
+      "source_control": "Do not equate Box 2 here with Box 2 of any earlier 1837/1842 list until the contents are directly reconciled; numbering systems may have been revised."
+    },
+    {
       "id": "IDS-V1-8-BOX-SACK",
       "modern_ref": "MSS EUR HODGSON/1 item 8 ff.281-290",
       "identifier_type": "member_object_box_and_sack_number",
       "identifier_value": "not transcribed in online catalogue",
+      "identifier_status": "IDENTIFIER_PRESENT_VALUE_UNREAD",
       "identifier_context": "original box and sack number at time of shipment given in Nepali on final page",
       "support": "imported paper",
       "dimensions": "33.7 x 20.5 cm",
@@ -47,6 +65,7 @@
       "modern_ref": "MSS EUR HODGSON/4 pre-bound notebooks",
       "identifier_type": "original_shipment_number_on_cover",
       "identifier_value": "not transcribed in online catalogue",
+      "identifier_status": "IDENTIFIER_PRESENT_VALUE_UNREAD",
       "identifier_context": "in most cases Nepali title and original shipment number in Nepali language/script on cover page",
       "support": "machine-made paper notebooks; item 5 includes two machine-made paper types",
       "language": "English working texts with Nepali cover metadata",
@@ -59,6 +78,7 @@
       "modern_ref": "MSS EUR HODGSON/5 pre-bound notebooks",
       "identifier_type": "original_shipment_or_sack_number_on_cover",
       "identifier_value": "not transcribed in online catalogue",
+      "identifier_status": "IDENTIFIER_PRESENT_VALUE_UNREAD",
       "identifier_context": "covers normally bear Nepali title and original shipment number; Jatamala notebooks explicitly preserve original sack numbers",
       "support": "machine-made paper",
       "language": "English working/summary states with Nepali cover metadata",
@@ -71,6 +91,7 @@
       "modern_ref": "MSS EUR HODGSON/55 item 20 f.129v",
       "identifier_type": "box_contents_control",
       "identifier_value": "3",
+      "identifier_status": "EXACT_NUMERIC",
       "identifier_context": "content page of box No. 3 of original shipment",
       "support": "within mixed support item, mostly Nepali hand-made with some machine-made",
       "language": "Nepali/Hindi/Avadhi-Kaithi context",
@@ -82,6 +103,7 @@
       "modern_ref": "MSS EUR HODGSON/94 item 7 ff.40-44",
       "identifier_type": "bundle_number_and_category_list",
       "identifier_value": "not transcribed in online catalogue",
+      "identifier_status": "IDENTIFIER_PRESENT_VALUE_UNREAD",
       "identifier_context": "original Kathmandu shipment bundle numbers and categories on separated content/title leaves",
       "support": "Nepali hand-made paper",
       "language": "Farsi with Nepali title description",
@@ -89,22 +111,32 @@
       "mechanism": "CONTAINER_METADATA_SURVIVES_AFTER_MEMBER_SEPARATION"
     }
   ],
+  "evidence_classes": {
+    "EXACT_TWO_LEVEL_NUMERIC_ADDRESS": "box/item or equivalent multi-level old address explicitly transcribed by the catalogue",
+    "EXACT_NUMERIC": "single historical sack/box number explicitly transcribed",
+    "IDENTIFIER_PRESENT_VALUE_UNREAD": "catalogue states that an old identifier survives but does not reproduce its value"
+  },
   "cross_class_findings": [
     "Shipment/container identifiers occur on Nepali hand-made paper, imported paper and machine-made paper.",
     "They occur on local-language source texts, English derivative/copy states and bilingual/multilingual metadata surfaces.",
     "The same identifier system can therefore link documents across material and linguistic classes.",
-    "Historical container identity must be coded separately from support, language and modern shelfmark."
+    "Historical container identity must be coded separately from support, language and modern shelfmark.",
+    "vol.6 provides an exact two-level historical address, Box 2 / Item 12, attached to a modern volume composed overwhelmingly of machine-paper English copies.",
+    "Numeric address nodes and unread-identifier nodes must not be treated as equivalent evidence in the reconstruction graph."
   ],
   "source_control_rules": [
     "Do not reconstruct unread identifier values omitted by the online catalogue.",
     "Do not equate box/sack numbers across dates without content-level confirmation.",
     "A cover number proves historical container assignment, not direct textual descent.",
-    "Identifier language does not determine the language or origin of the underlying document."
+    "Identifier language does not determine the language or origin of the underlying document.",
+    "Old addresses may have been renumbered at repacking events; repeated numerals across inventory states are candidates, not identities."
   ],
   "next_actions": [
+    "Search for additional exact old box/item/sack addresses across the Cambridge inventory.",
     "Physically recover identifier values on vol.1 item 8, vol.4 and vol.5 covers.",
     "Transcribe vol.94 bundle-number list and search matching numerals/titles across the corpus.",
     "Compare Box 3 in vol.55 f.129v against RAS BHH/11/1 contents.",
-    "Expand census with every explicit original shipment/sack/bundle identifier in Cambridge inventory."
+    "Compare vol.6 Box 2 / Item 12 against event-specific RAS inventory states without assuming number continuity.",
+    "Use evidence class as an edge-confidence field in the historical-container graph."
   ]
 }
