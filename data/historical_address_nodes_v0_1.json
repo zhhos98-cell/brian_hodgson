@@ -1,0 +1,119 @@
+{
+  "dataset": "historical_address_nodes_v0_1",
+  "date": "2026-09-01",
+  "status": "exact-address graph seed",
+  "scope": "Historical container/shipment addresses whose numeric values are explicitly transcribed in the Cambridge catalogue, separated from cases where an old number is known to survive but remains unread online.",
+  "graph_rule": "Only explicit numeric historical addresses become address nodes. Identifier-present-but-unread objects remain pending nodes until image/object inspection.",
+  "address_nodes": [
+    {
+      "node_id": "ADDR-SACK-8",
+      "address_type": "sack",
+      "address_value": 8,
+      "historical_system": "original shipment, date/system not yet securely mapped to RAS inventory state",
+      "modern_edges": [
+        {
+          "modern_ref": "MSS EUR HODGSON/58 item 18 f.65",
+          "edge_type": "CONTENTS_CONTROL_SURFACE",
+          "evidence": "catalogue title: Content of manuscripts from sack No. 8 of the original shipment",
+          "support": "Nepali hand-made",
+          "confidence": "very high"
+        },
+        {
+          "modern_ref": "MSS EUR HODGSON/85 item 4 ff.95-108",
+          "edge_type": "MEMBER_OBJECT_IDENTIFIER",
+          "evidence": "catalogue says original sack number (8) is mentioned in Nepali",
+          "support": "Nepali hand-made",
+          "confidence": "very high"
+        }
+      ],
+      "mechanism": "DIRECT_OLD_CONTAINER_TO_MULTIPLE_MODERN_SHELFMARKS"
+    },
+    {
+      "node_id": "ADDR-BOX-3",
+      "address_type": "box",
+      "address_value": 3,
+      "historical_system": "original shipment, exact inventory generation unresolved",
+      "modern_edges": [
+        {
+          "modern_ref": "MSS EUR HODGSON/55 item 20 f.129v",
+          "edge_type": "CONTENTS_CONTROL_SURFACE",
+          "evidence": "catalogue: Content page of box No. 3 of original shipment",
+          "support": "embedded in mixed-support item",
+          "confidence": "very high"
+        }
+      ],
+      "candidate_historical_crosswalk": "RAS BHH/11/1 includes a Box 3 in the 1837 five-box list, but continuity is NOT established",
+      "crosswalk_status": "UNRESOLVED_CONTENT_CHECK_REQUIRED"
+    },
+    {
+      "node_id": "ADDR-BOX2-ITEM12",
+      "address_type": "two_level_box_item",
+      "address_value": {"box": 2, "item": 12},
+      "historical_system": "original box/item address preserved in Nepali title layer; exact inventory generation unresolved",
+      "modern_edges": [
+        {
+          "modern_ref": "MSS EUR HODGSON/6",
+          "edge_type": "VOLUME_LEVEL_HISTORICAL_ADDRESS",
+          "evidence": "Cambridge volume description: Nepali title mentions original box and Item number, 2 and 12 respectively",
+          "support": "overwhelmingly machine-made paper",
+          "language": "English corpus with Nepali title/address layer",
+          "documentary_state": "all manuscripts copies; most published",
+          "confidence": "very high"
+        }
+      ],
+      "content_scope": [
+        "ethnic/military classification",
+        "law/legal practice",
+        "Kathmandu Valley households",
+        "military-road measurement",
+        "commerce",
+        "Nepali papermaking",
+        "judicial system/police",
+        "army survey"
+      ],
+      "candidate_historical_crosswalk": "RAS BHH/11/1 has a Box 2 in its 1837 five-box system, but public catalogue does not expose Box 2 contents; no continuity claim allowed",
+      "crosswalk_status": "UNRESOLVED_CONTENT_CHECK_REQUIRED",
+      "mechanisms": ["HISTORICAL_ADDRESS_SURVIVES_AS_EXACT_TWO_LEVEL_KEY", "OLD_CONTAINER_ADDRESS_ON_MACHINE_PAPER_COPY_VOLUME"]
+    }
+  ],
+  "pending_identifier_nodes": [
+    {
+      "modern_ref": "MSS EUR HODGSON/1 item 8 f.290b",
+      "known_identifier_type": "original box + sack",
+      "value": "unread online",
+      "support": "imported paper",
+      "language": "English copy with Nepali identifier layer"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/4 notebooks",
+      "known_identifier_type": "original shipment number",
+      "value": "unread online",
+      "support": "machine-made paper"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/5 notebooks",
+      "known_identifier_type": "original shipment/sack number",
+      "value": "unread online",
+      "support": "machine-made paper"
+    },
+    {
+      "modern_ref": "MSS EUR HODGSON/94 item 7 ff.40-44",
+      "known_identifier_type": "bundle numbers/categories",
+      "value": "unread online",
+      "support": "Nepali hand-made paper"
+    }
+  ],
+  "source_control_rules": [
+    "The numeral alone does not establish that two inventory generations use the same numbering system.",
+    "Box 2 or Box 3 in a modern-surviving label is not automatically the same box as Box 2 or Box 3 in RAS BHH/11/1 (1837).",
+    "A volume-level old address may describe a historical packet/copy family now bound together; physical title/cover inspection is required to determine its exact scope.",
+    "Do not promote pending identifier nodes to numeric graph nodes by inference from topic or modern order."
+  ],
+  "next_actions": [
+    "Inspect RAS BHH/11/1 and transcribe 1837 Box 2 and Box 3 contents.",
+    "Compare Box 2 contents with the thematic/title cluster of MSS EUR HODGSON/6, including the old Item 12 relation.",
+    "Compare Box 3 contents with vol.55 f.129v before joining nodes.",
+    "Recover unread box/sack/shipment numbers from vol.1, vol.4, vol.5 and vol.94 images or physical objects.",
+    "Search for repeated exact old addresses elsewhere in Cambridge after each number is recovered."
+  ]
+}
