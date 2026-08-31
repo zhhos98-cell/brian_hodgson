@@ -1,12 +1,12 @@
 # Hodgson paper mainline status — 2026-08-31
 
-Status: active article mainline, updated through Waves 23–32. This file is the guardrail against drift into generic Hodgson biography. The current article is about paper manufacture, stock, allocation, documentary versioning and custody.
+Status: active article mainline, updated through Waves 23–33. This file is the guardrail against drift into generic Hodgson biography. The current article is about paper manufacture, stock, allocation, documentary versioning, work organisation and custody.
 
 ## Current paper-centred question
 
 How did paper move through manufacture, procurement, storage, allocation, knowledge conversion and later custody, and how did those material transitions affect what Hodgson and his collaborators could write, draw, compare, translate, tabulate, transport and institutionalise?
 
-The newest refinement is that `knowledge conversion` must be treated as **material versioning**, not as a one-way support switch.
+The current refinement is that `knowledge conversion` must be treated as **material versioning**, and paper allocation must be explained through work settings rather than actor nationality.
 
 ## Current argument stack
 
@@ -16,9 +16,7 @@ The newest refinement is that `knowledge conversion` must be treated as **materi
 
 `same broad material source + different process history -> different paper properties`.
 
-Core mechanism:
-
-`PROCESS_HISTORY_EMBODIED_IN_SHEET`.
+Core mechanism: `PROCESS_HISTORY_EMBODIED_IN_SHEET`.
 
 ### B. Interface-relative affordance
 
@@ -26,9 +24,7 @@ Darjeeling and Serampore:
 
 `property value = material property × technical interface × intended operation`.
 
-Core mechanism:
-
-`AFFORDANCE_REVERSAL`.
+Core mechanism: `AFFORDANCE_REVERSAL`.
 
 ### C. Mixed-stock ecology
 
@@ -44,27 +40,23 @@ Core mechanisms:
 
 Watermark date may substantially predate object-use date; paper can have a storage/recirculation history before research use.
 
-Core mechanism:
-
-`PAPER_STOCK_RETENTION_OR_REUSE`.
+Core mechanism: `PAPER_STOCK_RETENTION_OR_REUSE`.
 
 ### E. Allocation by operation
 
-Cambridge support×operation work suggests that support tracks documentary operation, actor/workplace and version layer more strongly than subject alone.
+Cambridge support×operation work suggests that support tracks documentary operation, workplace and version layer more strongly than subject alone.
 
 Recurring but non-exclusive pattern:
 
 `local source/copy layer -> often Nepali handmade`
 
-`Hodgson/Campbell analytical, tabular, questionnaire, fair/reporting layer -> often machine/imported`
+`Residency analytical, tabular, questionnaire, fair/reporting layer -> often machine/imported`
 
 `composite or long-lived dossier -> often mixed`.
 
-Counterexamples are structurally important: English texts can remain on Nepali handmade paper, and Nepali/Farsi states can occur on machine-made paper.
+Counterexamples remain structural: English texts can remain on Nepali handmade paper, and Nepali/Farsi states can occur on machine-made paper.
 
-Core mechanism:
-
-`PAPER_ALLOCATION_AS_RESEARCH_INFRASTRUCTURE`.
+Core mechanism: `PAPER_ALLOCATION_AS_RESEARCH_INFRASTRUCTURE`.
 
 ### F. Documentary conversion is material versioning
 
@@ -80,9 +72,7 @@ A source can generate multiple derivative states whose supports diverge.
 
 Working model:
 
-`target support = source support × available stock × actor/workplace × derivative format × intended operation × custody/publication pathway`.
-
-This is a falsifiable heuristic, not a completed causal equation.
+`target support = source support × available stock × workplace × derivative format × writer role × intended operation × custody/publication pathway`.
 
 Core mechanisms:
 
@@ -93,7 +83,7 @@ Core mechanisms:
 
 ### G. Denominator/source control
 
-The conversion corpus now separates:
+The conversion corpus separates:
 
 - Tier A explicit source/derivative edges;
 - Tier B source-family→synthesis relations;
@@ -109,17 +99,39 @@ Core mechanisms:
 - `RELATION_STRENGTH_TIERING`
 - `CATALOGUE_RELATION_REQUIRES_FOLIO_CONTROL`.
 
-### H. Post-use custody
+### H. Actor-origin hypothesis falsified
+
+A simple `British writer -> machine/imported` / `local writer -> Nepali handmade` model is already contradicted by the archive.
+
+Counterexamples:
+
+- Ashraf Ali, Hodgson research assistant, writes English Q&A on machine-made paper (`vol.9/12`);
+- Ramtanu writes an English note to Hodgson on machine-made paper (`vol.14/10`);
+- Hodgson himself writes English route material on Nepali handmade paper (`vol.7/23`);
+- `vol.21` nevertheless contains a real cluster of native/non-native-English writers using Nepali handmade paper.
+
+Therefore actor identity remains a field, but ethnicity/national origin is not the causal explanation.
+
+Revised candidate:
+
+`support selection = stock access × workplace × task state × format × writer role × intended next operation`.
+
+Core mechanisms:
+
+- `ACTOR_ETHNICITY_DOES_NOT_DETERMINE_SUPPORT`
+- `WORKPLACE_STOCK_ACCESS_AS_CANDIDATE_VARIABLE`
+- `TASK_ALLOCATION_MEDIATES_SUPPORT_SELECTION`
+- `SHARED_WORKPLACE_PAPER_ACCESS`.
+
+### I. Post-use custody
 
 Auction splitting, private/institutional custody and shelfmark drift determine present access to paper evidence.
 
-Core mechanism:
-
-`POST_RESEARCH_PAPER_CUSTODY_HISTORY`.
+Core mechanism: `POST_RESEARCH_PAPER_CUSTODY_HISTORY`.
 
 ## Combined model
 
-`paper-object history = production history × supply/stock history × allocation × documentary versioning × post-use custody`.
+`paper-object history = production history × supply/stock history × allocation/work setting × documentary versioning × post-use custody`.
 
 ## Strongest empirical scenes at present
 
@@ -169,16 +181,17 @@ Both derivatives are chart-like, yet support diverges. This is currently the cle
 
 `vol.53/19 -> vol.7/21`: Nepali/Hindi source and English birta description both on Nepali handmade paper.
 
-`vol.51 fols.183–185 -> vol.21/3`: Nepali source and English rewritten/translated state both on Nepali handmade; the target is in the rough hand of a non-native English writer.
+`vol.51 fols.183–185 -> vol.21/3`: Nepali source and English rewritten/translated state both on Nepali handmade; target is in the rough hand of a non-native English writer.
 
-### 10. Newar kings partial branch
+### 10. Actor/workplace falsification set
 
-`vol.55/9` Nepali handmade chronicle
--> `vol.101/16` Farsi/Urdu translation on Nepali handmade
-AND
--> `vol.17/3` English chronicle whose paper support is omitted in the current catalogue.
+- `vol.21/3`, `vol.21/6`: local/native-writer English states on Nepali handmade;
+- `vol.9/12`: Ashraf Ali assistant state on machine-made;
+- `vol.14/10`: Ramtanu assistant state on machine-made;
+- `vol.8/1`: Campbell machine-made analytical chart;
+- `vol.7/23`: Hodgson English route state on Nepali handmade.
 
-Missing support is preserved as missing evidence.
+This makes `workplace + stock access + task` the active explanatory target.
 
 ## Current conversion denominator
 
@@ -188,7 +201,7 @@ Current working-table states:
 
 - 19 edges with known target support;
 - 4 explicit edges whose target support is unspecified in the catalogue;
-- among known targets: switch, continuity and one non-paper→paper medium-conversion edge are all represented.
+- switch, continuity and a non-paper→paper medium-conversion edge are all represented.
 
 These counts are **not publication statistics**. The inventory search is not yet proven exhaustive and cross-reference drift remains under reconciliation.
 
@@ -202,7 +215,7 @@ Tier B source-family relations and Tier C similarity links stay outside the dire
 
 ## Broad version ecologies
 
-The Buddhist chronicle/account family around `vol.52/2` is now analytically useful but deliberately excluded from the strict direct-edge count where relation semantics are broad.
+The Buddhist chronicle/account family around `vol.52/2` is analytically useful but deliberately excluded from the strict direct-edge count where relation semantics are broad.
 
 The family includes:
 
@@ -222,6 +235,7 @@ This demonstrates `VERSION_ECOLOGY_ACROSS_SUPPORTS`, while `similar`, `summary`,
 - `data/support_conversion_pairs_v0_1.json` — retained pilot state
 - `data/support_conversion_pairs_v0_2.json` — active relation-family dataset
 - `data/support_conversion_denominator_v0_1.json` — active explicit-edge denominator
+- `data/support_actor_workplace_pilot_v0_1.json` — actor hypothesis falsification pilot
 
 ## Active article/source notes
 
@@ -231,6 +245,7 @@ This demonstrates `VERSION_ECOLOGY_ACROSS_SUPPORTS`, while `similar`, `summary`,
 - `notes/PAPER_ARGUMENT_SUPPORT_CONVERSION_V0_2.md` — active material-versioning argument
 - `sources/WEB_RESEARCH_2026-08-31_WAVE31_CONVERSION_BRANCHING_AND_SUPPORT_CONTINUITY.md`
 - `sources/WEB_RESEARCH_2026-08-31_WAVE32_DENOMINATOR_MISSINGNESS_AND_DERIVATIVE_FAMILIES.md`
+- `sources/WEB_RESEARCH_2026-08-31_WAVE33_ACTOR_HYPOTHESIS_FALSIFICATION.md`
 
 ## Immediate research order
 
@@ -239,8 +254,8 @@ This demonstrates `VERSION_ECOLOGY_ACROSS_SUPPORTS`, while `similar`, `summary`,
 3. Physically compare the two branching systems first:
    - `vol.59/23 -> vol.2/3 + vol.102/19`;
    - `vol.59/38 -> vol.8/1 + vol.102/21`.
-4. Code actor, dimensions, binding, fair/rough state and correction density across Tier A derivatives.
-5. Test the actor hypothesis: local/native-writer English derivatives may disproportionately retain country-paper stock compared with Hodgson/Campbell analytical/fair states.
+4. Add named writer/role, dimensions, binding, fair/rough state and correction density across Tier A derivatives.
+5. Test workplace/stock-access patterns rather than writer nationality: compare multiple objects by Ashraf Ali, Ramtanu, Hodgson, Campbell and the vol.21 assistant/writer cluster.
 6. Resolve Cambridge item/folio drift before article citations.
 7. Resolve Christie's 1997 lot 171 from printed catalogue/BL accession records without web-ID inference.
 8. Run full sheet-level support census on BL Add Or 5338.
@@ -249,4 +264,4 @@ This demonstrates `VERSION_ECOLOGY_ACROSS_SUPPORTS`, while `similar`, `summary`,
 
 ## Guardrail
 
-Do not let the active paper article drift into a generic biography of Hodgson, a general history of all his disciplines, or a symbolic `local paper versus colonial paper` argument. Paper is treated as a material variable inside production, stock, allocation, versioning and custody systems. Non-paper evidence enters only when it reconstructs those operations.
+Do not let the active paper article drift into a generic biography of Hodgson, a general history of all his disciplines, a symbolic `local paper versus colonial paper` argument, or a personnel binary in which local actors are mechanically mapped onto local paper. Paper is treated as a material variable inside production, stock, work organisation, versioning and custody systems.
