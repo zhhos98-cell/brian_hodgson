@@ -1,0 +1,80 @@
+{
+  "dataset": "support_conversion_pairs_v0_1",
+  "date": "2026-08-31",
+  "status": "explicit-cross-reference pilot",
+  "scope": "Cambridge inventory pairs/chains where one Hodgson manuscript entry explicitly points to an original, translation, summary, copy or related analytical state and support class can be compared.",
+  "central_claim": "Some knowledge transformations in Hodgson's archive coincide with a change of paper support; support conversion is one component of documentary recoding, not a deterministic language rule.",
+  "pairs": [
+    {
+      "id": "SCP-POPULATION-KATHMANDU",
+      "relation": "local data -> English survey/copy state",
+      "source": {"ref":"vol.59/6","support":"NEPALI_HANDMADE","language":"Hindi + Nepali","operation":"checked population/household data","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html"},
+      "targets": [
+        {"ref":"vol.6/3","support":"MACHINE_MADE","language":"English","operation":"survey copy/list","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"},
+        {"ref":"vol.3/15","support":"MACHINE_MADE","language":"English","operation":"population summary/survey state","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol003.html"}
+      ],
+      "mechanism":"SOURCE_TO_SURVEY_ABSTRACTION_SUPPORT_SWITCH",
+      "confidence":"high cross-reference; descent details require physical comparison"
+    },
+    {
+      "id": "SCP-REVENUE-BAISE-CAUVISE",
+      "relation": "Nepali revenue list -> English comparative working state",
+      "source": {"ref":"vol.74/14","support":"NEPALI_HANDMADE","language":"Nepali","operation":"principalities/revenue list","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol074.html"},
+      "target": {"ref":"vol.7/10","support":"MACHINE_MADE","language":"English","operation":"revenue/salary analytical working with corrections","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol007.html"},
+      "mechanism":"LOCAL_ACCOUNT_TO_ANALYTICAL_TABLE_SUPPORT_SWITCH",
+      "confidence":"high explicit summary cross-reference"
+    },
+    {
+      "id": "SCP-SALARIES-1836",
+      "relation": "Nepali original -> English abstract statement",
+      "source": {"ref":"vol.53/16","support":"NEPALI_HANDMADE","language":"Nepali","operation":"official salaries and landholder incomes","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol053.html"},
+      "target": {"ref":"vol.14/14 ff.152-159","support":"MACHINE_MADE","language":"English","operation":"abstract statement of annual khangi/salaries","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol014.html"},
+      "mechanism":"SOURCE_TO_ABSTRACT_MATERIAL_RECODING",
+      "confidence":"very high explicit original reference"
+    },
+    {
+      "id": "SCP-NEWAR-FESTIVAL-CYCLE",
+      "relation": "Nepali/Newari source -> English translated notebook",
+      "source": {"ref":"vol.58/11","support":"NEPALI_HANDMADE","language":"Nepali + Newari","operation":"festival cycle and household duties source","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html"},
+      "target": {"ref":"vol.20/5","support":"MACHINE_MADE","language":"English","operation":"translated/analytical festival almanac notebook","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol020.html"},
+      "mechanism":"TRANSLATION_AS_SUPPORT_CONVERSION",
+      "confidence":"very high reciprocal catalogue cross-reference"
+    },
+    {
+      "id": "SCP-TARAI-REVENUE-CONTRACTS",
+      "relation": "Nepali original contracts -> English copies",
+      "source": {"ref":"vol.53/1","support":"NEPALI_HANDMADE","language":"Nepali + Avadhi","operation":"revenue contracts/source records","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol053.html"},
+      "target": {"ref":"vol.14/6","support":"MACHINE_MADE","language":"English","operation":"copy of government levy contracts","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol014.html"},
+      "mechanism":"OFFICIAL_RECORD_TO_ENGLISH_COPY_SUPPORT_SWITCH",
+      "confidence":"very high target explicitly identifies original"
+    },
+    {
+      "id": "SCP-PALM-LEAF-LAND-DOCUMENTS",
+      "relation": "original palm leaf -> Nepal-paper copies -> machine-paper Urdu translations",
+      "source_original": {"ref":"vol.53/29","support":"PALM_LEAF","language":"Newari","operation":"original sealed land grant","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol053.html"},
+      "source_copy": {"ref":"vol.29/14","support":"NEPALI_HANDMADE","language":"Sanskrit + Newari","operation":"copies of 24 palm-leaf property documents with seal sketches","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol029.html"},
+      "target": {"ref":"vol.14/17","support":"MACHINE_MADE","language":"Urdu","operation":"translations of royal orders and palm-leaf documents","url":"https://hodgson.socanth.cam.ac.uk/chunkhtml/vol014.html"},
+      "mechanism":"MULTISTAGE_SUPPORT_CONVERSION_CHAIN",
+      "confidence":"very high explicit original/copy/translation cross-references"
+    }
+  ],
+  "counterexamples": [
+    {"ref":"vol.7/27","support":"NEPALI_HANDMADE","language":"English","operation":"translated routes","meaning":"English translation does not require machine support"},
+    {"ref":"vol.21/6","support":"NEPALI_HANDMADE","language":"English","operation":"Buddhist account by native writer","meaning":"English language does not determine support"},
+    {"ref":"vol.60/6","support":"MACHINE_MADE","language":"Nepali","operation":"brief Shakyamuni story","meaning":"local language does not determine handmade support"},
+    {"ref":"vol.53/12","support":"MACHINE_MADE","language":"Nepali","operation":"copy of royal order","meaning":"official/local documentary copy can use machine support"}
+  ],
+  "source_control_rules": [
+    "Cross-reference establishes a declared relation but not necessarily direct scribal descent; inspect text and handwriting before claiming exact copying sequence.",
+    "Support switch is associated with knowledge conversion in these cases, not asserted as a universal causal requirement.",
+    "Do not reduce support allocation to language.",
+    "Do not infer maker/origin from machine-made formation class.",
+    "Treat original, copy, translation, summary, abstract and table as distinct document states."
+  ],
+  "next_steps": [
+    "Search full inventory for reciprocal phrases: For English translation, For Nepali original, translated copy, summary, abstract, copy of.",
+    "Expand to denominator-complete transformation-pair census.",
+    "Physically compare dimensions, watermark/formation, handwriting and formatting for each pair.",
+    "Test whether support switch predicts change in tabulation, correction density, binding state or publication readiness."
+  ]
+}
