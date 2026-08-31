@@ -1,0 +1,125 @@
+{
+  "dataset": "military_tribes_problem_vs_text_graph_v0_1",
+  "date": "2026-09-01",
+  "status": "two-layer graph separating policy/problem continuity from textual/copy descent",
+  "problem_nodes": [
+    {
+      "id": "P-1825-MEMOIR",
+      "ref": "MSS EUR HODGSON/10 item 1",
+      "date": "1825-02",
+      "support": "MACHINE_MADE",
+      "state": "pre-bound administrative memorandum",
+      "problem": "Nepal army and possible absorption/recruitment of Nepal military manpower into British service",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol010.html"
+    },
+    {
+      "id": "P-1825-ROUGH",
+      "ref": "MSS EUR HODGSON/9 item 23",
+      "date": "1825",
+      "support": "MACHINE_MADE",
+      "state": "rough administrative report",
+      "problem": "Nepal army",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "P-1828-BAYLEY",
+      "ref": "MSS EUR HODGSON/9 item 22",
+      "date": "1828-04",
+      "support": "MACHINE_MADE",
+      "state": "rough military memoir / answers to Bayley queries",
+      "problem": "Nepal military organization and manpower",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "P-1833-PRINT",
+      "ref": "JASB 2 (1833):217-224",
+      "date": "1833-05",
+      "state": "learned-society article",
+      "problem": "classification of military tribes plus assessment of their suitability/recruitability for British service",
+      "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf"
+    }
+  ],
+  "textual_nodes": [
+    {
+      "id": "T-1831-ROUGH-CLASSIFICATION",
+      "ref": "MSS EUR HODGSON/7 item 20",
+      "date": "1831",
+      "support": "MACHINE_MADE",
+      "state": "rough classificatory source pool",
+      "markers": ["Khasa thars", "Bara-Magarant", "Magar family names", "Gurung clans"],
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol007.html"
+    },
+    {
+      "id": "T-1832-FAIR-TABLE",
+      "ref": "MSS EUR HODGSON/6 item 1",
+      "date": "1832-10",
+      "support": "MACHINE_MADE",
+      "state": "fair tabular paper",
+      "relation_to_print": "high-confidence prepublication candidate",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    },
+    {
+      "id": "T-UNDATED-FAIR-COPY",
+      "ref": "MSS EUR HODGSON/9 item 10",
+      "date": null,
+      "support": "MACHINE_MADE",
+      "state": "parallel fair copy",
+      "relation_to_T_1832": "copy family; direction unresolved",
+      "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol009.html"
+    },
+    {
+      "id": "T-1833-PRINT",
+      "ref": "JASB 2 (1833):217-224",
+      "date": "1833-05",
+      "state": "printed narrative plus table"
+    }
+  ],
+  "problem_edges": [
+    {
+      "from": "P-1825-MEMOIR",
+      "to": "P-1833-PRINT",
+      "type": "POLICY_PROBLEM_CONTINUITY",
+      "strength": "high",
+      "evidence": "both explicitly concern recruitment/utility of Nepal military manpower"
+    },
+    {
+      "from": "P-1825-MEMOIR",
+      "to": "P-1828-BAYLEY",
+      "type": "ADMINISTRATIVE_PROBLEM_REWORKING",
+      "strength": "high family-level"
+    }
+  ],
+  "textual_edges": [
+    {
+      "from": "T-1831-ROUGH-CLASSIFICATION",
+      "to": "T-1833-PRINT",
+      "type": "SOURCE_POOL_TO_PUBLICATION_FAMILY",
+      "strength": "strong",
+      "direct_copy": false
+    },
+    {
+      "from": "T-1832-FAIR-TABLE",
+      "to": "T-1833-PRINT",
+      "type": "PREPUBLICATION_CANDIDATE",
+      "strength": "high",
+      "direct_copy": "unresolved"
+    },
+    {
+      "from": "T-1832-FAIR-TABLE",
+      "to": "T-UNDATED-FAIR-COPY",
+      "type": "COPY_FAMILY",
+      "strength": "high",
+      "direction": "unresolved"
+    }
+  ],
+  "cross_layer_interpretation": {
+    "claim": "The administrative recruitment problem predates the surviving explicit ethnological classification apparatus. By 1831-32 the problem is materially recoded through thars, ethnic subdivisions, origin narratives and tabulation before publication in 1833.",
+    "mechanism": "ADMINISTRATIVE_PROBLEM_TO_CLASSIFICATORY_RECODING"
+  },
+  "source_control_rules": [
+    "Do not turn problem continuity into a direct textual arrow.",
+    "The 1825 memoir may eventually prove textually ancestral, but this requires direct heading/passage comparison.",
+    "Use separate edge types for policy continuity, source-family relation, and copy descent.",
+    "All surviving manuscript states in this graph are machine-made paper, demonstrating genre/version change without broad support-class change."
+  ]
+}
