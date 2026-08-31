@@ -1,0 +1,183 @@
+{
+  "dataset": "cross_collection_support_pair_matrix_v0_2",
+  "date": "2026-08-31",
+  "supersedes_or_extends": "data/cross_collection_support_pair_bodhicaryavatara_v0_1.json",
+  "scope": "Exact-work cross-support comparisons between RAS Hodgson palm-leaf witnesses and Cambridge paper witnesses, without assuming direct copy lineage.",
+  "source_control": {
+    "ras": "Cowell and Eggeling 1875 Hodgson catalogue, uploaded OCR/VL scan",
+    "cambridge": "Cecil Bendall 1883 Cambridge Buddhist Sanskrit manuscript catalogue, Internet Archive/Pahar digitised text and PDF",
+    "rule": "Explicit Bendall cross-reference to an RAS catalogue number raises work-identity confidence, but does not establish descent from the RAS physical witness."
+  },
+  "pairs": [
+    {
+      "work": "Bodhicaryavatara",
+      "comparison_class": "EXACT_WORK_CROSS_SUPPORT_PAIR_WITHOUT_COPY_LINEAGE",
+      "control_strength": "high",
+      "ras": {
+        "id": "RAS_HODGSON_MS_13",
+        "support": "palm leaf",
+        "leaves": 47,
+        "long_in": 12.5,
+        "short_in": 1.75,
+        "lines_per_page": 5,
+        "section_count": 10,
+        "aspect_ratio": 7.142857,
+        "area_proxy_sq_in": 21.875
+      },
+      "cambridge": {
+        "id": "CAMBRIDGE_ADD_869",
+        "support": "paper",
+        "leaves": 66,
+        "long_in": 10.25,
+        "short_in": 4.5,
+        "lines_per_page": 7,
+        "section_count": 10,
+        "aspect_ratio": 2.277778,
+        "area_proxy_sq_in": 46.125,
+        "hand_age": "modern ordinary Devanagari"
+      },
+      "explicit_cross_reference": "Bendall: See R. A. S. Cat. No. 13",
+      "relative_change_cambridge_over_ras": {
+        "long_axis_ratio": 0.82,
+        "short_axis_ratio": 2.571429,
+        "area_proxy_ratio": 2.108571
+      },
+      "mechanisms": ["SHORT_AXIS_EXPANSION_WITH_LONG_AXIS_REDUCTION", "SUPPORT_AFFORDANCE_VISIBLE_UNDER_TEXT_CONTROL"]
+    },
+    {
+      "work": "Gandavyuha",
+      "comparison_class": "EXACT_WORK_CROSS_SUPPORT_PAIR_WITHOUT_COPY_LINEAGE",
+      "control_strength": "high_explicit_ras_cross_reference",
+      "ras": {
+        "id": "RAS_HODGSON_MS_2",
+        "support": "palm leaf",
+        "leaves": 289,
+        "long_in": 22.5,
+        "short_in": 2.0,
+        "lines_per_page": 6,
+        "aspect_ratio": 11.25,
+        "area_proxy_sq_in": 45.0
+      },
+      "cambridge": {
+        "id": "CAMBRIDGE_ADD_917",
+        "support": "paper",
+        "leaves": 309,
+        "long_in": 13.5,
+        "short_in": 6.5,
+        "lines_per_page": 11,
+        "aspect_ratio": 2.076923,
+        "area_proxy_sq_in": 87.75,
+        "hand_age": "modern"
+      },
+      "explicit_cross_reference": "Bendall directs the work to R. A. S. Cat. No. 2",
+      "relative_change_cambridge_over_ras": {
+        "long_axis_ratio": 0.6,
+        "short_axis_ratio": 3.25,
+        "area_proxy_ratio": 1.95
+      },
+      "source_warning": "Bendall's printed fractions should be checked against the page image before final quotation, although multiple digitised text surrogates support 13 1/2 x 6 1/2 in.",
+      "mechanisms": ["SHORT_AXIS_EXPANSION_WITH_LONG_AXIS_REDUCTION", "EXTREME_OBLONG_TO_BROAD_PAGE_SHIFT"]
+    },
+    {
+      "work": "Ekallavira/Candamaharosana-tantra",
+      "comparison_class": "EXACT_WORK_CROSS_SUPPORT_PAIR_WITHOUT_COPY_LINEAGE",
+      "control_strength": "very_high_work_level",
+      "ras": {
+        "id": "RAS_HODGSON_MS_46",
+        "support": "palm leaf",
+        "leaves": 50,
+        "long_in": 8.5,
+        "short_in": 3.0,
+        "lines_per_page": "7-8",
+        "section_count_patalas": 25,
+        "aspect_ratio": 2.833333,
+        "area_proxy_sq_in": 25.5,
+        "age": "old"
+      },
+      "cambridge": {
+        "id": "CAMBRIDGE_ADD_1319",
+        "support": "paper",
+        "leaves": 70,
+        "long_in": 10.5,
+        "short_in": 3.0,
+        "lines_per_page": 6,
+        "section_count_patalas": 25,
+        "aspect_ratio": 3.5,
+        "area_proxy_sq_in": 31.5,
+        "date": "N.S. 944 / A.D. 1824"
+      },
+      "explicit_cross_reference": "Bendall: See R. A. S. Cat. No. 46; both catalogues give twenty-five patalas",
+      "relative_change_cambridge_over_ras": {
+        "long_axis_ratio": 1.235294,
+        "short_axis_ratio": 1.0,
+        "area_proxy_ratio": 1.235294
+      },
+      "mechanisms": ["LONG_AXIS_EXPANSION_WITH_SHORT_AXIS_STABILITY", "PAPER_CAN_EXTEND_POTHI_GEOMETRY", "SUPPORT_AFFORDANCE_IS_DIRECTIONALLY_NONDETERMINISTIC"]
+    },
+    {
+      "work": "Ashtasahasrika Prajnaparamita",
+      "comparison_class": "EXACT_WORK_MULTI_WITNESS_CROSS_SUPPORT_SET_WITHOUT_COPY_LINEAGE",
+      "control_strength": "high_named_work_and_32_chapter_recension_context",
+      "ras": {
+        "id": "RAS_HODGSON_MS_1",
+        "support": "palm leaf",
+        "leaves": 204,
+        "long_in": 22.5,
+        "short_in": 2.5,
+        "lines_per_page": 6,
+        "chapters": 32,
+        "aspect_ratio": 9.0,
+        "area_proxy_sq_in": 56.25,
+        "age": "old"
+      },
+      "cambridge_witnesses": [
+        {
+          "id": "CAMBRIDGE_ADD_1544",
+          "support": "paper",
+          "leaves": 172,
+          "long_in": 20.0,
+          "short_in": 2.0,
+          "lines_per_page": 7,
+          "date_or_age": "12th century",
+          "aspect_ratio": 10.0,
+          "area_proxy_sq_in": 40.0,
+          "relative_to_ras": {
+            "long_axis_ratio": 0.888889,
+            "short_axis_ratio": 0.8,
+            "area_proxy_ratio": 0.711111
+          },
+          "mechanisms": ["EARLY_PAPER_PRESERVES_EXTREME_POTHI_GEOMETRY", "PAPER_SUPPORT_WITHOUT_WIDTH_EXPANSION"]
+        },
+        {
+          "id": "CAMBRIDGE_ADD_1625",
+          "support": "paper",
+          "leaves": 406,
+          "long_in": 14.0,
+          "short_in": 4.5,
+          "lines_per_page": 7,
+          "date_or_age": "N.S. 948 / A.D. 1828",
+          "aspect_ratio": 3.111111,
+          "area_proxy_sq_in": 63.0,
+          "relative_to_ras": {
+            "long_axis_ratio": 0.622222,
+            "short_axis_ratio": 1.8,
+            "area_proxy_ratio": 1.12
+          },
+          "material_notes": "Bound in coloured boards with designs; first leaf illustrated; pages bordered by red and green stripes.",
+          "mechanisms": ["LATE_PAPER_BROAD_PAGE_REGIME", "SHORT_AXIS_EXPANSION_WITH_LONG_AXIS_REDUCTION"]
+        }
+      ],
+      "set_level_result": "Paper does not imply one replacement geometry. Within the same named work, early paper can retain an even more extreme long-narrow form while later paper can move into a broad page regime.",
+      "mechanisms": ["PAPER_GEOMETRY_BIFURCATION_WITHIN_SAME_WORK", "CHRONOLOGY_MEDIATES_SUPPORT_FORM", "SUPPORT_AFFORDANCE_REQUIRES_HISTORICAL_SELECTION"]
+    }
+  ],
+  "collection_context": {
+    "cambridge_collection": "Chiefly collected by Dr Daniel Wright and received at Cambridge from February 1873 to May 1876.",
+    "institutional_copying_programme": "Bendall states that on Cowell's suggestion Wright was initially asked to procure copies made to order from works extant in Nepal; specimen transcriptions became Add. 1042. Originals were subsequently found procurable.",
+    "warning": "Do not infer that every modern Cambridge paper manuscript was commissioned. Copy/procurement state must be established witness by witness.",
+    "mechanisms": ["INSTITUTIONAL_RECOPYING_AS_MANUSCRIPT_PRODUCTION", "PAPER_COPYING_AS_COLLECTION_BUILDING", "HODGSON_TO_WRIGHT_COLLECTION_SUCCESSION"]
+  },
+  "aggregate_interpretation": "Exact-work comparisons show multiple directions of geometric change: strong short-axis expansion, long-axis expansion with stable width, and persistence of extreme narrow paper forms. Paper is therefore best treated as changing manuscript format possibility space rather than determining a single replacement page geometry.",
+  "next_search": ["Samputodbhava", "Tattvajnanasamsiddhi-tippani", "Namasangiti-tika Gudhapada exact commentary", "Sadangayoga-tippani", "Adikarmapradipa"],
+  "method_warning": "All comparisons are work-level unless a direct exemplar/copy relation is independently established. Dimensions should be image-checked before publication quotation where OCR fractions are involved."
+}
