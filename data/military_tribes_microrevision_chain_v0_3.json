@@ -1,0 +1,164 @@
+{
+  "dataset": "military_tribes_microrevision_chain_v0_3",
+  "date": "2026-09-01",
+  "status": "active microrevision chain; Phoenix direct target readings unresolved",
+  "supersedes": "data/military_tribes_microrevision_chain_v0_2.json",
+  "central_claim": "The 1833 first print and 1857 Selections both directly preserve 'caste' in the physiognomic phrase, while 1857 also preserves 'seventy years ago'. Thus both later corrections occur after long-lived published readings. A near-contemporary 1875 review independently establishes that Phoenix reprints incorporated Hodgson's marginalia from his own earlier printed copies and fed the 1874 collected edition.",
+  "nodes": [
+    {
+      "id": "MT-1832-FAIR-V6-1",
+      "date": "1832-10",
+      "type": "fair_manuscript",
+      "ref": "MSS EUR HODGSON/6 item 1 ff.1-12b",
+      "support": "MACHINE_MADE",
+      "state": "fair writing, tabular classification",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "importance": "decisive manuscript witness for whether later revisions restore an early reading"
+    },
+    {
+      "id": "MT-1832-PARALLEL-V9-10",
+      "type": "parallel_fair_copy",
+      "ref": "MSS EUR HODGSON/9 item 10 ff.59-62",
+      "support": "MACHINE_MADE",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "relation": "Cambridge identifies another copy of vol.6/1"
+    },
+    {
+      "id": "MT-1833-JASB",
+      "date": "1833-05",
+      "type": "printed_article",
+      "support": "PRINT",
+      "gorkha_date_reading": "70 years ago",
+      "cast_caste_reading": "general Calmak caste and character",
+      "source": "https://pahar.in/pahar/Books%20and%20Articles/Nepal/1833%20Origin%20and%20Classification%20of%20Military%20Tribes%20of%20Nepal%20by%20Hodgson%20from%20JASBv2%20s.pdf",
+      "evidence_state": "direct searchable source text",
+      "mechanisms": ["EARLY_PRINT_CASTE_READING_SECURE"]
+    },
+    {
+      "id": "MT-1857-SELECTIONS",
+      "date": "1857",
+      "type": "printed_reprint",
+      "support": "PRINT",
+      "cast_caste_reading": "general caste and character",
+      "gorkha_date_reading": "seventy years ago",
+      "evidence_state": "direct searchable full text",
+      "mechanisms": ["EARLY_PRINT_READING_PERSISTS_TO_1857", "CASTE_READING_PERSISTS_ACROSS_1833_1857"]
+    },
+    {
+      "id": "MT-POST1857-AUTHOR-MARGINALIA",
+      "date_range": "after 1857, before/during Phoenix reprinting",
+      "type": "manuscript_on_print",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "description": "Hodgson's marginal notes on his own copies of the earlier Illustrations and Selections",
+      "evidence": "1874 editor notice plus 1875 Indian Antiquary review",
+      "readings": {"cast_caste": "UNREAD", "gorkha_date": "UNREAD"},
+      "mechanism": "PRINTED_COPY_REOPENS_AS_MANUSCRIPT_SURFACE"
+    },
+    {
+      "id": "MT-1872-PHOENIX",
+      "date": "1872-08",
+      "type": "serial_reprint",
+      "citation": "The Phoenix III, no.26, Aug 1872, pp.31-35",
+      "support": "PRINT",
+      "cast_caste_reading_direct": "UNREAD",
+      "gorkha_date_reading_direct": "UNREAD",
+      "cast_caste_reading_predicted": "caste",
+      "gorkha_date_reading_predicted": "some years ago",
+      "prediction_basis": "1875 Indian Antiquary states 1874 papers were reprints of papers as first reprinted in Phoenix; Phoenix incorporated Hodgson marginal notes into text",
+      "prediction_confidence": "probable, not direct",
+      "digital_witness_state": "multiple bound-volume scans located; target pages text inaccessible through current public interfaces",
+      "mechanisms": ["INTERMEDIATE_WITNESS_LOCATED_TEXT_UNREAD", "MARGINALIA_ENTER_SERIAL_PRINT"]
+    },
+    {
+      "id": "MT-1874-BASE",
+      "date": "1874",
+      "type": "printed_collected_edition_base_text",
+      "support": "PRINT",
+      "gorkha_date_reading": "some years ago",
+      "cast_caste_reading": "caste",
+      "transmission_relation": "near-contemporary review says collected papers were reprints of Phoenix states",
+      "mechanism": "SERIAL_REPRINT_FEEDS_COLLECTED_EDITION"
+    },
+    {
+      "id": "MT-1874-CORRECTION-APPARATUS",
+      "date": "1874",
+      "type": "printed_correction_apparatus",
+      "support": "PRINT",
+      "corrections": [
+        {"page":39,"from":"caste","to":"cast","mechanism":"RETROSPECTIVE_SEMANTIC_DISAMBIGUATION"},
+        {"page":40,"from":"some","to":"about 100","mechanism":"RETROSPECTIVE_CHRONOLOGICAL_RECALIBRATION"}
+      ]
+    },
+    {
+      "id": "MT-1874-ALDERLEY-COPY",
+      "date": "1874-10",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "BHHodgson / Alderley Oct 1874",
+      "military_tribes_annotation_evidence": "Part II p.37 included in Joshi annotated-page census",
+      "annotation_content": "UNRECOVERED"
+    },
+    {
+      "id": "MT-1874-CORRECTED-1876-COPY",
+      "date": "1876+",
+      "type": "physical_annotated_copy",
+      "support": "PRINT_PLUS_MANUSCRIPT",
+      "inscription": "Own Copy corrected 1876",
+      "relation_to_1972": "Joshi links the Amsterdam edition to material from his collection but says not all annotations were included"
+    },
+    {
+      "id": "MT-1972-SAHA",
+      "date": "1972",
+      "type": "printed_editorial_derivative",
+      "support": "PRINT",
+      "description": "Supplement of additions and corrections edited from handwritten annotations in an author's copy",
+      "selection_state": "selective editorial extraction",
+      "military_tribes_entries": "UNRECOVERED"
+    }
+  ],
+  "microchains": [
+    {
+      "id": "MT-DATING",
+      "variable": "Gorkha expansion date phrase",
+      "states": [
+        {"node":"MT-1832-FAIR-V6-1","reading":"UNREAD"},
+        {"node":"MT-1833-JASB","reading":"70 years ago"},
+        {"node":"MT-1857-SELECTIONS","reading":"seventy years ago"},
+        {"node":"MT-1872-PHOENIX","reading":"UNREAD; predicted some"},
+        {"node":"MT-1874-BASE","reading":"some years ago"},
+        {"node":"MT-1874-CORRECTION-APPARATUS","reading":"about 100 years ago"}
+      ],
+      "secure_result": "The simple restoration model is false: 1833/1857 preserve 70, while the later sequence contains at least 70 -> some -> about 100.",
+      "active_breakpoint": "Phoenix determines whether 70 -> some entered serial print before the 1874 collected edition."
+    },
+    {
+      "id": "MT-PHYSIOGNOMY",
+      "variable": "general cast/caste and character",
+      "states": [
+        {"node":"MT-1832-FAIR-V6-1","reading":"UNREAD"},
+        {"node":"MT-1833-JASB","reading":"caste"},
+        {"node":"MT-1857-SELECTIONS","reading":"caste"},
+        {"node":"MT-1872-PHOENIX","reading":"UNREAD; predicted caste"},
+        {"node":"MT-1874-BASE","reading":"caste"},
+        {"node":"MT-1874-CORRECTION-APPARATUS","reading":"cast"}
+      ],
+      "secure_result": "The 1874 cast correction is not a restoration of the 1833 printed reading. Caste persisted for at least four decades in the published tradition before the explicit correction to cast.",
+      "active_question": "The 1832 manuscript is still needed to determine whether cast restores an unpublished manuscript reading or is a genuinely late semantic revision."
+    }
+  ],
+  "transmission_model": "fair manuscript -> first print -> 1857 reprint -> author marginalia on printed copy -> Phoenix serial text -> 1874 collected base -> printed correction apparatus -> copy-specific manuscript annotation branches -> selective later reprint",
+  "source_control_rules": [
+    "Do not promote predicted Phoenix readings to direct readings.",
+    "The 1875 review establishes transmission direction but not diplomatic identity of every word.",
+    "Do not call cast a restoration until the 1832 manuscript is read, even though it is demonstrably not the 1833 printed reading.",
+    "Keep edition-level and copy-specific states separate.",
+    "Treat digital scan existence, text accessibility, and direct reading as separate evidence states."
+  ],
+  "next_actions": [
+    "Read Phoenix III no.26 pp.31-35 directly.",
+    "Read MSS EUR HODGSON/6 item 1 at both microrevision loci.",
+    "Read vol.9/10 at the same loci.",
+    "Recover Alderley p.37 marginalia.",
+    "Recover Saha 1972 Part II entries."
+  ]
+}
