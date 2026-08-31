@@ -1,0 +1,134 @@
+{
+  "dataset": "zoological_labour_and_metadata_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "distributed production roles, drawing states and metadata failure channels reconstructed in wave 30",
+  "status": "v0.1; role-level attribution preferred where personal names are not securely attested",
+  "actors": [
+    {
+      "id": "RAJMAN_SINGH",
+      "type": "artist",
+      "confidence": "high",
+      "operations": ["zoological drawing", "mammal illustration", "Darjeeling-associated visual work"],
+      "limits": ["not yet proven author of 1870 native painter Hindi list"]
+    },
+    {
+      "id": "TURSMONEY_CHITTAKAR",
+      "type": "artist",
+      "confidence": "high",
+      "operations": ["zoological drawing; at least one signed watercolour"],
+      "limits": ["extent of contribution unresolved"]
+    },
+    {
+      "id": "UNNAMED_NEPALI_ARTISTS",
+      "type": "artist_group",
+      "confidence": "high_role_low_identity",
+      "operations": ["drawing from nature", "repeated correction from fresh specimens", "diagnostic anatomy/structure depiction", "sex and age variant depiction"],
+      "source_state": "1833/1835 Hodgson letters as later quoted; ZSL collection description"
+    },
+    {
+      "id": "SHIKAREES",
+      "type": "field_observers",
+      "confidence": "very_high_role_low_identity",
+      "operations": ["viva voce statements on manners and habits", "delegated observation of birds unavailable to Hodgson"],
+      "source_state": "NZSL/HOD/1/3 and NZSL/HOD/5/3/9"
+    },
+    {
+      "id": "HODGSON_WRITER",
+      "type": "translator_scribe",
+      "confidence": "very_high_role_low_identity",
+      "operations": ["translate/write shikaree viva voce statements", "produce manners notebooks"],
+      "source_state": "NZSL/HOD/1/3 and NZSL/HOD/5/3/9"
+    },
+    {
+      "id": "NATIVE_PAINTER_1870_LIST",
+      "type": "artist_list_compiler",
+      "confidence": "very_high_role_unidentified_person",
+      "operations": ["Hindi list of whole bird collection including Sikkim"],
+      "source_state": "NZSL/HOD/5/3/9",
+      "warning": "do not identify as Rajman Singh without direct evidence"
+    },
+    {
+      "id": "B_H_HODGSON",
+      "type": "organizer_naturalist",
+      "confidence": "very_high",
+      "operations": ["supervise diagnostic drawing", "parallel anatomy/stomach/food notes", "classification", "lists", "number namespace management", "copy-state control", "institutional negotiation"]
+    },
+    {
+      "id": "ARCHIBALD_CAMPBELL",
+      "type": "medical_natural_history_collaborator",
+      "confidence": "high_secondary",
+      "operations": ["assist specimen anatomy study/description"]
+    },
+    {
+      "id": "J_E_GRAY_BM",
+      "type": "institutional_zoologist",
+      "confidence": "very_high",
+      "operations": ["sort", "compare old/new", "name", "correct", "construct duplicate sets", "distribute"]
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "ROUGH_MASTER_DRAWING",
+      "historical_status": "original/working/generative",
+      "functions": ["revision", "continued research", "source for finished/transmission copies", "audit expected drawings"]
+    },
+    {
+      "id": "FINISHED_DRAWING_SERIES",
+      "historical_status": "institutional/fair/use state",
+      "functions": ["museum comparison", "institutional deposit", "publication preparation", "reference"]
+    },
+    {
+      "id": "DRAWING_SHEET_METADATA",
+      "fields_modern_ZSL_reports": ["unique species/reference number", "scientific name", "common/local names", "locality", "Devanagari text", "anatomical figures", "notes", "measurements", "weight"],
+      "actor_attribution_warning": "field presence is secure; historical author of each field requires object-level handwriting analysis"
+    },
+    {
+      "id": "BEHAVIOURAL_NOTEBOOK",
+      "status": "translated textual field-observation surface",
+      "key": "drawing number"
+    },
+    {
+      "id": "SPECIMEN_LABEL_PAIR",
+      "status": "cross-media identity surface",
+      "fields": ["date/locality/local name", "drawing number"]
+    }
+  ],
+  "workflow_edges": [
+    {"from":"fresh_or_live_specimen","to":"UNNAMED_NEPALI_ARTISTS","relation":"visual observation and repeated correction"},
+    {"from":"fresh_or_live_specimen","to":"B_H_HODGSON","relation":"parallel anatomy/stomach/food recording"},
+    {"from":"SHIKAREES","to":"HODGSON_WRITER","relation":"viva voce observation translated/written"},
+    {"from":"HODGSON_WRITER","to":"BEHAVIOURAL_NOTEBOOK","relation":"textual fixation"},
+    {"from":"ROUGH_MASTER_DRAWING","to":"FINISHED_DRAWING_SERIES","relation":"copied/fair-state derivation"},
+    {"from":"ROUGH_MASTER_DRAWING","to":"FINISHED_DRAWING_SERIES","relation":"British Museum proposed institutional artist completion of incomplete fair series"},
+    {"from":"DRAWING_SHEET_METADATA","to":"SPECIMEN_LABEL_PAIR","relation":"joined through drawing/reference number"},
+    {"from":"J_E_GRAY_BM","to":"institutional_catalogue_distribution","relation":"sorting/comparison/naming/distribution"}
+  ],
+  "failure_channels": [
+    {
+      "id": "NAME_COPY_FAILURE",
+      "code": "COPIER_NAME_CORRUPTION_WITH_NUMBER_PRESERVATION",
+      "source": "NZSL/HOD/5/2/27",
+      "evidence": "Gray reports list numbers correct while names are ludicrously wrong from ignorance of copyer"
+    },
+    {
+      "id": "NUMBER_COLLISION_FAILURE",
+      "code": "SPECIMEN_NUMBER_COLLISION",
+      "source": "NZSL/HOD/5/2/27",
+      "evidence": "Gray fears many bird numbering errors; two very different kinds share same number"
+    },
+    {
+      "id": "NAME_REVISION_CHANNEL",
+      "code": "SORTING_BEFORE_NOMENCLATURAL_STABILIZATION",
+      "source": "NZSL/HOD/5/2/27",
+      "evidence": "new species cannot be described until whole collection sorted and old/new compared"
+    }
+  ],
+  "working_vs_finished": {
+    "source": "NZSL/HOD/5/4/3 and related British Museum proposal",
+    "rough_original": "needed by Hodgson for rapid resumption/completion of research; source from which finished series copied",
+    "notes_memoranda": "working research state retained with originals",
+    "finished_series": "left for British Museum institutional custody/use",
+    "completion_protocol": "Museum proposed to appoint artist to complete missing finished drawings from Hodgson rough originals"
+  },
+  "revised_core_hypothesis": "The natural-history archive is resilient because multiple imperfect fields and surfaces overlap. Artists, shikarees, a writer, Hodgson, medical collaborators and museum zoologists produced distinct but joinable states. Neither name nor number is inherently stable: copying can corrupt names while preserving numbers, and specimen handling can create number collisions. Reconstructibility therefore depends on relational redundancy rather than identifier purity."
+}
