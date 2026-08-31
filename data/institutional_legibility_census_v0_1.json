@@ -1,0 +1,213 @@
+{
+  "schema_version": "0.1",
+  "date_created": "2026-08-31",
+  "scope": "Cross-domain operational census of institutional legibility mechanisms reconstructed from manuscript and zoological evidence in Waves 17-19.",
+  "governing_question": "What relations had to remain addressable for a physically possessed Hodgson object to become institutionally usable after movement?",
+  "mechanisms": {
+    "operational_metadata": "Metadata fields are selected to support downstream actions such as finding, comparing, copying, purchasing, distributing, correcting, or publishing objects.",
+    "semantic_addressability": "Institution can identify what an object is, what it contains, or how it should be named/classified.",
+    "physical_addressability": "Institution can locate the physical object/container and maintain a relation between description and storage/custody state.",
+    "relational_addressability": "Institution can preserve links among object, label, drawing, list, container, provenance, copy, body part, or distribution history.",
+    "catalogue_labour_economy": "Budgeted expert reading, travel, transcription, form production, copying, binding, transport, checking, indexing, storage, and printing used to manufacture institutional legibility.",
+    "counting_ontology": "Counts are operation-specific; bundle, volume, textual work, specimen, body part, drawing, catalogue entry, and distribution series are non-equivalent units."
+  },
+  "historical_metadata_regimes": [
+    {
+      "id": "IL-MSS-GOV-1868-01",
+      "domain": "manuscript",
+      "date_range": "1868-1871",
+      "institutional_context": "Government of India / Asiatic Society Sanskrit manuscript survey",
+      "record_type": "nine-column survey form",
+      "fields": [
+        "number",
+        "name_in_Devanagari",
+        "name_in_Roman_character",
+        "subject_and_author",
+        "number_of_pages",
+        "lines_per_page",
+        "substance_support_and_script",
+        "place_found_and_owner_custodian",
+        "accuracy_and_peculiarities"
+      ],
+      "intended_operations": [
+        "identify remotely",
+        "classify",
+        "locate",
+        "contact custodian",
+        "select for copying or acquisition",
+        "assess physical/textual character",
+        "support European/distant scholarly use"
+      ],
+      "review_loop": "Government reviewed submitted notices and demanded supplementary information where location/owner and other actionability fields were insufficient.",
+      "evidence_status": "DIRECT_PUBLISHED_GOVERNMENT_CORRESPONDENCE",
+      "source_wave": 18
+    },
+    {
+      "id": "IL-MSS-ASB-1869-02",
+      "domain": "manuscript",
+      "date_range": "1869-1878",
+      "institutional_context": "Asiatic Society manuscript conservation/cataloguing programme",
+      "record_type": "budget + catalogue production workflow",
+      "inputs": [
+        "Travelling Pandit salary",
+        "catalogue compiler salary",
+        "travel allowance",
+        "transcription",
+        "stationery",
+        "2000 printed tabular forms",
+        "copying manuscripts",
+        "binding manuscripts",
+        "japanned paper box",
+        "postage",
+        "manuscript transport by banghy",
+        "printing"
+      ],
+      "throughput_evidence": {
+        "manuscripts_noticed_total_1877": 1110,
+        "notices_prepared_in_preceding_year": 173
+      },
+      "intended_operations": [
+        "discover",
+        "preserve",
+        "describe",
+        "index",
+        "arrange",
+        "number",
+        "print",
+        "make library accessible/useful"
+      ],
+      "evidence_status": "DIRECT_PUBLISHED_ACCOUNTS_AND_ANNUAL_REPORTS",
+      "source_wave": 17
+    },
+    {
+      "id": "IL-ZOO-HOD-1840S-03",
+      "domain": "zoology",
+      "date_range": "1840-1846",
+      "institutional_context": "Hodgson specimen/drawing identity system and British Museum incorporation",
+      "record_type": "paired specimen labels + numbered drawings + mutable specimen/distribution lists",
+      "fields_relations": [
+        "collection_date",
+        "locality",
+        "local_name",
+        "drawing_number",
+        "taxonomic_name",
+        "physical_preparation_state",
+        "condition_completeness",
+        "retained_or_duplicate_status",
+        "distribution_destination",
+        "catalogue/list_version"
+      ],
+      "intended_operations": [
+        "identify specimen",
+        "link specimen to drawing",
+        "compare",
+        "select Museum reference series",
+        "construct duplicate sets",
+        "distribute",
+        "update distribution records",
+        "compile retrospective printed catalogue"
+      ],
+      "evidence_status": "DIRECT_ZSL_CORRESPONDENCE_PLUS_SECONDARY_LABEL_RECONSTRUCTION",
+      "source_wave": 19
+    }
+  ],
+  "addressability_dimensions": {
+    "manuscript": [
+      "physical_location",
+      "title_identity",
+      "original_script_identity",
+      "transliterated_identity",
+      "textual_segmentation",
+      "support_material",
+      "script",
+      "extent",
+      "owner_custodian",
+      "accuracy_condition",
+      "copy_relation"
+    ],
+    "zoology": [
+      "physical_location",
+      "taxonomic_identity",
+      "local_name",
+      "collection_locality",
+      "collection_date",
+      "drawing_number_relation",
+      "preparation_body_part_state",
+      "physical_condition",
+      "duplicate_reference_status",
+      "distribution_destination"
+    ]
+  },
+  "failure_modes": [
+    {
+      "code": "SEMANTIC_ADDRESSABILITY_FAILURE",
+      "definition": "Object is physically present but name/title/content identity is insufficient for institutional use.",
+      "examples": ["unnamed/misnamed birds", "underidentified multi-work manuscript"]
+    },
+    {
+      "code": "PHYSICAL_ADDRESSABILITY_FAILURE",
+      "definition": "Object is described or expected but cannot be located at the relevant processing/custody node.",
+      "examples": ["bird at stuffer omitted from current list", "object elsewhere/unpacked"]
+    },
+    {
+      "code": "RELATIONAL_ADDRESSABILITY_FAILURE",
+      "definition": "Object survives but links to labels, drawings, lists, containers or provenance are lost or drift.",
+      "examples": ["original specimen labels removed", "wrapper/title relation separated"]
+    },
+    {
+      "code": "PROCESS_STAGE_VISIBILITY_FAILURE",
+      "definition": "Object temporarily disappears from a list because it is at another processing stage/node.",
+      "examples": ["Tibetan pheasant at stuffer when bird list prepared"]
+    },
+    {
+      "code": "PARTIAL_OBJECT_STATE",
+      "definition": "Only a material part or preparation survives/is received, requiring a distinct counting unit.",
+      "examples": ["Ganges Pelican represented only by a head"]
+    },
+    {
+      "code": "SEGMENTATION_FAILURE",
+      "definition": "Physical unit boundary is incorrectly equated with intellectual/textual object boundary.",
+      "examples": ["continuously paginated multi-work codex treated as one work"]
+    },
+    {
+      "code": "METADATA_COMPLETENESS_FAILURE",
+      "definition": "Record may identify object but lacks fields needed for intended downstream action.",
+      "examples": ["manuscript notice lacking place/owner"]
+    },
+    {
+      "code": "DISTRIBUTION_LEDGER_DRIFT",
+      "definition": "Physical redistribution and list/catalogue state diverge until a later update reconciles them.",
+      "examples": ["Gray asks for bird list so later distributions can be added"]
+    }
+  ],
+  "cross_domain_comparison": {
+    "shared_problem": "Maintain enough selected relations for a distant institution to identify, locate, compare, transform, and redistribute objects after separation from their production context.",
+    "manuscript_specific_problem": "Textual segmentation, aliases/titles, copy state, script competence, support and ownership/location.",
+    "zoology_specific_problem": "Organism/specimen/body-part distinction, taxonomic naming, physical condition, preparation state, specimen-drawing linkage, duplicate/reference-series construction.",
+    "non_equivalence_rule": "Use shared infrastructure variables only after preserving domain-specific object ontology and failure modes."
+  },
+  "archive_ingestion_protocol": [
+    "Identify the historical counting unit before comparing totals.",
+    "List all metadata fields actually present on the object/document.",
+    "Infer the downstream operation each field was intended to enable only with contextual evidence.",
+    "Separate semantic, physical, and relational addressability.",
+    "Record whether the item is a first record, updated list, proof, correction, receipt, distribution ledger, or later catalogue version.",
+    "Flag reconciliation/failure events rather than smoothing discrepancies.",
+    "Preserve object-list-label-container relations as explicit edges.",
+    "Use material support/paper evidence at sheet level where images or originals permit."
+  ],
+  "upload_threshold_assessment": {
+    "status": "HIGH_VALUE_TO_UPLOAD_NEXT_ARCHIVAL_BATCH",
+    "reason": "Public-source work has independently reconstructed manuscript and zoological metadata regimes, funding/labour structures, counting ontologies and failure modes. Archival material can now be read as tests of specific mechanisms rather than as broad thematic evidence.",
+    "highest_value_next_sources": [
+      "original specimen/distribution lists",
+      "specimen labels or label transcriptions",
+      "numbered Hodgson drawings",
+      "working manuscript lists with leaves/verses/prices/support",
+      "catalogue forms/proofs/corrections",
+      "packing lists linked to boxes/bundles",
+      "bills joining paper/labour/transport",
+      "correspondence correcting identity, number, location, missing or partial object state"
+    ]
+  }
+}
