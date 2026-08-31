@@ -1,0 +1,59 @@
+{
+  "dataset": "military_tribes_paratext_states_v0_1",
+  "date": "2026-09-01",
+  "scope": "Placement/readability states of the retrospective recruitment update across military-tribes publication witnesses.",
+  "central_claim": "Paratext placement must be treated as an independent version field. The 1857 footnote marker and body are directly readable; the 1874 base directly retains the marker at the same recruitment sentence, while the note body remains unread in currently accessible text interfaces.",
+  "states": [
+    {
+      "id": "MTP-1833",
+      "edition": "JASB first publication",
+      "date": "1833",
+      "recruitment_sentence": "present",
+      "retrospective_1857_note": "not applicable as later addition",
+      "evidence_state": "baseline publication"
+    },
+    {
+      "id": "MTP-1857",
+      "edition": "Selections from the Records of the Government of Bengal No.27",
+      "date": "1857",
+      "marker": "DIRECT",
+      "body": "DIRECT",
+      "placement": "footnote",
+      "body_function": ["retrospective composition dating", "recruitment-policy update", "authorial advocacy history"],
+      "opening": "Since this paper was written (twenty-five years back)",
+      "source": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt"
+    },
+    {
+      "id": "MTP-1872-PHOENIX",
+      "edition": "The Phoenix III no.26 pp.31-35",
+      "date": "1872-08",
+      "marker": "UNREAD",
+      "body": "UNREAD",
+      "placement": "UNRESOLVED",
+      "transmission_context": "Phoenix generally incorporated marginal notes from Hodgson's earlier printed copies into running text, according to 1875 Indian Antiquary review",
+      "source_control": "general marginalia incorporation does not prove this specific note moved into body"
+    },
+    {
+      "id": "MTP-1874",
+      "edition": "Essays on the Languages, Literature, and Religion of Nepal and Tibet",
+      "date": "1874",
+      "marker": "DIRECT",
+      "marker_context": "recruitment sentence still ends most highly prized.*",
+      "body": "UNREAD",
+      "placement": "footnote call present; body placement/content unresolved",
+      "full_view_witnesses": ["HathiTrust hvd.32044060254646", "HathiTrust mdp.39015029241042", "Internet Archive essaysonlanguage00hodg"],
+      "access_note": "HathiTrust page-at-a-time text is full view but current tool section links percent-encode semicolon parameters and fail; OCR search surfaces have not yielded the body"
+    }
+  ],
+  "possible_transforms": ["FOOTNOTE_CONTINUITY", "FOOTNOTE_REVISION", "PARATEXT_TO_BODY_RECODING", "PARATEXT_OMISSION", "PARATEXT_SPLIT_RECODING"],
+  "active_status": "OUTCOME_UNRESOLVED",
+  "mechanisms": ["PARATEXT_PLACEMENT_IS_A_VERSION_VARIABLE", "PARATEXT_WITNESS_STATE_MUST_SEPARATE_MARKER_FROM_BODY", "ACCESS_FAILURE_NOT_TEXTUAL_ABSENCE"],
+  "source_control_rules": [
+    "Do not infer footnote body from marker alone.",
+    "Do not infer omission from OCR failure.",
+    "Do not infer Phoenix placement from general editorial transmission description.",
+    "Treat marker, body, placement and wording as separate fields.",
+    "Direct edition evidence outranks later quotation."
+  ],
+  "next_actions": ["Recover 1874 footnote body directly", "Read Phoenix placement and wording", "Compare wording across 1857/Phoenix/1874"]
+}
