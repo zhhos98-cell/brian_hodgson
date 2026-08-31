@@ -1,0 +1,166 @@
+{
+  "dataset": "branching_derivative_state_reconstruction_v0_1",
+  "date": "2026-09-01",
+  "status": "article-facing object reconstruction; catalogue-level until physical comparison",
+  "scope": "Two explicit Cambridge source families with multiple derivatives, reconstructed across support, language, extent, writer, format, corrections, completeness, publication/custody pathway.",
+  "central_claim": "Material versioning is multidimensional: one source can generate derivatives that differ simultaneously in support, compression, hand, format, completeness, revision affordance and downstream use.",
+  "families": [
+    {
+      "id": "BDS-JUMLA-REVENUE",
+      "relation_strength": "Tier A explicit branching",
+      "source": {
+        "ref": "vol.59/38 fols.205-240",
+        "title": "Revenue and levies from the whole of Jumla",
+        "support": "NEPALI_HANDMADE",
+        "language": "Nepali",
+        "extent_folios_approx": 36,
+        "format": "extended revenue/statistical record",
+        "content": ["daras", "villages", "households", "land held", "land revenue", "levies"],
+        "writer": "unidentified in current catalogue",
+        "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html"
+      },
+      "derivatives": [
+        {
+          "ref": "vol.8/1 fols.1-8b",
+          "relation": "English summary explicitly tied to Nepali original",
+          "support": "MACHINE_MADE",
+          "language": "English",
+          "extent_folios_approx": 8,
+          "dimensions_cm": [48.5, 38.0],
+          "format": "chart",
+          "writer": "Archibald Campbell",
+          "medium": "natural black ink",
+          "hand_state": "chart writing; catalogue identifies Campbell",
+          "condition": "good",
+          "corrections": "not described for item 1",
+          "content_retained": ["daras and villages", "households with caste breakdown", "fields", "taxes", "duties", "fines"],
+          "downstream_use": "English analytical/chart state; later bundled with Khas version in 1864 India Office transfer at large-bundle level",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol008.html"
+        },
+        {
+          "ref": "vol.102/21 fols.115-116",
+          "relation": "Farsi summary explicitly tied to source family",
+          "support": "NEPALI_HANDMADE",
+          "language": "Farsi",
+          "extent_folios_approx": 2,
+          "dimensions_cm": null,
+          "format": "table/chart",
+          "writer": "unidentified in current catalogue",
+          "hand_state": "very neat",
+          "condition": "not separately described",
+          "corrections": "not described",
+          "content_retained": "taxes and revenues from 17 villages",
+          "downstream_use": "compact Persian intermediary/reference state",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol102.html"
+        }
+      ],
+      "branching_result": "same source + tabular derivatives -> support divergence",
+      "falsifies": ["language-alone model", "translation-alone model", "table-format-alone model"],
+      "compression_observation": "c.36 source folios -> c.8 English chart folios and 2 Farsi chart folios; surface-area comparison pending source/target dimensions",
+      "later_custody": {
+        "event": "India Office Library gift, August 1864",
+        "manifest_description": "sixth large bundle contains, in Khas and in English, Statement of the Revenue of the Province of Jumla",
+        "source": "Hunter 1896, Appendix B",
+        "source_url": "https://dspace.gipe.ac.in/xmlui/bitstream/handle/10973/24484/GIPE-000910-Contents.pdf?isAllowed=y&sequence=2",
+        "interpretation": "version states differentiated during research were later recombined at large-bundle custody level",
+        "source_control": "manifest does not prove exact modern sheet-to-lesser-wrapper mapping"
+      },
+      "mechanisms": ["BRANCHED_DERIVATIVE_SUPPORT_STATES", "DERIVATIVE_COMPRESSION_AS_VERSIONING", "CUSTODY_RECOMBINES_VERSION_STATES"]
+    },
+    {
+      "id": "BDS-PEKING-ROUTE-1822",
+      "relation_strength": "Tier A explicit branching plus publication linkage",
+      "source": {
+        "ref": "vol.59/23 fols.97-104",
+        "title": "Routes from Kathmandu to Beijing (Pechin)",
+        "support": "NEPALI_HANDMADE",
+        "language": "Nepali",
+        "extent_folios_approx": 8,
+        "format": "route/itinerary record",
+        "content": ["stages", "kos distances", "mountains/ridges", "passes", "bridges", "lakes", "forts", "rivers"],
+        "writer": "unidentified in current catalogue",
+        "date_catalogued": "1840",
+        "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol059.html"
+      },
+      "parallel_local_state": {
+        "ref": "vol.58/28 fols.100-103",
+        "support": "NEPALI_HANDMADE",
+        "language": "Nepali",
+        "extent_folios_approx": 4,
+        "relation": "same 1822 Dalbhanjan Pande route; direct descent not yet established",
+        "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol058.html"
+      },
+      "derivatives": [
+        {
+          "ref": "vol.2/3 fols.30-32",
+          "relation": "English summary; catalogue identifies vol.59/23 as Nepali original",
+          "support": "IMPORTED_THICK_PAPER",
+          "language": "English",
+          "extent_folios_approx": 3,
+          "dimensions_cm": null,
+          "format": "fair route-book copy",
+          "volume_context": "Route Book Private; most manuscripts in vol.2 are copies",
+          "writer": "unidentified for this item in current catalogue",
+          "medium": "ink",
+          "hand_state": "fair hand",
+          "condition": "excellent",
+          "corrections": "some corrections and addenda in pencil",
+          "content_retained": ["stages", "kos distances", "forts", "tanks", "rivers", "boats", "bridges", "halting days"],
+          "publication_link": "Cambridge cites Hodgson 1856, JASB 25:473-497",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol002.html"
+        },
+        {
+          "ref": "vol.102/19 fols.112-113",
+          "relation": "Persian/Urdu summary and translation cross-referenced to vol.2/3",
+          "support": "NEPALI_HANDMADE",
+          "language": "Urdu + Farsi",
+          "extent_folios_approx": 2,
+          "dimensions_cm": null,
+          "format": "translation/summary",
+          "writer": "unidentified in current catalogue",
+          "hand_state": "poor hand",
+          "condition": "not separately described",
+          "completeness": "incomplete",
+          "corrections": "not described",
+          "url": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol102.html"
+        }
+      ],
+      "branching_result": "Nepali handmade source -> fair corrected English imported-paper route-book state AND poor incomplete Urdu/Farsi Nepali-paper state",
+      "publication_surface": {
+        "publication": "B. H. Hodgson, Route of two Nepalese Embassies to Pekin with remarks on the water-shed and plateau of Tibet, JASB 25 (1856), 473-497",
+        "claim": "Hodgson describes the papers as literal translations and says his additional information is distinguished by brackets, with further material in footnotes",
+        "interpretation": "English derivative/publication state develops a graphical provenance grammar separating source-derived and author-added information",
+        "source_url": "https://pahar.in/pahar/Books%20and%20Articles/Tibet%20and%20China/1857%20Route%20of%20two%20Nepalese%20Embassies%20to%20Pekin%20by%20Hodgson%20from%20JASBv25%20s.pdf",
+        "source_control": "physical/textual comparison required before calling vol.2/3 the exact printer's copy or direct copy-text"
+      },
+      "compression_observation": "8 source folios -> 3 English derivative folios; 2 Urdu/Farsi folios but incomplete",
+      "falsifies": ["language-alone model", "actor-ethnicity model"],
+      "mechanisms": ["BRANCHED_DERIVATIVE_SUPPORT_STATES", "SOURCE_TO_FAIR_ROUTE_BOOK_STATE", "PROVENANCE_GRAMMAR_ON_DERIVATIVE_SURFACE", "DERIVATIVE_COMPRESSION_AS_VERSIONING"]
+    }
+  ],
+  "new_variables": [
+    "documentary_compression_state",
+    "surface_area_at_version_state",
+    "correction_affordance",
+    "completeness_state",
+    "publication_link",
+    "provenance_graphic_layer",
+    "custody_recombination_event"
+  ],
+  "source_control_rules": [
+    "Folio counts are not surface-area counts; dimensions are required before quantitative compression claims.",
+    "Summary, translation and copy must remain separate relation labels.",
+    "Parallel local source states such as vol.58/28 and vol.59/23 should not be ordered into a stemma without textual/handwriting comparison.",
+    "Published graphical provenance practice does not automatically prove identical bracket conventions in the surviving manuscript.",
+    "The 1864 large-bundle manifest establishes Khas+English co-custody at bundle level but not exact modern sheet-level wrapper membership.",
+    "Imported thick paper is a catalogue material label; maker and manufacture origin remain unresolved."
+  ],
+  "next_actions": [
+    "Physically compare vol.59/38, vol.8/1 and vol.102/21 column structures and retained data.",
+    "Measure vol.59/38 and vol.102/21 sheet dimensions.",
+    "Identify the Farsi hand of vol.102/21 if possible.",
+    "Compare vol.59/23, vol.58/28, vol.2/3 and vol.102/19 line-by-line.",
+    "Inspect vol.2/3 for brackets or other visible provenance marking.",
+    "Reconstruct 1864 Jumla bundle mapping through India Office accession records."
+  ]
+}
