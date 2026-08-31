@@ -1,0 +1,143 @@
+{
+  "dataset": "reputation_resegmentation_census_v0_1",
+  "date": "2026-08-31",
+  "scope": "testimonial and Notes of the Services evidence chain, household collection through private-print revision",
+  "status": "v0.1 after archive research wave 28; exact copy stemma remains to be reconstructed",
+  "records": [
+    {
+      "id": "RAS_BHH_10_2_ANNIE_NOTEBOOK",
+      "date_range": "1849-1868; discovery inscription 1868-03-12",
+      "creator": "Anne/Annie Hodgson per Royal Asiatic Society catalogue",
+      "subject": "Brian Houghton Hodgson",
+      "surface_type": "testimonial_notebook",
+      "media": ["handwritten copies", "newspaper cuttings", "two inserts"],
+      "operation": "collect distributed testimonials concerning Hodgson's work",
+      "mechanisms": ["HOUSEHOLD_TESTIMONIAL_COMPILATION", "REPUTATION_ARCHIVE_CO_PRODUCTION"],
+      "source_uploaded": "Adobe Scan 2025年3月28日 (5).pdf_by_PaddleOCR-VL-1.6.json",
+      "external_control": "Royal Asiatic Society GB 891 BHH-BHH/10-BHH/10/2",
+      "confidence": "very_high_after_catalogue_control"
+    },
+    {
+      "id": "BHH_10_2_DISCOVERY_1868",
+      "date": "1868-03-12",
+      "actor": "Brian Houghton Hodgson",
+      "surface_type": "discovery/reinscription event",
+      "operation": "find Anne's testimonial notebook in her desk and identify it as testimonials to the value of his labours",
+      "mechanisms": ["POSTHUMOUS_HOUSEHOLD_RECOVERY", "HOUSEHOLD_CUSTODY_TRANSITION"],
+      "external_control": "RAS catalogue transcription: collected by my darling Annie and found in her desk Mar 12 1868",
+      "confidence": "very_high"
+    },
+    {
+      "id": "BHH_10_SERIES",
+      "date_range": "1849-1868",
+      "creators": ["Brian Houghton Hodgson", "Anne/Annie Hodgson"],
+      "surface_type": "series_of_two_testimonial_books",
+      "operation": "bring together accolades and achievements",
+      "mechanisms": ["SERIAL_REPUTATION_ARCHIVE", "REPUTATION_ARCHIVE_CO_PRODUCTION"],
+      "external_control": "Royal Asiatic Society BHH/10 series description",
+      "confidence": "very_high"
+    },
+    {
+      "id": "NOTES_SERVICES_1868_69_STATE",
+      "date": "1868/1869 bibliographic states",
+      "surface_type": "privately_printed_pamphlet",
+      "title": "Notes of the services of B.H. Hodgson, esq., late British minister at the court of Nepal, collected by a friend",
+      "extent": "Google Play 1869 state: 30 pages",
+      "operation": "assemble and circulate evidence of official/scholarly service",
+      "mechanisms": ["ANONYMOUS_SELF_ADVOCACY", "PRIVATE_PRINT_VERSION_CHAIN"],
+      "authorship_state": "anonymous friend voice; Waterhouse states Bodleian evidence identifies Hodgson himself as author",
+      "confidence": "high_for_bibliographic_state; exact 1868/1869 relation unresolved"
+    },
+    {
+      "id": "NOTES_SERVICES_TUSHAR_UNDATED",
+      "date": "undated copy-state in Joshi census",
+      "surface_type": "private_print_annotated_copy",
+      "extent_pages": 75,
+      "operation": "authorial correction and augmentation",
+      "annotations": ["Private", "Own Corrected", "and list added"],
+      "special_state": "Collected and Friend crossed out; Hunter catalogue present",
+      "mechanisms": ["OWN_COPY_CORRECTION", "PRIVATE_PRINT_VERSION_CHAIN", "RECURSIVE_REPUTATION_EDITING"],
+      "external_control": "Harihar Raj Joshi 2002 copy census",
+      "confidence": "high_as_secondary_bibliographical_report"
+    },
+    {
+      "id": "NOTES_SERVICES_CALVIN_1883_MANUSCRIPT_DATE",
+      "date": "1883 handwritten by Hodgson",
+      "surface_type": "private_print_annotated_copy",
+      "extent_pages": 51,
+      "operation": "mark existing state as corrected yet imperfect and refer to renewed copy",
+      "annotations": ["Own copy corrected", "Imperfect", "See renewed COPY"],
+      "mechanisms": ["OWN_COPY_CORRECTION", "RENEWED_COPY_PROPAGATION", "INTERMEDIATE_STATE_FIXATION"],
+      "external_control": "Harihar Raj Joshi 2002 copy census",
+      "confidence": "high_as_secondary_bibliographical_report"
+    },
+    {
+      "id": "NOTES_SERVICES_INDU_1883_PRINTED",
+      "date": "1883 printed",
+      "surface_type": "expanded_private_print_annotated_copy",
+      "extent_pages": 104,
+      "index_pages": 4,
+      "operation": "expanded/renewed printed state with further authorial annotations",
+      "annotations_locations_reported": ["inside cover", "p.34", "pp.47-49", "p.57", "back cover"],
+      "mechanisms": ["PRIVATE_PRINT_VERSION_CHAIN", "CAREER_OBJECT_ACCUMULATION", "OWN_COPY_CORRECTION"],
+      "external_control": "Harihar Raj Joshi 2002 copy census; Google Books 1883 extent",
+      "confidence": "high_as_version_state"
+    },
+    {
+      "id": "UPLOADED_NOTES_SERVICES_EXPANDED_STATE",
+      "date": "consistent with expanded 1883 state; exact exemplar unresolved",
+      "surface_type": "scanned_private_print_state",
+      "source_uploaded": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "secure_pagination_markers": ["Appendix B Part II at p.34", "Appendix D at p.78"],
+      "operation": "classify career evidence and append catalogues/checksums",
+      "mechanisms": ["CAREER_RESEGMENTATION", "CAREER_TOTALIZATION_BEFORE_EVALUATION", "EXTERNAL_CATALOGUE_AS_SELF_EVIDENCE"],
+      "confidence": "high_for_expanded_state_match; exact physical copy unidentified"
+    },
+    {
+      "id": "APPENDIX_B_PART_II_TAXONOMY",
+      "date": "expanded Notes of the Services state",
+      "surface_type": "classified_testimonial_sections",
+      "sections": [
+        "I. Vernacular Education",
+        "II. Hindu Law and Legal Administration",
+        "III. Physical Geography of Himalaya and Tibet",
+        "IV. Ethnology",
+        "V. Settlement of Europeans in India, and Trans-Himalayan Commerce",
+        "VI. Buddhism",
+        "VII. Zoology"
+      ],
+      "operation": "re-segment heterogeneous judgments into career domains",
+      "mechanisms": ["CAREER_RESEGMENTATION", "HETEROGENEOUS_PRESTIGE_NORMALIZATION"],
+      "source_uploaded": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "very_high_for_section_structure"
+    },
+    {
+      "id": "NOTES_SERVICES_POLITICAL_BLOCK",
+      "date": "expanded Notes state",
+      "surface_type": "official/political testimonial block preceding Appendix B Part II",
+      "operation": "assemble documentary proof of Nepal Residency and official service",
+      "mechanisms": ["OFFICIAL_SERVICE_EVIDENCE_ASSEMBLY"],
+      "exact_heading": null,
+      "warning": "Part I exact title not yet securely recovered; do not invent one",
+      "source_uploaded": "Adobe Scan 2025年3月28日.pdf_by_PaddleOCR-VL-1.6.json",
+      "confidence": "high_for_content_block_low_for_heading"
+    },
+    {
+      "id": "HUNTER_CATALOGUE_AS_APPENDIX_PROOF",
+      "date": "1881 catalogue / later Notes integration",
+      "surface_type": "external scholarly catalogue embedded/appended in reputation print",
+      "compiler": "W. W. Hunter",
+      "operation": "make scale/distribution/usability of Hodgson manuscript collections legible as proof of service",
+      "mechanisms": ["EXTERNAL_CATALOGUE_AS_SELF_EVIDENCE"],
+      "warning": "Hunter's catalogue contribution must remain distinct from disputed attribution of Notes of the Services authorship to Hunter",
+      "confidence": "high"
+    }
+  ],
+  "authorship_control": {
+    "printed_voice": "Collected by a Friend",
+    "historical_catalogue_attribution": "some catalogues identified the friend as W. W. Hunter",
+    "current_working_attribution": "Waterhouse cites Bodleian evidence that Hodgson himself authored Notes of the Services; Joshi rejects Hunter identification",
+    "rule": "describe the pamphlet as anonymous/friend-voiced self-advocacy attributed to Hodgson, while marking historical attribution conflict"
+  },
+  "umbrella_hypothesis": "Reputation in the Hodgson archive was produced through distributed household and authorial documentary labour: Anne gathered testimonial traces; Brian recovered and retained them; Notes of the Services repeatedly classified, printed, annotated and renewed career evidence until Hodgson's own life became a versioned catalogue object."
+}
