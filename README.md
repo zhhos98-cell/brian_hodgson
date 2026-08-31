@@ -6,7 +6,7 @@ This repository reconstructs Brian Houghton Hodgson as a problem in the history 
 
 **How were heterogeneous Himalayan knowledge objects made credible, identifiable, countable, portable, auditable after separation, and institutionally usable?**
 
-The project follows the concrete operations by which objects and claims moved: paper selection and procurement, copying, drawing, tabulation, annotation, collation, numbering, wrapper and title-slip production, binding and bundling, packing, shipment, receipt, comparison, sorting, cataloguing, redistribution, rebinding, relabelling, and retrospective archival reorganisation.
+The project follows the concrete operations by which objects and claims moved: paper selection and procurement, copying, drawing, tabulation, annotation, collation, numbering, wrapper and title-slip production, binding and bundling, packing, shipment, receipt, unpacking, counting, segmentation, comparison, sorting, cataloguing, redistribution, rebinding, relabelling, re-identification, and retrospective archival reorganisation.
 
 ## Main analytical axes
 
@@ -14,9 +14,9 @@ The project follows the concrete operations by which objects and claims moved: p
 2. **Paper technologies and material affordances** — Nepali handmade paper, British and Indian machine/wove papers, watermarks, sheet formats, wrappers, tickets, copying paper, drawing supports and other paper regimes studied through historically specific performance and use rather than a predetermined symbolic hierarchy.
 3. **Containers, transport and custody** — bastas, bundles, trunks, boxes, crates, portfolios, rolls and parcels as devices that protected objects, preserved or rearranged relations, crossed transport systems, and generated custody records. Transport unit and disciplinary unit are not assumed to coincide.
 4. **Conversion across media and knowledge forms** — specimen + ticket + drawing + description; manuscript + wrapper + title slip; image + Sanskrit note + European identifier; testimony + writer + manuscript notebook + catalogue. These are assembled evidence systems rather than naturally given units.
-5. **Institutional handling and evidential afterlives** — receipt, unpacking, sorting, comparison, relabelling, rebinding, delayed opening, redistribution and cataloguing are treated as further epistemic stages, not passive preservation.
+5. **Institutional handling and evidential afterlives** — receipt, unpacking, counting, segmentation, expert identification, sorting, comparison, relabelling, rebinding, delayed opening, redistribution and cataloguing are treated as further epistemic stages, not passive preservation.
 6. **Recursive archive and reputation** — Hodgson's later annotations, lists, corrections and reorganisations are practices of revision, priority-making, evidential control and self-archiving.
-7. **Changing verification regimes** — the standing of a medium could change even when the object survived: for example, drawings functioning as portable witnesses could later be downgraded when photography became a preferred evidential medium.
+7. **Changing verification regimes** — the standing of a medium or descriptive unit could change even when the material survived: drawings could be downgraded when photography became preferred evidence, and physical codices could be re-segmented into different numbers of textual works after deeper inspection.
 
 ## Working title
 
@@ -26,18 +26,22 @@ If the completed census shows that natural history carries substantially more ev
 
 ## Buddhism policy for this repo
 
-Buddhist doctrinal historiography does not determine the argument. Buddhist manuscripts, drawings and catalogues themselves are not reduced to contextual evidence: they remain central wherever they expose copying industries, paper and copy states, wrappers and foliation, authentication, collation, explanatory text-image relations, packing, receipt, institutional custody, catalogue error or other material mechanisms comparable with natural-history and administrative objects.
+Buddhist doctrinal historiography does not determine the argument. Buddhist manuscripts, drawings and catalogues themselves are not reduced to contextual evidence: they remain central wherever they expose copying industries, paper and copy states, wrappers and foliation, authentication, collation, explanatory text-image relations, packing, receipt, institutional custody, catalogue error, segmentation failure or other material mechanisms comparable with natural-history and administrative objects.
 
 The same rule applies across domains. A source is retained because it exposes a knowledge-making operation, not because it belongs to a preferred modern discipline.
 
 ## Current high-value mechanisms
 
 - **Material affordance:** paper/support choice must be demonstrated through use and performance, not assigned a fixed epistemic meaning in advance.
+- **Affordance reversal:** a property can change from advantage to defect across operations or technical interfaces. Darjeeling/Serampore paper trials show toughness-associated fibre behaviour helping hand-formed sheets while obstructing a machine web, and shifting again in value across filtration and waterproof packing.
 - **Relational preservation:** a container can preserve associations among drawings, labels, manuscripts, lists and specimens even while blocking access; active cataloguing can enable use while destroying those relations.
 - **Interoperable load unit:** Hodgson's commerce writing explicitly designs parcel weight around transfer between bullocks and one-man mountain carriage, reducing repacking at transport interfaces.
-- **Custody checksum:** `safe arrival` acknowledgements confirm that an expected shipment unit reached a new custody node, while leaving completeness, internal identity, unpacking and cataloguing to later stages.
+- **Custody checksum:** `safe arrival` acknowledgements confirm only the unit actually counted at a custody transition; they leave internal completeness, segmentation, identity, unpacking and catalogue incorporation to later stages.
 - **Container chronology:** dates and notes on boxes, cases, packets or wrappers may record packing, repacking or storage events rather than the production or first shipment of their contents; later catalogues can misdate objects when those layers are collapsed.
-- **Error-control redundancy:** repeated numbers, labels, lists, distribution tables, receipts and paired representations are treated as material systems for controlling identity across large distributed collections.
+- **Counting ontology:** leaves, copies, works, physical volumes, bundles, packages, boxes and catalogue entries are different operational count units. Counts across unit classes are not reconciled unless a historical conversion relation is demonstrated.
+- **Institutional legibility:** physical receipt does not guarantee institutional usability. Access, segmentation, authorised expertise, language/script, classification and descriptive fields determine whether received objects can be identified and operated on.
+- **Segmentation failure:** material boundaries can be mistaken for intellectual/object boundaries. Mitra's 1882 account shows continuously paginated multi-work codices collapsed into one catalogue identity when only first and last pages were sampled, while the reverse error could split one work under multiple names.
+- **Error-control redundancy:** repeated numbers, labels, lists, distribution tables, receipts, paired representations and later comparative catalogues are treated as material systems for controlling identity across large distributed collections.
 
 ## Current source leads
 
@@ -47,7 +51,8 @@ The same rule applies across domains. A source is retained because it exposes a 
 - 2025 CV project description under the title **Paper Empires**, with attention to Whatman/Towgood, lokta, Calcutta machine paper, administrative blue paper, watermarks, authenticity, bureaucratic authority and local knowledge.
 - BASAS abstract, **The Self as Archive**, retained as an earlier conceptual layer and mined selectively for annotation, tables, lists, paper techniques, scientific institutions and self-archiving.
 - 2026 SHNH/ZSL circular pointing to David A. Lowther, “The art of classification: Brian Houghton Hodgson and the ‘Zoology of Nipal’” (2019), and to the importance of Hodgson's manuscript holdings in the ZSL Library and Archives.
-- Public-web research waves in `sources/WEB_RESEARCH_2026-08-31_WAVE*.md`, with Wave 10 adding direct Hodgson evidence for load-unit engineering, a container-derived Institut chronology error, and `safe arrival` as a recurring custody operation.
+- Public-web research waves in `sources/WEB_RESEARCH_2026-08-31_WAVE*.md`. Wave 12 reconstructs the Darjeeling paper-transfer and failed-experiment chain; Wave 13 reconstructs manuscript procurement/accounting; Wave 14 separates Fort William bundle/volume/work/catalogue counts and institutional legibility; Wave 15 recovers Mitra's direct explanation of false splitting/lumping and multi-work codex segmentation failure.
+- Machine-readable working datasets now include `paper_experiment_census_v0_1.json`, `manuscript_procurement_census_v0_1.json`, `fort_william_incorporation_census_v0_1.json`, and `catalogue_error_census_v0_1.json`.
 
 ## Repository principle
 
