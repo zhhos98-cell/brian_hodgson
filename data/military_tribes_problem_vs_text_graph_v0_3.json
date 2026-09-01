@@ -1,0 +1,283 @@
+{
+  "dataset": "military_tribes_problem_vs_text_graph_v0_3",
+  "date": "2026-09-02",
+  "status": "four-layer graph separating historical document attestation, surviving witnesses, neighboring administrative classification infrastructure, and textual/copy descent",
+  "model_revision": "Wave 58 replaces a simple administrative-problem-to-classification transition with a sequence of changing classification regimes and documentary scales. Military administration already categorized manpower before Hodgson's surviving 1831 thar/clan paper; direct influence from the 1830 Bengal battalion returns to Hodgson remains unproven.",
+  "attestation_nodes": [
+    {
+      "id": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "date": "Assistant-Resident / early Residency period; exact date unresolved",
+      "state": "RETROSPECTIVELY_ATTESTED_DOCUMENT_PHYSICAL_IDENTITY_UNRESOLVED",
+      "content_markers": [
+        "military tribes and races",
+        "tribal names and classification",
+        "physical and moral qualities as soldiers",
+        "recruitment through the Durbar"
+      ],
+      "control": "do not assign the exact February 1825 date of vol.10/1 or identify a surviving shelfmark without content-level evidence"
+    }
+  ],
+  "surviving_hodgson_witness_nodes": [
+    {
+      "id": "W-1825-MEMOIR",
+      "ref": "MSS EUR HODGSON/10 item 1",
+      "date": "1825-02",
+      "support": "MACHINE_MADE",
+      "state": "pre-bound administrative memorandum",
+      "title": "Memoir on the Army of Nepal",
+      "documentary_operation": "military manpower assessment / recruitment",
+      "classification_regime": [
+        "force status",
+        "territorial origin",
+        "training/effectiveness",
+        "recruitability"
+      ],
+      "headings": 39,
+      "direct_full_text_status": "UNREAD",
+      "secondary_archival_reconstruction": "Coleman cites 10 Feb 1825 memorandum through Bengal Secret Political Consultations and Hodgson MSS.9 passages"
+    },
+    {
+      "id": "W-1825-ROUGH",
+      "ref": "MSS EUR HODGSON/9 item 23",
+      "date": "1825",
+      "support": "MACHINE_MADE",
+      "state": "rough incomplete army report/essay with corrections",
+      "original_control_surface": "head cross-reference to the red leather volume",
+      "relation_to_government_record": "POSSIBLE_WORKING_OR_PARALLEL_STATE_UNRESOLVED"
+    },
+    {
+      "id": "W-1828-BAYLEY",
+      "ref": "MSS EUR HODGSON/9 item 22",
+      "date": "1828-04",
+      "support": "MACHINE_MADE",
+      "state": "very rough military memoir / answers to Bayley queries"
+    },
+    {
+      "id": "W-1831-ROUGH-CLASSIFICATION",
+      "ref": "MSS EUR HODGSON/7 item 20",
+      "date": "1831",
+      "support": "MACHINE_MADE",
+      "state": "earliest currently identified surviving explicit publication-facing classificatory source pool",
+      "documentary_operation": "rough ethnological/classificatory working",
+      "classification_regime": [
+        "Khasa thars",
+        "Brahman family names",
+        "Magar family names",
+        "Bara-Magarant / original-home relation",
+        "Gurung clans"
+      ],
+      "title_marker": "Castes of Parbattiah army tribes"
+    },
+    {
+      "id": "W-1832-FAIR-TABLE",
+      "ref": "MSS EUR HODGSON/6 item 1",
+      "date": "1832-10",
+      "support": "MACHINE_MADE",
+      "state": "fair publication-facing tabular copy",
+      "documentary_operation": "fair classificatory table/paper",
+      "relation_to_print": "DATE_ALIGNED_PREPUBLICATION_FAIR_STATE_HIGH"
+    },
+    {
+      "id": "W-UNDATED-FAIR-COPY",
+      "ref": "MSS EUR HODGSON/9 item 10",
+      "date": null,
+      "support": "MACHINE_MADE",
+      "state": "parallel fair copy",
+      "copy_direction": "UNRESOLVED"
+    },
+    {
+      "id": "W-1833-PRINT",
+      "ref": "JASB 2 (1833):217-224",
+      "date": "1833-05",
+      "state": "learned-society printed narrative plus table",
+      "documentary_operation": "classification plus recruitment argument"
+    }
+  ],
+  "neighboring_administrative_classification_nodes": [
+    {
+      "id": "N-1830-BENTINCK-MINUTE",
+      "date": "1830-07-27",
+      "institution": "Bengal military administration",
+      "archive_ref": "I.O.R., B.M.C., P/33/55, no.11, 25 July-13 August 1830",
+      "state": "classification request / documentary-format instruction",
+      "requested_variables": [
+        "Casts",
+        "Districts",
+        "Provinces",
+        "length of service"
+      ],
+      "format_transform": "DESCRIPTION_ROLL_DETAIL_TO_ABSTRACT",
+      "evidence_state": "SECONDARY_RECONSTRUCTION_WITH_PRECISE_ARCHIVAL_REFERENCE"
+    },
+    {
+      "id": "N-1830-KENNEDY-YOUNG-RETURNS",
+      "date": "1830-08/09",
+      "institution": "Nasiri and Sirmoor battalions",
+      "archive_ref": "I.O.R., B.M.C., P/33/57, nos.34-37 / 36-37 of 1 October 1830",
+      "state": "local commanding-officer returns / abstracts",
+      "documentary_operation": "aggregate personnel attributes for corps comparison",
+      "classification_regime": [
+        "country/district of origin",
+        "service length",
+        "Brahman",
+        "Rajput",
+        "Khas Gorkha / Chhetri",
+        "Magar / Gurung / Garhwali",
+        "Sarki / Damai",
+        "inferior-class Hindu",
+        "Muslim"
+      ],
+      "evidence_state": "SECONDARY_RECONSTRUCTION_WITH_PRECISE_ARCHIVAL_REFERENCE"
+    },
+    {
+      "id": "N-1830-BENGAL-MILITARY-LETTER",
+      "date": "1830-11-06",
+      "institution": "Bengal military administration -> Court of Directors",
+      "archive_ref": "I.O.R., M.D.R., L/MIL/3/32, letter no.52 of 6 November 1830",
+      "state": "higher-level recoding/transmission of battalion classifications",
+      "category_stability_assessment": "apparent caste difference attributed to a capricious system of classification",
+      "documentary_operation": "interpret and transmit aggregated local returns",
+      "evidence_state": "SECONDARY_RECONSTRUCTION_WITH_PRECISE_ARCHIVAL_REFERENCE"
+    }
+  ],
+  "record_channel_nodes": [
+    {
+      "id": "R-1825-BENGAL-SECRET-POLITICAL-CONSULTATION",
+      "date": "1825-03-04",
+      "archive_ref": "I.O.R., B.S.P.C., P/Ben/Sec/328, no.16",
+      "state": "government consultation record carrying Hodgson/Gardner military inquiry",
+      "relation_to_hodgson_manuscripts": "PARALLEL_OFFICIAL_RECORD_CHANNEL; EXACT_COPY_RELATION_UNRESOLVED"
+    }
+  ],
+  "edges": [
+    {
+      "from": "W-1825-MEMOIR",
+      "to": "R-1825-BENGAL-SECRET-POLITICAL-CONSULTATION",
+      "type": "ADMINISTRATIVE_SUBMISSION_OR_RECORDING_CHAIN",
+      "strength": "HIGH_FOR_TRANSMISSION_EXISTENCE; COPY_DIRECTION_DETAILS_UNRESOLVED"
+    },
+    {
+      "from": "W-1825-ROUGH",
+      "to": "W-1825-MEMOIR",
+      "type": "ROUGH_FAIR_ADMINISTRATIVE_FAMILY",
+      "strength": "HIGH_FAMILY_LEVEL",
+      "direction": "PROBABLE_BUT_NOT_DIRECTLY_CONTROLLED"
+    },
+    {
+      "from": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "to": "W-1831-ROUGH-CLASSIFICATION",
+      "type": "POSSIBLE_HISTORICAL_PREDECESSOR_ONLY",
+      "strength": "UNRESOLVED",
+      "direct_copy": false
+    },
+    {
+      "from": "N-1830-BENTINCK-MINUTE",
+      "to": "N-1830-KENNEDY-YOUNG-RETURNS",
+      "type": "CLASSIFICATION_REQUEST_TO_LOCAL_ABSTRACTS",
+      "strength": "HIGH"
+    },
+    {
+      "from": "N-1830-KENNEDY-YOUNG-RETURNS",
+      "to": "N-1830-BENGAL-MILITARY-LETTER",
+      "type": "LOCAL_RETURNS_TO_CENTRAL_RECODING",
+      "strength": "HIGH"
+    },
+    {
+      "from": "N-1830-KENNEDY-YOUNG-RETURNS",
+      "to": "W-1831-ROUGH-CLASSIFICATION",
+      "type": "INSTITUTIONAL_NEIGHBORING_CLASSIFICATION_INFRASTRUCTURE",
+      "strength": "TEMPORAL_AND_CATEGORY_ADJACENCY_ONLY",
+      "direct_influence": "UNPROVEN",
+      "overlap": [
+        "Brahman",
+        "Khas/Khasa",
+        "Magar",
+        "Gurung"
+      ]
+    },
+    {
+      "from": "W-1831-ROUGH-CLASSIFICATION",
+      "to": "W-1833-PRINT",
+      "type": "SOURCE_POOL_TO_PUBLICATION_FAMILY",
+      "strength": "STRONG",
+      "direct_copy": false
+    },
+    {
+      "from": "W-1832-FAIR-TABLE",
+      "to": "W-1833-PRINT",
+      "type": "PREPUBLICATION_CANDIDATE",
+      "strength": "HIGH",
+      "direct_copy": "UNRESOLVED"
+    },
+    {
+      "from": "W-1832-FAIR-TABLE",
+      "to": "W-UNDATED-FAIR-COPY",
+      "type": "COPY_FAMILY",
+      "strength": "HIGH",
+      "direction": "UNRESOLVED"
+    }
+  ],
+  "documentary_scale_model": [
+    {
+      "state": "personnel-level record",
+      "example": "Description Roll",
+      "unit": "individual soldier",
+      "operation": "attach multiple attributes to named/person-level record"
+    },
+    {
+      "state": "administrative abstract",
+      "example": "1830 Nasiri/Sirmoor returns",
+      "unit": "category count / corps distribution",
+      "operation": "select attributes, aggregate individuals, compare corps"
+    },
+    {
+      "state": "rough ethnological classification",
+      "example": "MSS EUR HODGSON/7 item 20",
+      "unit": "thar / family / clan / group / origin relation",
+      "operation": "order and relate collective categories beyond personnel management"
+    },
+    {
+      "state": "fair tabular paper",
+      "example": "MSS EUR HODGSON/6 item 1",
+      "unit": "publication-facing classification",
+      "operation": "stabilize classificatory relations for learned communication"
+    },
+    {
+      "state": "learned-society print",
+      "example": "JASB 1833",
+      "unit": "published classification + historical/recruitment argument",
+      "operation": "circulate classification as learned and policy-relevant knowledge"
+    }
+  ],
+  "cross_layer_interpretation": {
+    "superseded_over_simple_model": "administrative problem -> classification",
+    "revised_model": "military administration already contains operational and personnel classifications; 1830 abstracting practices make caste/origin/service variables comparable at corps scale; Hodgson's 1831-33 surviving sequence reconfigures classification toward thar, clan, family and origin/genealogical relations and carries that infrastructure into learned print",
+    "mechanisms": [
+      "ADMINISTRATIVE_CLASSIFICATION_TO_ETHNOLOGICAL_RECODING",
+      "DESCRIPTION_ROLL_TO_ABSTRACT_COMPRESSION",
+      "AGGREGATION_FORMAT_PRODUCES_CLASSIFICATORY_VISIBILITY",
+      "DOCUMENT_FORMAT_CHANGES_SCALE_OF_KNOWING",
+      "CLASSIFICATION_IS_RECORDER_DEPENDENT",
+      "ABSTRACT_TABLE_STABILIZES_HETEROGENEOUS_CATEGORIES",
+      "STATE_MILITARY_AND_ETHNOLOGICAL_CATEGORIES_OVERLAP_WITHOUT_IDENTITY",
+      "CLASSIFICATORY_INFRASTRUCTURE_PRECEDES_LEARNED_SOCIETY_PUBLICATION"
+    ]
+  },
+  "source_control_rules": [
+    "Coleman's archival references are retrieval targets; primary India Office files were not directly inspected in Wave 58.",
+    "Do not infer that Hodgson saw the 1830 Kennedy/Young returns.",
+    "Do not infer a direct source edge from Bentinck's request or battalion abstracts to vol.7/20.",
+    "Do not describe 1825 Hodgson military work as unclassified; distinguish operational manpower categories from later thar/clan/genealogical categories.",
+    "Keep Description Roll, abstract, rough classification, fair table and print as distinct documentary operations.",
+    "Preserve category instability between local recorders rather than normalizing labels retrospectively.",
+    "Keep historical attestation, surviving witness identity, neighboring institutional infrastructure and textual descent as separate graph layers."
+  ],
+  "next_actions": [
+    "Recover B.M.C. P/33/55 no.11 and inspect the 1830 format instruction directly",
+    "Recover B.M.C. P/33/57 nos.34-37 and compare original Kennedy/Young returns",
+    "Recover L/MIL/3/32 no.52 and inspect central recoding of local categories",
+    "Recover P/Ben/Sec/328 no.16 and compare against Hodgson MSS.9 ff.177-178",
+    "Compare 1830 category ordering with vol.7/20 only after primary returns are controlled",
+    "Add physical format/layout fields when primary images are recovered"
+  ]
+}
