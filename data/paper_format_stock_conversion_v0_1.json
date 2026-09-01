@@ -1,0 +1,236 @@
+{
+  "dataset": "paper_format_stock_conversion_v0_1",
+  "date": "2026-09-02",
+  "scope": "Controlled diagnostic sample for parent-sheet size, watermark/stock time, cutting-format and work-operation hypotheses in Hodgson-associated paper objects. This is not a complete collection census.",
+  "central_claim": "Repeated working formats can persist across heterogeneous paper stocks. Object dimensions therefore need to be modelled as the result of parent-sheet manufacture plus post-procurement cutting/folding/trimming, not as a direct proxy for stock identity or maker.",
+  "standard_size_reference": {
+    "source": "British Association of Paper Historians, Old English Paper Sizes",
+    "url": "https://baph.org.uk/resources/reference-material/old-english-paper-sizes/",
+    "book_and_drawing_papers": [
+      {
+        "name": "Demy",
+        "whole_inches": [15.5, 20.0],
+        "whole_cm": [39.37, 50.8],
+        "quarter_cm": [19.685, 25.4]
+      },
+      {
+        "name": "Medium",
+        "whole_inches": [17.5, 22.5],
+        "whole_cm": [44.45, 57.15],
+        "half_cm": [28.575, 44.45]
+      },
+      {
+        "name": "Royal",
+        "whole_inches": [19.0, 24.0],
+        "whole_cm": [48.26, 60.96],
+        "half_cm": [30.48, 48.26]
+      }
+    ]
+  },
+  "ras_022_diagnostic_objects": [
+    {
+      "ref": "RAS Hodgson 022.023",
+      "title": "The Asoka stupa, Langankhel, Patan",
+      "date": "c.1844",
+      "artist": "Raj Man Singh Chitrakar",
+      "medium": "pencil drawing",
+      "paper_cm": [30.6, 48.8],
+      "mount_cm": [55.0, 66.0],
+      "watermark_date": 1837,
+      "format_family": "LONG_C30x48_5",
+      "parent_sheet_candidate": "HALF_ROYAL_HIGH",
+      "source": "https://royalasiaticcollections.org/the-asoka-stupa-langankhel-patan/"
+    },
+    {
+      "ref": "RAS Hodgson 022.027",
+      "title": "Temple of Krishna and Radha, Patan",
+      "date": "c.1844",
+      "artist": "Raj Man Singh Chitrakar",
+      "medium": "pencil and wash",
+      "paper_cm": [30.0, 48.5],
+      "mount_cm": [55.0, 66.0],
+      "watermark_date": null,
+      "format_family": "LONG_C30x48_5",
+      "parent_sheet_candidate": "HALF_ROYAL_HIGH",
+      "source": "https://royalasiaticcollections.org/temple-of-krishna-and-radha-patan-2/"
+    },
+    {
+      "ref": "RAS Hodgson 022.026",
+      "title": "Temple of Krishna and Radha, Patan",
+      "date": "c.1844",
+      "artist": "Raj Man Singh Chitrakar",
+      "medium": "pencil drawing",
+      "paper_cm": [31.6, 43.8],
+      "mount_cm": [55.0, 66.0],
+      "watermark_date": 1821,
+      "format_family": "SHORT_IRREGULAR",
+      "parent_sheet_candidate": "UNRESOLVED",
+      "stock_age_if_catalogue_dates_literal_years": 23,
+      "source": "https://royalasiaticcollections.org/temple-of-krishna-and-radha-patan/"
+    },
+    {
+      "ref": "RAS Hodgson 022.014",
+      "title": "Temple of Krishna and Radhan, Patan",
+      "date": "1844",
+      "artist": "Raj Man Singh Chitrakar",
+      "medium": "pencil drawing",
+      "paper_cm": [27.0, 43.8],
+      "frame_cm": [60.0, 71.5],
+      "watermark_date": 1841,
+      "format_family": "SHORT_C27_28x44_45",
+      "parent_sheet_candidate": "HALF_MEDIUM_CANDIDATE",
+      "source": "https://royalasiaticcollections.org/?p=2359"
+    },
+    {
+      "ref": "RAS Hodgson 022.054",
+      "title": "Temple of Krishna, Patan",
+      "date": "c.1844",
+      "artist": "Hodgson-associated sketch",
+      "medium": "pen and ink sketch",
+      "paper_cm": [31.0, 41.5],
+      "mount_cm": [55.0, 66.0],
+      "watermark_date": null,
+      "format_family": "PRELIMINARY_SHORT",
+      "work_stage": "explicit preliminary sketch for 022.027",
+      "parent_sheet_candidate": "UNRESOLVED",
+      "source": "https://royalasiaticcollections.org/temple-of-krishna-patan/"
+    }
+  ],
+  "ras_long_format_sample_statistics": {
+    "sample_status": "17-item diagnostic set assembled from RAS online catalogue entries; not complete corpus",
+    "observed_mean_cm": [30.1059, 48.6294],
+    "theoretical_half_royal_cm": [30.48, 48.26],
+    "mean_difference_percent": [-1.23, 0.77],
+    "interpretation": "near-exact dimensional fit supports HALF_ROYAL_DRAWING_SHEET_CANDIDATE_HIGH pending physical edge/watermark topology checks"
+  },
+  "short_format_test": {
+    "theoretical_half_medium_cm": [28.575, 44.45],
+    "examples_cm": [[27.0, 43.8], [27.1, 45.4], [27.8, 44.0]],
+    "interpretation": "compatible with trimmed half-Medium units but fit is looser than half-Royal; retain candidate status"
+  },
+  "christies_corpora": [
+    {
+      "lot": "191301",
+      "corpus": "over four hundred studies of Nepalese birds",
+      "date": "c.1850",
+      "physical_count_catalogue_tail": 210,
+      "medium": "pencil and watercolour heightened with white",
+      "repeated_formats_cm": [[25.1, 20.3], [30.5, 19.7]],
+      "visible_watermarks": {
+        "MOINIER'S PATENT 1848": 5,
+        "JOYNSON 1848": 2,
+        "I NEWEY DARNFORD 1847": 11,
+        "BRITANNIA": 17,
+        "1840": 1
+      },
+      "format_hypotheses": {
+        "25.1x20.3": "QUARTER_DEMY_CANDIDATE",
+        "30.5x19.7": "PARENT_SIZE_UNRESOLVED"
+      },
+      "source_control": "visible watermark counts are observations of marked cut pieces, not stock-frequency percentages",
+      "source": "https://www.christies.com/zh/lot/lot-191301"
+    },
+    {
+      "lot": "191304",
+      "corpus": "over eighty temple/statue/shrine/tribe sketches",
+      "physical_pages": 41,
+      "medium": "pencil, pen and ink",
+      "max_format_cm": [24.8, 39.6],
+      "visible_watermarks": {"WHATMAN": 1},
+      "source_control": "one visible WHATMAN mark establishes presence only; it cannot establish that only one page belonged to Whatman stock",
+      "source": "https://www.christies.com/en/lot/lot-191304"
+    }
+  ],
+  "british_library_corpora": [
+    {
+      "ref": "Add Or 5338(1-17)",
+      "operation": "Buddhist iconography",
+      "extent": "17 sheets",
+      "support": "Nepalese and European paper",
+      "format": "various sizes, mostly 25 x 40 cm",
+      "conversion_note": "some sheets from a folded exercise book",
+      "mechanism": "FORMAT_CONVERGENCE_ACROSS_PAPER_ORIGIN",
+      "source": "https://searcharchives.bl.uk/?f%5Brelated_subjects_ssim%5D%5B%5D=Buddhist+imagery&page=1&sort=date"
+    },
+    {
+      "ref": "Add Or 5338(18-28)",
+      "operation": "Nepalese sculpture and iconography",
+      "extent": "11 sheets",
+      "support": "not fully itemized at group level",
+      "format": "various sizes, mostly 25 x 40 cm",
+      "mechanism": "WORKFLOW_FORMAT_CONTINUITY",
+      "source": "https://searcharchives.bl.uk/?f%5Brelated_subjects_ssim%5D%5B%5D=Buddhist+imagery&page=1&sort=date"
+    },
+    {
+      "ref": "Add Or 5332-5334",
+      "operation": "caitya and mandala drawings",
+      "extent": "3 sheets",
+      "support": "Nepalese country paper",
+      "format_cm": [44.0, 34.0],
+      "mechanism": "LOCAL_PAPER_DISTINCT_WORKING_FORMAT",
+      "source": "https://searcharchives.bl.uk/catalog/032-003279156"
+    }
+  ],
+  "watermark_observation_model": {
+    "reference": "National Gallery of Australia watermark/countermark guidance",
+    "url": "https://nga.gov.au/art-artists/conservation/paper/listings-watermark-and-countermark-library/",
+    "general_topology": "watermark often near centre of one half of whole sheet and countermark in other half, with important exceptions",
+    "consequence_of_cutting": [
+      "working unit may retain whole watermark",
+      "working unit may retain countermark",
+      "working unit may retain only fragment",
+      "working unit may appear unmarked despite sharing parent stock with marked pieces"
+    ],
+    "rule": "VISIBLE_MARK_COUNT_IS_LOWER_BOUND_OR_CENSORED_OBSERVATION_NOT_STOCK_SHARE"
+  },
+  "material_lifecycle": [
+    "mould_or_machine_sheet",
+    "commercial_parent_sheet",
+    "procured_and_stored_stock_sheet",
+    "cut_folded_or_trimmed_working_unit",
+    "research_use_surface",
+    "mounted_guarded_bound_or_archived_object"
+  ],
+  "new_census_fields": [
+    "commercial_size_candidate",
+    "parent_sheet_candidate",
+    "cut_state",
+    "fold_state",
+    "edge_state",
+    "mark_topology",
+    "countermark",
+    "working_format_family",
+    "work_stage",
+    "mount_or_frame_state",
+    "stock_age_at_use",
+    "parent_batch_confidence"
+  ],
+  "mechanisms": [
+    "PARENT_SHEET_TO_WORKING_UNIT_CONVERSION",
+    "CUTTING_IS_PAPER_ALLOCATION",
+    "FORMAT_STANDARDIZATION_OVER_HETEROGENEOUS_STOCK",
+    "FORMAT_CAN_CROSS_PAPER_ORIGIN",
+    "STOCK_TIME_IS_SERIES_LEVEL_NOT_OUTLIER",
+    "WATERMARK_OBSERVATION_IS_CUT_POSITION_DEPENDENT",
+    "VISIBLE_MARK_COUNT_UNDERCOUNTS_STOCK_FREQUENCY",
+    "RESEARCH_SHEET_NOT_NECESSARILY_MILL_SHEET",
+    "SHEET_IS_A_VERSIONED_MATERIAL_UNIT"
+  ],
+  "source_control_rules": [
+    "Dimensional match alone does not prove parent-sheet size.",
+    "No catalogue watermark statement does not mean no watermark is present.",
+    "Watermark date, maker, commercial size, working format and use date are independent fields.",
+    "Do not turn visible watermark counts into stock percentages.",
+    "Do not infer task/support determinism from small cross-collection samples.",
+    "Keep working paper dimensions separate from later mount/frame dimensions.",
+    "Physical edge, formation and transmitted-light evidence outrank dimensional reconstruction."
+  ],
+  "next_actions": [
+    "Physical/transmitted-light census of RAS 022 long-format family",
+    "Test half-Royal topology through cut/deckle edges and watermark/countermark positions",
+    "Test short RAS family against half-Medium and later trimming alternatives",
+    "Recover item-level paper origin and exact dimensions in Add Or 5338",
+    "Trace Christie's Hodgson lots for physical paper inspection",
+    "Reconstruct marked and unmarked zoological sheets into candidate parent-sheet batches"
+  ]
+}
