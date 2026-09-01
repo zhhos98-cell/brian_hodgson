@@ -1,0 +1,103 @@
+{
+  "dataset": "military_tribes_paratext_states_v0_2",
+  "date": "2026-09-02",
+  "scope": "Presence, placement and wording-fidelity states of the retrospective recruitment update across military-tribes publication witnesses.",
+  "central_claim": "The 1874 recruitment footnote is directly present and remains paratextual, although its small-type body is badly damaged in accessible OCR. Presence and placement are therefore secure while exact wording identity to 1857 remains unresolved. Phoenix is now the sole unresolved publication breakpoint in this paratext chain.",
+  "states": [
+    {
+      "id": "MTP-1833",
+      "edition": "JASB first publication",
+      "date": "1833",
+      "recruitment_sentence": "DIRECT_PRESENT",
+      "retrospective_1857_note": "NOT_APPLICABLE_AS_LATER_ADDITION",
+      "evidence_state": "BASELINE_PUBLICATION"
+    },
+    {
+      "id": "MTP-1857",
+      "edition": "Selections from the Records of the Government of Bengal No.27",
+      "date": "1857",
+      "marker": "DIRECT",
+      "body_presence": "DIRECT",
+      "placement": "FOOTNOTE_DIRECT",
+      "wording_fidelity": "DIRECT_READABLE_WITH_MINOR_OCR_NOISE",
+      "body_function": [
+        "retrospective composition dating",
+        "recruitment-policy update",
+        "authorial advocacy history"
+      ],
+      "opening": "Since this paper was written (twenty-five years back)",
+      "source": "https://archive.org/stream/in.ernet.dli.2015.23938/2015.23938.Records-Of-The-Government-Of-Bengal-No27_djvu.txt"
+    },
+    {
+      "id": "MTP-1872-PHOENIX",
+      "edition": "The Phoenix III no.26 pp.31-35",
+      "date": "1872-08",
+      "marker": "UNREAD",
+      "body_presence": "UNREAD",
+      "placement": "UNRESOLVED",
+      "wording_fidelity": "UNRESOLVED",
+      "bound_volume_metadata": "Google Books Volume 3 located; No.27 begins p.41, consistent with No.26 occupying preceding pagination and the established pp.31-35 article citation",
+      "transmission_context": "1874 NOTICE states that Hodgson manuscript additions in his own copy of Selections were introduced into the reprint text; this does not prove the placement of this specific already-printed 1857 footnote in Phoenix",
+      "source_control": "do not infer Phoenix placement from the 1874 outcome"
+    },
+    {
+      "id": "MTP-1874",
+      "edition": "Essays on the Languages, Literature, and Religion of Nepal and Tibet",
+      "date": "1874",
+      "marker": "DIRECT",
+      "marker_context": "recruitment sentence still ends most highly prized.* on printed p.41",
+      "body_presence": "DIRECT_PRESENT_OCR_GARBLED",
+      "placement": "FOOTNOTE_DIRECT",
+      "wording_fidelity": "HIGH_ALIGNMENT_TO_1857_NOT_EXACTLY_VERIFIED",
+      "direct_body_anchors": [
+        "Brahman ... Kshatri",
+        "mercenaries",
+        "earnestly dwelt",
+        "(1857.)"
+      ],
+      "transform_state": "FOOTNOTE_CONTINUITY_OR_REVISION",
+      "excluded_transform_states": [
+        "PARATEXT_OMISSION",
+        "FULL_PARATEXT_TO_BODY_RECODING"
+      ],
+      "source": "https://archive.org/stream/essaysonlanguage00hodg/essaysonlanguage00hodg_djvu.txt",
+      "source_note": "OCR reading order is disrupted by the adjacent tabular material; direct presence and footnote status are secure, exact body wording is not yet fully recoverable"
+    }
+  ],
+  "editorial_transmission": {
+    "source": "1874 NOTICE",
+    "direct_claim": "Hodgson made many manuscript additions in his own copy of the Selections and the corrections and additions were introduced into the text of the reprint",
+    "material_sequence": [
+      "printed Selections copy",
+      "Hodgson handwriting on print",
+      "editorial/typesetting incorporation",
+      "Phoenix serial state",
+      "1874 collected state"
+    ],
+    "control": "general incorporation does not imply uniform body-text recoding at every locus"
+  },
+  "active_status": "1874_PARATEXT_SURVIVAL_SECURE_PHOENIX_UNRESOLVED",
+  "mechanisms": [
+    "PARATEXT_PLACEMENT_IS_A_VERSION_VARIABLE",
+    "PARATEXT_WITNESS_STATE_MUST_SEPARATE_MARKER_FROM_BODY",
+    "DIRECT_PRESENCE_DISTINCT_FROM_EXACT_WORDING",
+    "OCR_LAYOUT_FAILURE_CAN_HIDE_PRESENT_PARATEXT",
+    "PARATEXT_SURVIVES_SELECTIVE_TEXTUAL_INTEGRATION",
+    "EDITORIAL_INCORPORATION_IS_LOCUS_SPECIFIC_NOT_DOCUMENT_GLOBAL"
+  ],
+  "source_control_rules": [
+    "Treat presence, placement and wording fidelity as separate evidence fields.",
+    "Do not import 1857 wording into damaged 1874 OCR as though it were directly read there.",
+    "Do not infer Phoenix placement from the 1874 state.",
+    "Do not infer textual absence from OCR access failure.",
+    "Direct edition evidence outranks later quotation.",
+    "General editorial incorporation evidence does not determine every locus-specific typographic transform."
+  ],
+  "next_actions": [
+    "Recover Phoenix III no.26 pp.31-35 directly",
+    "Search Phoenix for the recruitment marker and distinctive footnote phrases",
+    "Recover higher-quality 1874 footnote image or OCR",
+    "Compare exact wording across 1857 Phoenix and 1874",
+    "Apply presence-placement-wording fields to the publication-version graph"
+  ]
+}
