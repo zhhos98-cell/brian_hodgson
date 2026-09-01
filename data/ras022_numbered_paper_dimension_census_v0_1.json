@@ -1,0 +1,78 @@
+{
+  "dataset": "ras022_numbered_paper_dimension_census_v0_1",
+  "date": "2026-09-02",
+  "scope": "47 numbered Raj Man Singh architectural drawings currently recovered from RAS online catalogue. Only dimensions explicitly described as paper size are used. Positions 33, 34 and 50 remain unresolved/not surfaced.",
+  "collection_source": "https://royalasiaticcollections.org/collection/hodgson-drawings/",
+  "entry_schema": ["number", "paper_short_cm", "paper_long_cm", "watermark_year_or_null", "format_family"],
+  "entries": [
+    [1,30.2,48.4,null,"LONG"], [2,30.0,48.4,null,"LONG"], [3,30.4,48.4,1841,"LONG"], [4,30.3,48.8,null,"LONG"], [5,29.7,48.4,null,"LONG"],
+    [6,30.0,48.4,null,"LONG"], [7,30.1,48.7,1841,"LONG"], [8,30.2,48.5,null,"LONG"], [9,30.3,48.5,1841,"LONG"], [10,29.8,48.6,1841,"LONG"],
+    [11,30.3,48.5,1841,"LONG"], [12,27.1,45.4,null,"SHORT_MEDIUM_LIKE"], [13,30.0,48.5,1841,"LONG"], [14,27.0,43.8,1841,"SHORT_MEDIUM_LIKE"], [15,30.3,48.7,1841,"LONG"],
+    [16,30.2,48.6,null,"LONG"], [17,30.0,48.5,null,"LONG"], [18,27.8,44.0,null,"SHORT_MEDIUM_LIKE"], [19,30.0,48.7,null,"LONG"], [20,30.2,48.9,1841,"LONG"],
+    [21,30.0,48.6,1841,"LONG"], [22,30.0,48.5,1841,"LONG"], [23,30.6,48.8,1837,"LONG"], [24,30.2,48.2,null,"LONG"], [25,30.0,48.0,null,"LONG"],
+    [26,31.6,43.8,1821,"OLD_STOCK_IRREGULAR"], [27,30.0,48.5,null,"LONG"], [28,30.3,48.5,null,"LONG"], [29,29.6,48.5,1841,"LONG"], [30,30.0,48.5,1841,"LONG"],
+    [31,29.8,47.5,1841,"LONG"], [32,30.3,48.5,null,"LONG"], [35,30.2,48.7,null,"LONG"], [36,30.2,48.8,null,"LONG"], [37,30.0,48.8,null,"LONG"],
+    [38,30.1,48.6,1841,"LONG"], [39,29.7,48.3,1841,"LONG"], [40,30.0,48.7,1841,"LONG"], [41,30.1,49.0,1841,"LONG"], [42,30.0,48.5,1841,"LONG"],
+    [43,30.3,48.6,1841,"LONG"], [44,29.8,48.5,null,"LONG"], [45,30.3,48.9,1841,"LONG"], [46,30.2,48.6,null,"LONG"], [47,30.1,48.7,1841,"LONG"],
+    [48,30.5,48.7,null,"LONG"], [49,30.0,48.3,1841,"LONG"]
+  ],
+  "coverage": {
+    "numbered_records_recovered": 47,
+    "unresolved_number_positions": [33,34,50]
+  },
+  "statistics": {
+    "long_format_n": 43,
+    "long_format_mean_cm": [30.10,48.54],
+    "long_format_sample_sd_cm": [0.21,0.25],
+    "long_format_range_cm": {"short_side": [29.6,30.6], "long_side": [47.5,49.0]},
+    "dated_watermark_long_n": 23,
+    "dated_watermark_long_distribution": {"1841":22,"1837":1},
+    "dated_watermark_long_mean_cm": [30.09,48.56],
+    "dated_watermark_long_sample_sd_cm": [0.23,0.29],
+    "catalogue_watermark_not_stated_long_n": 20,
+    "catalogue_watermark_not_stated_long_mean_cm": [30.12,48.53],
+    "catalogue_watermark_not_stated_long_sample_sd_cm": [0.19,0.20],
+    "short_format_n": 4,
+    "short_format_numbers": [12,14,18,26]
+  },
+  "standard_size_comparison": {
+    "reference": "British Association of Paper Historians, Old English Paper Sizes",
+    "url": "https://baph.org.uk/resources/reference-material/old-english-paper-sizes/",
+    "royal_whole_cm": [48.26,60.96],
+    "theoretical_half_royal_cm": [30.48,48.26],
+    "long_mean_difference_percent": [-1.25,0.58],
+    "long_interpretation": "HALF_ROYAL_DRAWING_SHEET_CANDIDATE_VERY_HIGH_BY_DIMENSION",
+    "medium_whole_cm": [44.45,57.15],
+    "theoretical_half_medium_cm": [28.575,44.45],
+    "medium_like_short_numbers": [12,14,18],
+    "medium_like_mean_cm": [27.3,44.4],
+    "short_interpretation": "TRIMMED_HALF_MEDIUM_CANDIDATE"
+  },
+  "preliminary_sketch_comparison": {
+    "note": "Extra/preliminary Hodgson sketch sheets are excluded from numbered-programme statistics and occupy a shorter, more variable dimensional zone.",
+    "examples": [
+      ["022.052",27.6,46.0],
+      ["022.053",31.0,41.5],
+      ["022.054",31.0,41.5],
+      ["022.055",26.1,43.4],
+      ["022.056",30.0,43.4],
+      ["022.057",31.3,42.7],
+      ["022.058",29.3,44.8]
+    ]
+  },
+  "mechanisms": [
+    "WORKING_FORMAT_STANDARDIZATION_IS_SERIES_LEVEL",
+    "FORMAT_STANDARDIZATION_OVER_HETEROGENEOUS_STOCK",
+    "CATALOGUE_WATERMARK_SILENCE_DOES_NOT_DEFINE_A_FORMAT_FAMILY",
+    "WORKING_FORMAT_IS_MORE_STABLE_THAN_VISIBLE_WATERMARK_STATE",
+    "FORMAL_SERIES_PRODUCTION_INCREASES_FORMAT_STANDARDIZATION",
+    "MULTI_STAGE_DIMENSIONAL_STANDARDIZATION"
+  ],
+  "source_control_rules": [
+    "No watermark statement means CATALOGUE_NOT_STATED, not NO_WATERMARK.",
+    "The half-Royal interpretation is dimensional and does not establish maker, batch, trade label or cutting location.",
+    "Working paper size is separate from mount/frame size.",
+    "Preliminary sketches are excluded from the numbered-programme statistics.",
+    "Physical edges, formation and transmitted-light watermark/countermark evidence outrank dimensional reconstruction."
+  ]
+}
