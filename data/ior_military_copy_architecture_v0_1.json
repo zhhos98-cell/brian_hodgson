@@ -1,0 +1,153 @@
+{
+  "dataset": "ior_military_copy_architecture_v0_1",
+  "date": "2026-09-02",
+  "scope": "Administrative transmission and archival survival states relevant to the 1825/1830 Hodgson-military classification problem.",
+  "central_claim": "Military classification moved through parallel administrative record channels. The identified surviving London witness of the Bengal Military letter of 6 Nov 1830, IOR/L/MIL/3/32 no.52, belongs to the Board of Control copy series. Later archival weeding preferentially retained this pre-1858 Board-copy branch over duplicated Company holdings.",
+  "series_context": {
+    "series": "IOR/L/MIL/3",
+    "title": "Military Correspondence with India",
+    "date_range": "1803-1937",
+    "relevant_subseries": {
+      "ref": "IOR/L/MIL/3/1-78",
+      "title": "Military Letters from Bengal and India (Board's Copies)",
+      "date_range": "1803-1858",
+      "relevant_volume": "IOR/L/MIL/3/32"
+    },
+    "historical_record_ecology": [
+      "parallel military-letter sets at East India House / Company headquarters",
+      "parallel military-letter sets at Board of Control",
+      "later extensive weeding of duplicate former-headquarters records",
+      "pre-1858 incoming military letters retained preferentially as Board copies",
+      "later correspondence systems also contain fair copies, drafts and multiple-copy incoming originals"
+    ],
+    "later_enclosure_rule": {
+      "period": "1835-1900 for Bengal/India incoming correspondence",
+      "operation": "enclosures removed and bound separately",
+      "control": "do not project this later procedure automatically onto the specific 1830 letter"
+    }
+  },
+  "witness_nodes": [
+    {
+      "id": "BMC-1830-BENTINCK",
+      "ref": "IOR/B.M.C. P/33/55 no.11",
+      "date": "1830-07-27",
+      "institution": "Bengal military administration",
+      "record_function": "classification request / format instruction",
+      "requested_fields": [
+        "Casts",
+        "Districts",
+        "Provinces",
+        "length of service"
+      ],
+      "documentary_scale": "selected variables for abstract rather than full Description Roll",
+      "direct_primary_inspection": false
+    },
+    {
+      "id": "BMC-1830-LOCAL-RETURNS",
+      "ref": "IOR/B.M.C. P/33/57 nos.34-37 / 36-37",
+      "date": "1830-08/09",
+      "institution": "Nasiri and Sirmoor battalions -> Bengal military administration",
+      "record_function": "commanding-officer personnel/classification returns",
+      "documentary_scale": "corps-level aggregate",
+      "direct_primary_inspection": false
+    },
+    {
+      "id": "BM-LONDON-1830-NO52",
+      "ref": "IOR/L/MIL/3/32 no.52",
+      "date": "1830-11-06",
+      "institution": "Bengal military administration -> London / Board of Control record series",
+      "record_function": "central synthesis / official military letter",
+      "copy_status": "BOARD_OF_CONTROL_COPY_SERIES_SECURE",
+      "subseries": "IOR/L/MIL/3/1-78",
+      "survival_status": "EXTANT_CATALOGUED_NOT_DIGITALLY_INSPECTED",
+      "direct_primary_inspection": false
+    },
+    {
+      "id": "HODGSON-1825-GOVT-CHANNEL",
+      "ref": "IOR/B.S.P.C. P/Ben/Sec/328, 4 Mar 1825, no.16",
+      "date": "1825-03-04",
+      "institution": "Bengal Secret Political Consultations",
+      "record_function": "official consultation state of Hodgson/Gardner military inquiry",
+      "relation_to_personal_archive": "PARALLEL_RECORD_CHANNEL_UNRESOLVED",
+      "direct_primary_inspection": false
+    },
+    {
+      "id": "HODGSON-1825-PERSONAL-CHANNEL",
+      "ref": "Hodgson papers MSS.9 ff.177-178 / related MSS EUR HODGSON army family",
+      "date": "1825",
+      "institution": "Hodgson/Residency working archive",
+      "record_function": "author/Residency manuscript state",
+      "relation_to_government_record": "PARALLEL_RECORD_CHANNEL_UNRESOLVED",
+      "direct_primary_inspection": false
+    }
+  ],
+  "transmission_edges": [
+    {
+      "from": "BMC-1830-BENTINCK",
+      "to": "BMC-1830-LOCAL-RETURNS",
+      "type": "REQUEST_TO_RETURN",
+      "strength": "HIGH_SECONDARY_ARCHIVAL_RECONSTRUCTION"
+    },
+    {
+      "from": "BMC-1830-LOCAL-RETURNS",
+      "to": "BM-LONDON-1830-NO52",
+      "type": "LOCAL_RETURNS_TO_CENTRAL_SYNTHESIS_AND_METROPOLITAN_COPY",
+      "strength": "HIGH_FOR_ADMINISTRATIVE_SEQUENCE; EXACT_COPYING_OPERATIONS_UNINSPECTED"
+    },
+    {
+      "from": "HODGSON-1825-PERSONAL-CHANNEL",
+      "to": "HODGSON-1825-GOVT-CHANNEL",
+      "type": "RESIDENCY_WORKING_TO_OFFICIAL_RECORD_CANDIDATE",
+      "strength": "UNRESOLVED_COPY_RELATION"
+    }
+  ],
+  "archival_transformations": [
+    {
+      "type": "PARALLEL_INSTITUTIONAL_DUPLICATION",
+      "historical_state": "Company and Board of Control military-letter sets coexist",
+      "function": "governance / oversight rather than preservation-only copying"
+    },
+    {
+      "type": "POST_EIC_WEEDING",
+      "historical_state": "duplicate former-headquarters records extensively weeded",
+      "effect": "some parallel witness branches removed"
+    },
+    {
+      "type": "PRE_1858_SURVIVAL_SELECTION",
+      "historical_state": "Board copies retained in preference to Company set for incoming military letters",
+      "effect": "surviving archive privileges Board-copy branch"
+    },
+    {
+      "type": "LATER_ENCLOSURE_REBINDING",
+      "historical_state": "incoming enclosures removed and separately bound from 1835",
+      "effect": "letter/enclosure documentary neighborhoods can be remade",
+      "specific_1830_application": "NOT_ESTABLISHED"
+    }
+  ],
+  "mechanisms": [
+    "GOVERNANCE_COPY_IS_AN_OPERATIONAL_DOCUMENT_STATE",
+    "ADMINISTRATIVE_DUPLICATION_IS_GOVERNANCE_INFRASTRUCTURE",
+    "PARALLEL_INSTITUTIONAL_RECORD_BRANCHES",
+    "OPERATIONAL_COPY_LATER_BECOMES_ARCHIVAL_WITNESS",
+    "ARCHIVAL_WEEDING_SELECTS_SURVIVING_VERSION_BRANCH",
+    "CUSTODY_IS_VERSION_SELECTION",
+    "RECORD_SERIES_ARCHITECTURE_IS_VERSION_HISTORY",
+    "AUTHOR_ARCHIVE_AND_STATE_ARCHIVE_ARE_PARALLEL_VERSION_SYSTEMS"
+  ],
+  "source_control_rules": [
+    "Call IOR/L/MIL/3/32 part of the Board's-copy subseries, not a unique original.",
+    "Do not infer physical copy direction between P/33 returns and L/MIL/3/32 without primary inspection.",
+    "Do not project post-1835 enclosure removal onto the 1830 letter without item-level evidence.",
+    "Keep governance duplication separate from later archival duplication and rebinding.",
+    "British Library series history supports record architecture, not the wording of item no.52.",
+    "Keep Hodgson personal-paper and Government-record channels separate until direct textual/material comparison."
+  ],
+  "next_actions": [
+    "Inspect IOR/L/MIL/3/32 no.52 physically",
+    "Inspect P/33/55 and P/33/57 in parallel",
+    "Compare local-return category order and wording against the Board-copy synthesis",
+    "Search for surviving Company-side counterpart to the 6 Nov 1830 letter",
+    "Compare P/Ben/Sec/328 with Hodgson MSS.9 ff.177-178 and MSS EUR HODGSON/10 item 1",
+    "Record creator, institution, copy status, support, aggregation level, custody branch and survival state for each witness"
+  ]
+}
