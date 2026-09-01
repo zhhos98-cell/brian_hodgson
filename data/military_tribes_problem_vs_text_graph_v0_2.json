@@ -1,0 +1,225 @@
+{
+  "dataset": "military_tribes_problem_vs_text_graph_v0_2",
+  "date": "2026-09-02",
+  "status": "three-layer graph separating historical document attestation, surviving witnesses, and textual/copy descent",
+  "model_revision": "Wave 57 adds a retrospectively attested early classificatory military-tribes memoir as a missing/unidentified document node. This does not create a direct textual arrow to 1832/1833 and does not displace vol.7/20 as the earliest currently identified surviving explicit classificatory manuscript state.",
+  "attestation_nodes": [
+    {
+      "id": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "date": "Assistant-Resident / early Residency period; exact date unresolved",
+      "state": "RETROSPECTIVELY_ATTESTED_DOCUMENT_PHYSICAL_IDENTITY_UNRESOLVED",
+      "content_markers": [
+        "military tribes and races",
+        "tribal names and classification",
+        "physical and moral qualities as soldiers",
+        "recruitment through the Durbar"
+      ],
+      "dating_control": "1868-69 service narrative begins Hodgson's extra-routine work in 1825 and places the two military memoirs before a subsequent 1830-32 commerce section; do not equate this with a February 1825 composition date",
+      "possible_survival_states": [
+        "survives under broad army catalogue description",
+        "survives only as fragments or reworking",
+        "no longer survives / not yet identified"
+      ]
+    },
+    {
+      "id": "A-1868-69-SERVICE-PAMPHLET",
+      "work": "Notes of the services of B. H. Hodgson, collected by a friend",
+      "date": "1868-1869",
+      "evidence_class": "RETROSPECTIVE_SERVICE_HISTORY",
+      "supports": [
+        "two early military memoirs",
+        "separate military-system and military-tribes content",
+        "military-tribes memoir includes race/classification/names/qualities",
+        "recruitment argument attached to the military inquiry"
+      ],
+      "provenance_note": "privately printed/not published pamphlet; multiple early impressions reported by Harihar Joshi"
+    },
+    {
+      "id": "A-1882-MITRA",
+      "work": "Rajendralala Mitra, The Sanskrit Buddhist Literature of Nepal",
+      "date": "1882",
+      "evidence_class": "NEAR_CONTEMPORARY_RETROSPECTIVE_ATTESTATION_WITH_POSSIBLE_TEXTUAL_DEPENDENCE",
+      "supports": [
+        "two memoirs from Assistant-Resident military studies",
+        "tribal names and classification",
+        "physical/moral soldier qualities",
+        "recruitment recommendation"
+      ],
+      "control": "wording is close to the service-pamphlet tradition; do not count as automatically independent textual witness"
+    },
+    {
+      "id": "A-1896-HUNTER",
+      "work": "W. W. Hunter, Life of Brian Houghton Hodgson",
+      "date": "1896",
+      "evidence_class": "RETROSPECTIVE_PROVENANCE_SUPPORT",
+      "supports": [
+        "Mitra was in personal communication with Hodgson",
+        "early inquiries belong to Assistant-Resident systematic research programme",
+        "results later appeared in multiple publication forms"
+      ],
+      "control": "does not identify the physical manuscript or prove textual descent"
+    }
+  ],
+  "surviving_witness_nodes": [
+    {
+      "id": "W-1825-MEMOIR",
+      "ref": "MSS EUR HODGSON/10 item 1",
+      "date": "1825-02",
+      "support": "MACHINE_MADE",
+      "state": "pre-bound administrative memorandum",
+      "title": "Memoir on the Army of Nepal",
+      "operation": "army assessment / recruitment",
+      "headings": 39,
+      "relation_to_attested_tribes_memoir": "CANDIDATE_COMPONENT_OF_TWO_MEMOIR_PROGRAM_NOT_IDENTIFIED"
+    },
+    {
+      "id": "W-1825-ROUGH",
+      "ref": "MSS EUR HODGSON/9 item 23",
+      "date": "1825",
+      "support": "MACHINE_MADE",
+      "state": "rough incomplete army report/essay with corrections",
+      "original_control_surface": "head cross-reference to the red leather volume",
+      "relation_to_attested_tribes_memoir": "ROUGH_ARMY_FAMILY_CANDIDATE_NOT_IDENTIFIED"
+    },
+    {
+      "id": "W-1828-BAYLEY",
+      "ref": "MSS EUR HODGSON/9 item 22",
+      "date": "1828-04",
+      "support": "MACHINE_MADE",
+      "state": "very rough military memoir / answers to Bayley queries",
+      "relation_to_attested_tribes_memoir": "REWORKING_CANDIDATE_NOT_IDENTIFIED"
+    },
+    {
+      "id": "W-1831-ROUGH-CLASSIFICATION",
+      "ref": "MSS EUR HODGSON/7 item 20",
+      "date": "1831",
+      "support": "MACHINE_MADE",
+      "state": "earliest currently identified surviving explicit classificatory source pool",
+      "markers": [
+        "Khasa thars",
+        "Brahman family names",
+        "Bara-Magarant / Magar family names",
+        "Gurung clans",
+        "Castes of Parbattiah army tribes"
+      ]
+    },
+    {
+      "id": "W-1832-FAIR-TABLE",
+      "ref": "MSS EUR HODGSON/6 item 1",
+      "date": "1832-10",
+      "support": "MACHINE_MADE",
+      "state": "fair publication-facing tabular copy",
+      "relation_to_print": "DATE_ALIGNED_PREPUBLICATION_FAIR_STATE_HIGH"
+    },
+    {
+      "id": "W-UNDATED-FAIR-COPY",
+      "ref": "MSS EUR HODGSON/9 item 10",
+      "date": null,
+      "support": "MACHINE_MADE",
+      "state": "parallel fair copy",
+      "copy_direction": "UNRESOLVED"
+    },
+    {
+      "id": "W-1833-PRINT",
+      "ref": "JASB 2 (1833):217-224",
+      "date": "1833-05",
+      "state": "learned-society printed narrative plus table",
+      "operation": "classification plus recruitment argument"
+    }
+  ],
+  "problem_edges": [
+    {
+      "from": "W-1825-MEMOIR",
+      "to": "W-1833-PRINT",
+      "type": "POLICY_PROBLEM_CONTINUITY",
+      "strength": "HIGH",
+      "direct_copy": false
+    },
+    {
+      "from": "W-1825-MEMOIR",
+      "to": "W-1828-BAYLEY",
+      "type": "ADMINISTRATIVE_PROBLEM_REWORKING",
+      "strength": "HIGH_FAMILY_LEVEL"
+    }
+  ],
+  "attestation_edges": [
+    {
+      "from": "A-1868-69-SERVICE-PAMPHLET",
+      "to": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "type": "RETROSPECTIVE_DOCUMENT_ATTESTATION",
+      "strength": "HIGH_FOR_EXISTENCE_AND_CONTENT_CLASS",
+      "physical_identity": "UNRESOLVED"
+    },
+    {
+      "from": "A-1882-MITRA",
+      "to": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "type": "NEAR_CONTEMPORARY_RETROSPECTIVE_ATTESTATION",
+      "strength": "HIGH_ALIGNMENT",
+      "independence": "UNRESOLVED_POSSIBLE_TEXTUAL_DEPENDENCE"
+    },
+    {
+      "from": "A-1896-HUNTER",
+      "to": "A-1882-MITRA",
+      "type": "EXPLICIT_QUOTATION_AND_PROVENANCE_CONTEXT",
+      "strength": "DIRECT"
+    }
+  ],
+  "textual_edges": [
+    {
+      "from": "W-1831-ROUGH-CLASSIFICATION",
+      "to": "W-1833-PRINT",
+      "type": "SOURCE_POOL_TO_PUBLICATION_FAMILY",
+      "strength": "STRONG",
+      "direct_copy": false
+    },
+    {
+      "from": "W-1832-FAIR-TABLE",
+      "to": "W-1833-PRINT",
+      "type": "PREPUBLICATION_CANDIDATE",
+      "strength": "HIGH",
+      "direct_copy": "UNRESOLVED"
+    },
+    {
+      "from": "W-1832-FAIR-TABLE",
+      "to": "W-UNDATED-FAIR-COPY",
+      "type": "COPY_FAMILY",
+      "strength": "HIGH",
+      "direction": "UNRESOLVED"
+    },
+    {
+      "from": "A-EARLY-MILITARY-TRIBES-MEMOIR",
+      "to": "W-1831-ROUGH-CLASSIFICATION",
+      "type": "POSSIBLE_HISTORICAL_PREDECESSOR_ONLY",
+      "strength": "UNRESOLVED",
+      "direct_copy": false,
+      "control": "attestation establishes an earlier classificatory document but no shared wording/order/error comparison is available"
+    }
+  ],
+  "cross_layer_interpretation": {
+    "old_model": "administrative military problem -> 1831 first visible classification -> 1832 fair table -> 1833 print",
+    "revised_model": "early Residency programme contains parallel/coupled administrative army and classificatory military-tribes documentary branches; a classificatory tribes memoir is retrospectively attested but not yet mapped to a surviving shelfmark; 1831 remains the earliest directly identified surviving classificatory state feeding the publication-facing family",
+    "mechanisms": [
+      "EARLY_PARALLEL_ADMINISTRATIVE_AND_CLASSIFICATORY_DOCUMENTARY_BRANCHES",
+      "RETROSPECTIVE_ATTESTATION_ADDS_A_MISSING_DOCUMENT_NODE",
+      "ATTESTED_DOCUMENT_DOES_NOT_EQUAL_IDENTIFIED_SURVIVING_WITNESS",
+      "SURVIVAL_FILTER_RESHAPES_APPARENT_GENEALOGY"
+    ]
+  },
+  "source_control_rules": [
+    "Do not turn retrospective document attestation into a direct textual edge.",
+    "Do not assign the attested military-tribes memoir the exact February 1825 date of vol.10/1.",
+    "Do not identify vol.10/1, vol.9/22 or vol.9/23 as the tribes memoir without content-level comparison.",
+    "Treat the service pamphlet, Mitra and Hunter as a related provenance tradition; do not count wording overlap as three independent witnesses.",
+    "Keep vol.7/20 as the earliest currently identified surviving explicit classificatory manuscript state.",
+    "Keep missing/unidentified historical document nodes explicit in the graph.",
+    "Textual descent requires shared wording, ordering, errors, headings or other direct content evidence."
+  ],
+  "next_actions": [
+    "Read vol.9/23 images when Cambridge image server recovers",
+    "Read vol.9/22 for tribe/race/caste/classification headings",
+    "Read all 39 headings in vol.10/1",
+    "Search vol.11/6 and vol.6/8 for copied/abstracted classificatory sections",
+    "Track the red leather volume cross-reference",
+    "Compare any recovered early classificatory text against vol.7/20, vol.6/1 and 1833 print"
+  ]
+}
