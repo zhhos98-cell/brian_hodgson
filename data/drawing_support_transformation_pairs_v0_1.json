@@ -1,0 +1,149 @@
+{
+  "dataset": "drawing_support_transformation_pairs_v0_1",
+  "date": "2026-09-02",
+  "scope": "Explicit Royal Asiatic Society working-sketch to British Library Lawrence finished-drawing relations, with paper/support metadata and measurement-type controls.",
+  "central_claim": "At least four British Library finished Nepal drawings explicitly cite original pencil sketches now in the RAS Hodgson collection. The Lawrence finished corpus is normally on English paper watermarked 1840-42, showing that visual copying frequently transferred information onto a newly allocated support rather than merely elaborating the original sketch sheet.",
+  "lawrence_collection": {
+    "ref": "Add Or 5229-5255",
+    "date": "1843-1846 for Nepal drawings",
+    "operation": "finished Nepal drawings, watercolour/body-colour",
+    "paper_normal_state": "English paper",
+    "watermark_range": "1840-1842",
+    "container": "folder of Nepalese paper inscribed Pictures of Nepal",
+    "container_date": "UNRESOLVED",
+    "source": "https://searcharchives.bl.uk/catalog/032-003279064"
+  },
+  "pairs": [
+    {
+      "source_support": {
+        "ref": "RAS Hodgson 022.058",
+        "title": "British Ambassador's house, Kathmandu in the Gothic style",
+        "medium": "pen and ink sketch",
+        "paper_dimension_cm": [29.3, 44.8],
+        "date": "c.1844",
+        "source": "https://royalasiaticcollections.org/british-ambassadors-house-kathmandu-in-the-gothic-style/"
+      },
+      "derivative_support": {
+        "ref": "BL Add Or 5233",
+        "title": "The British Residency in Kathmandu",
+        "medium": "wash, watercolour and body-colour, heightened with silver",
+        "dimension_mm": [268, 445],
+        "dimension_semantic_type": "IMAGE_FIELD_WITHIN_FRAME_NOT_FULL_PAPER",
+        "paper_class": "normally English paper by collection-level statement",
+        "watermark": "collection-level normal range 1840-42; item-level unread",
+        "source": "https://searcharchives.bl.uk/catalog/040-003279069"
+      },
+      "relation": "BL_DIRECTLY_IDENTIFIES_RAS_AS_ORIGINAL_PENCIL_SKETCH"
+    },
+    {
+      "source_support": {
+        "ref": "RAS Hodgson 022.055",
+        "title": "The Durbar, Kathmandu",
+        "medium": "pen and ink sketch",
+        "paper_dimension_cm": [26.1, 43.4],
+        "date": "c.1844",
+        "source": "https://royalasiaticcollections.org/the-durbar-kathmandu/"
+      },
+      "derivative_support": {
+        "ref": "BL Add Or 5244",
+        "title": "Kala-Bhairava and the northern part of the old royal palace at Kathmandu",
+        "medium": "pencil, wash and watercolour",
+        "dimension_mm": [240, 420],
+        "dimension_semantic_type": "IMAGE_FIELD_WITHIN_PAINTED_FRAME_NOT_FULL_PAPER",
+        "paper_class": "normally English paper by collection-level statement",
+        "watermark": "collection-level normal range 1840-42; item-level unread",
+        "source": "https://searcharchives.bl.uk/catalog/040-003279076"
+      },
+      "relation": "BL_DIRECTLY_IDENTIFIES_RAS_AS_ORIGINAL_PENCIL_SKETCH"
+    },
+    {
+      "source_support": {
+        "ref": "RAS Hodgson 022.054",
+        "title": "Temple of Krishna, Patan",
+        "medium": "pen and ink sketch",
+        "paper_dimension_cm": [31.0, 41.5],
+        "date": "c.1844",
+        "source": "https://royalasiaticcollections.org/temple-of-krishna-patan/",
+        "additional_relation": "RAS describes as preliminary sketch for RAS 022.027"
+      },
+      "derivative_support": {
+        "ref": "BL Add Or 5246",
+        "title": "The Krishna temple at Patan",
+        "medium": "pencil, wash and watercolour",
+        "dimension_mm": [262, 420],
+        "dimension_semantic_type": "IMAGE_FIELD_WITHIN_FRAME_NOT_FULL_PAPER",
+        "paper_class": "normally English paper by collection-level statement",
+        "watermark": "collection-level normal range 1840-42; item-level unread",
+        "source": "https://searcharchives.bl.uk/catalog/040-003279078"
+      },
+      "relation": "BL_DIRECTLY_IDENTIFIES_RAS_AS_ORIGINAL_PENCIL_SKETCH",
+      "branch_note": "same RAS sketch is also explicitly linked by RAS to finished RAS 022.027; exact multiple-copy chronology unresolved"
+    },
+    {
+      "source_support": {
+        "ref": "RAS Hodgson 022.052",
+        "title": "Temple of Avalokitesvara, Patan",
+        "medium": "pen and ink sketch",
+        "paper_dimension_cm": [27.6, 46.0],
+        "date": "c.1844",
+        "source": "https://royalasiaticcollections.org/temple-of-avalokitesvara-patan/"
+      },
+      "derivative_support": {
+        "ref": "BL Add Or 5251",
+        "title": "The temple and courtyard of Matsyendranath in Patan",
+        "medium": "pencil, wash and watercolour",
+        "dimension_mm": [240, 394],
+        "dimension_semantic_type": "IMAGE_FIELD_WITHIN_FRAME_NOT_FULL_PAPER",
+        "paper_class": "normally English paper by collection-level statement",
+        "watermark": "collection-level normal range 1840-42; item-level unread",
+        "source": "https://searcharchives.bl.uk/catalog/040-003279083"
+      },
+      "relation": "BL_DIRECTLY_IDENTIFIES_RAS_AS_ORIGINAL_PENCIL_SKETCH"
+    }
+  ],
+  "paper_exception": {
+    "ref": "BL Add Or 5254",
+    "title": "Outline sketch of a Buddhist stupa",
+    "support": "Nepalese paper",
+    "medium": "wash and watercolour",
+    "dimension_mm": [352, 363],
+    "dimension_semantic_type": "WITHIN_BLACK_RULED_FRAMES_NOT_CONFIRMED_FULL_SHEET",
+    "significance": "direct local-paper exception inside collection otherwise described as normally English paper",
+    "source": "https://searcharchives.bl.uk/catalog/040-003279086"
+  },
+  "material_sequence": [
+    "working paper stock",
+    "original sketch support",
+    "visual copying/reference operation",
+    "newly allocated finished-drawing support",
+    "drawn/painted frame or mount state",
+    "Nepalese-paper folder/container",
+    "later Lawrence/BL custody"
+  ],
+  "new_fields": [
+    "dimension_semantic_type",
+    "paper_function",
+    "source_support_ref",
+    "derivative_support_ref",
+    "container_support_ref",
+    "support_substitution_state",
+    "item_level_watermark",
+    "collection_level_watermark_range"
+  ],
+  "mechanisms": [
+    "WORKING_SKETCH_IS_COPY_INFRASTRUCTURE",
+    "FINISHING_CAN_TRIGGER_SUPPORT_SUBSTITUTION",
+    "COPYING_TRANSFERS_INFORMATION_ACROSS_SUPPORTS",
+    "ONE_VISUAL_OBJECT_CAN_HAVE_MULTIPLE_PAPER_STATES",
+    "PAPER_ORIGIN_DOES_NOT_FIX_FUNCTION",
+    "NESTED_PAPER_OBJECT",
+    "CATALOGUE_DIMENSIONS_ARE_OPERATIONALLY_TYPED"
+  ],
+  "source_control_rules": [
+    "Do not compare RAS paper dimensions directly with BL within-frame dimensions.",
+    "Collection-level normal English-paper state does not prove each paired BL item's support until physically inspected.",
+    "Do not date the Nepalese-paper folder to the 1840s without further evidence.",
+    "Do not infer exact copying personnel or branch chronology beyond explicit catalogue links.",
+    "Keep paper support, medium, image-field dimensions, mount and container as separate fields."
+  ]
+}
