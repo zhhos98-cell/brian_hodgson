@@ -1,0 +1,137 @@
+{
+  "dataset": "nepal_paper_counting_units_v0_1",
+  "date": "2026-09-02",
+  "scope": "Nepali paper counting hierarchy and its relation to the unresolved 1843 Hodgson/Wallich paper bill.",
+  "central_claim": "Independent Nepali lexical and paper-industry evidence strongly validates tau -> dhep -> kori as a paper-count hierarchy: one tau is one paper sheet/folio, ten tau make one dhep, twenty dhep make one kori, hence one kori is two hundred tau. Cambridge's 1843 catalogue transcription ḍhyāp with a ten-sheet gloss is therefore a very strong candidate for the Nepali unit ढेप/ḍhep(a), although the original bill remains unread and exact orthography/romanization is unresolved.",
+  "units": [
+    {
+      "id": "NEP-TAU",
+      "script": "ताउ",
+      "romanization": "tau / tāu",
+      "level": "sheet",
+      "value": 1,
+      "value_unit": "paper sheet/folio",
+      "evidence": [
+        "Nepali-English lexical sources: tau = sheet of paper",
+        "Nepali-Esperanto dictionary: tau = folio (de papero)",
+        "Bhupahari Paudel 1987 paper-industry hierarchy uses tau as the sheet-level count"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "id": "NEP-DHEP",
+      "script": "ढेप",
+      "romanization": "dhep / ḍhep / ḍhepa",
+      "level": "small paper bundle",
+      "value": 10,
+      "value_unit": "tau/sheets",
+      "evidence": [
+        "Nepali lexical definition: ढेप = ten tau of Nepali paper in one stack/bundle",
+        "Nepali-English definition: dhepa = bundle/quire of Nepalese paper consisting of 10 sheets",
+        "Bhupahari Paudel 1987: 10 tau = 1 dhep"
+      ],
+      "confidence": "HIGH"
+    },
+    {
+      "id": "NEP-KORI",
+      "script": "कोरी",
+      "romanization": "kori / korī",
+      "level": "market/production batch",
+      "value": 20,
+      "value_unit": "dhep",
+      "equivalent_tau": 200,
+      "evidence": [
+        "Nepali lexical definition: kori = group of twenty dhep of paper",
+        "Bhupahari Paudel 1987: 20 dhep = 1 kori and 1 kori = 200 tau",
+        "modern handmade-paper production literature continues to use 1 kori = 200 sheets/tau"
+      ],
+      "functions": [
+        "production count",
+        "market/pricing batch",
+        "labour/remuneration unit"
+      ],
+      "confidence": "HIGH_FOR_DOCUMENTED_TRADITIONAL_AND_MODERN_USAGE"
+    }
+  ],
+  "hodgson_1843_bill": {
+    "ref": "MSS EUR HODGSON/12 f.117",
+    "catalogue_unit_transcription": "ḍhyāp",
+    "catalogue_unit_gloss": "10 sheets in one bundle",
+    "normalized_local_unit_candidate": "ढेप / ḍhep(a)",
+    "identity_confidence": "VERY_HIGH_CANDIDATE",
+    "original_graphic_form": "UNREAD",
+    "bill_support": "machine-made paper",
+    "paper_purchased": "Nepali paper",
+    "catalogue_quantity": "1,012 bundles",
+    "catalogue_total": "Nepali Rupees 79.30 / Indian Rupees 61.12",
+    "catalogue_rates": "Rupees 10/- and 14/- per bundle as prose-transcribed",
+    "arithmetic_status": "DOES_NOT_RECONCILE_UNDER_LITERAL_CATALOGUE_READING",
+    "current_problem": "ACCOUNT_LAYOUT_QUANTITY_GRADE_AND_PRICE_UNIT_RELATION",
+    "not_current_problem": "EXISTENCE_OF_A_TEN_SHEET_NEPALI_PAPER_UNIT",
+    "image_status": "HISTORICAL_CAMBRIDGE_MEDIA_LINK_RETURNS_502"
+  },
+  "evidence_hierarchy": [
+    {
+      "source": "MSS EUR HODGSON/12 catalogue",
+      "date_of_object": "1843",
+      "date_of_catalogue": "modern",
+      "evidence_type": "catalogue transcription of historical bill",
+      "supports": ["ḍhyāp transcription", "ten-sheet gloss", "quantity/rate/total prose"],
+      "limitation": "original bill image unread"
+    },
+    {
+      "source": "Bhupahari Paudel, Ancient Nepal no.103, 1987-1988, p.33",
+      "evidence_type": "directly inspected printed description of traditional Nepali paper factory/practice",
+      "supports": ["10 tau = 1 dhep", "20 dhep = 1 kori", "1 kori = 200 tau", "kori as price/labour unit"],
+      "limitation": "late twentieth-century documentation, not 1843 primary evidence"
+    },
+    {
+      "source": "modern Nepali lexicography",
+      "evidence_type": "lexical confirmation",
+      "supports": ["tau = sheet of paper", "dhep = 10 tau of Nepali paper", "kori = 20 dhep"],
+      "limitation": "does not by itself date usage to 1843"
+    }
+  ],
+  "comparative_non_equivalent_units": [
+    {
+      "system": "English/Company",
+      "hierarchy": "sheet -> quire -> ream -> chest",
+      "control": "English quire historically 24/25 sheets in Moxon context; not equivalent to Nepali dhep despite dictionary use of English word quire"
+    },
+    {
+      "system": "Kashmir 1831",
+      "hierarchy": "24 finished sheets -> dasta",
+      "control": "regional comparator only"
+    },
+    {
+      "system": "North Indian 1853/1877 glossary",
+      "hierarchy": "2/4/or-more sheets -> takhta; 24 takhta -> dasta",
+      "control": "regional comparator showing lexical/package variability"
+    }
+  ],
+  "mechanisms": [
+    "LOCAL_PAPER_COUNTING_HIERARCHY_INDEPENDENTLY_VALIDATED",
+    "CATALOGUE_ROMANIZATION_CAN_OBSCURE_RECOGNIZABLE_LOCAL_UNIT",
+    "LEXICAL_TRIANGULATION_CAN_RECOVER_ACCOUNTING_STRUCTURE",
+    "TRANSLATION_GLOSS_CAN_CREATE_FALSE_METROLOGICAL_EQUIVALENCE",
+    "PRICE_UNIT_MAY_DIFFER_FROM_COUNT_UNIT",
+    "UNIT_HIERARCHY_CAN_BE_LOST_WHEN_ACCOUNT_TABLE_IS_PROSIFIED",
+    "QUANTITY_PROVENANCE_IS_PART_OF_PAPER_PROVENANCE"
+  ],
+  "source_control_rules": [
+    "Preserve Cambridge ḍhyāp transcription and normalized candidate ढेप/ḍhep(a) as separate fields.",
+    "Do not state that the original 1843 bill spells ढेप until the page is directly inspected.",
+    "Treat ten sheets per dhep as independently validated but the f.117 total quantity and rate structure as unresolved.",
+    "Do not equate dictionary English gloss quire with English trade quire.",
+    "Do not back-calculate the 1843 bill using late twentieth-century or modern kori prices.",
+    "Keep Nepal tau/dhep/kori, Kashmir dasta, North Indian dasta/takhta and English quire/ream systems non-equivalent."
+  ],
+  "next_actions": [
+    "Recover f.117 recto and read original term, quantity columns and price-unit headings",
+    "Check whether kori occurs on f.117 as aggregate or price unit",
+    "Recover 1827 Wallich bills for recurrence of tau/dhep/kori",
+    "Search pre-1900 Nepali legal/account records and dictionaries for dhep/kori paper usage",
+    "Search Hodgson archive for romanized dhep/dhyap, ten sheets, twenty bundles and 200 sheets",
+    "Add tau/dhep/kori hierarchy fields to the paper census protocol"
+  ]
+}
