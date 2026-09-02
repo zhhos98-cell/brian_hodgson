@@ -1,0 +1,132 @@
+{
+  "dataset": "nepal_paper_pulp_shipments_v0_3",
+  "date": "2026-09-02",
+  "scope": "Hodgson-linked paper-pulp transfers with material/package state, route infrastructure, and pre-existing Company transport metrology.",
+  "central_claim": "The March 1842 twenty-four-package pulp shipment entered a transport corridor that was already both physically and administratively structured. By 1825 the Company listed Govindgunge as an up-river boat-hire destination with a standardized two-month allowance and priced baggage boats by carrying capacity and monthly rate. Rankine's 1838 report shows the physical constraints behind such standards. Actual 1842 route, freight cost and Serampore relation remain unresolved.",
+  "shipments": [
+    {
+      "id": "PULP-1831-BRITAIN",
+      "date": "1831",
+      "material_state": "DRIED_PREPARED_PULP_BRICKS",
+      "package_count": null,
+      "route": "INDIA_TO_BRITAIN",
+      "experiment_relation": "DIRECT_TO_1833_REPORTED_BRITISH_REMANUFACTURE_TRIAL"
+    },
+    {
+      "id": "PULP-1842-24PKG-CALCUTTA",
+      "date": "1842-03-25",
+      "sender": "Brian Houghton Hodgson",
+      "sender_location": "Nepal Residency",
+      "initiating_authority_exact": "Mr. Secretary Halliday",
+      "initiating_authority_normalized": "Frederick James Halliday",
+      "initiating_order": "MISSING",
+      "material_label_exact": "Nepalese paper pulp",
+      "package_count": 24,
+      "package_count_type": "TRANSPORT_PACKAGE_COUNT_NOT_MASS",
+      "first_stage_carrier_exact": "my people",
+      "recipient_transcript_exact": "G. Woodcock Esq., Joint Magistrate, Champaun",
+      "recipient_probable_normalized": "Edward E. Woodcock",
+      "recipient_state": "HIGH_TO_VERY_HIGH_ADMINISTRATIVE_IDENTIFICATION_ORIGINAL_INITIAL_UNREAD",
+      "destination": "Calcutta",
+      "actual_route": null,
+      "actual_route_state": "UNRESOLVED",
+      "freight_bill": "REQUESTED_NOT_RECOVERED",
+      "receipt": "UNRECOVERED",
+      "final_receiver": "UNRESOLVED",
+      "serampore_relation": "POSSIBLE_BROADER_PROGRAM_DIRECT_CONSIGNMENT_EDGE_UNPROVEN",
+      "route_alternatives": [
+        {
+          "id": "LAND-PATNA",
+          "mode": "LAND_PLUS_FORWARDING",
+          "nodes": ["Champaran", "Motihari", "Patna Magistrate", "further disposal"],
+          "decision_variable": "relative land carriage cost"
+        },
+        {
+          "id": "WATER-GOVIND-GANG-CALCUTTA",
+          "mode": "WATER",
+          "nodes": ["Champaran", "Govind Gang", "Calcutta"],
+          "vehicle_exact": "small safe boat",
+          "custody_exact": "Burkundaz",
+          "decision_variable": "relative water carriage cost and safety"
+        }
+      ],
+      "physical_infrastructure_context": {
+        "source": "Robert Rankine, Notes on the Medical Topography of the Districts of Sarun, report 22 Jan 1838, print 1839",
+        "observations": [
+          "Great and Little Gunduck navigable for small boats but navigation capacity variable",
+          "Govind Gunge and Bettiah roads included in bad-road discussion",
+          "high road to Chumparun hardly passable in many places five or six months per year",
+          "bridge deficiencies constrained wheeled carriage",
+          "poor cross-roads could increase reliance on human carriage and raise cost"
+        ],
+        "use_rule": "context only; does not establish actual pulp route or carrier"
+      },
+      "route_metrology_context": {
+        "source": "The New Annual Bengal Directory and General Register, 1825, Rates of Boat Hire",
+        "source_type": "DIRECT_PERIOD_COMPANY_ALLOWANCE_TABLE",
+        "scope": "Time allowed for boats to proceed to listed destinations as per Company's allowance, plus baggage-boat capacity/monthly-rate schedule",
+        "historical_place_exact": "Govindgunge",
+        "standard_trip_allowance": {
+          "months": 2,
+          "days": 0,
+          "type": "ADMINISTRATIVE_ALLOWED_TRIP_PERIOD_NOT_OBSERVED_DURATION"
+        },
+        "comparison_destinations": [
+          {"place": "Patna group", "months": 1, "days": 28},
+          {"place": "Goruckpore", "months": 2, "days": 8},
+          {"place": "Bettiah", "months": 2, "days": 15}
+        ],
+        "baggage_boat_capacity_range_maunds": [200, 250, 300, 350, 400, 450, 500, 550, 600, 700, 800, 900, 1000],
+        "example_monthly_rates_sa_rs": [
+          {"capacity_maunds": 200, "rupees": 22, "annas": 0},
+          {"capacity_maunds": 500, "rupees": 49, "annas": 0},
+          {"capacity_maunds": 1000, "rupees": 94, "annas": 0}
+        ],
+        "rate_control": "exact table visually verify before detailed quantitative publication",
+        "relation_to_1842": "PREEXISTING_COMPANY_TRANSPORT_METROLOGY_NOT_DIRECT_PROOF_OF_1842_RULE_CONTINUITY"
+      },
+      "place_name_control": {
+        "1825": "Govindgunge",
+        "1838": "Govind Gunge",
+        "1842": "Govind Gang",
+        "normalization_state": "SAME_HISTORICAL_TRANSPORT_NODE_VERY_HIGH",
+        "rule": "retain exact source spelling in transcription fields"
+      }
+    }
+  ],
+  "multi_metrology_model": {
+    "paper_count_metrology": ["tau", "dhep", "kori", "sheet/quire/ream/chest in Company stationery"],
+    "transport_metrology": ["destination", "allowed trip time", "boat carrying capacity", "monthly hire rate"],
+    "interpretation": "Material circulation becomes administratively actionable through multiple non-equivalent metrologies layered around the object. Package count does not equal mass; route allowance does not equal observed duration; boat capacity does not reveal the actual boat used."
+  },
+  "mechanisms": [
+    "PULP_AS_PACKAGED_TRANSPORT_COMMODITY",
+    "ROUTE_NODE_PREEXISTS_EXPERIMENT",
+    "TRANSPORT_ROUTE_IS_ADMINISTRATIVELY_METRIZED",
+    "TIME_ALLOWANCE_IS_LOGISTICS_STANDARDIZATION",
+    "BOAT_CAPACITY_IS_A_LOGISTICS_METROLOGY",
+    "COMPANY_TRANSPORT_INFRASTRUCTURE_PRESTRUCTURES_MATERIAL_CIRCULATION",
+    "PHYSICAL_INFRASTRUCTURE_AND_ACCOUNTING_INFRASTRUCTURE_CO_PRODUCE_ROUTE",
+    "MATERIAL_CIRCULATION_IS_MULTI_METROLOGICAL",
+    "FREIGHT_BILL_IS_DOCUMENTARY_INTERFACE_BETWEEN_ROUTE_STANDARD_AND_MATERIAL_EVENT",
+    "TEMPORAL_ALIGNMENT_NOT_CONSIGNMENT_IDENTITY"
+  ],
+  "source_control_rules": [
+    "Do not use 1825 two-month allowance as actual 1842 transit duration.",
+    "Do not claim the 1825 allowance remained unchanged in 1842 without later rules or the actual freight bill.",
+    "Do not infer boat capacity from 24-package count.",
+    "Do not infer package mass from Company baggage-boat categories.",
+    "Keep standard allowance, actual time, standard rate and actual cost separate.",
+    "Keep Govindgunge/Govind Gunge/Govind Gang exact strings in source fields.",
+    "Keep the Serampore consignment edge unproven."
+  ],
+  "next_actions": [
+    "Search 1830s-1840s Company rules/directories for Govindgunge boat allowance continuity",
+    "Recover Woodcock bill of charges",
+    "Recover Halliday initiating directive",
+    "Recover Patna/Calcutta receipt chain",
+    "Resolve historical Govindgunge geography and river access",
+    "Search Calcutta stationer advertisements for named imported drawing-paper stocks",
+    "Only create supplier edges when a period source names the paper product/brand/size"
+  ]
+}
