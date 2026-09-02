@@ -1,0 +1,166 @@
+{
+  "dataset": "nepal_paper_counting_units_v0_3",
+  "date": "2026-09-02",
+  "supersedes": "nepal_paper_counting_units_v0_2",
+  "scope": "Contextual Nepalese paper-count metrology, separating paper-specific package terms from general numerical collectives and separating count from dimensional format.",
+  "central_claim": "The recovered paper hierarchy is semantically mixed. Tau is attested as a sheet-level count whose dimensions are unspecified; dhep is a handmade-paper bundle term with context-dependent package depth; kori is a general Nepali collective meaning twenty/score that is applied to paper bundles. Landon 1928 directly prints 10 Tao = 1 Dhep and 20 Dheps = 1 Kori, but the immediate source of that table remains unresolved. The accessible Turnbull scan is not an 1887 witness: it reproduces a 1923 third-edition state and directly establishes kori as a general twenty-count collective.",
+  "units": [
+    {
+      "id": "NEP-TAU",
+      "script": "ताउ",
+      "romanization": ["tau", "tao", "tāu"],
+      "semantic_scope": "PAPER_SHEET_COUNT_IN_RECOVERED_METROLOGY",
+      "count_multiplier": 1,
+      "dimension_rule": "COUNT_DOES_NOT_DEFINE_DIMENSIONS",
+      "attestations": [
+        {
+          "source": "Perceval Landon, Nepal vol. II, 1928, Appendix VI p.256 footnote",
+          "date": "1928",
+          "statement": "a tao is a sheet of any size",
+          "directness": "DIRECT_PRINTED_COMPILATION",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "Bhupahari Paudel, Ancient Nepal no.103",
+          "date": "1987-1988",
+          "statement": "10 tau = 1 dhep",
+          "directness": "DIRECT_PRINTED_TRADITIONAL_PRACTICE_DESCRIPTION",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "NEP-DHEP",
+      "script": "ढेप",
+      "romanization": ["dhep", "ḍhep", "ḍhepa"],
+      "semantic_scope": "PAPER_BUNDLE_TERM",
+      "count_multiplier": null,
+      "package_depth_rule": "CONTEXTUAL_NOT_UNIVERSAL",
+      "attested_values": [
+        {
+          "sheets": 10,
+          "source": "Perceval Landon, Nepal vol. II, Appendix VI",
+          "source_date": "1928",
+          "locality": "Nepal general metrology compilation; immediate source unresolved",
+          "observation_type": "DIRECT_PRINTED_COMPILATION",
+          "confidence": "HIGH_FOR_PRINTED_CONVENTION_NOT_UNIVERSALITY"
+        },
+        {
+          "sheets": 10,
+          "source": "Bhupahari Paudel, Ancient Nepal no.103",
+          "source_date": "1987-1988",
+          "locality": "traditional Nepal paper industry context",
+          "observation_type": "DIRECT_PRINTED_TRADITIONAL_PRACTICE_DESCRIPTION",
+          "confidence": "HIGH_FOR_CONVENTION"
+        },
+        {
+          "sheets": 20,
+          "source": "Griha Man Singh, Ancient Nepal no.144 p.16",
+          "source_date": "2000",
+          "practice_date": "1998-1999",
+          "locality": ["Myagdi", "Parbat", "Baglung"],
+          "observation_type": "AUTHOR_FIELD_STUDY",
+          "physical_operation": "twenty dried sheets tied with thin bast strips into one dhep",
+          "confidence": "HIGH_DIRECT_LOCALITY_SPECIFIC"
+        },
+        {
+          "sheets": 200,
+          "source": "NAST indigenous technology report",
+          "source_date": "c.2013",
+          "locality": "national synthesis / exact production locality unresolved",
+          "observation_type": "DIRECT_PRINTED_SECONDARY_SYNTHESIS",
+          "practice_status": "UNRESOLVED",
+          "unit_conflation_candidate": "HIGH_WITH_KORI",
+          "confidence": "HIGH_THAT_SOURCE_PRINTS_200_LOW_FOR_WORKSHOP_PRACTICE"
+        }
+      ]
+    },
+    {
+      "id": "NEP-KORI",
+      "script": "कोरी",
+      "romanization": ["kori", "korī"],
+      "semantic_scope": "GENERAL_NUMERICAL_COLLECTIVE_APPLIED_TO_PAPER",
+      "count_multiplier": 20,
+      "physical_package_form": null,
+      "attestations": [
+        {
+          "source": "A. Turnbull, Nepali Grammar and Vocabulary, accessible 1923 third-edition textual state as later AES reprint",
+          "direct_textual_state": "1923",
+          "edition_note": "third-edition preface says it is practically page-for-page reproduction of 1904 second edition with correction of obvious mistakes; exact kori entry not independently checked in 1904",
+          "context": "special collectives",
+          "meaning": "a twenty, score",
+          "domain": "GENERAL",
+          "confidence": "HIGH_DIRECT_BY_1923"
+        },
+        {
+          "source": "Perceval Landon, Nepal vol. II, Appendix VI",
+          "date": "1928",
+          "context": "paper weights and measures",
+          "statement": "20 dheps = 1 kori",
+          "domain": "PAPER_APPLICATION",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "Bhupahari Paudel, Ancient Nepal no.103",
+          "date": "1987-1988",
+          "context": "paper production/pricing",
+          "statement": "20 dhep = 1 kori; under ten-sheet convention 1 kori = 200 tau",
+          "domain": "PAPER_APPLICATION",
+          "functions": ["production count", "pricing batch", "labour/remuneration unit"],
+          "confidence": "HIGH"
+        }
+      ],
+      "interpretation": "Kori is not inherently a paper-specific bundle. It is a twenty-count collective that can count dhep packages. Its stable multiplier does not determine the sheet-depth of an individual dhep."
+    }
+  ],
+  "hodgson_1843_bill": {
+    "ref": "MSS EUR HODGSON/12 f.117",
+    "date": "1843",
+    "catalogue_unit_transcription": "ḍhyāp",
+    "normalized_lexeme_candidate": "ढेप / dhep",
+    "lexical_identity_confidence": "VERY_HIGH_CANDIDATE",
+    "catalogue_gloss": "10 sheets in one bundle",
+    "historical_scope": "OBJECT/CATALOGUE_CONTEXT_ONLY",
+    "original_image": "UNREAD_CURRENT_ENDPOINT",
+    "gloss_provenance": "UNRESOLVED_OBJECT_LEVEL_VS_CATALOGUER_KNOWLEDGE",
+    "arithmetic_status": "NONRECONCILING_UNDER_LITERAL_CATALOGUE_PROSE",
+    "normalized_total_sheets": null,
+    "rule": "Do not normalize quantity until original account columns, rate units, and local unit notation are recovered."
+  },
+  "source_genealogy": {
+    "wright_1877": {
+      "work": "Daniel Wright, History of Nepal, Appendix IV Weights and Measures",
+      "recovered_categories": ["gold weight", "silver weight", "metal-utensil weight", "dry measure", "liquid measure"],
+      "paper_hierarchy_in_recovered_appendix": false,
+      "evidence_scope": "BOUNDED_NEGATIVE_IN_AVAILABLE_TRANSCRIPTION",
+      "control": "Does not prove absence from all Wright-related manuscripts or other sections."
+    },
+    "turnbull_scan": {
+      "internet_archive_metadata_date": "1887",
+      "actual_scanned_object": "1992 AES reprint",
+      "reprinted_textual_state": "1923 third edition",
+      "third_edition_relation": "editor says practically page-for-page reproduction of 1904 second edition with obvious mistakes corrected",
+      "first_edition_relation": "Turnbull says 1904 second edition is really an entirely new work relative to his 1887 attempt",
+      "source_control": "Do not cite accessible scan as direct 1887 lexical evidence."
+    },
+    "landon_1928": {
+      "work": "Perceval Landon, Nepal vol. II, Appendix VI Weights and Measures",
+      "paper_table": ["10 Tao = 1 Dhep", "20 Dheps = 1 Kori"],
+      "footnote": "tao is a sheet of any size",
+      "immediate_source": "UNRESOLVED",
+      "wright_direct_copy_edge": "NOT_DEMONSTRATED",
+      "candidate_sources": ["Nepalese administrative table", "Kathmandu official/informant", "post-Wright intelligence or handbook source", "other historical account", "composite compilation"]
+    }
+  },
+  "data_model": {
+    "required_fields": ["unit_term_exact", "script", "romanization_source", "semantic_scope", "count_multiplier", "package_depth", "domain_application", "sheet_dimensions_if_known", "locality", "date_of_practice", "date_of_source", "observation_type", "source_edition_state", "source_directness", "normalization_confidence"],
+    "rules": [
+      "Count metrology and dimensional/format metrology are independent fields.",
+      "A general collective can be applied to paper without becoming a paper-specific physical bundle.",
+      "A package term can retain lexical identity while its sheet-depth varies by locality or production context.",
+      "Digitized-item metadata date must be separated from the actual scanned edition state."
+    ]
+  },
+  "mechanisms": ["GENERAL_COLLECTIVE_CAN_BECOME_DOMAIN_METROLOGY", "GENERAL_COUNT_COLLECTIVE_DISTINCT_FROM_PACKAGE_DEPTH", "UPPER_LEVEL_COUNT_CAN_BE_STABLE_WHILE_LOWER_PACKAGE_DEPTH_VARIES", "COUNT_METROLOGY_DISTINCT_FROM_DIMENSIONAL_METROLOGY", "PAPER_COUNT_HIERARCHY_REUSES_NON_PAPER_NUMERICAL_VOCABULARY", "BIBLIOGRAPHIC_METADATA_MUST_BE_CHECKED_AGAINST_INTERNAL_EDITION_STATEMENTS", "METROLOGY_TABLES_HAVE_SOURCE_GENEALOGIES"],
+  "next_actions": ["Recover actual 1887 Turnbull first-edition witness", "Recover 1904 Turnbull second edition and verify kori locus directly", "Inspect E.R. Elles 1884 Report on Nepal weights and measures", "Search Gurkha/intelligence manuals for tao/dhep/kori", "Search Documenta Nepalica/Regmi materials for pre-1900 paper-unit attestations", "Recover Hodgson f.117 original account image"]
+}
