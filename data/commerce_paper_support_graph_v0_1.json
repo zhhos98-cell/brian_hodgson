@@ -1,0 +1,188 @@
+{
+  "dataset": "commerce_paper_support_graph_v0_1",
+  "date": "2026-09-02",
+  "scope": "Paper support, language and documentary-operation states in Hodgson's 1831 commerce investigation.",
+  "central_claim": "The commerce-report family is a heterogeneous paper ecology. Nepali, Farsi and English working states cross Nepali handmade and machine-made support classes; support origin does not determine language, source status or documentary stage. Publication-facing English states concentrate on machine-made paper but retain stock heterogeneity.",
+  "nodes": [
+    {
+      "id": "C-53-31",
+      "ref": "MSS EUR HODGSON/53 item 31, ff.211-216",
+      "operation": "local trade/customs source data",
+      "information_agent": "Hanumanta Sing",
+      "language": ["Nepali"],
+      "support": ["machine-made paper", "Nepali handmade paper"],
+      "support_state": "MIXED_SUPPORT_DIRECT_CATALOGUE",
+      "content": ["imports/exports Tibet and India", "customs income", "types of customs duties"],
+      "publication_relation": "Cambridge inventory links material to Hodgson 1874 pp.92-121",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol053.html"
+    },
+    {
+      "id": "C-60-14",
+      "ref": "MSS EUR HODGSON/60 item 14, ff.157-158",
+      "operation": "local shop/source list",
+      "language": ["Nepali"],
+      "support": ["Nepali handmade paper"],
+      "content": ["Kathmandu shops", "Patan shops", "goods specialities"],
+      "direct_receiving_states": ["C-6-5", "C-14-16"],
+      "relation_evidence": "explicit Cambridge cross-reference to English note/translation",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol060.html"
+    },
+    {
+      "id": "C-53-24",
+      "ref": "MSS EUR HODGSON/53 item 24, ff.130-131",
+      "operation": "local commercial-mart source list",
+      "language": ["Nepali"],
+      "support": ["Nepali handmade paper"],
+      "content": ["government recognised kothi", "merchant communities", "merchants in Banaras"],
+      "relation_to_english_report": "HIGH_RELEVANCE_SOURCE_POOL_DIRECT_TEXTUAL_EDGE_UNRESOLVED",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol053.html"
+    },
+    {
+      "id": "C-94-15",
+      "ref": "MSS EUR HODGSON/94 item 15, ff.89-123b",
+      "date": "1831-09-13",
+      "operation": "quantitative Calcutta-to-Nepal commodity price working",
+      "language": ["Farsi"],
+      "support": ["machine-made paper"],
+      "hand_state": ["fair", "rough"],
+      "content": ["Calcutta purchase prices", "commodities imported to Nepal"],
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol094.html"
+    },
+    {
+      "id": "C-96-19",
+      "ref": "MSS EUR HODGSON/96 item 19, ff.154-161",
+      "operation": "quantitative Calcutta-to-Nepal commodity price working",
+      "language": ["Farsi"],
+      "support": ["Nepali handmade paper"],
+      "hand_state": ["very neat"],
+      "content": ["Calcutta purchase price", "transport cost", "Kathmandu final price", "commodities imported from Calcutta"],
+      "relation_to_C_94_15": "POSSIBLE_COPY_OR_ABSTRACT_FAMILY_DIRECTION_UNRESOLVED",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol096.html"
+    },
+    {
+      "id": "C-14-18",
+      "ref": "MSS EUR HODGSON/14 item 18, ff.219-318",
+      "date_range": "1831-1833",
+      "operation": "English draft report / correction surface",
+      "language": ["English"],
+      "support": ["machine-made paper of various types"],
+      "hand_state": ["multiple hands", "Hodgson corrections/addenda", "pen", "pencil"],
+      "stock_identity": "HETEROGENEOUS_MACHINE_STOCK_DIRECT_CATALOGUE",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol014.html"
+    },
+    {
+      "id": "C-14-16",
+      "ref": "MSS EUR HODGSON/14 item 16, ff.177a-207",
+      "date": "1831-10-25 catalogue dating",
+      "operation": "English fair report / Government submission state",
+      "language": ["English"],
+      "support": ["machine-made paper"],
+      "hand_state": ["fair"],
+      "content": ["commerce report", "import/export tables"],
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol014.html"
+    },
+    {
+      "id": "C-6-5",
+      "ref": "MSS EUR HODGSON/6 item 5, ff.42-76",
+      "date": "1831-12",
+      "operation": "parallel publication-facing English copy",
+      "language": ["English"],
+      "support": ["machine-made paper"],
+      "condition": "very fine",
+      "source": "https://hodgson.socanth.cam.ac.uk/chunkhtml/vol006.html"
+    }
+  ],
+  "edges": [
+    {
+      "from": "C-60-14",
+      "to": "C-14-16",
+      "type": "EXPLICIT_SOURCE_TO_ENGLISH_NOTE_TRANSLATION_FAMILY",
+      "strength": "DIRECT_CATALOGUE_CROSS_REFERENCE",
+      "material_transform": "NEPALI_HANDMADE_TO_MACHINE_MADE"
+    },
+    {
+      "from": "C-60-14",
+      "to": "C-6-5",
+      "type": "EXPLICIT_SOURCE_TO_ENGLISH_NOTE_TRANSLATION_FAMILY",
+      "strength": "DIRECT_CATALOGUE_CROSS_REFERENCE",
+      "material_transform": "NEPALI_HANDMADE_TO_MACHINE_MADE"
+    },
+    {
+      "from": "C-94-15",
+      "to": "C-96-19",
+      "type": "POSSIBLE_COPY_OR_ABSTRACT_FAMILY",
+      "strength": "THEMATIC_AND_TABULAR_ALIGNMENT_ONLY",
+      "direction": "UNRESOLVED",
+      "material_contrast": "FARSI_MACHINE_MADE_VS_FARSI_NEPALI_HANDMADE"
+    },
+    {
+      "from": "C-53-31",
+      "to": "C-14-18",
+      "type": "COMMERCE_SOURCE_POOL_TO_ENGLISH_DRAFT_ECOLOGY",
+      "strength": "PROJECT_FAMILY_HIGH_DIRECT_PASSAGE_MAPPING_UNRESOLVED",
+      "material_transform": "MIXED_SOURCE_SUPPORT_TO_HETEROGENEOUS_MACHINE_STOCK"
+    },
+    {
+      "from": "C-14-18",
+      "to": "C-14-16",
+      "type": "DRAFT_FAIR_REPORT_FAMILY",
+      "strength": "HIGH_FAMILY_LEVEL",
+      "exact_copy_direction": "REQUIRES_TEXTUAL_AND_PHYSICAL_CONTROL"
+    },
+    {
+      "from": "C-14-16",
+      "to": "C-6-5",
+      "type": "PARALLEL_PUBLICATION_FACING_COPY_FAMILY",
+      "strength": "HIGH",
+      "direction": "UNRESOLVED"
+    }
+  ],
+  "controlled_negative_results": [
+    {
+      "question": "Is paper clearly listed as a commodity in the accessible 1874 printed commerce import summary?",
+      "state": "NOT_YET_DIRECTLY_IDENTIFIED",
+      "control": "OCR/table selectivity means this cannot be converted into evidence that imported stationery or drawing paper did not circulate."
+    }
+  ],
+  "mechanisms": [
+    "COMMERCE_KNOWLEDGE_HAS_A_PAPER_GENEALOGY",
+    "SUPPORT_ORIGIN_NOT_LANGUAGE_IDENTITY",
+    "SOURCE_STATUS_NOT_SUPPORT_IDENTITY",
+    "SAME_LANGUAGE_CROSSES_SUPPORT_CLASS",
+    "SAME_INFORMATION_DOMAIN_CROSSES_SUPPORT_CLASS",
+    "SOURCE_COLLECTION_CAN_CONSUME_MULTIPLE_STOCKS",
+    "LOCAL_SOURCE_SUPPORT_TO_PUBLICATION_FACING_SUPPORT_TRANSFORM",
+    "PUBLICATION_FACING_BRANCH_CAN_STANDARDIZE_SUPPORT_CLASS_WITHOUT_STANDARDIZING_STOCK",
+    "MACHINE_MADE_IS_TOO_COARSE_FOR_STOCK_IDENTITY",
+    "RECOPYING_IS_MATERIAL_TRANSLATION",
+    "PAPER_CHANGE_CAN_ACCOMPANY_AGGREGATION_AND_LANGUAGE_CHANGE",
+    "RESIDENCY_AS_PAPER_ALLOCATION_NODE",
+    "RESIDENCY_AS_MATERIAL_INFORMATION_CONVERSION_NODE"
+  ],
+  "paper_census_fields_added": [
+    "information_provenance",
+    "support_provenance",
+    "documentary_operation",
+    "language",
+    "writer_or_copyist",
+    "copy_relation",
+    "support_class",
+    "stock_identity_confidence"
+  ],
+  "source_control_rules": [
+    "Do not infer support from language.",
+    "Do not infer documentary stage from support class.",
+    "Do not equate machine-made paper with one maker, mill or stock.",
+    "Keep vol.94/15 and vol.96/19 as a possible family until item-level comparison proves relation/direction.",
+    "Treat explicit Cambridge source/translation cross-references as stronger than thematic similarity.",
+    "Treat every recopying event as a potential support-allocation operation."
+  ],
+  "next_actions": [
+    "Recover vol.53/31 images and locate support switch points.",
+    "Compare vol.60/14 physically against receiving English report pages.",
+    "Compare vol.94/15 and vol.96/19 item-by-item.",
+    "Inspect watermark/formation and dimensions in vol.14/18, vol.14/16 and vol.6/5.",
+    "Test whether vol.14/18 machine-stock changes correlate with hand, section or revision stage.",
+    "Continue explicit stationery procurement search in Residency and Calcutta accounts."
+  ]
+}
