@@ -1,0 +1,136 @@
+{
+  "dataset": "company_stationery_supply_control_v0_1",
+  "date": "2026-09-02",
+  "scope": "East India Company and Indian paper-supply, packaging, sampling and quality-control infrastructure relevant as context for Hodgson's mixed paper stocks.",
+  "central_claim": "Imported paper circulated through a multi-stage supply and quality-control system involving stationers, reams/quires, identifiable chests, presidency stocks, redistribution and physical musters. This infrastructure contextualizes Hodgson's imported/machine-made paper without proving the route of any specific Hodgson sheet.",
+  "nodes": [
+    {
+      "id": "EIC-1725-FSG-PAPER-COMPLAINT",
+      "date": "1725-12-01 general-letter packet context",
+      "source_family": "Records of Fort St George: Despatches from England, 1724-27",
+      "evidence_state": "DIRECT_PERIOD_PRINTED_TEXT_GENERAL_LETTER_DATE_CONTROLLED",
+      "operations": [
+        "paper and stationery shipment",
+        "quality complaint from India",
+        "physical musters returned to London",
+        "diagnosis that samples came from outside cording quires",
+        "request for chest marks/numbers",
+        "supplier discrimination because Company used two stationers"
+      ],
+      "mechanism": "SAMPLE_LOCATION_WITHIN_REAM_AND_PACKAGE_IDENTITY_ARE_REQUIRED_FOR_QUALITY_TRACEABILITY"
+    },
+    {
+      "id": "TECH-MOXON-REAM",
+      "date": "late seventeenth century",
+      "work": "Joseph Moxon, Mechanick Exercises",
+      "evidence_state": "DIRECT_PERIOD_TECHNICAL_TEXT",
+      "quantity_structure": {
+        "ream": "20 quires",
+        "cording_quires": "2 outside quires within the 20",
+        "quire_sheet_count": "24 or 25 depending how the ream holds out"
+      },
+      "material_structure": "outside cording/cassie quires contain torn, wrinkled, stained and otherwise inferior sheets, though usable sheets may be culled from them",
+      "control": "technical comparator, not evidence for the exact constitution of a particular EIC ream beyond the Court's own description"
+    },
+    {
+      "id": "EIC-1800-1811-STATIONERY-PRECARITY",
+      "date_range": "1800-1811",
+      "evidence_state": "SECONDARY_RECONSTRUCTION_WITH_PRECISE_PRIMARY_RETRIEVAL_TARGETS",
+      "secondary_source": "Tania Sengupta, Papered Spaces",
+      "primary_targets": [
+        "IOR/E/4/887 p.112, Public Department letter, 11 June 1800",
+        "Public Department letter, 28 February 1809",
+        "Fort St George Public Department, 4 September 1811",
+        "IOR/Z/E/4/39/S776: 1807-1813",
+        "IOR/E/4/908 p.39"
+      ],
+      "operations": [
+        "shortage of suitable/watermarked paper",
+        "inter-presidency paper transfer",
+        "physical paper muster / quality complaint"
+      ]
+    },
+    {
+      "id": "PATNA-1838-PAPER-MARKET",
+      "date": "1838 publication; survey materials earlier",
+      "work": "Robert Montgomery Martin, Eastern India, vol.1",
+      "page_target": "p.373",
+      "evidence_state": "PERIOD_SOURCE_IDENTIFIED_PAGE_CONTENT_CURRENTLY_CONTROLLED_THROUGH_PAGE_SPECIFIC_SECONDARY_CITATION",
+      "market_structure": [
+        "dedicated kaghazi paper shops in Patna",
+        "paper polishers/finishers in some shops",
+        "rough paper acquired wholesale from paper manufacturers",
+        "daftari office-oriented paper as a principal grade"
+      ],
+      "control": "direct p.373 transcription still required"
+    },
+    {
+      "id": "CALCUTTA-1850-DRAWING-PAPER",
+      "date": "1850",
+      "evidence_state": "LATER_DIRECT_INSTITUTIONAL_CONTINUITY",
+      "institution": "Calcutta Stationery Office / Bengal Government",
+      "operations": [
+        "drawing paper treated as named stationery grade",
+        "fitness-for-use complaint",
+        "Superintendent of Stationery response",
+        "proposal for half-yearly instead of annual drawing-paper supplies",
+        "stationery indents and issue/freight administration"
+      ],
+      "control": "seven years after Hodgson left Nepal; do not project as direct evidence of his supply route"
+    }
+  ],
+  "supply_model": {
+    "metropolitan_company_route": [
+      "maker/merchant",
+      "stationer",
+      "Company ream/consignment",
+      "marked/numbered chest",
+      "presidency stock",
+      "possible inter-presidency redistribution",
+      "local issue/private acquisition",
+      "working stock"
+    ],
+    "indian_market_route": [
+      "paper manufacturer/workshop",
+      "wholesale movement",
+      "specialist kaghazi retailer",
+      "optional polishing/finishing",
+      "office/research purchaser or intermediary",
+      "working stock"
+    ],
+    "nepal_local_route": [
+      "local manufacture/stock",
+      "billed purchase OR collaborator-mediated acquisition",
+      "Residency/research stock",
+      "task allocation"
+    ]
+  },
+  "quality_model": "observed fitness = manufacture x grade/sorting x within-package position x finishing x stock history x transport x operation/interface x sampling procedure",
+  "mechanisms": [
+    "STATIONERY_SUPPLY_IS_DUAL_GLOBAL_LOCAL",
+    "SUPPLY_PRECARITY_GENERATES_SUBSTITUTION_AND_REDISTRIBUTION",
+    "PAPER_QUALITY_CONTROL_REQUIRES_PHYSICAL_MUSTER",
+    "PHYSICAL_SAMPLE_NOT_AUTOMATICALLY_REPRESENTATIVE",
+    "SAMPLE_LOCATION_WITHIN_REAM_CAN_BIAS_QUALITY_JUDGMENT",
+    "PACKAGE_IDENTIFIER_CAN_RECONNECT_COMPLAINT_TO_SUPPLIER",
+    "MULTIPLE_STATIONERS_GENERATE_PARALLEL_SUPPLY_BRANCHES",
+    "PRESIDENCY_TO_PRESIDENCY_STATIONERY_REDISTRIBUTION",
+    "LOCAL_OFFICE_PAPER_MARKET_COEXISTS_WITH_IMPORTED_STATIONERY",
+    "QUALITY_EVIDENCE_HAS_A_MATERIAL_SAMPLING_HISTORY"
+  ],
+  "source_control_rules": [
+    "Do not infer that a Hodgson imported sheet came through Company stationery supply merely because the infrastructure existed.",
+    "Separate manufacture origin, supply node, issue node and use location.",
+    "Record ream/quire/package position when using physical samples as quality evidence.",
+    "Keep 1800-1811 IOR evidence at secondary-reconstruction status until primary items are directly read.",
+    "Keep Martin p.373 at page-specific secondary-control status until the page is directly inspected.",
+    "Treat 1850 drawing-paper administration as later continuity only."
+  ],
+  "next_actions": [
+    "Directly inspect IOR/E/4/887 p.112 and related 1800-1811 targets",
+    "Directly inspect Martin 1838 vol.1 p.373",
+    "Identify the two London stationers in the 1725 Company supply if invoices survive",
+    "Search Hodgson/Residency accounts for ream, quire, chest marks, Stationery Office, stationer and drawing-paper issue language",
+    "Add package-position and supplier identifiers to the paper census"
+  ]
+}
