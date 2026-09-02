@@ -1,0 +1,131 @@
+{
+  "dataset": "nepal_paper_pulp_shipments_v0_2",
+  "date": "2026-09-02",
+  "scope": "Hodgson-linked transfers of Nepal/Himalayan paper pulp, now including recipient identity control and district transport-infrastructure context.",
+  "central_claim": "The 25 March 1842 twenty-four-package pulp shipment was routed through a Chumparun joint-magistrate forwarding node operating in a corridor with strongly seasonal road constraints and multimodal land/water options. The most probable recipient was Edward E. Woodcock, appointed to Chumparun on 8 February 1842, despite Regmi's transcript reading 'G. Woodcock'. Actual route, freight cost, Calcutta receiver and relation to Serampore remain unresolved.",
+  "shipments": [
+    {
+      "id": "PULP-1831-BRITAIN",
+      "date": "1831",
+      "material_state": "DRIED_PREPARED_PULP_BRICKS",
+      "package_count": null,
+      "route": "INDIA_TO_BRITAIN",
+      "experiment_relation": "DIRECT_TO_1833_REPORTED_COWAN_MANUFACTURER_TRIAL",
+      "control": "outer packaging and detailed transit route unresolved"
+    },
+    {
+      "id": "PULP-1842-24PKG-CALCUTTA",
+      "date": "1842-03-25",
+      "sender": "Brian Houghton Hodgson",
+      "sender_location": "Nepal Residency",
+      "initiating_authority_exact": "Mr. Secretary Halliday",
+      "initiating_authority_normalized": "Frederick James Halliday",
+      "initiating_authority_confidence": "VERY_HIGH",
+      "initiating_order_document": "MISSING",
+      "material_label_exact": "Nepalese paper pulp",
+      "package_count": 24,
+      "package_count_type": "TRANSPORT_PACKAGES_NOT_MASS_OR_BRICK_COUNT",
+      "first_stage_carrier_exact": "my people",
+      "first_stage_carrier_normalization": null,
+      "recipient_transcript_exact": "G. Woodcock Esq., Joint Magistrate, Champaun",
+      "recipient_regmi_1984_exact": "G. Woodcock, Joint Magistrate, Champaran",
+      "recipient_probable_normalized": "Edward E. Woodcock",
+      "recipient_confidence": "HIGH_TO_VERY_HIGH_ADMINISTRATIVE_MATCH_ORIGINAL_INITIAL_UNREAD",
+      "recipient_evidence": [
+        "Bengal and Agra Directory 1844: Edward E. Woodcock, joint magistrate and deputy collector of Chumparun, 8 February 1842",
+        "Bengal Directory 1840: Edward E. Woodcock at Balasore from 12 February 1839",
+        "no competing G. Woodcock recovered in the Chumparun joint-magistrate office for March 1842"
+      ],
+      "transcript_initial_state": "G_CANDIDATE_MISREADING_OR_TYPESETTING_ERROR",
+      "forwarding_role": [
+        "intermediate receipt",
+        "route selection",
+        "forwarding",
+        "freight accounting"
+      ],
+      "destination": "Calcutta",
+      "route_alternatives": [
+        {
+          "id": "LAND-PATNA",
+          "mode": "LAND_PLUS_ADMINISTRATIVE_FORWARDING",
+          "nodes": [
+            "Woodcock/Chumparun",
+            "Motihari",
+            "Patna Magistrate",
+            "further disposal"
+          ],
+          "decision_variable": "land carriage cost Motihari-Patna"
+        },
+        {
+          "id": "WATER-GOVIND-GANG-CALCUTTA",
+          "mode": "WATER",
+          "nodes": [
+            "Woodcock/Chumparun",
+            "Govind Gang [Hodgson transcript]",
+            "Calcutta"
+          ],
+          "vehicle_exact": "small safe boat",
+          "custody_exact": "Burkundaz",
+          "decision_variable": "relative water-carriage cost and safety"
+        }
+      ],
+      "actual_route": null,
+      "actual_route_state": "UNRESOLVED",
+      "freight_bill": "REQUESTED_FROM_WOODCOCK_NOT_RECOVERED",
+      "freight_cost": null,
+      "receipt": null,
+      "final_receiver": null,
+      "serampore_relation": "POSSIBLE_BROADER_PROGRAM_DIRECT_CONSIGNMENT_EDGE_UNPROVEN",
+      "original_archive": "Bihar State Archives, Register of Letters Received from January 1842 to June 1842, pp.344-45",
+      "published_transcript": "Regmi Research Series vol. XII pp.143-144",
+      "date_control": "1842 secured by Regmi 1984 archival citation; 1942 transcript heading is error",
+      "infrastructure_context": {
+        "source": "Robert Rankine, Notes on the Medical Topography of the Districts of Sarun, report dated 22 Jan 1838, printed Calcutta 1839",
+        "source_type": "DIRECT_CONTEMPORARY_DISTRICT_DESCRIPTION",
+        "observations": [
+          "Great and Little Gunduck navigable for small boats through the year, but Great Gunduck navigation difficult and dry-season capacity reduced in places to very small boats",
+          "bad-road remarks explicitly extended to Govind Gunge and Bettiah roads",
+          "high road to Chumparun via Sutter Ghat hardly passable in many places for five or six months of the year",
+          "bridges urgently required for wheeled-carriage access during rainy season",
+          "neglected cross roads could force produce transport by human head-load for about six months, increasing expense"
+        ],
+        "govind_name_relation": "HODGSON_GOVIND_GANG_TO_RANKINE_GOVIND_GUNGE_VERY_HIGH_GEOGRAPHIC_CANDIDATE_NOT_NORMALIZED_FINAL",
+        "use_rule": "context for route feasibility and freight cost only; does not establish actual pulp route or carrier mode"
+      }
+    }
+  ],
+  "mechanisms": [
+    "PULP_AS_PACKAGED_TRANSPORT_COMMODITY",
+    "RAW_MATERIAL_TRANSFER_HAS_A_LOGISTICS_HISTORY",
+    "DISTRICT_MAGISTRACY_AS_MATERIAL_FORWARDING_INFRASTRUCTURE",
+    "ROUTE_SELECTION_BY_RELATIVE_FREIGHT_COST",
+    "ROUTE_COST_IS_INFRASTRUCTURE_DEPENDENT",
+    "SEASONAL_ROAD_PASSABILITY_SHAPES_MATERIAL_CARRIAGE",
+    "LAND_WATER_MODAL_SUBSTITUTION",
+    "WATER_CARRIAGE_HAS_SEASONAL_AND_CHANNEL_CONSTRAINTS",
+    "MATERIAL_ROUTE_GENERATES_ACCOUNTING_ROUTE",
+    "TRANSPORT_HISTORY_CAN_MODIFY_EXPERIMENTAL_MATERIAL",
+    "EXPERIMENT_BEGINS_BEFORE_THE_TEST_SITE",
+    "ARCHIVAL_TRANSCRIPTION_ERROR_CAN_DISTORT_LOGISTICS_NETWORK",
+    "ORIGINAL_DOCUMENT_REMAINS_FINAL_CONTROL"
+  ],
+  "source_control_rules": [
+    "Preserve G. Woodcock as the exact Regmi transcript reading.",
+    "Use Edward E. Woodcock as probable normalization only until original Bihar State Archives initials are read.",
+    "Do not turn Rankine's general human-carriage observation into a claim that the pulp packages were carried by coolies.",
+    "Do not infer package weight from Rankine's twenty-seer load example.",
+    "Keep Govind Gang and Govind Gunge exact strings separate pending historical geographic normalization.",
+    "Keep both Hodgson route alternatives live.",
+    "Do not connect the consignment directly to Serampore without receipt/forwarding evidence."
+  ],
+  "next_actions": [
+    "Inspect Bihar State Archives original pp.344-45 for recipient initials and endorsements",
+    "Search Edward E. Woodcock Chumparun correspondence March-April 1842",
+    "Recover Woodcock's bill of charges",
+    "Search Patna magistrate receipt/forwarding records",
+    "Search Calcutta receipt and Government proceedings for 24 packages",
+    "Recover Halliday's initiating order",
+    "Resolve Govind Gang/Govind Gunge with historical maps/gazetteers",
+    "Only after receipt control test direct identity with Serampore batch"
+  ]
+}
