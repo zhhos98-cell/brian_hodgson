@@ -1,0 +1,150 @@
+{
+  "dataset": "nepal_paper_pulp_shipments_v0_1",
+  "date": "2026-09-02",
+  "scope": "Directly evidenced Hodgson-linked transfers of Nepal/Himalayan paper pulp or paper stuff, separating material state, package state, route, custody and experiment relation.",
+  "central_claim": "Paper pulp reached experimental sites through material logistics histories that must be reconstructed separately from the later manufacturing tests. The March 1842 shipment is directly documented as twenty-four packages moving from Nepal toward Calcutta through a cost-sensitive land/water forwarding system; its direct consignment relation to the Serampore machine trial remains unproven.",
+  "shipments": [
+    {
+      "id": "PULP-1831-BRITAIN",
+      "date": "1831",
+      "sender_or_forwarder": "George Swinton / Bengal Government forwarding chain",
+      "origin_state": "Himalayan/Nepal paper material prepared as dried pulp bricks",
+      "package_count": null,
+      "package_type": "DRIED_PULP_BRICKS / OUTER_PACKAGING_UNRESOLVED",
+      "route": [
+        "India/Calcutta forwarding context",
+        "Britain",
+        "Edinburgh scientific relay",
+        "British paper manufacturer"
+      ],
+      "receiver_or_broker": [
+        "John Robison",
+        "Charles Cowan / manufacturers"
+      ],
+      "experiment_relation": "DIRECT_TO_1833_REPORTED_BRITISH_REMANUFACTURE_TRIAL",
+      "result": "trial sheets materially disappointing relative to finished Nepal-made control sheets",
+      "source": "JASB 2 (1833), proceedings p.93",
+      "control": "exact outer transport packaging, route details and Cowan trial apparatus unresolved"
+    },
+    {
+      "id": "PULP-1842-24PKG-CALCUTTA",
+      "date": "1842-03-25",
+      "sender": "Brian Houghton Hodgson",
+      "sender_location": "Nepal Residency",
+      "initiating_authority": "Mr. Secretary Halliday",
+      "initiating_authority_normalized": "Frederick James Halliday",
+      "initiating_authority_confidence": "VERY_HIGH_INSTITUTIONAL_MATCH",
+      "material_label_exact": "Nepalese paper pulp",
+      "material_preparation_state": "UNRESOLVED_BEYOND_PULP_LABEL",
+      "package_count": 24,
+      "package_count_directness": "DIRECT_TRANSCRIPT",
+      "package_type": "TRANSPORT_PACKAGE",
+      "package_weight": null,
+      "package_dimensions": null,
+      "bricks_per_package": null,
+      "package_material": null,
+      "first_stage_carrier_exact": "my people",
+      "first_stage_carrier_normalization": "UNRESOLVED",
+      "forwarding_official": "G. Woodcock",
+      "forwarding_official_role": "Joint Magistrate, Champaran",
+      "destination": "Calcutta",
+      "route_alternatives": [
+        {
+          "id": "ROUTE-LAND-PATNA",
+          "mode": "LAND_PLUS_ADMINISTRATIVE_FORWARDING",
+          "sequence": [
+            "Nepal Residency",
+            "Woodcock/Champaran",
+            "Motihari",
+            "Patna Magistrate",
+            "further disposal toward Calcutta"
+          ],
+          "cost_variable": "land carriage between Motihari and Patna"
+        },
+        {
+          "id": "ROUTE-WATER-CALCUTTA",
+          "mode": "WATER",
+          "sequence": [
+            "Nepal Residency",
+            "Woodcock/Champaran",
+            "Govind Gang",
+            "Calcutta"
+          ],
+          "transport_form_exact": "small safe boat",
+          "custody_exact": "under charge of a Burkundaz",
+          "selection_condition": "preferred if land carriage likely expensive compared with water carriage"
+        }
+      ],
+      "actual_route": "UNRESOLVED",
+      "freight_cost": null,
+      "freight_document": "Woodcock bill of charges REQUESTED / NOT RECOVERED",
+      "receipt_state": "UNRESOLVED",
+      "final_receiver": "UNRESOLVED",
+      "serampore_relation": "POSSIBLE_SAME_BROADER_1842_PROGRAM_DIRECT_CONSIGNMENT_EDGE_UNPROVEN",
+      "original_archive": "Bihar State Archives, Register of Letters Received from January 1842 to June 1842, pp.344-45",
+      "published_transcript": "Regmi Research Series cumulative vol. XII, pp.143-144",
+      "date_control": "RRS heading says 1942; Mahesh C. Regmi 1984 cites original as March 25, 1842",
+      "source_control": [
+        "24 packages is a package count, not mass or brick count",
+        "Calcutta destination does not identify Serampore as test site",
+        "do not identify Hodgson's 'my people' as porters/sepoys/servants without another source",
+        "both route alternatives remain live until a freight bill, receipt or forwarding record is recovered"
+      ]
+    }
+  ],
+  "institutional_nodes": [
+    {
+      "id": "NODE-NEPAL-RESIDENCY",
+      "functions": [
+        "material dispatch",
+        "first-stage carrier coordination",
+        "freight accounting"
+      ]
+    },
+    {
+      "id": "NODE-WOODCOCK-CHAMPARAN",
+      "functions": [
+        "intermediate receipt",
+        "route choice",
+        "forwarding",
+        "transport-cost reporting"
+      ]
+    },
+    {
+      "id": "NODE-CALCUTTA",
+      "functions": [
+        "destination / administrative-scientific hub"
+      ],
+      "control": "destination does not equal manufacture or test site"
+    },
+    {
+      "id": "NODE-SERAMPORE",
+      "functions": [
+        "1842 machine-interface testing in existing paper history"
+      ],
+      "relation_to_24pkg": "UNPROVEN"
+    }
+  ],
+  "mechanisms": [
+    "PULP_AS_PACKAGED_TRANSPORT_COMMODITY",
+    "RAW_MATERIAL_TRANSFER_HAS_A_LOGISTICS_HISTORY",
+    "PACKAGE_COUNT_IS_NOT_MASS",
+    "ROUTE_SELECTION_BY_RELATIVE_FREIGHT_COST",
+    "LAND_WATER_MODAL_SUBSTITUTION",
+    "ADMINISTRATIVE_FORWARDING_NODE",
+    "MATERIAL_ROUTE_GENERATES_ACCOUNTING_ROUTE",
+    "TRANSPORT_HISTORY_CAN_MODIFY_EXPERIMENTAL_MATERIAL",
+    "EXPERIMENT_BEGINS_BEFORE_THE_TEST_SITE",
+    "DESTINATION_CITY_NOT_TEST_SITE",
+    "TEMPORAL_ALIGNMENT_NOT_CONSIGNMENT_IDENTITY"
+  ],
+  "next_actions": [
+    "Recover Halliday directive preceding 25 March 1842",
+    "Recover Woodcock's bill of charges",
+    "Search Champaran/Patna forwarding registers for actual route",
+    "Search Calcutta receipt records for 24 packages / Nepalese paper pulp",
+    "Search O'Shaughnessy/Marshman/Serampore records for matching package count or receipt",
+    "Inspect Bihar State Archives original pp.344-45 for endorsements, letter format and transcription variants",
+    "Determine package construction, weight and contents if related records survive"
+  ]
+}
