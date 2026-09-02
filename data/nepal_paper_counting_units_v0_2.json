@@ -1,0 +1,193 @@
+{
+  "dataset": "nepal_paper_counting_units_v0_2",
+  "date": "2026-09-02",
+  "supersedes": "nepal_paper_counting_units_v0_1",
+  "scope": "Contextual paper-counting units in Nepal and their relation to Hodgson's 1843 Wallich paper bill.",
+  "central_claim": "Dhep/ढेप is securely a Nepalese handmade-paper bundle/count term, but its reported numerical depth is context-dependent. A ten-sheet convention is strongly documented in traditional/lexical sources; a twenty-sheet dhep is directly documented by 1998-99 field observation in Myagdi-Parbat-Baglung; a 2013 NAST synthesis directly prints 200 sheets per dhep but is secondary for production practice and may conflate dhep with the independently documented 200-sheet kori level. Do not store a single universal sheet-equivalent for dhep.",
+  "units": [
+    {
+      "id": "NEP-TAU",
+      "script": "ताउ",
+      "romanization": "tau / tāu",
+      "unit_type": "sheet_level_count",
+      "attested_values": [
+        {
+          "value": 1,
+          "value_unit": "paper sheet/folio",
+          "locality": "Nepali lexical/general usage",
+          "date_of_source": "modern lexical + 1987-88 paper-industry description",
+          "observation_type": "LEXICAL_AND_INDUSTRY_DESCRIPTION",
+          "confidence": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "NEP-DHEP",
+      "script": "ढेप",
+      "romanization": "dhep / ḍhep / ḍhepa",
+      "unit_type": "paper_bundle_count",
+      "global_numeric_value": null,
+      "global_value_status": "DO_NOT_ASSIGN_UNIVERSAL_SHEET_EQUIVALENT",
+      "attested_values": [
+        {
+          "value": 10,
+          "value_unit": "tau/sheets",
+          "locality": "traditional factory/market practice described in Nepal; exact production locality of Paudel passage to be retained from article context",
+          "date_of_practice": "late twentieth-century description of traditional practice",
+          "date_of_source": "1987-1988",
+          "source": "Bhupahari Paudel, Ancient Nepal no.103, p.33",
+          "observation_type": "DIRECT_PRINTED_TRADITIONAL_PRACTICE_DESCRIPTION",
+          "corroboration": [
+            "modern Nepali lexical definition: ढेप = ten tau of Nepali paper",
+            "Nepali-English dictionary tradition: dhepa = ten sheets of Nepalese paper"
+          ],
+          "confidence": "HIGH_FOR_TEN_SHEET_CONVENTION_NOT_UNIVERSALITY"
+        },
+        {
+          "value": 20,
+          "value_unit": "paper sheets",
+          "locality": ["Myagdi", "Parbat", "Baglung"],
+          "date_of_practice": "1998-1999 / 2054-2055 B.S.",
+          "date_of_source": "2000-03",
+          "source": "Griha Man Singh, Ancient Nepal no.144, p.16",
+          "observation_type": "AUTHOR_FIELD_STUDY",
+          "production_stage": "drying_and_folding",
+          "physical_bundle_method": "twenty dried sheets tied into a single bundle with thin bast strips",
+          "confidence": "HIGH_DIRECT_LOCALITY_SPECIFIC"
+        },
+        {
+          "value": 200,
+          "value_unit": "paper sheets",
+          "locality": "national synthesis / exact production locality unresolved",
+          "date_of_source": "2070 B.S. / c.2013",
+          "source": "Nepal Academy of Science and Technology indigenous technology final report, paper section",
+          "observation_type": "DIRECT_PRINTED_SECONDARY_SYNTHESIS",
+          "source_method": "report states greater reliance on secondary sources; field visits mainly Kathmandu Valley",
+          "practice_status": "UNRESOLVED",
+          "unit_conflation_candidate": "HIGH_WITH_KORI_200",
+          "confidence": "HIGH_THAT_SOURCE_PRINTS_200_LOW_FOR_UNIVERSAL_OR_WORKSHOP_PRACTICE"
+        }
+      ]
+    },
+    {
+      "id": "NEP-KORI",
+      "script": "कोरी",
+      "romanization": "kori / korī",
+      "unit_type": "larger paper_batch",
+      "attested_values": [
+        {
+          "value": 20,
+          "value_unit": "dhep",
+          "equivalent_tau_under_ten_sheet_dhep_convention": 200,
+          "source": "Bhupahari Paudel 1987-88 + modern Nepali lexicography",
+          "functions": ["production count", "pricing batch", "labour/remuneration unit"],
+          "confidence": "HIGH_FOR_DOCUMENTED_TRADITION"
+        }
+      ],
+      "control": "Do not assume 20 western-Nepal dhep bundles necessarily compose the same numerical kori relation without local evidence."
+    }
+  ],
+  "hodgson_1843_bill": {
+    "ref": "MSS EUR HODGSON/12 f.117",
+    "date": "1843",
+    "catalogue_unit_transcription": "ḍhyāp",
+    "normalized_unit_candidate": "ढेप / dhep",
+    "lexical_identity_confidence": "VERY_HIGH_CANDIDATE",
+    "catalogue_unit_gloss": "10 sheets in one bundle",
+    "reported_bundle_depth": 10,
+    "reported_bundle_depth_scope": "F117_CATALOGUE_ONLY_UNTIL_ORIGINAL_IS_READ",
+    "original_graphic_form": "UNREAD",
+    "original_unit_gloss_provenance": "UNRESOLVED",
+    "catalogue_quantity": "1,012 bundles",
+    "catalogue_total": "Nepali Rupees 79.30 / Indian Rupees 61.12",
+    "catalogue_rates": "Rupees 10/- and 14/- per bundle as prose-transcribed",
+    "arithmetic_status": "UNRESOLVED_AND_NONRECONCILING_UNDER_LITERAL_CATALOGUE_READING",
+    "normalized_total_sheets": null,
+    "normalization_rule": "DO_NOT_CALCULATE_TOTAL_SHEETS_UNTIL_ORIGINAL_ACCOUNT_LAYOUT_IS_RECOVERED"
+  },
+  "evidence_hierarchy": [
+    {
+      "id": "E-1843-F117-CATALOGUE",
+      "object_date": "1843",
+      "source_date": "modern catalogue",
+      "directness": "CATALOGUE_TRANSCRIPTION_OF_HISTORICAL_OBJECT",
+      "supports": ["ḍhyāp transcription", "10-sheet gloss", "quantity/rate prose"],
+      "limitation": "original bill image unread"
+    },
+    {
+      "id": "E-PAUDEL-1987",
+      "source_date": "1987-1988",
+      "directness": "DIRECT_PRINTED_DESCRIPTION",
+      "supports": ["10 tau = 1 dhep", "20 dhep = 1 kori", "1 kori = 200 tau", "kori as price/labour unit"],
+      "limitation": "late source describing traditional practice, not nineteenth-century primary evidence"
+    },
+    {
+      "id": "E-SINGH-2000",
+      "source_date": "2000-03",
+      "practice_date": "1998-1999",
+      "directness": "DIRECT_FIELD_OBSERVATION_REPORTED_IN_PRINT",
+      "supports": ["20 sheets tied with bast strips = one dhep"],
+      "locality": ["Myagdi", "Parbat", "Baglung"],
+      "limitation": "late twentieth-century western Nepal, not Kathmandu 1843"
+    },
+    {
+      "id": "E-NAST-2013",
+      "source_date": "c.2013",
+      "directness": "DIRECT_PRINTED_STATEMENT_SECONDARY_FOR_PRACTICE",
+      "supports": ["source prints one dhep usually contains 200 sheets"],
+      "limitation": "report relies largely on secondary sources and gives no matching locality-specific observation; possible conflation with kori"
+    },
+    {
+      "id": "E-LEXICAL-MODERN",
+      "source_date": "modern",
+      "directness": "LEXICOGRAPHIC",
+      "supports": ["tau = sheet", "dhep = ten tau in standardized dictionary value", "kori = twenty dhep"],
+      "limitation": "lexical standardization does not erase workshop/local variation"
+    }
+  ],
+  "data_model": {
+    "required_unit_fields": [
+      "unit_term_exact",
+      "script",
+      "romanization_source",
+      "sheet_equivalent_reported",
+      "locality",
+      "date_of_practice",
+      "date_of_source",
+      "observation_type",
+      "production_stage",
+      "physical_bundle_method",
+      "pricing_function",
+      "source_directness",
+      "normalization_confidence"
+    ],
+    "rule": "Metrological value is a contextual attribute of an attestation, not a universal property of a lexeme."
+  },
+  "mechanisms": [
+    "LOCAL_UNIT_NAME_DOES_NOT_FIX_PACKAGE_DEPTH",
+    "PAPER_METROLOGY_CAN_VARY_BY_LOCALITY_WORKSHOP_OR_REPORTING_TRADITION",
+    "LEXICAL_STANDARDIZATION_CAN_HIDE_PRACTICE_VARIATION",
+    "COUNT_UNIT_IS_PHYSICALLY_MADE_BY_BUNDLING",
+    "BUNDLE_DEPTH_IS_A_WORKSHOP_OPERATION",
+    "SECONDARY_TECHNICAL_SYNTHESIS_CAN_COLLAPSE_ADJACENT_UNIT_LEVELS",
+    "QUANTITY_PROVENANCE_REQUIRES_LOCALITY_DATE_AND_OBSERVATION_CONTEXT",
+    "METROLOGICAL_VALUE_IS_CONTEXTUAL_ATTRIBUTE_NOT_LEXEME_CONSTANT"
+  ],
+  "source_control_rules": [
+    "Retain dhep as securely identified Nepalese handmade-paper vocabulary.",
+    "Do not assign a universal numerical value to dhep.",
+    "Treat ten sheets as a strong convention; treat twenty sheets as direct western-Nepal field evidence.",
+    "Preserve the NAST 200-sheet statement exactly while marking possible unit conflation with kori.",
+    "Do not use a dictionary definition to override locality-specific workshop observation.",
+    "Keep catalogue transcription, normalized lexeme, reported package depth, and historian normalization separate.",
+    "Do not normalize Hodgson f.117 to total sheets before the original account layout is inspected."
+  ],
+  "next_actions": [
+    "Recover f.117 original image or surrogate",
+    "Determine whether Cambridge's 10-sheet gloss derives from the bill or cataloguer knowledge",
+    "Search pre-1900 Nepali accounts and dictionaries for dhep/tau/kori",
+    "Search Kathmandu Valley production records for historical ten-sheet dhep usage",
+    "Trace the NAST 2013 underlying source for 200-sheet dhep",
+    "Compare western Nepal bundle practice with Kathmandu/eastern production practice"
+  ]
+}
