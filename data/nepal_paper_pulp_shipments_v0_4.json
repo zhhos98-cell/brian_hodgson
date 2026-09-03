@@ -1,0 +1,283 @@
+{
+  "dataset": "nepal_paper_pulp_shipments_v0_4",
+  "date": "2026-09-03",
+  "scope": "Hodgson-linked paper-pulp transfers with material/package state, route infrastructure, Company transport metrology, and documentary/archival routing.",
+  "central_claim": "The March 1842 twenty-four-package pulp shipment moved through two linked infrastructures: a physical transport regime and a documentary-administrative regime. The physical route remains unresolved, but the document search can now be split into upstream Halliday directive branches, the secure Champaran incoming-register witness, a downstream Woodcock reply/bill branch, and possible Patna/Calcutta receipt branches. Halliday's 1842 dual secretariat roles prevent assignment of the initiating instruction to one department without a direct record.",
+  "shipments": [
+    {
+      "id": "PULP-1831-BRITAIN",
+      "date": "1831",
+      "material_state": "DRIED_PREPARED_PULP_BRICKS",
+      "package_count": null,
+      "route": "INDIA_TO_BRITAIN",
+      "experiment_relation": "DIRECT_TO_1833_REPORTED_BRITISH_REMANUFACTURE_TRIAL"
+    },
+    {
+      "id": "PULP-1842-24PKG-CALCUTTA",
+      "date": "1842-03-25",
+      "sender": "Brian Houghton Hodgson",
+      "sender_location": "Nepal Residency",
+      "initiating_authority_exact": "Mr. Secretary Halliday",
+      "initiating_authority_normalized": "Frederick James Halliday",
+      "initiating_order": "MISSING",
+      "initiating_authority_office_profile_1842": {
+        "source": "The East-India Register and Directory for 1842, compiled from official returns",
+        "bengal_role_exact_normalized": "secretary to the government of Bengal, judicial and revenue department",
+        "government_of_india_role_exact_normalized": "junior secretary to government of India, revenue, judicial, and legislative departments",
+        "interpretive_state": "DUAL_SIMULTANEOUS_SECRETARIAT_PROFILE",
+        "use_rule": "Halliday identity is secure; office multiplicity expands the archival search and does not identify the department that issued the paper-pulp directive."
+      },
+      "material_label_exact": "Nepalese paper pulp",
+      "package_count": 24,
+      "package_count_type": "TRANSPORT_PACKAGE_COUNT_NOT_MASS",
+      "first_stage_carrier_exact": "my people",
+      "recipient_transcript_exact": "G. Woodcock Esq., Joint Magistrate, Champaun",
+      "recipient_probable_normalized": "Edward E. Woodcock",
+      "recipient_state": "HIGH_TO_VERY_HIGH_ADMINISTRATIVE_IDENTIFICATION_ORIGINAL_INITIAL_UNREAD",
+      "destination": "Calcutta",
+      "actual_route": null,
+      "actual_route_state": "UNRESOLVED",
+      "freight_bill": "REQUESTED_NOT_RECOVERED",
+      "receipt": "UNRECOVERED",
+      "final_receiver": "UNRESOLVED",
+      "serampore_relation": "POSSIBLE_BROADER_PROGRAM_DIRECT_CONSIGNMENT_EDGE_UNPROVEN",
+      "route_alternatives": [
+        {
+          "id": "LAND-PATNA",
+          "mode": "LAND_PLUS_FORWARDING",
+          "nodes": ["Champaran", "Motihari", "Patna Magistrate", "further disposal"],
+          "decision_variable": "relative land carriage cost"
+        },
+        {
+          "id": "WATER-GOVIND-GANG-CALCUTTA",
+          "mode": "WATER",
+          "nodes": ["Champaran", "Govind Gang", "Calcutta"],
+          "vehicle_exact": "small safe boat",
+          "custody_exact": "Burkundaz",
+          "decision_variable": "relative water carriage cost and safety"
+        }
+      ],
+      "physical_infrastructure_context": {
+        "source": "Robert Rankine, Notes on the Medical Topography of the Districts of Sarun, report 22 Jan 1838, print 1839",
+        "observations": [
+          "Great and Little Gunduck navigable for small boats but navigation capacity variable",
+          "Govind Gunge and Bettiah roads included in bad-road discussion",
+          "high road to Chumparun hardly passable in many places five or six months per year",
+          "bridge deficiencies constrained wheeled carriage",
+          "poor cross-roads could increase reliance on human carriage and raise cost"
+        ],
+        "use_rule": "context only; does not establish actual pulp route or carrier"
+      },
+      "route_metrology_context": {
+        "source": "The New Annual Bengal Directory and General Register, 1825, Rates of Boat Hire",
+        "source_type": "DIRECT_PERIOD_COMPANY_ALLOWANCE_TABLE",
+        "scope": "Time allowed for boats to proceed to listed destinations as per Company's allowance, plus baggage-boat capacity/monthly-rate schedule",
+        "historical_place_exact": "Govindgunge",
+        "standard_trip_allowance": {
+          "months": 2,
+          "days": 0,
+          "type": "ADMINISTRATIVE_ALLOWED_TRIP_PERIOD_NOT_OBSERVED_DURATION"
+        },
+        "comparison_destinations": [
+          {"place": "Patna group", "months": 1, "days": 28},
+          {"place": "Goruckpore", "months": 2, "days": 8},
+          {"place": "Bettiah", "months": 2, "days": 15}
+        ],
+        "baggage_boat_capacity_range_maunds": [200, 250, 300, 350, 400, 450, 500, 550, 600, 700, 800, 900, 1000],
+        "example_monthly_rates_sa_rs": [
+          {"capacity_maunds": 200, "rupees": 22, "annas": 0},
+          {"capacity_maunds": 500, "rupees": 49, "annas": 0},
+          {"capacity_maunds": 1000, "rupees": 94, "annas": 0}
+        ],
+        "rate_control": "exact table visually verify before detailed quantitative publication",
+        "relation_to_1842": "PREEXISTING_COMPANY_TRANSPORT_METROLOGY_NOT_DIRECT_PROOF_OF_1842_RULE_CONTINUITY"
+      },
+      "place_name_control": {
+        "1825": "Govindgunge",
+        "1838": "Govind Gunge",
+        "1842": "Govind Gang",
+        "normalization_state": "SAME_HISTORICAL_TRANSPORT_NODE_VERY_HIGH",
+        "rule": "retain exact source spelling in transcription fields"
+      },
+      "documentary_route": [
+        {
+          "sequence": 1,
+          "node": "HALLIDAY_INITIATING_DIRECTIVE",
+          "direction": "Government -> Nepal Residency",
+          "state": "MISSING",
+          "date_window_for_retrieval": "before_or_by_1842-03-25",
+          "department_state": "UNRESOLVED"
+        },
+        {
+          "sequence": 2,
+          "node": "HODGSON_TO_WOODCOCK_INSTRUCTION",
+          "direction": "Nepal Residency -> Champaran",
+          "state": "DIRECT_TRANSCRIPT_WITH_ARCHIVAL_CITATION",
+          "date": "1842-03-25",
+          "archive": "Bihar State Archives, Patna",
+          "record_exact": "Register of Letters Received from January 1842 to June 1842",
+          "pages": "344-345",
+          "original_image_state": "NOT_YET_CONTROLLED"
+        },
+        {
+          "sequence": 3,
+          "node": "WOODCOCK_ROUTE_DECISION_AND_BILL",
+          "direction": "Champaran -> Hodgson/Residency and/or downstream office",
+          "state": "REQUESTED_IN_DIRECT_LETTER_NOT_RECOVERED",
+          "expected_information_if_recovered": [
+            "route selected",
+            "land or water mode",
+            "actual charges",
+            "possible carrier/boat/security detail",
+            "possible Patna or Calcutta forwarding edge"
+          ]
+        },
+        {
+          "sequence": 4,
+          "node": "PATNA_OR_CALCUTTA_RECEIPT_FORWARDING",
+          "direction": "downstream administrative/receiver node",
+          "state": "UNRECOVERED",
+          "consignment_key": "24 packages / Nepalese paper pulp"
+        }
+      ],
+      "archival_retrieval_map": {
+        "upstream_halliday": [
+          {
+            "series": "West Bengal State Archives General Department (General) Proceedings",
+            "period_form_attested": true,
+            "pulp_item_state": "UNPROVEN_CANDIDATE_SERIES",
+            "retrieval_window": "1842-01-01_to_1842-03-25",
+            "search_terms": ["Hodgson", "Halliday", "Nepal paper", "Nipal paper", "paper pulp", "paper manufacture", "O'Shaughnessy", "Marshman", "Darjeeling"]
+          },
+          {
+            "series": "Government of Bengal Judicial/Revenue proceedings/correspondence",
+            "basis": "Halliday's 1842 Bengal secretaryship in judicial and revenue department",
+            "pulp_item_state": "UNPROVEN_CANDIDATE_SERIES"
+          },
+          {
+            "series": "Government of India Revenue/Judicial/Legislative proceedings/correspondence",
+            "basis": "Halliday's 1842 junior Government-of-India secretaryship",
+            "pulp_item_state": "UNPROVEN_CANDIDATE_SERIES"
+          },
+          {
+            "series": "British Library IOR/P/13/39 Bengal Proceedings",
+            "period_scope": "early 1842 Bengal Proceedings container with date-and-number indexed matters",
+            "pulp_item_state": "CANDIDATE_CONTAINER_NOT_PROVEN_PULP_FILE",
+            "use_rule": "search by proceeding date/number indexes, not catalogue keyword alone"
+          },
+          {
+            "series": "Nepal Residency incoming/copy correspondence",
+            "basis": "recipient-side survival path for Halliday directive",
+            "pulp_item_state": "UNPROVEN_CANDIDATE_SERIES"
+          }
+        ],
+        "champaran_anchor": {
+          "incoming_1842": {
+            "record_exact": "Register of Letters Received from January 1842 to June 1842",
+            "pages": "344-345",
+            "state": "SECURE_ARCHIVAL_CITATION",
+            "volume_number": "UNRESOLVED",
+            "next_image_target": "pages 344-345 plus adjacent folios, endorsements, enclosure marks and continuation notes"
+          },
+          "series_form_control_1839": {
+            "record_exact": "Register of Letters Received from February 1839 to December 1839",
+            "volume": "Vol. 6",
+            "archive_context": "Champaran District Records, Bihar State Archives, Patna",
+            "enclosure_survival_attested": true,
+            "use_rule": "demonstrates series/enclosure ecology only; does not assign a volume number or enclosure to the 1842 item"
+          }
+        },
+        "downstream_woodcock": [
+          {
+            "record_form": "Champaran Register of Letters Issued / General Department outgoing correspondence",
+            "1842_survival_state": "UNRESOLVED",
+            "later_form_control": "Register of Letters Issued (General Department) from April 1859 to January 1862",
+            "use_rule": "later register form guides retrieval but does not prove identical 1842 series continuity"
+          },
+          {
+            "record_form": "Champaran accounts / contingent charges / bill or voucher records",
+            "state": "UNSEARCHED_OR_UNRECOVERED_CANDIDATE"
+          },
+          {
+            "record_form": "Patna Magistrate/Commissioner correspondence",
+            "state": "UNRECOVERED_CANDIDATE"
+          },
+          {
+            "record_form": "Calcutta receipt/forwarding records",
+            "state": "UNRECOVERED_CANDIDATE"
+          }
+        ]
+      },
+      "public_web_search_state_2026_09_03": {
+        "direct_halliday_directive": "NOT_RECOVERED",
+        "direct_woodcock_reply": "NOT_RECOVERED",
+        "freight_bill": "NOT_RECOVERED",
+        "patna_receipt": "NOT_RECOVERED",
+        "calcutta_receipt": "NOT_RECOVERED",
+        "scope_rule": "negative result is bounded to publicly searchable web witnesses examined; it is not evidence of archival non-survival"
+      }
+    }
+  ],
+  "multi_metrology_model": {
+    "paper_count_metrology": ["tau", "dhep", "kori", "sheet/quire/ream/chest in Company stationery"],
+    "transport_metrology": ["destination", "allowed trip time", "boat carrying capacity", "monthly hire rate"],
+    "interpretation": "Material circulation becomes administratively actionable through multiple non-equivalent metrologies layered around the object. Package count does not equal mass; route allowance does not equal observed duration; boat capacity does not reveal the actual boat used."
+  },
+  "documentary_state_model": {
+    "sequence": [
+      "initiating instruction",
+      "outgoing material-forwarding letter",
+      "incoming district-office registration",
+      "route decision",
+      "bill/charge account",
+      "downstream forwarding or receipt",
+      "higher-government proceeding/copy where applicable",
+      "later archive/catalogue state"
+    ],
+    "interpretation": "Material movement can generate a parallel documentary circulation. Administrative handoffs distribute recoverable traces across sender, recipient, accounting, proceeding and receipt systems; the documentary route should therefore be reconstructed node by node rather than treated as a single missing-file problem."
+  },
+  "mechanisms": [
+    "PULP_AS_PACKAGED_TRANSPORT_COMMODITY",
+    "ROUTE_NODE_PREEXISTS_EXPERIMENT",
+    "TRANSPORT_ROUTE_IS_ADMINISTRATIVELY_METRIZED",
+    "TIME_ALLOWANCE_IS_LOGISTICS_STANDARDIZATION",
+    "BOAT_CAPACITY_IS_A_LOGISTICS_METROLOGY",
+    "COMPANY_TRANSPORT_INFRASTRUCTURE_PRESTRUCTURES_MATERIAL_CIRCULATION",
+    "PHYSICAL_INFRASTRUCTURE_AND_ACCOUNTING_INFRASTRUCTURE_CO_PRODUCE_ROUTE",
+    "MATERIAL_CIRCULATION_IS_MULTI_METROLOGICAL",
+    "FREIGHT_BILL_IS_DOCUMENTARY_INTERFACE_BETWEEN_ROUTE_STANDARD_AND_MATERIAL_EVENT",
+    "OFFICIAL_ROLE_MULTIPLICITY_SPLITS_ARCHIVAL_SEARCH",
+    "DOCUMENTARY_ROUTE_PARALLELS_BUT_DOES_NOT_EQUAL_MATERIAL_ROUTE",
+    "INCOMING_REGISTER_ANCHORS_ONE_SIDE_OF_HANDOFF",
+    "MISSING_BILL_MUST_BE_SEARCHED_AT_BOTH_SENDER_AND_RECIPIENT_SIDES",
+    "PROCEEDING_DATE_AND_NUMBER_FORM_A_RETRIEVAL_ADDRESS",
+    "MATERIAL_MOVEMENT_GENERATES_DOCUMENT_MOVEMENT",
+    "DOCUMENTARY_STATE_IS_PART_OF_MATERIAL_HISTORY",
+    "ARCHIVAL_DISTRIBUTION_FOLLOWS_ADMINISTRATIVE_HANDOFFS",
+    "TEMPORAL_ALIGNMENT_NOT_CONSIGNMENT_IDENTITY"
+  ],
+  "source_control_rules": [
+    "Do not use the 1825 two-month allowance as actual 1842 transit duration.",
+    "Do not claim the 1825 allowance remained unchanged in 1842 without later rules or the actual freight bill.",
+    "Do not infer boat capacity from 24-package count or package mass from Company baggage-boat categories.",
+    "Keep standard allowance, actual time, standard rate and actual cost separate.",
+    "Keep Govindgunge/Govind Gunge/Govind Gang exact strings in source fields.",
+    "Keep Halliday identity secure but initiating department unresolved.",
+    "Do not collapse Government of Bengal and Government of India Halliday roles into one archival branch.",
+    "Treat IOR/P/13/39 as an early-1842 candidate Bengal Proceedings container, not a proven pulp file.",
+    "Treat West Bengal State Archives General Department proceedings as a candidate series until a consignment-level paper-pulp record is found.",
+    "Do not infer the 1842 Champaran incoming-register volume number from the 1839 Vol. 6 witness.",
+    "Use the 1859-1862 Champaran Register of Letters Issued only as later evidence of an outgoing record form, not proof of identical 1842 survival.",
+    "Keep public-web non-recovery separate from archival non-survival.",
+    "Keep the Serampore consignment edge unproven until a receipt, forwarding instruction, matching package count or other consignment-level identifier is recovered."
+  ],
+  "next_actions": [
+    "Recover West Bengal State Archives Jan-Mar 1842 General Department proceeding indexes and inspect exact date/number entries.",
+    "Search Bengal Judicial/Revenue and Government-of-India Revenue/Judicial/Legislative proceedings for Halliday/Hodgson/Nepal paper terms.",
+    "Identify the 1842 Champaran incoming-register volume number and any contemporary Register of Letters Issued / General Department shelfmark.",
+    "Recover original BSA pages 344-345 plus adjacent folios and record endorsements, docketing and enclosure marks.",
+    "Search Edward E. Woodcock outgoing correspondence and accounts for March-April 1842 charges/packages/paper/Patna/Govind/Calcutta.",
+    "Search Patna and Calcutta receipt chains using the consignment key 24 packages / Nepalese paper pulp.",
+    "Only after consignment-level evidence connect the 24-package shipment to Marshman, O'Shaughnessy or Serampore."
+  ]
+}
