@@ -1,0 +1,129 @@
+{
+  "dataset": "nepal_paper_supply_circulation_network_v0_1",
+  "date": "2026-09-03",
+  "scope": "Government, learned-society, commercial, market and transport circulation of Nepal paper before and around the 1842 pulp shipment.",
+  "central_claim": "By late 1837 Nepal paper was being treated simultaneously as a Government-stationery substitution candidate, a traded commodity with distributed plains markets, a route-costed material, an experimental sample set differentiated by size and quality, a proposed Chamber of Commerce sample, and a learned-society publication object. Govindgunge appears in 1825, 1837 and 1842 in three distinct functions: Company transport-metrology destination, Nepal-paper market/supply node, and specific pulp-forwarding option.",
+  "source_families": [
+    {
+      "id": "TRANS_AHSI_V5_1838",
+      "type": "DIRECT_PUBLISHED_PRIMARY",
+      "title": "Transactions of the Agricultural and Horticultural Society of India, Vol. V",
+      "publication": "Serampore Press, 1838",
+      "secure_fields": [
+        "On Nepalese Paper by Dr Campbell p.220",
+        "20 Nov 1837 request for each size and quality of Nepal paper for experimental purposes",
+        "28 Nov 1837 Campbell reply promising a quantity",
+        "Campbell proposal to forward samples of each variety to the Chamber of Commerce",
+        "Campbell enclosure of copies of recent T. C. Scott correspondence"
+      ],
+      "control_limit": "article body p.220 still requires image control for exact Scott-Campbell wording"
+    },
+    {
+      "id": "ABDUL_ALI_1945",
+      "type": "SECONDARY_ARCHIVAL_EXTRACTION",
+      "title": "A. F. M. Abdul Ali, The Daphne Paper of Nepal",
+      "secure_as_secondary": [
+        "Campbell 15 Nov 1837 letter to T. C. Scott",
+        "durability comparison using Government office records",
+        "Government-office substitution proposal",
+        "paper market geography including Govindgunge",
+        "reported prices and Nepal-to-Patna transport estimate",
+        "seasonal procurement proposal",
+        "Political O.C. 29 Nov 1841 No.147",
+        "Political O.C. 11 May 1842 No.70",
+        "Campbell-to-Bushby paper letter dated 21 Apr 1842",
+        "Darjeeling operation closure reported as 16 Apr 1842"
+      ],
+      "control_limit": "underlying Political/Foreign files not directly inspected; Political O.C. expansion and modern shelfmarks unresolved"
+    }
+  ],
+  "events": [
+    {
+      "id": "PAPER_GOV_1837_CAMPBELL_SCOTT",
+      "date": "1837-11-15",
+      "source_level": "SECONDARY_ARCHIVAL_EXTRACTION_PENDING_PRIMARY_IMAGE_CONTROL",
+      "operations": ["durability comparison", "Government stationery substitution proposal", "market survey", "price/carriage calculation", "seasonal procurement plan"]
+    },
+    {
+      "id": "PAPER_SOCIETY_1837_SAMPLE_REQUEST",
+      "date": "1837-11-20",
+      "source_level": "DIRECT_PUBLISHED_PRIMARY",
+      "operation": "request small supply of each size and quality of Nepal paper",
+      "purpose": "experimental purposes"
+    },
+    {
+      "id": "PAPER_SOCIETY_1837_CAMPBELL_REPLY",
+      "date": "1837-11-28",
+      "source_level": "DIRECT_PUBLISHED_PRIMARY",
+      "operations": ["promises material quantity", "proposes Chamber of Commerce samples", "transmits copies of Scott correspondence"],
+      "chamber_receipt_state": "PROPOSED_NOT_PROVEN"
+    },
+    {
+      "id": "PAPER_PUBLICATION_1838",
+      "date": "1838",
+      "source_level": "DIRECT_PUBLISHED_PRIMARY_METADATA",
+      "publication": "On Nepalese Paper, Transactions AHSI vol. V, p.220",
+      "printer": "Serampore Press",
+      "serampore_edge_type": "PUBLICATION_DOCUMENTARY_NOT_CONSIGNMENT"
+    },
+    {
+      "id": "PULP_1842_24PKG_CROSSREF",
+      "date": "1842-03-25",
+      "operation": "24 packages Nepalese paper pulp sent toward Calcutta through Champaran with land/water route choice",
+      "actual_route": "UNRESOLVED"
+    },
+    {
+      "id": "PAPER_DARJEELING_CLOSURE_1842",
+      "date": "1842-04-16",
+      "source_level": "SECONDARY_ARCHIVAL_EXTRACTION",
+      "causal_relation_to_24pkg": "UNPROVEN"
+    },
+    {
+      "id": "PAPER_CAMPBELL_BUSHBY_1842_04_21",
+      "date": "1842-04-21",
+      "source_level": "SECONDARY_ARCHIVAL_POINTER",
+      "reference": "Political O.C., 11 May 1842, No.70",
+      "direct_file_state": "UNINSPECTED"
+    }
+  ],
+  "nodes": [
+    {
+      "normalized": "Patna",
+      "functions": ["1837 Nepal-paper market/distribution and freight endpoint", "1842 land-route forwarding option"],
+      "guardrail": "1837 finished-paper freight estimate cannot price 1842 pulp packages"
+    },
+    {
+      "normalized": "Govindgunge",
+      "exact_forms": ["Govindgunge", "Govind Gunge", "Govind Gang"],
+      "functions": [
+        {"date": "1825", "role": "COMPANY_BOAT_HIRE_METROLOGY_DESTINATION"},
+        {"date": "1837", "role": "NEPAL_PAPER_MARKET_OR_SUPPLY_NODE"},
+        {"date": "1842-03-25", "role": "SPECIFIC_PULP_FORWARDING_OPTION_TO_CALCUTTA"}
+      ],
+      "interpretation": "market, route-metrology and consignment-forwarding functions interlock but remain separate evidence states"
+    }
+  ],
+  "models": {
+    "archive_as_material_test": "Long-lived Government office records become comparative evidence about paper durability and proof objects for prospective procurement.",
+    "government_substitution": "paper substitution = durability/performance x price x market access x season x transport",
+    "sample_transformation": "finished paper commodity -> classified sample set -> experimental specimen -> proposed commercial sample -> learned-society publication object",
+    "circulation": "physical material circulation + administrative/documentary circulation + learned/commercial knowledge circulation",
+    "continuity_rule": "Treat 1831-1842 as a recurring government paper problem-space with documented continuities and gaps, not as one uninterrupted programme unless direct continuation orders are recovered."
+  },
+  "source_control_rules": [
+    "Use the 1838 Transactions proceedings as direct primary evidence for the Society sample request, Campbell reply, Chamber proposal and copied correspondence transfer.",
+    "Use Abdul Ali 1945 as secondary archival extraction until cited primary files/pages are inspected.",
+    "Do not silently expand Political O.C.; modern series/shelfmark unresolved.",
+    "Keep proposed Chamber of Commerce forwarding separate from proven receipt/testing.",
+    "Keep Govindgunge 1825, 1837 and 1842 functions distinct.",
+    "Keep Serampore Press publication separate from Serampore Paper Mills experimentation and from the unproven 1842 consignment edge.",
+    "Keep spring-1842 temporal convergence separate from causality or batch identity."
+  ],
+  "next_actions": [
+    "Recover/image-control Transactions vol. V p.220 and extract Scott-Campbell correspondence directly.",
+    "Decode Political O.C. through contemporary Foreign/Political indexes and map 29 Nov 1841 No.147 and 11 May 1842 No.70 to modern shelfmarks.",
+    "Retrieve the 21 Apr 1842 Campbell-to-Bushby paper letter.",
+    "Search Chamber of Commerce records after 28 Nov 1837 for Nepal paper sample receipt or evaluation.",
+    "Search Govindgunge/Patna/Sarun procurement references for operational use of Campbell's market network."
+  ]
+}
