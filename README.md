@@ -1,5 +1,16 @@
 # Brian Houghton Hodgson — history of science working repository
 
+## Current writing
+
+Canonical Nepal paper draft:
+
+- `drafts/NEPAL_PAPER_DRAFT_02_SOURCE_LANGUAGE_2026-09-04.md`
+- draft index: `drafts/README.md`
+
+Current article title: **“Nipal Paper Stuff”: Experiments in the Manufacture of Nepal Paper, 1831–1842**.
+
+For article prose, prefer the words used by Hodgson, Campbell, the papermakers, O’Shaughnessy, Marshman and the institutional records. The analytical terms below remain research shorthand for the wider Hodgson project. They should not automatically enter the Nepal paper article. The 2026-09-03 full paper and Wave87 prose have been moved to `archive/drafts/2026-09-03/`.
+
 This repository reconstructs Brian Houghton Hodgson as a problem in the history of science and material knowledge infrastructures. It does not begin from a fixed disciplinary hierarchy. Buddhist manuscripts, zoological specimens and drawings, geographical and survey papers, administrative records, paper technologies, and Hodgson's later household/personal archive are treated as distinct classes of knowledge objects whose argumentative weight is determined by evidence density.
 
 ## Core question
