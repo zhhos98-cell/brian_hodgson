@@ -83,10 +83,35 @@ Cowan's later report that Nepal-made sheets took a bank-note impression with "pe
 
 Do not yet write a direct causal arrow from this correspondence to Cowan without a transmission link.
 
-Open tasks:
+---
 
-- identify exact date, sender and recipient of the bank-note passage;
-- recover/verify the related Raffles/Cartwright/Wallich wording about sending finished paper and material for making it to Britain / the Court of Directors.
+## Finding 3A — Raffles directly distinguishes finished paper from material for making it
+
+Evidence status: **SECURE / direct published letter.**
+
+In a letter reproduced in Jane Margaret Strickland's memoir of Edmund Cartwright, T. S. Raffles recommends Wallich's Nepal paper to Cartwright in the context of the security-paper problem. Raffles emphasizes its toughness and the possibility of East India Company control over the raw material supply. Most importantly, he states that Wallich had contemplated sending home to the Court of Directors both **a quantity of the paper** and **the material for making it**.
+
+Direct public text:
+https://www.fadedpage.com/books/20180140/html.php
+
+Source-critical note:
+
+The memoir is a later publication of the letter, not the autograph. Its text is nevertheless direct correspondence evidence and is considerably stronger than a later paraphrase. The exact original letter date and manuscript location remain to be fixed if readily available.
+
+Consequence:
+
+By c.1820 the technical problem had already separated:
+
+`finished Nepal-made paper`
+from
+`material intended to reproduce that paper elsewhere`.
+
+This predates Hodgson's 1831 intervention by roughly a decade. Hodgson's novelty therefore cannot be formulated as the first attempt to move raw material or the first recognition that Nepal paper might be remade in Britain. The article must determine what Hodgson newly contributed: a different source base, greater operational specificity, a new administrative purpose, actual specimen/pulp transmission, or a more tightly controlled remanufacture experiment.
+
+Revised P0:
+
+- compare the Raffles/Wallich proposed transfer with the actual Hodgson/Cowan transfer chain;
+- do not assume institutional continuity between the two without a documentary bridge.
 
 ---
 
@@ -109,30 +134,36 @@ Open task:
 
 ---
 
-## Finding 5 — filtration evidence requires object-state distinction
+## Finding 5 — O'Shaughnessy's own 1842 dispensatory treats finished Nepal paper as an excellent filter for bulky deposits
 
-Evidence status: **STRONG published technical witness; author/date verification still being completed.**
+Evidence status: **SECURE / direct published technical witness.**
 
-*The Bengal Dispensatory* distinguishes papers used for filtration. For delicate experiments it recommends white unsized Serampore paper, but where the deposit is bulky it states that paper made in Nepal is the best material because of its strength and its ability to permit rapid filtration followed by pressure/expression.
+W. B. O'Shaughnessy, *The Bengal Dispensatory* (Calcutta: W. Thacker and Co., 1842), published by order of Government, distinguishes papers by filtration operation. For delicate experiments he recommends white unsized, well-washed Serampore paper. Where the deposit is bulky, however, he states that **paper made in Nipal is the best substance**, because it is very strong and permits rapid filtration followed by expression/pressure.
 
-Public scan/search lead:
-https://archive.org/
-Search title: *The Bengal Dispensatory*.
+Bibliographic control:
+https://wellcomecollection.org/works/utyzfxf9
+
+Direct scan/text witness:
+https://upload.wikimedia.org/wikipedia/commons/9/97/The_Bengal_dispensatory._Chiefly_compiled_from_the_works_of_Roxburgh%2C_Wallich%2C_Ainslie%2C_Wight%2C_Arnot%2C_Royle%2C_Pereira%2C_Lindley%2C_Richard%2C_and_Fe%C3%A9%2C_including_the_results_of_numerous_special_experiments_%28IA_b2933360x%29.pdf
+
+This is especially important because O'Shaughnessy was not an external commentator: he was the Chemical Examiner involved in the Darjeeling paper experiments.
 
 Consequence:
 
-The article must not generalize from one Campbell/O'Shaughnessy experimental filtering failure to "Nepal paper was a poor filter." It must distinguish at minimum:
+The article must not generalize from a specific Campbell/O'Shaughnessy experimental filtering result to "Nepal paper was a poor filter." At minimum it must distinguish:
 
 - Nepal-made finished paper;
 - Campbell/Darjeeling experimental paper;
 - bleached/reprocessed experimental states;
-- Serampore machine-made paper.
+- Serampore white paper and machine-made states.
 
-This is a direct case-level warning against treating "Nepal paper" as a single stable technical object.
+The historical problem becomes actor- and object-specific: which paper state did O'Shaughnessy test in the Darjeeling correspondence, and why did that specimen receive a different judgment from "paper made in Nipal" in his general laboratory manual?
 
-Open task:
+New P0 join:
 
-- verify edition, author, date and exact page wording.
+`1841/42 O'Shaughnessy paper-test report`
+versus
+`O'Shaughnessy, Bengal Dispensatory (1842), general filtration instruction`.
 
 ---
 
@@ -160,7 +191,7 @@ The Jackson absence does not prove the factory had ended, but it weakens any ass
 Short antecedent:
 
 `1818 public paper specimen / Wallich botanical network`
--> `1820 Wallich/Murray technical description + bank-note/security-paper discussion`
+-> `1820 Wallich/Murray technical description + security-paper discussion + proposed transfer of finished paper and papermaking material`
 -> `1831–33 Hodgson specimens/account + Cowan remanufacture`.
 
 Historical question:
@@ -189,7 +220,7 @@ Did moving the makers solve what moving finished paper, pulp/material and writte
 Do not organize this as an abstract sequence of "interfaces." Follow the paper into concrete uses and judgments:
 
 - whitening/bleaching;
-- filtering;
+- filtration, explicitly distinguishing finished Nepal paper from experimental Darjeeling states;
 - waterproof wrapping;
 - Serampore machine manufacture;
 - possible continued Darjeeling production/supply;
@@ -205,8 +236,8 @@ Who decided whether the paper was successful, for which use, and what became of 
 
 1. Recover the 1842 journal sequel at p. 273.
 2. Compare Wallich/Murray 1820 directly against Hodgson 1831/32 at process-detail and source-actor level.
-3. Verify the early bank-note/security-paper correspondence and any plan to send both finished paper and papermaking material to Britain.
-4. Verify *Bengal Dispensatory* filtering wording/edition/author and reconcile it with O'Shaughnessy/Campbell test reports.
+3. Compare Raffles/Wallich's proposed paper+material transfer against the later Hodgson/Cowan actual remanufacture chain; seek a bridge but do not assume one.
+4. Reconcile O'Shaughnessy's 1841/42 experimental report with his 1842 *Bengal Dispensatory* statement that Nepal-made finished paper was best for bulky filtration.
 5. Search 1842–1850 newspapers, government print and technical journals for one contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
 6. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
 
