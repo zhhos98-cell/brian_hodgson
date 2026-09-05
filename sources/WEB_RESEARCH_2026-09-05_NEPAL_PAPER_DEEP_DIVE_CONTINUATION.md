@@ -111,9 +111,46 @@ This also helps prevent Serampore 1842 machine incompatibility from becoming a t
 
 ---
 
+## Finding 11 — Hooker's 1849 route passes an active eastern-Nepal paper-manufacturing centre
+
+Evidence status: **SECURE / direct contemporary field narrative.**
+
+In *Himalayan Journals*, describing his 1849 travel in eastern Nepal, Joseph Dalton Hooker identifies **Dunkotah** (Dhankuta) as the capital of that part of Nepal and says it was **famous for its manufactory of paper from the bark of the Daphne**.
+
+Direct public text:
+https://www.gutenberg.org/cache/epub/6476/pg6476-images.html
+Alternative mirror:
+https://mirror.csclub.uwaterloo.ca/gutenberg/6/4/7/6478/6478-h/6478-h.htm
+
+In the same expeditionary world, Hooker's daily field routine included collectors changing the plant-papers, while his letters to Hodgson repeatedly requested Nepal paper by bundle and load and discussed men/coolies sent to procure or carry it.
+
+### Consequence
+
+By 1849 the relevant historical geography was not a landscape in which Himalayan papermaking had been superseded by the failed Serampore machine experiment. Local manufacture remained an active and visible economic practice in eastern Nepal.
+
+This strengthens, but does not overjoin, the Hooker procurement evidence:
+
+- `active paper manufactory at Dhankuta in 1849` = SECURE;
+- `Hooker's requested paper came specifically from Dhankuta` = **NOT PROVEN**;
+- `Hodgson's people sent into Nepal for paper were buying from this manufactory` = **NOT PROVEN**.
+
+The value is contextual and causal at the correct scale: Hooker's paper demand operated within a still-functioning regional manufacturing economy, not merely among old experimental stocks.
+
+### Article consequence
+
+Case 3 no longer needs the retrospective claim that Campbell's Darjeeling factory survived "for some years" in order to show technological afterlife. A stronger contemporary contrast exists:
+
+`Darjeeling / Serampore attempts to relocate and mechanize manufacture`
+versus
+`continued Himalayan manufacture + repeated human procurement for field science`.
+
+This contrast destabilizes a machine-centred account of technological survival: incompatibility with continuous mill production did not make Nepal paper technically or scientifically obsolete.
+
+---
+
 ## Updated active priorities
 
 1. Reconcile the 1842 editors' poor-filtration result with O'Shaughnessy's 1842 statement that Nepal-made paper was best for bulky deposits.
 2. Test for an actual transmission bridge from the c.1820 Raffles/Wallich proposal to Cowan's 1833 trial; if none appears quickly, preserve them as a problem genealogy rather than a direct chain.
-3. Give the `continued Darjeeling factory` claim one final bounded contemporaneous search. If no 1842–50 witness appears, leave it unresolved and use the 1851 Exhibition only as afterlife evidence.
+3. Give the `continued Darjeeling factory` claim one final bounded contemporaneous search. If no 1842–50 witness appears, leave it unresolved; it is no longer structurally necessary because the 1849 Dhankuta and Hooker evidence already establishes continued regional manufacture/use.
 4. Return next to actor-level archival gaps only where they change the central cases: Hodgson's 1831 maker/source, names/tasks/retention of the five papermakers, and identities/fates of the two Lepcha trainees.
