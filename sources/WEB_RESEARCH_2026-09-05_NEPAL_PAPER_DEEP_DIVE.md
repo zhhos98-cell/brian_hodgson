@@ -115,22 +115,47 @@ Revised P0:
 
 ---
 
-## Finding 4 — 1842 printed paper experiment has an unresolved published sequel
+## Finding 4 — Marshman's 1842 sequel is already recovered and parsed in the repository
 
-Evidence status: **SECURE bibliographic fact; sequel text still OPEN.**
+Evidence status: **CLOSED / direct 1842 printed sequel, OCR-extracted against identified page range.**
 
-The 1842 first volume of the Agricultural and Horticultural Society journal contains the main Darjeeling manufacture account at pp. 210–221 and separately lists a "Sequel to the Correspondence regarding the Manufacture ..." at p. 273.
+The apparent missing sequel is not a new source gap. The repo had already recovered and parsed it in:
 
-Google Books volume control:
-https://books.google.com/books/about/Journal.html?id=2XxHAQAAMAAJ
+- `sources/WEB_RESEARCH_2026-08-31_WAVE12.md`;
+- `data/paper_experiment_census_v0_1.json`;
+- later draft notes.
+
+Full title:
+
+**“Sequel to the Correspondence regarding the Manufacture of Nipal Paper at Darjeeling. Result of Mr. Marshman’s Experiments,”** *Journal of the Agricultural and Horticultural Society of India* 1 (1842), 273–274.
+
+Public-domain source already controlled in repo:
+https://archive.org/details/in.ernet.dli.2015.109896
+
+Core source-level results already extracted:
+
+- Marshman saw little prospect of general economic success against alternative paper materials available to the Serampore mill.
+- The bark demanded substantial bleaching effort compared with ordinary rag materials.
+- Treatments analogous to English papermaking did not make it an attractive general paper.
+- When greater thickness was attempted, mucilaginous material prevented the pulp from running freely on the machine web.
+- He doubted general use with the machinery then in vogue.
+- Strength-dominant niches such as bank-note paper remained more plausible.
+- The editors' own filtration trial reports a mechanical advantage — the paper could be twisted/pressed without tearing — but slower filtration and less clear liquor than good European filtering paper.
+- The editors regarded packing/waterproof wet-season carriage as a stronger application because toughness and low mass mattered while dingy colour did not.
 
 Consequence:
 
-The p. 273 sequel is now a P0 printed source because it may close the event chain without requiring another archival series.
+The sequel does not close the history by declaring Nepal paper a failure. It differentiates several operations and, crucially, tests a **particular experimental paper state** against a particular industrial machine environment.
 
-Open task:
+New source-critical problem:
 
-- recover and transcribe p. 273 and its immediate continuation/context.
+The editors' p.274 filtration verdict must be reconciled with O'Shaughnessy's 1842 *Bengal Dispensatory*, which says paper made in Nepal is the best material for bulky filtration. Do not normalize the contradiction. Determine whether the two statements concern different paper states, different deposits, or different filtration criteria.
+
+P0 status change:
+
+- `recover sequel` = **CLOSED**;
+- `re-read sequel at actor/object-state level` = **ACTIVE**;
+- `identify Serampore machinery/production regime precisely` = **ACTIVE**.
 
 ---
 
@@ -157,11 +182,11 @@ The article must not generalize from a specific Campbell/O'Shaughnessy experimen
 - bleached/reprocessed experimental states;
 - Serampore white paper and machine-made states.
 
-The historical problem becomes actor- and object-specific: which paper state did O'Shaughnessy test in the Darjeeling correspondence, and why did that specimen receive a different judgment from "paper made in Nipal" in his general laboratory manual?
+The historical problem becomes actor- and object-specific: which paper state did the 1842 editors test, and why did that specimen receive a different judgment from "paper made in Nipal" in O'Shaughnessy's general laboratory manual?
 
 New P0 join:
 
-`1841/42 O'Shaughnessy paper-test report`
+`1842 editors' Darjeeling/Nepal-paper filtration trial, pp.273–274`
 versus
 `O'Shaughnessy, Bengal Dispensatory (1842), general filtration instruction`.
 
@@ -280,11 +305,11 @@ Who decided whether the paper was successful, for which use, and why did Nepal-m
 
 ## Current P0 research order
 
-1. Recover the 1842 journal sequel at p. 273.
-2. Compare Wallich/Murray 1820 directly against Hodgson 1831/32 at process-detail and source-actor level.
-3. Compare Raffles/Wallich's proposed paper+material transfer against the later Hodgson/Cowan actual remanufacture chain; seek a bridge but do not assume one.
-4. Reconcile O'Shaughnessy's 1841/42 experimental report with his 1842 *Bengal Dispensatory* statement that Nepal-made finished paper was best for bulky filtration.
-5. Search 1842–1850 newspapers, government print and technical journals for one contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
+1. Compare Wallich/Murray 1820 directly against Hodgson 1831/32 at process-detail and source-actor level.
+2. Compare Raffles/Wallich's proposed paper+material transfer against the later Hodgson/Cowan actual remanufacture chain; seek a bridge but do not assume one.
+3. Reconcile the p.273–274 editors' filtration result with O'Shaughnessy's 1842 *Bengal Dispensatory* statement that Nepal-made finished paper was best for bulky filtration.
+4. Reconstruct the Serampore mill's actual papermaking machinery and process environment sufficiently to interpret Marshman's "machine web" failure historically rather than generically.
+5. Search 1842–1850 newspapers, government print and technical journals for **one** contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
 6. Treat Hooker's 1849 field-use chain as CLOSED enough for article design; further letters are useful only if they identify suppliers/carriers or paper origin more precisely.
 7. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
 
