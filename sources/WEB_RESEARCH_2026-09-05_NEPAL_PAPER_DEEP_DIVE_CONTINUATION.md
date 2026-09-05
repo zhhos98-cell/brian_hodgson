@@ -55,22 +55,13 @@ Hodgson turns the concise process into a much more operational specification. He
 
 ### Consequence for Case 1
 
-Hodgson's historical importance should not be stated as:
-
-- discovery of Nepal paper;
-- first description of the plant;
-- first written recipe;
-- first imagination that its material might be transported to Britain.
+Hodgson's historical importance should not be stated as discovery of Nepal paper, first description of the plant, first written recipe, or first imagination that its material might be transported to Britain.
 
 A stronger and more precise formulation is available:
 
 **Hodgson reformatted already-circulating Himalayan papermaking knowledge into a more executable, measurable and transport-oriented technical account.**
 
-This makes the Cowan remanufacture episode analytically stronger. Cowan's failure can be read as a historical test of whether:
-
-`more explicit procedure + transported material`
-
-was sufficient to reproduce a successful Nepal-made sheet elsewhere.
+This makes the Cowan remanufacture episode analytically stronger. Cowan's failure can be read as a historical test of whether `more explicit procedure + transported material` was sufficient to reproduce a successful Nepal-made sheet elsewhere.
 
 Do not elevate this into an abstract 'codification' thesis in the introduction. Let the comparison emerge through the two texts and the later maker correction at Darjeeling.
 
@@ -148,9 +139,108 @@ This contrast destabilizes a machine-centred account of technological survival: 
 
 ---
 
+## Finding 12 — do not force the c.1820 security-paper proposal into the 1831–33 Cowan chain
+
+Evidence status: **DIRECT CHAIN CLOSED for Hodgson–Swinton–Robison–Cowan; earlier Raffles/Wallich connection remains genealogical, not demonstrated as transmission.**
+
+The 1833 *Journal of the Asiatic Society of Bengal* report directly states that:
+
+- George Swinton sent thin finished sheets made in Nepal to Britain in **1829**;
+- Swinton sent dried pulp bricks to Britain in **1831**;
+- those bricks were the form described in Hodgson's first-volume paper;
+- Swinton communicated the later correspondence between John Robison, Secretary of the Royal Society of Edinburgh, and paper manufacturers;
+- Charles Cowan's trials compared British remanufacture from the dried stuff with the earlier Nepal-made sheets.
+
+Direct printed witness:
+https://pahar.in/pahar/Journals/Asiatic%20Society%20of%20Bengal%201788-1921/Journal%20of%20Asiatic%20Society%20of%20Bengal%201832-1923/1833%20Journal%20Asiatic%20Society%20of%20Bengal%20Vol%202%20s.pdf
+
+This supplies the usable case chain:
+
+`Nepal-made finished sheets -> Swinton -> Britain (1829)`
++
+`Hodgson-described dried pulp bricks -> Swinton -> Britain (1831)`
+-> `Robison / Edinburgh`
+-> `Cowan and other manufacturers`
+-> `comparative remanufacture verdict (1833)`.
+
+A bounded search did **not** locate a document showing that the c.1820 Raffles/Wallich proposal to send paper + material to the Court of Directors directly generated Swinton's 1829/31 transfers.
+
+Consequence:
+
+Use the earlier episode as a **problem genealogy**: security paper and moving the raw material were already imaginable. Do not write a continuous Raffles → Swinton → Cowan transmission chain without new evidence.
+
+P0 status change:
+
+- `Cowan direct chain` = CLOSED;
+- `Raffles/Wallich direct causal bridge` = STOP / not required.
+
+---
+
+## Finding 13 — the 1842 filtration tension should be preserved as competing operational criteria, not prematurely solved
+
+Evidence status: **SECURE tension; exact object-state identity between the two tests remains unresolved and need not be forced.**
+
+O'Shaughnessy's *Bengal Dispensatory* does **not** call Nepal paper the universally best filter. It explicitly differentiates operations:
+
+- for **delicate experiments**, use white, unsized, well-washed Serampore paper;
+- where the **deposit is bulky**, paper made in Nepal is the best substance because it is very strong, allows rapid filtration, and can then be subjected to expression/pressure.
+
+Direct text witness:
+https://upload.wikimedia.org/wikipedia/commons/9/97/The_Bengal_dispensatory._Chiefly_compiled_from_the_works_of_Roxburgh%2C_Wallich%2C_Ainslie%2C_Wight%2C_Arnot%2C_Royle%2C_Pereira%2C_Lindley%2C_Richard%2C_and_Fe%C3%A9%2C_including_the_results_of_numerous_special_experiments_%28IA_b2933360x%29.pdf
+
+The 1842 Agricultural Society dossier and sequel test Darjeeling/Nepal paper as a substitute for imported English filtering paper. The evaluators separate at least four criteria:
+
+- cost;
+- mechanical strength / capacity to be twisted or pressed without tearing;
+- filtration speed;
+- clarity of the resulting liquor.
+
+Their result is mixed: the paper performs strongly mechanically and cheaply, but filtering is slower and the liquor less clear than with good European filtering paper.
+
+Repo control:
+`data/paper_experiment_census_v0_1.json`, PE-1841-07.
+
+### Consequence
+
+Do not resolve the difference into one statement such as `Nepal paper was / was not a good filter`.
+
+The historical actors themselves distinguished kinds of filtration and ranked paper by different operations. A paper could be preferable where a bulky precipitate had to survive pressure and expression while being inferior where speed and clarity were decisive.
+
+A further object-state distinction between finished Nepal-made paper and Darjeeling experimental paper remains possible, but current evidence does not require it to make the first-order historical point.
+
+This is a strong micro-case for the article because the disagreement is not conceptual commentary added by us; it appears in contemporary practical instructions and use tests.
+
+---
+
+## Finding 14 — bounded search does not corroborate continuous Darjeeling factory production after 1842
+
+Evidence status: **CLOSED UNRESOLVED / do not spend further broad-search effort.**
+
+A final targeted search across 1842–1850 combinations of `paper made/manufactured at Darjeeling`, `Darjeeling paper`, Campbell and paper manufacture did not produce a contemporaneous report demonstrating that Campbell's experimental manufactory supplied writing/packing paper continuously "for some years."
+
+The contemporary/publicly controlled evidence instead consists of:
+
+- the 1841–42 experiment and sequel;
+- the 1851 Great Exhibition catalogue entry for paper made in Nepal and at Darjeeling;
+- Hooker's 1849 evidence for active Nepal-paper procurement and field use;
+- Hooker's 1849 description of Dhankuta as famous for Daphne-paper manufacture.
+
+The later Darjeeling Gazetteer says Campbell's factory supplied strong writing and packing paper for some years and eventually failed against cheap plains paper. An 1880 *Paper Trade Journal* retrospective, however, explicitly says the writer could not determine when or why the manufacture was abandoned.
+
+Consequence:
+
+Keep the Gazetteer story as **P1 retrospective** and do not use it as the causal ending unless a direct contemporary source emerges incidentally later.
+
+P0 status change:
+
+- `continued Darjeeling factory` = **STOP / unresolved**;
+- article no longer depends on it.
+
+---
+
 ## Updated active priorities
 
-1. Reconcile the 1842 editors' poor-filtration result with O'Shaughnessy's 1842 statement that Nepal-made paper was best for bulky deposits.
-2. Test for an actual transmission bridge from the c.1820 Raffles/Wallich proposal to Cowan's 1833 trial; if none appears quickly, preserve them as a problem genealogy rather than a direct chain.
-3. Give the `continued Darjeeling factory` claim one final bounded contemporaneous search. If no 1842–50 witness appears, leave it unresolved; it is no longer structurally necessary because the 1849 Dhankuta and Hooker evidence already establishes continued regional manufacture/use.
-4. Return next to actor-level archival gaps only where they change the central cases: Hodgson's 1831 maker/source, names/tasks/retention of the five papermakers, and identities/fates of the two Lepcha trainees.
+1. Move the deep dive back to **actor-level gaps** that can change the central cases: Hodgson's 1831 maker/source; names/task division/retention of the five 1841 papermakers; identities/fates of the two Lepcha trainees.
+2. Preserve filtration as a controlled source tension rather than pursuing more generic technical literature.
+3. Treat Hodgson–Swinton–Robison–Cowan, the Serampore machine environment, Hooker's 1849 field-use chain, Dhankuta manufacture, and the 1851 exhibition afterlife as closed enough for article design.
+4. Do not reopen broad RAS, Board's Collection, or Darjeeling-industry searches unless a specific actor-level question requires them.
