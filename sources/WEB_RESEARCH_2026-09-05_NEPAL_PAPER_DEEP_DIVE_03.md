@@ -153,14 +153,83 @@ The first-order question is simply: **what did a filter have to do?** `Good filt
 
 ---
 
+## Finding 21 — the July 1841 continuation order created a restartable experimental capacity, not yet a permanent factory
+
+Evidence status: **SECURE direct 1842 printed correspondence; exact Government-letter day has an OCR conflict.**
+
+The full-text OCR of the 1842 correspondence dossier now closes the sequence after Campbell's 4 July report much more precisely.
+
+### Campbell's own proposal at the end of the 4 July report
+
+The rains had stopped manufacture and Campbell said proceedings could not be renewed until October. With the house and implements already complete, he proposed that **the head man** be kept on, or re-engaged after the rains. He did not propose retaining all five as a permanent workforce at this point.
+
+Campbell then reported three outcomes from the first trial:
+
+- 3,300 sheets had been made, weighing 1 maund 7 seers;
+- he regarded the paper as `excellent of its kind` though more expensive than expected;
+- he had persuaded **two Lepchas, subjects of Government at Darjeeling, to learn the art**, and said that with their assistance manufacture could be renewed whenever the Governor-General desired.
+
+He explicitly framed the permanent-factory question as still open: the trial's high cost should not determine whether Government should later `countenance a permanent factory` for supplying stationery to neighbouring plains stations.
+
+Primary full-text location:
+https://archive.org/stream/in.ernet.dli.2015.109896/2015.109896.Journal-Of-The-Agricultural-And-Horticultural-Society-Of-India--Vol-1_djvu.txt
+Printed pp.215–216.
+
+### Government response
+
+T. H. Maddock, Secretary to the Government of India, replied on behalf of the Governor-General in Council. The order was:
+
+- continue the existing course of **experimental paper making `till further notice`**;
+- keep in pay **`the manufacturers necessary for that purpose`**;
+- use Calcutta country-paper prices as the standard toward which Campbell should try to reduce cost;
+- send twenty or thirty sheets by dak for O'Shaughnessy's experiments.
+
+Crucially, Government did **not** specify in the printed order that all five original makers must remain. The number and identity of `manufacturers necessary` therefore remain open.
+
+### Campbell's follow-up
+
+Campbell thanked Government for the authority to continue but said he would renew the experiment **after the rains, if possible**. This is a restart condition, not evidence that manufacture continued uninterrupted.
+
+### Date caution
+
+The OCR contains a small unresolved conflict:
+
+- a later Government paragraph says it is `in continuation of the letter of this Department, dated the 9th July`;
+- Campbell's acknowledgement reads `your letter of the 19th instant`.
+
+The exact day should not be normalized until the printed page is visually checked. The sequence itself is secure: Campbell's 4 July report -> Maddock/Government continuation order -> later July follow-up on filtering/waterproofing -> Campbell reply.
+
+### Historical consequence
+
+Case 2 should no longer be narrated as:
+
+`five makers moved -> factory established`.
+
+The source supports a more precise sequence:
+
+`five makers moved -> trial workshop + 3,300 sheets -> two Lepcha trainees learn -> rains stop production -> Campbell proposes retaining/re-engaging head maker -> Government orders experiment maintained as needed, with necessary makers kept on pay -> possible restart after rains`.
+
+The object produced by the first experiment was therefore not only paper. It was a **restartable production capacity** composed of a completed workshop, some retained/re-engageable expert labour, and two newly trained Lepchas.
+
+This also sharpens the archival P0. What matters is no longer just `how long did all five stay?` but:
+
+1. Was the head maker in fact retained or re-engaged after the rains?
+2. How many of the other four counted as `manufacturers necessary` under Government's order?
+3. Were the two Lepchas paid, formally employed, or only trained during the initial experiment?
+4. Was manufacture actually restarted after the rains, and if so by whom?
+
+No currently recovered printed evidence answers these four questions.
+
+---
+
 ## Actor-level P0s after this pass
 
 1. Who supplied Hodgson with the Nepal-specific manufacturing procedure in 1831?
 2. What were the names and internal task divisions of the five papermakers sent in 1841?
 3. What document selected/authorised/despatched them through the Nepal Durbar?
-4. Which makers were retained on pay after the initial experiment, and for how long?
-5. Who were the two Lepcha trainees and what became of their training?
+4. Was the head maker retained/re-engaged after the rains, and which of the other makers remained on pay under Government's `manufacturers necessary` order?
+5. Who were the two Lepcha trainees; were they paid/employed; and did they participate in any restarted manufacture?
 
 Do not expand the archive map until one of these questions generates a specific record target.
 
-Next highest-value move: reconstruct the exact July 1841 -> Government continuation/retention sequence to determine what happened to the five makers and two trainees after Campbell's first successful 3,300-sheet trial.
+Next highest-value move: search only for an October 1841 or later restart/pay record and for the pre-April 1841 Nepal Residency/Durbar despatch record. If neither appears through a narrow search, keep them as bounded gaps and proceed to article redesign.
