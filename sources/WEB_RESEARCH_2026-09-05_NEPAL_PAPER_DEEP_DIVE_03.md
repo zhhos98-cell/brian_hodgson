@@ -72,6 +72,87 @@ Archive priority therefore remains:
 
 ---
 
+## Finding 18 — Hodgson's 1831 technical description is actor-thin but operation-dense
+
+Evidence status: **SECURE textual observation; intentional erasure NOT claimed.**
+
+Hodgson's 1831/32 printed paper gives exceptionally detailed operations while preserving human actors only generically. It begins with the implements `necessary`, then specifies ash-liquor quantities and strength, boiling time, beating, churning until stringiness is lost, screening, manual pulp distribution on a floating cloth-bottom frame, drying, optional polishing, sheet thickness control and transport in dried-pulp bricks. Human references are generic: `the operator`, `paper makers`, and broad producing communities rather than named workshop personnel.
+
+Primary text:
+B. H. Hodgson, `On the Native Method of making the Paper, denominated in Hindustan, Nipalese`, *Journal of the Asiatic Society of Bengal* 1 (1832), 8–11.
+Public scan:
+https://pahar.in/pahar/Books%20and%20Articles/Nepal/1832%20Native%20Method%20of%20Making%20Paper%20in%20Hindustan%20Nipalese%20by%20Hodgson%20from%20JASBv1%20s.pdf
+
+Consequence:
+
+Do not write that Hodgson deliberately `erased` artisans unless motive evidence appears. The defensible point is narrower:
+
+**the portable technical description encoded operations in great detail but did not encode how those operations were socially distributed among particular makers.**
+
+This creates the strongest transition into 1841. Campbell's Darjeeling experiment makes visible a differentiated five-person production team, a head/mate wage hierarchy, site judgments, material vetoes and trainees. Case 2 can therefore ask what became visible when an abstractly described `operator` had to be replaced by actual makers performing the process elsewhere.
+
+This empirical transition should replace generic `tacit knowledge` language wherever possible.
+
+---
+
+## Finding 19 — targeted public searching still does not recover personal names for the five makers or two Lepcha trainees
+
+Evidence status: **CONTROLLED NON-FINDING; one targeted nominal/pay/retention check remains justified.**
+
+Searches built from the exact wage hierarchy, Campbell-to-Colvin correspondence, `five paper-makers`, Nepal Durbar, and the Lepcha training episode do not recover personal names in public printed/citation-level sources.
+
+The makers are nevertheless unusually visible in non-nominal form:
+
+- five-person party;
+- head man / mate / three ordinary workers;
+- differentiated monthly wages;
+- social/geographical classification in Campbell's language;
+- site preference and transport judgments;
+- tool/material/process judgments;
+- relationship to two Lepcha trainees.
+
+Consequence:
+
+The article should not wait for names before restoring these workers. The source problem itself is historically precise: administrative and printed records preserve them through occupation, hierarchy, pay and collective labels rather than individual identity.
+
+One narrow archival move remains rational:
+
+`selection/despatch/pay/retention records generated before or after the 4 July 1841 Campbell report`.
+
+If that remains negative, mark the names unresolved and stop.
+
+---
+
+## Finding 20 — O'Shaughnessy's positive filtration judgment and the 1842 editors' negative test optimize different filtration tasks
+
+Evidence status: **STRONG interpretive resolution grounded in direct 1842 technical wording.**
+
+O'Shaughnessy's *Bengal Dispensatory* explicitly divides filtration by task:
+
+- for `delicate experiments` such as testing saltpetre and separating silver precipitate, use white unsized, well-washed Serampore paper;
+- where `the deposit is bulky`, `the paper made in Nipal is the best substance`, because it is very strong and allows rapid filtration followed by `subsequent expression`.
+
+Direct witness:
+https://upload.wikimedia.org/wikipedia/commons/c/c4/The_Bengal_Dispensatory%3B_chiefly_compiled_from_the_Works_of_Roxburgh%2C_Wallich%2C_Ainslie%2C_Wight%2C_Arnot%2C_Royle%2C_Pereria%2C_Lindley%2C_Richard_and_Fee_%28IA_dli.granth.73996%29.pdf
+
+The Agricultural and Horticultural Society sequel/editorial trial instead compares Nepal/Darjeeling paper with good European filtering paper in terms of filtration speed and clarity of the resulting liquor. It acknowledges the mechanical advantage that the strong sheet can be twisted/pressed without tearing but judges it inferior for obtaining a fast, clear filtrate.
+
+Consequence:
+
+Do not frame this primarily as a contradiction requiring different paper states. The more strongly evidenced distinction is **task**:
+
+`bulky precipitate + subsequent pressing/expression` -> strength becomes decisive and Nepal paper can be best;
+
+`delicate / clear filtration` -> porosity, speed and filtrate clarity dominate, making Serampore or good European filtering paper preferable.
+
+Different paper states remain a secondary possibility until specimen identity is reconstructed.
+
+Historical payoff:
+
+The first-order question is simply: **what did a filter have to do?** `Good filtering paper` was not one technical rank. Historical actors weighted strength, flow, clarity and resistance to expression differently according to operation. The relational/HPS result should emerge from this practical distinction rather than precede it as theory.
+
+---
+
 ## Actor-level P0s after this pass
 
 1. Who supplied Hodgson with the Nepal-specific manufacturing procedure in 1831?
@@ -81,3 +162,5 @@ Archive priority therefore remains:
 5. Who were the two Lepcha trainees and what became of their training?
 
 Do not expand the archive map until one of these questions generates a specific record target.
+
+Next highest-value move: reconstruct the exact July 1841 -> Government continuation/retention sequence to determine what happened to the five makers and two trainees after Campbell's first successful 3,300-sheet trial.
