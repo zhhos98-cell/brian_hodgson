@@ -60,6 +60,25 @@ If the table of contents or transcription lacks the item, move directly to BL `M
 
 ---
 
+## Finding 49 — the current Documenta Nepalica catalogue interface does not expose the microfilm images
+
+Evidence status: **SECURE interface-level observation; not a claim about all NGMPP access channels.**
+
+Direct inspection of the `T_0033_0002` catalogue page confirms the corpus metadata above and states that the material was copied courtesy of Tribhuvan University Central Library and microfilmed as NGMPP `T 33/2`. The page does not provide a digital-image viewer, download link, exposure list or document-level image links for this record; its `Running no., exposures` field is effectively blank (`T .....`).
+
+The same page identifies the holding institution as `Private; Kathmandu; T. U. C. L.` and says its source is an NGMPP catalogue card.
+
+Catalogue witness:
+https://nepalica.hadw-bw.de/nepal/catitems/viewitem/18876/4349
+
+### Access consequence
+
+This closes one possible shortcut: the currently exposed Documenta Nepalica record is a locator, not the digitized content itself. Do **not** infer from this that NGMPP/TUCL images are unavailable through every other channel. For this research session, however, the public catalogue page cannot supply the consultation text.
+
+The next step remains access to `Rb 750`, `T 36–T 37`, or the underlying institutional copy, not further clicking within the catalogue record.
+
+---
+
 ## Retrieval wording for a library/archive request
 
 For a human or institutional lookup, the shortest unambiguous request is:
