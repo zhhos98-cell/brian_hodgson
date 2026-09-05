@@ -184,6 +184,51 @@ The Jackson absence does not prove the factory had ended, but it weakens any ass
 
 ---
 
+## Finding 7 — Hooker's 1849 expedition makes Nepal paper an active field-science consumable
+
+Evidence status: **SECURE / direct digitized correspondence in ZSL Hodgson archive.**
+
+Joseph Dalton Hooker's 1849 letters to Hodgson repeatedly request and account for Nepal paper as a working expedition material, not as a historical curiosity or experimental specimen.
+
+Key direct records:
+
+1. `NZSL/HOD/5/5/23` — Hooker asks for two kinds of folio white paper, one for drawings and one for specimen tickets, and says these should be placed between quires of **Nepal or brown paper (for drying plants)** and tied tightly for safe transmission.
+   https://zsl-archive.maxarchiveservices.co.uk/index.php/letter-from-joseph-dalton-hooker-to-brian-houghton-hodgson-22
+
+2. `NZSL/HOD/5/5/19` — Hooker asks Hodgson to **send still another load of Nepal Paper** while simultaneously describing the food and coolie economy of his camp.
+   https://zsl-archive.maxarchiveservices.co.uk/index.php/letter-from-joseph-dalton-hooker-to-brian-houghton-hodgson-19
+
+3. `NZSL/HOD/5/5/15` — Hooker says he has asked Campbell to send a **bundle of Nepal paper from my room**, and asks Hodgson to have **my people** pack it and take it to Campbell for transmission.
+
+4. `NZSL/HOD/5/5/32`, 12 July 1849 — the long-awaited coolies arrive **with the paper I have been so anxiously wanting**, directly joining paper supply to the expedition's transport labour.
+
+5. `NZSL/HOD/5/5/40`, 18 Oct 1849 — Hooker says there is "a screw loose" in Hodgson's people sending to Nepal for paper. He contrasts his own men, who had gone and returned in seventeen days, with another batch for which **neither men, paper or money** had been heard of. This is direct evidence of a procurement route to Nepal, labour assignment, money at risk, and failure of the supply chain.
+
+6. Another 1849 letter asks for **6 loads** of Nepal paper but immediately notes that obtaining coolies may make this difficult.
+
+Interpretive limit:
+
+These letters prove active procurement and field use of Nepal paper in 1849. They do **not** by themselves prove that the paper came from Campbell's 1841 Darjeeling manufacture; indeed, the explicit language about sending people **to Nepal for paper** points toward continued procurement of Nepal-made paper.
+
+Consequence:
+
+Serampore machine incompatibility cannot function as the endpoint of Nepal paper's scientific history. By 1849 the paper remained materially valuable enough that Hodgson/Hooker organized repeated loads and human transport around it.
+
+The paper's uses were concrete and differentiated:
+
+- drying plants;
+- protecting/delivering white drawing paper;
+- protecting/delivering paper for specimen tickets;
+- expedition supply as bundles/loads.
+
+This materially strengthens an actor-level Case 3:
+
+`paper need -> Hodgson / Campbell coordination -> Hodgson's people / coolies -> procurement in Nepal or Hodgson's stores -> bundle/load -> field camp -> plant drying / paper protection`.
+
+The important afterlife is therefore not only whether a Darjeeling "factory" survived. A parallel, demonstrably live path was **continued procurement of Nepal-made paper through human carrying networks for scientific fieldwork**.
+
+---
+
 ## Active case architecture after current findings
 
 ### Case 1 — before and through Hodgson/Cowan: material and description travel
@@ -215,20 +260,21 @@ Historical question:
 
 Did moving the makers solve what moving finished paper, pulp/material and written procedure had failed to solve?
 
-### Case 3 — 1841 onward: what happened to the paper they made?
+### Case 3 — 1841–49: what happened to the paper after experimental remanufacture?
 
-Do not organize this as an abstract sequence of "interfaces." Follow the paper into concrete uses and judgments:
+Do not organize this as an abstract sequence of "interfaces." Follow particular paper states into particular hands and uses:
 
 - whitening/bleaching;
 - filtration, explicitly distinguishing finished Nepal paper from experimental Darjeeling states;
 - waterproof wrapping;
 - Serampore machine manufacture;
 - possible continued Darjeeling production/supply;
-- later field-science use and procurement.
+- **continued Nepal procurement by Hodgson's people and coolies**;
+- **Hooker's field use for plant drying and protecting drawing/ticket papers**.
 
 Historical question:
 
-Who decided whether the paper was successful, for which use, and what became of the manufacture after the 1841–42 experiments?
+Who decided whether the paper was successful, for which use, and why did Nepal-made paper remain worth procuring by the load even after attempts to bleach, remake and mechanize it?
 
 ---
 
@@ -239,7 +285,8 @@ Who decided whether the paper was successful, for which use, and what became of 
 3. Compare Raffles/Wallich's proposed paper+material transfer against the later Hodgson/Cowan actual remanufacture chain; seek a bridge but do not assume one.
 4. Reconcile O'Shaughnessy's 1841/42 experimental report with his 1842 *Bengal Dispensatory* statement that Nepal-made finished paper was best for bulky filtration.
 5. Search 1842–1850 newspapers, government print and technical journals for one contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
-6. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
+6. Treat Hooker's 1849 field-use chain as CLOSED enough for article design; further letters are useful only if they identify suppliers/carriers or paper origin more precisely.
+7. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
 
 ## Dropped / deprioritized
 
