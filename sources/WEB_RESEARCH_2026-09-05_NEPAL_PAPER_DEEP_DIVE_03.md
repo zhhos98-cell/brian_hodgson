@@ -222,14 +222,52 @@ No currently recovered printed evidence answers these four questions.
 
 ---
 
+## Finding 22 — restart/pay and pre-arrival selection searches now close as bounded archival gaps
+
+Evidence status: **CONTROLLED NEGATIVE SEARCH / archival gap, not historical non-event.**
+
+Two deliberately narrow searches were run after the July 1841 sequence was reconstructed.
+
+### A. Post-rains restart / pay
+
+Target: October 1841 and later evidence that manufacture was actually restarted, that the head maker was retained/re-engaged, that some subset of the five remained on pay, or that the two Lepcha trainees entered a paid production establishment.
+
+Result: no public English printed/catalogue-level record recovered that closes this sequence. The strongest direct text still ends with Campbell's conditional plan to renew manufacture after the rains `if possible` and Government's order to keep only the manufacturers necessary for continuing the experiment.
+
+### B. Pre-arrival selection / despatch
+
+Target window is now sharply bounded by the 1842 dossier itself:
+
+`8 January 1841` — Maddock informs Campbell that Lord Auckland has asked Hodgson to try to send persons skilled in Nepal papermaking;
+
+`mid-April 1841` — the five-person party arrives at Darjeeling, sent through the Nepal Durbar at Hodgson's request.
+
+Searches for a nominal roll, selection order, Nepal Residency forwarding letter, Nepal Durbar despatch, or pay/allowance record in this January-to-mid-April window did not recover a public record naming the five.
+
+Consequence:
+
+These are now **bounded file-level archival gaps**, not reasons to keep expanding the archive map or delay article design.
+
+Article rule:
+
+- state exactly what the printed/archival record preserves: five makers, hierarchy, pay, group labels, technical judgments, training and Government continuation order;
+- state exactly what remains unknown: personal names, exact task division, who was retained/re-engaged, trainee identities, and whether production restarted after the rains;
+- do not turn absence of public evidence into a claim that restart did not occur;
+- do not reopen broad NAI/Sikkim/BL trawls unless a specific consultation number, pay record, or nominal list surfaces.
+
+P0 status change:
+
+- `names / selection record / post-rains retention` -> **BOUNDED ARCHIVAL GAP**;
+- `Case 2 historical reconstruction` -> **READY ENOUGH FOR ARTICLE DESIGN**.
+
+---
+
 ## Actor-level P0s after this pass
 
-1. Who supplied Hodgson with the Nepal-specific manufacturing procedure in 1831?
-2. What were the names and internal task divisions of the five papermakers sent in 1841?
-3. What document selected/authorised/despatched them through the Nepal Durbar?
-4. Was the head maker retained/re-engaged after the rains, and which of the other makers remained on pay under Government's `manufacturers necessary` order?
-5. Who were the two Lepcha trainees; were they paid/employed; and did they participate in any restarted manufacture?
+1. Who supplied Hodgson with the Nepal-specific manufacturing procedure in 1831? **OPEN / highest-value remaining actor question.**
+2. What were the names and internal task divisions of the five papermakers sent in 1841? **BOUNDED GAP.**
+3. What document selected/authorised/despatched them through the Nepal Durbar? **BOUNDED GAP.**
+4. Was the head maker retained/re-engaged after the rains, and which of the other makers remained on pay? **BOUNDED GAP.**
+5. Who were the two Lepcha trainees; were they paid/employed; and did they participate in restarted manufacture? **BOUNDED GAP.**
 
-Do not expand the archive map until one of these questions generates a specific record target.
-
-Next highest-value move: search only for an October 1841 or later restart/pay record and for the pre-April 1841 Nepal Residency/Durbar despatch record. If neither appears through a narrow search, keep them as bounded gaps and proceed to article redesign.
+Next move: stop broad actor-archive expansion. Return to contemporaneous printed/public reception and then article redesign, unless a precise 1831 maker-source lead appears.
