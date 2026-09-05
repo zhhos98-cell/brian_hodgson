@@ -52,19 +52,34 @@ Primary volume control:
 https://www.biodiversitylibrary.org/
 Search: Nathaniel Wallich, *Asiatick Researches* 13 (1820), pp. 369–415.
 
-A later specialist history by Frederik Trier attributes the practical description used by Wallich not to Wallich's direct observation in Nepal but to Lt. M. R. Murray, who had travelled in Kumaon. This attribution is currently **SECONDARY-CONTROLLED** and must be checked against Wallich's own wording before being promoted.
+A near-contemporary synthesis, *Historical and Descriptive Account of British India*, vol. III (1832), explicitly says that the particulars published by Wallich were extracted from the manuscripts of **Lieutenant H. R. Murray**, forming part of Murray's official correspondence with the Military Board at Calcutta. The same text reproduces Murray's observations from Kumaon and the manufacturing procedure. This strongly upgrades the Murray attribution while still leaving Wallich's own 1820 wording to be checked directly if needed for quotation.
+
+The Murray/Wallich account already includes:
+
+- ecological observation in Kumaon;
+- use for cartridges, genealogical records and deeds;
+- durability/wet resistance claims;
+- multiple sheet qualities/sizes and prices;
+- scraping outer bark;
+- boiling inner bark with oak ash;
+- washing;
+- beating with small mallets on stone;
+- mixing in clean water;
+- spreading on bamboo-mat moulds/frames.
 
 Consequence:
 
-Hodgson 1831/32 cannot be presented as the first written recipe for Nepal papermaking. The P0 comparison is now:
+Hodgson 1831/32 cannot be presented as the first written recipe for Nepal/Himalayan papermaking. The P0 comparison is now:
 
-`Wallich/Murray 1820 account -> Hodgson 1831/32 account`
+`Murray official observations -> Wallich 1820 publication`
+versus
+`Hodgson 1831/32 Nepal-specific account`.
 
 Questions:
 
 - What procedural detail did Hodgson add or alter?
 - Did Hodgson have a different source base, especially direct Nepal workshop/maker knowledge?
-- Did Hodgson convert an earlier descriptive recipe into a more operational account tied to specimens, government records, procurement and remanufacture?
+- Did Hodgson convert an earlier concise manufacture account into a more operational description tied to implements, screening, thickness control, finishing, dried-pulp transport, government records and actual remanufacture?
 
 ---
 
@@ -254,6 +269,47 @@ The important afterlife is therefore not only whether a Darjeeling "factory" sur
 
 ---
 
+## Finding 8 — Serampore's 1842 "machine web" belonged to a concrete continuous papermaking regime
+
+Evidence status: **SECURE for core process description; Fourdrinier naming independently supported by modern specialist scholarship.**
+
+George Smith's *Life of William Carey* reproduces Carey's answer to an 1832 Agricultural and Horticultural Society inquiry about paper manufacture. Carey explicitly distinguishes three production regimes at Serampore:
+
+1. **early local hand production** — the missionaries employed native papermakers working in their accustomed way, with Serampore modifications to sizing; pulp was taken up on mat frames and sheets dried individually;
+2. **the English hand method** — pulp in cisterns and fine-wire frames used by a workman to form sheets, followed by separate drying and optional sizing;
+3. **their machine method by 1832** — pulp was allowed to run onto **a web of wire**, passed over **several cylinders**, with the last cylinder **heated by steam**, producing paper in about two minutes from the liquid state.
+
+Public text:
+https://www.ccel.org/s/smith_geo/carey/carey.htm
+
+The same source records Serampore's 12-horse steam engine from Thwaites and Rothwell of Bolton, operating from 27 March 1820. Modern paper-history scholarship independently reports that Fourdrinier papermaking machines had been installed at Serampore by 1832.
+
+Modern control:
+Russell Jones, *Malay manuscripts: a guide to paper and watermarks*, noting steam-driven beaters from 1820 and Fourdrinier machines by 1832.
+https://www.tandfonline.com/doi/full/10.1080/13639811.2021.1939521
+
+Consequence:
+
+Marshman's 1842 complaint that the mucilaginous Nepal/Darjeeling pulp would not run freely on the **machine web** is now historically specific. It did not meet a generic abstraction called "industrial technology"; it met a continuous production system requiring regular furnish flow across a moving wire web, through cylinders, into steam drying.
+
+This sharpens the contrast with Hodgson's 1832 Nepal process:
+
+- Hodgson: maker manually varies the quantity/distribution of pulp on a floating cloth-bottom frame to control sheet thickness;
+- Serampore: pulp must travel continuously and regularly over a moving wire web; attempts to increase thickness are constrained by flow behaviour.
+
+The same desired outcome — thicker/stronger paper — is therefore operationalized differently in the two production systems.
+
+Article-level caution:
+
+Do not write "the Fourdrinier proved Nepal fibre unsuitable." The source supports a narrower claim: Marshman found the experimental furnish difficult to run at greater thickness with the machinery then in use at Serampore. Other uses, hand production, and later Nepal-paper procurement continued.
+
+P0 status change:
+
+- `Serampore machine regime` = **CLOSED ENOUGH FOR ARTICLE DESIGN**;
+- exact make/model of the individual 1842 machine = **NOT REQUIRED unless an easily available source provides it**.
+
+---
+
 ## Active case architecture after current findings
 
 ### Case 1 — before and through Hodgson/Cowan: material and description travel
@@ -261,12 +317,12 @@ The important afterlife is therefore not only whether a Darjeeling "factory" sur
 Short antecedent:
 
 `1818 public paper specimen / Wallich botanical network`
--> `1820 Wallich/Murray technical description + security-paper discussion + proposed transfer of finished paper and papermaking material`
--> `1831–33 Hodgson specimens/account + Cowan remanufacture`.
+-> `Murray official observations -> Wallich 1820 publication + security-paper discussion + proposed transfer of finished paper and papermaking material`
+-> `1831–33 Hodgson Nepal-specific account/specimens + Cowan remanufacture`.
 
 Historical question:
 
-What did Hodgson add to an already circulating knowledge of Nepal paper, and why did transported material plus written knowledge still fail to reproduce the Nepal-made sheet in Britain?
+What did Hodgson add to an already circulating knowledge of Himalayan paper, and why did transported material plus written knowledge still fail to reproduce the Nepal-made sheet in Britain?
 
 ### Case 2 — 1841: makers travel
 
@@ -292,7 +348,7 @@ Do not organize this as an abstract sequence of "interfaces." Follow particular 
 - whitening/bleaching;
 - filtration, explicitly distinguishing finished Nepal paper from experimental Darjeeling states;
 - waterproof wrapping;
-- Serampore machine manufacture;
+- Serampore continuous wire-web/cylinder/steam-drying manufacture;
 - possible continued Darjeeling production/supply;
 - **continued Nepal procurement by Hodgson's people and coolies**;
 - **Hooker's field use for plant drying and protecting drawing/ticket papers**.
@@ -305,16 +361,16 @@ Who decided whether the paper was successful, for which use, and why did Nepal-m
 
 ## Current P0 research order
 
-1. Compare Wallich/Murray 1820 directly against Hodgson 1831/32 at process-detail and source-actor level.
+1. Complete a direct Wallich/Murray 1820 versus Hodgson 1831/32 comparison at process-detail and source-actor level.
 2. Compare Raffles/Wallich's proposed paper+material transfer against the later Hodgson/Cowan actual remanufacture chain; seek a bridge but do not assume one.
 3. Reconcile the p.273–274 editors' filtration result with O'Shaughnessy's 1842 *Bengal Dispensatory* statement that Nepal-made finished paper was best for bulky filtration.
-4. Reconstruct the Serampore mill's actual papermaking machinery and process environment sufficiently to interpret Marshman's "machine web" failure historically rather than generically.
-5. Search 1842–1850 newspapers, government print and technical journals for **one** contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
-6. Treat Hooker's 1849 field-use chain as CLOSED enough for article design; further letters are useful only if they identify suppliers/carriers or paper origin more precisely.
-7. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
+4. Search 1842–1850 newspapers, government print and technical journals for **one** contemporaneous witness of continued Darjeeling manufacture/supply. Stop once the "for some years" claim is either corroborated or remains unresolved.
+5. Treat the Serampore machine environment and Hooker's 1849 field-use chain as CLOSED enough for article design; further work is useful only if it identifies actors or resolves a concrete contradiction.
+6. Only then return to archival series for actor gaps that printed material cannot close: 1831 knowledge source; papermaker names/tasks/retention; Lepcha trainees.
 
 ## Dropped / deprioritized
 
 - Royal Asiatic Society physical archive: DROP for this phase.
 - broad Hodgson correspondence harvesting: DROP unless it closes one of the P0 event chains.
+- exact Serampore machine make/model: HOLD; no need to over-archive unless easy evidence appears.
 - additional Board's Collections / consultation architecture: HOLD unless needed for a specific actor or event gap.
