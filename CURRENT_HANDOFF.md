@@ -8,14 +8,15 @@ The previous 1831–1842 draft remains the best source-language/factual quarry, 
 
 Read first:
 
-1. `notes/NEPAL_PAPER_DEEP_DIVE_HANDOFF_2026-09-05.md`
-2. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_11.md` — latest 1831 knowledge-source narrowing
+1. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_12.md` — exact Stiller master locator / public-web stop rule
+2. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_11.md` — 1831 knowledge-source narrowing
 3. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_10.md` — Stiller Typescript / Kathmandu route
-4. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_CONTINUATION.md`
-5. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE.md`
-6. `data/paper_experiment_census_v0_1.json`
-7. `historiography/NEPALI_PAPER_NINETEENTH_CENTURY_CALIBRATION.md`
-8. `drafts/NEPAL_PAPER_DRAFT_02_SOURCE_LANGUAGE_2026-09-04.md` — factual/source-language quarry only
+4. `notes/NEPAL_PAPER_DEEP_DIVE_HANDOFF_2026-09-05.md`
+5. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE_CONTINUATION.md`
+6. `sources/WEB_RESEARCH_2026-09-05_NEPAL_PAPER_DEEP_DIVE.md`
+7. `data/paper_experiment_census_v0_1.json`
+8. `historiography/NEPALI_PAPER_NINETEENTH_CENTURY_CALIBRATION.md`
+9. `drafts/NEPAL_PAPER_DRAFT_02_SOURCE_LANGUAGE_2026-09-04.md` — factual/source-language quarry only
 
 ## Active first-order problem
 
@@ -133,11 +134,11 @@ Current secure limit:
 
 Bounded retrieval sequence:
 
-1. **Stiller Typescript / TUCL Kathmandu** — use the English pre-1840 transcription route already controlled in `_10` to test whether the 1831/32 paper transaction is present and to recover exact document joins cheaply;
+1. **Stiller Typescript / TUCL Kathmandu** — exact master locator now controlled as `Documenta Nepalica T_0033_0002 / NGMPP T 33/2`, explicitly `Foreign Political Records Political consultations 1801–1839`; transcription `T 36–T 37`; table of contents NRC Library `Rb 750`. The 13 January 1832 consultation falls inside the declared corpus by date and series. Public web does not expose the relevant `Rb 750` entry or a safe Stiller page number, so do not interpolate pagination from later citations;
 2. **BL Mss Eur Hodgson/6, item 6, ff.77–81** — separate covering letter from attached note; look specifically for source/observation/informant language and compare manuscript copy with print;
 3. **Political Consultation, 13 January 1832, Nos.18–20** — inspect the original administrative cluster for enclosure/forwarding language, a named maker/informant/intermediary, or any distinction between personal observation and reported information.
 
-Stop rule: if these three routes produce no attribution, close the actor-source question as an unresolved but bounded archival gap and proceed to writing. Follow a new lead only if one of these records supplies a specific name or document reference.
+Stop rule: the public-web component of Stage 1 is **EXHAUSTED enough**. Next action is content access to `Rb 750` / `T36–T37`, not further generic searching. If the three routes produce no attribution, close the actor-source question as an unresolved but bounded archival gap and proceed to writing. Follow a new lead only if one of these records supplies a specific name or document reference.
 
 ## P1 / stop-rule
 
